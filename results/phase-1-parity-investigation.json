@@ -1,0 +1,86 @@
+{
+  "variants": {
+    "nano": {
+      "ORT_DISABLE_ALL": {
+        "raw_all": 0.0011818408966064453,
+        "raw_scored": 2.396106719970703e-05,
+        "box_rel": 5.665935039520264,
+        "decoded_px_scored": 0.0013840851815984934,
+        "score_scored": 1.8537044525146484e-05,
+        "worst_anchor": {
+          "anchor": 2846,
+          "stride": 8,
+          "ref_value": 1.5807454586029053,
+          "score": 7.83684839245069e-10
+        }
+      },
+      "ORT_ENABLE_BASIC": {
+        "raw_all": 0.0011818408966064453,
+        "raw_scored": 2.396106719970703e-05,
+        "box_rel": 5.665935039520264,
+        "decoded_px_scored": 0.0013840851815984934,
+        "score_scored": 1.8537044525146484e-05,
+        "worst_anchor": {
+          "anchor": 2846,
+          "stride": 8,
+          "ref_value": 1.5807454586029053,
+          "score": 7.83684839245069e-10
+        }
+      },
+      "ORT_ENABLE_ALL": {
+        "raw_all": 0.0011818408966064453,
+        "raw_scored": 2.396106719970703e-05,
+        "box_rel": 5.665935039520264,
+        "decoded_px_scored": 0.0013840851815984934,
+        "score_scored": 1.8537044525146484e-05,
+        "worst_anchor": {
+          "anchor": 2846,
+          "stride": 8,
+          "ref_value": 1.5807454586029053,
+          "score": 7.83684839245069e-10
+        }
+      }
+    },
+    "tiny": {
+      "ORT_DISABLE_ALL": {
+        "raw_all": 0.0001575946807861328,
+        "raw_scored": 1.1160969734191895e-05,
+        "box_rel": 1.8711576461791992,
+        "decoded_px_scored": 0.0016962798763415776,
+        "score_scored": 1.1160969734191895e-05,
+        "worst_anchor": {
+          "anchor": 8535,
+          "stride": 8,
+          "ref_value": 3.070403575897217,
+          "score": 2.635949726721709e-13
+        }
+      },
+      "ORT_ENABLE_BASIC": {
+        "raw_all": 0.0001575946807861328,
+        "raw_scored": 1.1160969734191895e-05,
+        "box_rel": 1.8711576461791992,
+        "decoded_px_scored": 0.0016962798763415776,
+        "score_scored": 1.1160969734191895e-05,
+        "worst_anchor": {
+          "anchor": 8535,
+          "stride": 8,
+          "ref_value": 3.070403575897217,
+          "score": 2.635949726721709e-13
+        }
+      },
+      "ORT_ENABLE_ALL": {
+        "raw_all": 0.0001575946807861328,
+        "raw_scored": 1.1160969734191895e-05,
+        "box_rel": 1.8711576461791992,
+        "decoded_px_scored": 0.0016962798763415776,
+        "score_scored": 1.1160969734191895e-05,
+        "worst_anchor": {
+          "anchor": 8535,
+          "stride": 8,
+          "ref_value": 3.070403575897217,
+          "score": 2.635949726721709e-13
+        }
+      }
+    }
+  }
+}

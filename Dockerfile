@@ -37,3 +37,18 @@ RUN cmake -S cpp -B build -G Ninja -DCMAKE_BUILD_TYPE=Release \
     && cmake --build build
 
 CMD ["/src/build/env_check"]
+
+# Python tools for ONNX export and evaluation. ByteTrack is mounted at
+# /work/external/ByteTrack and put on PYTHONPATH (it is not pip-installed).
+FROM ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55 AS pytools
+ARG DEBIAN_FRONTEND=noninteractive
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      python3 python3-venv ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+COPY python/requirements.txt /tmp/requirements.txt
+RUN python3 -m venv /opt/venv \
+    && /opt/venv/bin/pip install --no-cache-dir -r /tmp/requirements.txt
+ENV PATH=/opt/venv/bin:$PATH \
+    PYTHONPATH=/work/external/ByteTrack \
+    PYTHONDONTWRITEBYTECODE=1
+WORKDIR /work

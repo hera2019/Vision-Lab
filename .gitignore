@@ -7,3 +7,4 @@ data/
 *.onnx
 *.pt
 *.mp4
+external/
