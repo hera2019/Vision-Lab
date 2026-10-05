@@ -1,0 +1,9 @@
+.DS_Store
+.venv/
+__pycache__/
+build/
+models/
+data/
+*.onnx
+*.pt
+*.mp4
