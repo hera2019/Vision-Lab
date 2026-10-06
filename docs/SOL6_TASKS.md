@@ -22,7 +22,11 @@ reproduce the published MOT17 numbers and measure held-out MOT20 accuracy.
   `data/MOT20/train/MOT20-0{1,2,3,5}` (8,931 frames, with `gt/`),
   `external/ByteTrack` at `d1bf0191adff59bc8fcfeaa0b33d3d1642552a99`.
 - Environment check: `./scripts/phase2_detector_parity.sh` must print
-  `pass=True` for nano and tiny. If not, stop and report.
+  `pass=True` for nano and tiny. If not, stop and report. (It regenerates
+  `results/phase-2/cpp-*.json` with new timings; restore them with
+  `git checkout -- results/phase-2` afterwards.)
+- All container runs use `scripts/drun.sh` (see PROJECT_RULES). For this phase
+  create `data/phase-3/` first and run with `VL_RW="results data/phase-3"`.
 
 ## Tasks
 

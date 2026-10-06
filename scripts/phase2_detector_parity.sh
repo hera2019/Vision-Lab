@@ -5,8 +5,9 @@ set -euo pipefail
 docker build -q --target build -t vision-lab:dev . >/dev/null
 docker build -q --target pytools -t vision-lab:pytools . >/dev/null
 
-PY=(docker run --rm -v "$PWD:/work" -w /work/python vision-lab:pytools python)
-CPP=(docker run --rm -v "$PWD:/work" vision-lab:dev /src/build/detect_frames)
+mkdir -p results/phase-2
+PY=(scripts/drun.sh vision-lab:pytools -w /work/python -- python)
+CPP=(scripts/drun.sh vision-lab:dev -- /src/build/detect_frames)
 
 "${PY[@]}" check_cpp_detector.py frames
 for v in nano tiny; do

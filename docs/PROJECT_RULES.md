@@ -25,7 +25,9 @@ repository follows the same rules.
 
 ## Execution environment
 
-- Everything runs in Docker: `vision-lab:dev` (C++ build, target `build`) and `vision-lab:pytools` (Python, target `pytools`), mounted with `-v "$PWD:/work"`. Docker CLI: `export PATH="$HOME/.docker/bin:$PATH"`.
+- Everything runs in Docker: `vision-lab:dev` (C++ build, target `build`) and `vision-lab:pytools` (Python, target `pytools`). Docker CLI: `export PATH="$HOME/.docker/bin:$PATH"`.
+- **Every container run goes through [`scripts/drun.sh`](../scripts/drun.sh)**, never a bare `docker run`. It mounts the repository read-only at `/work`, makes only the directories listed in `VL_RW` writable (default `results`), and runs with no network, the caller's non-root uid, all capabilities dropped, `no-new-privileges`, a read-only root filesystem, a 1 GB tmpfs `/tmp`, 512 processes and 6 GB memory (`VL_MEMORY`). Example: `VL_RW="results data/phase-3" scripts/drun.sh vision-lab:dev -- /src/build/<tool> ...`. Do not weaken these flags; if a step needs more, record why in ISSUES.md first.
+- Network is used only by `docker build` (pinned packages) and by host-side `git clone` of sources the taskbook lists.
 - Host: Apple M2 Max (8 performance + 4 efficiency cores), 32 GB RAM. Docker Desktop runs with **default settings**: VM with 12 vCPU and ~7.7 GiB RAM, no per-container limits. Do not change Docker Desktop's global settings.
 - CPU budgets are set per run, never globally: ONNX Runtime threads via `--threads`; for benchmarks also `docker run --cpus=N` (and `--memory` where stated). Record the thread count in every output.
 - Weights, datasets, videos and large intermediate files stay out of git (`models/`, `data/`, `external/`). Record source, revision, SHA-256 and license in [`assets.json`](../assets.json).

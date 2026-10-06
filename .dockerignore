@@ -1,0 +1,8 @@
+# Only cpp/ and python/requirements.txt are copied into images.
+.git
+data
+models
+external
+results
+docs
+scripts
