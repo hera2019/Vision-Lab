@@ -1,0 +1,11 @@
+{
+  "status": "failed-before-first-runtime-container",
+  "source_commit": "97d7177e42b6c6b66e1ddea3e5fb77743719c28e",
+  "image_builds_completed": true,
+  "experiment_stages_executed": false,
+  "fresh_clone_gate_passed": false,
+  "failure": "macOS Bash 3.2 set -u rejects expansion of an empty extra array at reproduce.sh line 44",
+  "resolution": "Use the same guarded optional-array expansion as unchanged scripts/drun.sh; verify empty and populated arrays, commit, create another clean clone.",
+  "log": "results/phase-6/full-run-first-attempt.log",
+  "clone_proof": "results/phase-6/full-clone-proof.json"
+}

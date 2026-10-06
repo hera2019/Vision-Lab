@@ -121,3 +121,9 @@ minimal fix, status. Append; do not delete resolved entries.
 - **Correction:** retained all logs; placed the independent snapshot under the already shared project's ignored data directory and created empty mount destinations before read-only mounting. No global Docker setting or runtime protection changed. Do not repeat the same offline build with unchanged inputs to chase a pass.
 - **Standalone build:** after using existing owner download authorization for the original C++ dependencies and SHA-checked ORT, root build succeeds. Fresh root env_check passes, two models' first-50-frame detection/track outputs are byte-identical to frozen slices. This is not a fresh Python installation or a full-clone acceptance verdict.
 - **Evidence:** first/mountpoint attempt logs, offline/network root-build logs, root-package/env records and `root-check.json` under `results/phase-6/`.
+
+## I-19 · Full driver empty-array expansion on macOS Bash (corrected; failure retained)
+
+- **Observed:** first full attempt from clean commit `97d7177` builds all images, then Bash 3.2 `set -u` rejects an empty optional mount array before preflight. No experimental stage ran.
+- **Correction:** use the guarded optional-array form already used by unchanged `scripts/drun.sh`; empty and populated cases pass on the host Bash, with spaces retained. Commit correction and use another independent clean clone, without overlaying the failed one.
+- **Evidence:** `results/phase-6-full-first-attempt.md` / `.json`, `results/phase-6/full-run-first-attempt.log`, Git clone proof.

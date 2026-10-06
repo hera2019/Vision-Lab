@@ -1,0 +1,269 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.43kB done
+#1 DONE 0.0s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1
+#2 ...
+
+#3 [auth] docker/dockerfile:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1
+#2 DONE 1.3s
+
+#4 docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#4 resolve docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e 0.0s done
+#4 CACHED
+
+#5 [internal] load metadata for docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+#5 ...
+
+#6 [auth] library/ubuntu:pull token for registry-1.docker.io
+#6 DONE 0.0s
+
+#5 [internal] load metadata for docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+#5 DONE 1.2s
+
+#7 [internal] load .dockerignore
+#7 transferring context: 151B done
+#7 DONE 0.0s
+
+#8 [base 1/3] FROM docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+#8 resolve docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55 done
+#8 DONE 0.0s
+
+#9 [internal] load build context
+#9 transferring context: 47.28kB done
+#9 DONE 0.0s
+
+#10 [base 2/3] RUN apt-get update && apt-get install -y --no-install-recommends       build-essential cmake ninja-build ca-certificates curl       libeigen3-dev       libopencv-core-dev libopencv-imgproc-dev libopencv-imgcodecs-dev       libopencv-videoio-dev libopencv-video-dev     && rm -rf /var/lib/apt/lists/*
+#10 CACHED
+
+#11 [build 1/3] WORKDIR /src
+#11 CACHED
+
+#12 [build 2/3] COPY cpp/ cpp/
+#12 CACHED
+
+#13 [base 3/3] RUN case "arm64" in       arm64) ORT_ARCH=aarch64; ORT_SHA256=e16a27a8ed330bbc698df7330b0cf56e722f354e3bcc92118682c74ef3c3e3da ;;       amd64) ORT_ARCH=x64;     ORT_SHA256=a5ed5a3cac51fbb2e90da632ae43d19212faaa20e76484e62bcb7c23ddb3b3fd ;;       *) echo "unsupported arch: arm64" >&2; exit 1 ;;     esac     && curl -fsSL -o /tmp/ort.tgz       "https://github.com/microsoft/onnxruntime/releases/download/v1.30.0/onnxruntime-linux-${ORT_ARCH}-1.30.0.tgz"     && echo "${ORT_SHA256}  /tmp/ort.tgz" | sha256sum -c -     && mkdir -p /opt/onnxruntime     && tar -xzf /tmp/ort.tgz -C /opt/onnxruntime --strip-components=1     && rm /tmp/ort.tgz
+#13 CACHED
+
+#14 [build 3/3] RUN cmake -S cpp -B build -G Ninja -DCMAKE_BUILD_TYPE=Release     && cmake --build build
+#14 CACHED
+
+#15 exporting to image
+#15 exporting layers done
+#15 exporting manifest sha256:eef623c4d2dd10f2c190a6932acb70955b0cc1f1e99059d17f289e1907338d58 done
+#15 exporting config sha256:4fe089a6fa618c96d3050ecabdffc68962454718b2b7387c3a8e5f11d1af4149 done
+#15 exporting attestation manifest sha256:e4571a7facb3b63a5c78bd2091f7820b4c27d12ecf90e265e5195f3f04c71e59 done
+#15 exporting manifest list sha256:8950134849438d4cf5e51ce8b9c5b556533a433c673aec388f490805d671128b done
+#15 naming to docker.io/library/vision-lab:dev done
+#15 unpacking to docker.io/library/vision-lab:dev done
+#15 DONE 0.0s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/t02jmjo9dsfe800jk2ufuypu2
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.43kB done
+#1 DONE 0.0s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1
+#2 DONE 0.3s
+
+#3 docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#3 resolve docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e 0.0s done
+#3 CACHED
+
+#4 [internal] load metadata for docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+#4 DONE 0.0s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 151B done
+#5 DONE 0.0s
+
+#6 [pytools 1/5] FROM docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+#6 resolve docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55 done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 627B done
+#7 DONE 0.0s
+
+#8 [pytools 3/5] COPY python/requirements.txt /tmp/requirements.txt
+#8 CACHED
+
+#9 [pytools 4/5] RUN python3 -m venv /opt/venv     && /opt/venv/bin/pip install --no-cache-dir -r /tmp/requirements.txt
+#9 CACHED
+
+#10 [pytools 2/5] RUN apt-get update && apt-get install -y --no-install-recommends       python3 python3-venv ca-certificates build-essential python3-dev     && rm -rf /var/lib/apt/lists/*
+#10 CACHED
+
+#11 [pytools 5/5] WORKDIR /work
+#11 CACHED
+
+#12 exporting to image
+#12 exporting layers done
+#12 exporting manifest sha256:f51072719002198a4e95e12d4728ba091ffe5226ad3431ed88936dc53739a197 done
+#12 exporting config sha256:975314083807209d01e4fa5bdaf9f238359ee1e6f4b4d84a1dcc2be7da2fcdc4 done
+#12 exporting attestation manifest sha256:f21bb471f7866e6a62217222640e8bdc6ad85c66b4f44c84ad886b970ed9edd0
+#12 exporting attestation manifest sha256:f21bb471f7866e6a62217222640e8bdc6ad85c66b4f44c84ad886b970ed9edd0 done
+#12 exporting manifest list sha256:4a10c8ee76c3f87036b82b4eeaa15c2917e0976bc320c29791dd7284dc44f21e done
+#12 naming to docker.io/library/vision-lab:pytools done
+#12 unpacking to docker.io/library/vision-lab:pytools done
+#12 DONE 0.0s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/nbaubxqju3tgwlc8kzy17rxrt
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.review-fixes
+#1 transferring dockerfile: 266B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/vision-lab:dev
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 151B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 47.28kB done
+#4 DONE 0.0s
+
+#5 [1/4] FROM docker.io/library/vision-lab:dev@sha256:8950134849438d4cf5e51ce8b9c5b556533a433c673aec388f490805d671128b
+#5 resolve docker.io/library/vision-lab:dev@sha256:8950134849438d4cf5e51ce8b9c5b556533a433c673aec388f490805d671128b done
+#5 DONE 0.0s
+
+#6 [2/4] WORKDIR /src
+#6 DONE 0.0s
+
+#7 [3/4] COPY cpp/ cpp/
+#7 DONE 0.0s
+
+#8 [4/4] RUN cmake -S cpp -B build -G Ninja -DCMAKE_BUILD_TYPE=Release     && cmake --build build
+#8 0.054 -- Configuring done (0.0s)
+#8 0.061 -- Generating done (0.0s)
+#8 0.064 -- Build files have been written to: /src/build
+#8 0.240 [1/17] Building CXX object CMakeFiles/vl_tracker.dir/src/tracker/lapjv.cpp.o
+#8 0.962 [2/17] Building CXX object CMakeFiles/transcode_demo.dir/src/transcode_demo.cpp.o
+#8 1.264 [3/17] Linking CXX executable transcode_demo
+#8 1.333 [4/17] Building CXX object CMakeFiles/env_check.dir/src/env_check.cpp.o
+#8 1.400 [5/17] Building CXX object CMakeFiles/detect_frames.dir/src/detect_frames.cpp.o
+#8 1.499 [6/17] Linking CXX executable env_check
+#8 1.566 [7/17] Building CXX object CMakeFiles/vl_detector.dir/src/detector.cpp.o
+#8 1.574 [8/17] Linking CXX static library libvl_detector.a
+#8 1.655 [9/17] Building CXX object CMakeFiles/detect_sequence.dir/src/detect_sequence.cpp.o
+#8 1.738 [10/17] Linking CXX executable detect_frames
+#8 1.823 [11/17] Linking CXX executable detect_sequence
+#8 2.069 [12/17] Building CXX object CMakeFiles/benchmark_pipeline.dir/src/benchmark_pipeline.cpp.o
+#8 2.182 [13/17] Building CXX object CMakeFiles/track_sequence.dir/src/track_sequence.cpp.o
+#8 3.967 [14/17] Building CXX object CMakeFiles/vl_tracker.dir/src/tracker/tracker.cpp.o
+#8 3.974 [15/17] Linking CXX static library libvl_tracker.a
+#8 4.103 [16/17] Linking CXX executable benchmark_pipeline
+#8 4.117 [17/17] Linking CXX executable track_sequence
+#8 DONE 4.1s
+
+#9 exporting to image
+#9 exporting layers 0.1s done
+#9 exporting manifest sha256:2425307804f31406cd4ee291e8b15d4f7a88861e6f8548876b76849f1c56c818 done
+#9 exporting config sha256:2612eb83604114ddb77a05d73aca673979b41725e6cb425f01b5501c02b91af8 done
+#9 exporting attestation manifest sha256:e78576bc2ef696123c683960731bdaf484b5d66e13a99989308dc8919d590fb8 done
+#9 exporting manifest list sha256:5ba2cae912e5d914747df975595268a8aa34fdc0d57b22db187086241f308a98
+#9 exporting manifest list sha256:5ba2cae912e5d914747df975595268a8aa34fdc0d57b22db187086241f308a98 done
+#9 naming to docker.io/library/vision-lab:review-fixes done
+#9 unpacking to docker.io/library/vision-lab:review-fixes 0.0s done
+#9 DONE 0.1s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/p0r1175obe25wor1htx3tmy9l
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.phase4
+#1 transferring dockerfile: 256B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/vision-lab:review-fixes
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 151B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 752B done
+#4 DONE 0.0s
+
+#5 [1/4] FROM docker.io/library/vision-lab:review-fixes@sha256:5ba2cae912e5d914747df975595268a8aa34fdc0d57b22db187086241f308a98
+#5 resolve docker.io/library/vision-lab:review-fixes@sha256:5ba2cae912e5d914747df975595268a8aa34fdc0d57b22db187086241f308a98 done
+#5 DONE 0.0s
+
+#6 [2/4] WORKDIR /src
+#6 DONE 0.0s
+
+#7 [3/4] COPY cpp/ cpp/
+#7 DONE 0.0s
+
+#8 [4/4] RUN cmake -S cpp -B build -G Ninja -DCMAKE_BUILD_TYPE=Release     && cmake --build build
+#8 0.035 -- Configuring done (0.0s)
+#8 0.041 -- Generating done (0.0s)
+#8 0.043 -- Build files have been written to: /src/build
+#8 0.056 ninja: no work to do.
+#8 DONE 0.1s
+
+#9 exporting to image
+#9 exporting layers 0.0s done
+#9 exporting manifest sha256:cae703115c53150cb43d0a5fb6bef5cdc992a7eb131d15ad03f0c0adf0fa52fa done
+#9 exporting config sha256:263ee877245f28508eb22146780c238705fb11ca6ab966cba0a7afef3c0243da done
+#9 exporting attestation manifest sha256:a3dd5e9bf7ba0757c8564e78801ed5d8e1c08ac77e594738777dece69159cd5b done
+#9 exporting manifest list sha256:997923e30190028668ef4183e9c3b9ccce96f0a71a0ac03c826da5d9ad8159cf done
+#9 naming to docker.io/library/vision-lab:phase4 done
+#9 unpacking to docker.io/library/vision-lab:phase4 0.0s done
+#9 DONE 0.1s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/4yvt8u24fw3om4ghamhbb12ol
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.phase4-pytools
+#1 transferring dockerfile: 322B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/vision-lab:pytools
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 151B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 422B done
+#4 DONE 0.0s
+
+#5 [1/3] FROM docker.io/library/vision-lab:pytools@sha256:4a10c8ee76c3f87036b82b4eeaa15c2917e0976bc320c29791dd7284dc44f21e
+#5 resolve docker.io/library/vision-lab:pytools@sha256:4a10c8ee76c3f87036b82b4eeaa15c2917e0976bc320c29791dd7284dc44f21e done
+#5 DONE 0.0s
+
+#6 [2/3] COPY python/requirements-phase4.txt /tmp/requirements-phase4.txt
+#6 DONE 0.0s
+
+#7 [3/3] RUN pip install --no-cache-dir --no-deps --only-binary=:all: --require-hashes     -r /tmp/requirements-phase4.txt
+#7 0.745 Collecting ml_dtypes==0.6.0 (from -r /tmp/requirements-phase4.txt (line 3))
+#7 0.883   Downloading ml_dtypes-0.6.0-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (360 kB)
+#7 1.041      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 360.2/360.2 kB 2.3 MB/s eta 0:00:00
+#7 1.050 Installing collected packages: ml_dtypes
+#7 1.097 Successfully installed ml_dtypes-0.6.0
+#7 DONE 1.1s
+
+#8 exporting to image
+#8 exporting layers 0.1s done
+#8 exporting manifest sha256:22c459b2905f8cbbbb8c356a1c965f93cc6508dab925d8f46e6d47384177f38c done
+#8 exporting config sha256:7cc22405ced0ac12ce1e73d6e17ee2804bb77598f3b54dcac09544460c699cab done
+#8 exporting attestation manifest sha256:92a9bd167a77576e9a792c4bc65af3931712f47647eb60bf13f3c14be02d1f84 done
+#8 exporting manifest list sha256:6e6ef7daebb9db7874560d0a255ad9b3efee6fb1678121ebcefac67953c73779 done
+#8 naming to docker.io/library/vision-lab:phase4-pytools done
+#8 unpacking to docker.io/library/vision-lab:phase4-pytools 0.0s done
+#8 DONE 0.1s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/0xigmdkdhjxhz9a2eapgc9hoe
+scripts/reproduce.sh: line 44: extra[@]: unbound variable

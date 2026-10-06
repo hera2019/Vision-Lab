@@ -1,0 +1,14 @@
+{
+  "method": "git clone --no-hardlinks --branch codex/vision-lab-reproduction",
+  "source_commit": "97d7177e42b6c6b66e1ddea3e5fb77743719c28e",
+  "clone_commit": "97d7177e42b6c6b66e1ddea3e5fb77743719c28e",
+  "source_tree": "aacb9daf57531498cc4b0259eac27b4e5be416ea",
+  "clone_tree": "aacb9daf57531498cc4b0259eac27b4e5be416ea",
+  "clone_origin": "/Users/Hera/Documents/Vision-Lab",
+  "clone_path": "/Users/Hera/Documents/Vision-Lab/data/phase-6-clean-97d7177",
+  "clone_clean_before_assets": true,
+  "clone_clean_after_assets": true,
+  "assets_method": "APFS copy-on-write regular files via cp -cR; models, external, MOT17 and MOT20 only; no historical detection/tracking data copied",
+  "source_overlay": false,
+  "push_performed": false
+}

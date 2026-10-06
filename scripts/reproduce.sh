@@ -41,7 +41,7 @@ if [[ -n ${VL_ASSET_ROOT:-} ]]; then
   done
 fi
 runpy() {
-  VL_RW="results data/phase-6" scripts/drun.sh vision-lab:phase4-pytools "${extra[@]}" -- python "$@"
+  VL_RW="results data/phase-6" scripts/drun.sh vision-lab:phase4-pytools ${extra[@]+"${extra[@]}"} -- python "$@"
 }
 runpy /work/python/phase6_preflight.py "$mode"
 if [[ $mode == full ]]; then
@@ -85,24 +85,24 @@ docker image inspect "$base" --format '{{.Id}} {{.Architecture}} {{.Os}}' > resu
 docker build --network=none --build-arg "REPRO_BASE=$base" -f Dockerfile.reproduce \
   -t vision-lab:phase6-smoke . > results/phase-6/build.log 2>&1
 docker image inspect vision-lab:phase6-smoke --format '{{.Id}} {{.Architecture}} {{.Os}}' > results/phase-6/built-image.txt
-VL_RW="results data/phase-6" scripts/drun.sh vision-lab:phase6-smoke "${extra[@]}" -- \
+VL_RW="results data/phase-6" scripts/drun.sh vision-lab:phase6-smoke ${extra[@]+"${extra[@]}"} -- \
   /src/build/env_check > results/phase-6/environment.json
 runpy /work/python/track_reference.py --sequence /work/data/phase-3/edge-cases \
   --cache /work/data/phase-3/edge-cases/dets.txt --out /work/data/phase-6/edge-python.txt
-VL_RW="results data/phase-6" scripts/drun.sh vision-lab:phase6-smoke "${extra[@]}" -- \
+VL_RW="results data/phase-6" scripts/drun.sh vision-lab:phase6-smoke ${extra[@]+"${extra[@]}"} -- \
   /src/build/track_sequence --sequence /work/data/phase-3/edge-cases \
   --cache /work/data/phase-3/edge-cases/dets.txt --out /work/data/phase-6/edge-cpp.txt
 for model in nano tiny; do
-  VL_RW="results data/phase-6" scripts/drun.sh vision-lab:phase6-smoke --cpus=4 "${extra[@]}" -- \
+  VL_RW="results data/phase-6" scripts/drun.sh vision-lab:phase6-smoke --cpus=4 ${extra[@]+"${extra[@]}"} -- \
     /src/build/detect_sequence --sequence /work/data/MOT17/train/MOT17-02-FRCNN \
     --model "/work/models/bytetrack_${model}_mot17.onnx" --threads 4 --limit 50 \
     --out "/work/data/phase-6/$model-detections.txt"
-  VL_RW="results data/phase-6" scripts/drun.sh vision-lab:phase6-smoke --cpus=4 "${extra[@]}" -- \
+  VL_RW="results data/phase-6" scripts/drun.sh vision-lab:phase6-smoke --cpus=4 ${extra[@]+"${extra[@]}"} -- \
     /src/build/track_sequence --sequence /work/data/MOT17/train/MOT17-02-FRCNN \
     --model "/work/models/bytetrack_${model}_mot17.onnx" --threads 4 --limit 50 \
     --out "/work/data/phase-6/$model-tracks.txt"
   for repeat in 1 2 3; do
-    VL_RW="results data/phase-6" scripts/drun.sh vision-lab:phase6-smoke --cpus=4 "${extra[@]}" -- \
+    VL_RW="results data/phase-6" scripts/drun.sh vision-lab:phase6-smoke --cpus=4 ${extra[@]+"${extra[@]}"} -- \
       /src/build/benchmark_pipeline --sequence /work/data/MOT17/train/MOT17-02-FRCNN \
       --model "/work/models/bytetrack_${model}_mot17.onnx" --threads 4 --warmup 50 --frames 100 \
       --out "/work/results/phase-6/$model-r$repeat.csv" > "results/phase-6/$model-r$repeat.json"
