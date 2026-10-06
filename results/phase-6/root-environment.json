@@ -1,0 +1,7 @@
+{
+  "onnxruntime_version": "1.30.0",
+  "providers": ["CPUExecutionProvider"],
+  "opencv_version": "4.6.0",
+  "jpeg_roundtrip": true,
+  "hardware_concurrency": 12
+}

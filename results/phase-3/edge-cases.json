@@ -1,0 +1,18 @@
+{
+  "left_lines": 87,
+  "right_lines": 87,
+  "byte_identical": false,
+  "identical_line_share": 0.0,
+  "same_frame_and_id": true,
+  "max_box_difference": 0.0,
+  "max_score_difference": 2.384185793236071e-08,
+  "pass": true,
+  "covers": [
+    "high/low confidence",
+    "empty-frame skip",
+    "lost recovery",
+    "expiry",
+    "unconfirmed removal",
+    "float32 threshold equality at 0.1, 0.6 and 0.7"
+  ]
+}

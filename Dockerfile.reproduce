@@ -1,0 +1,8 @@
+# Offline rebuild of current sources using an already installed local toolchain.
+# This is a smoke-validation route, not a fresh dependency installation.
+ARG REPRO_BASE=vision-lab:phase4
+FROM ${REPRO_BASE}
+WORKDIR /src
+COPY cpp/ cpp/
+RUN cmake -S cpp -B build -G Ninja -DCMAKE_BUILD_TYPE=Release \
+    && cmake --build build

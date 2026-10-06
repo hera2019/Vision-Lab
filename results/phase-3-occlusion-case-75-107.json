@@ -1,0 +1,310 @@
+{
+  "sequence": "MOT20-03",
+  "model": "nano",
+  "source_fps": 25,
+  "frozen_config": {
+    "track_thresh": 0.6,
+    "track_buffer": 30,
+    "match_thresh": 0.9,
+    "mot20": false
+  },
+  "tracker_frame_rate_argument": 30,
+  "max_time_lost_updates": 30,
+  "endpoints_in_demo": {
+    "75": {
+      "first_row": [
+        33.0,
+        75.0,
+        1014.0,
+        117.3,
+        43.2,
+        94.8,
+        0.69,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "last_row": [
+        141.0,
+        75.0,
+        784.6,
+        184.9,
+        39.6,
+        82.5,
+        0.15,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "emitted_frames": 109,
+      "python_same_frames_ids_boxes": true
+    },
+    "107": {
+      "first_row": [
+        180.0,
+        107.0,
+        647.6,
+        182.7,
+        44.1,
+        96.8,
+        0.72,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "last_row": [
+        300.0,
+        107.0,
+        277.4,
+        245.2,
+        47.9,
+        100.5,
+        0.75,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "emitted_frames": 108,
+      "python_same_frames_ids_boxes": true
+    }
+  },
+  "missing_output_frames_between_ids": 38,
+  "gt_correspondence": [
+    {
+      "frame": 130,
+      "track_id": 75,
+      "top_matches": [
+        {
+          "gt_id": 169,
+          "iou": 0.8279096477794796,
+          "visibility": 0.67391,
+          "box": [
+            806.0,
+            163.0,
+            45.0,
+            106.0
+          ]
+        },
+        {
+          "gt_id": 24,
+          "iou": 0.0,
+          "visibility": 0.99237,
+          "box": [
+            435.0,
+            751.0,
+            53.0,
+            130.0
+          ]
+        },
+        {
+          "gt_id": 27,
+          "iou": 0.0,
+          "visibility": 0.65812,
+          "box": [
+            274.0,
+            425.0,
+            50.0,
+            116.0
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 141,
+      "track_id": 75,
+      "top_matches": [
+        {
+          "gt_id": 169,
+          "iou": 0.5842412451361859,
+          "visibility": 0.021277,
+          "box": [
+            775.0,
+            167.0,
+            46.0,
+            106.0
+          ]
+        },
+        {
+          "gt_id": 17,
+          "iou": 0.0,
+          "visibility": 0.96875,
+          "box": [
+            102.0,
+            850.0,
+            36.0,
+            31.0
+          ]
+        },
+        {
+          "gt_id": 24,
+          "iou": 0.0,
+          "visibility": 1.0,
+          "box": [
+            421.0,
+            730.0,
+            60.0,
+            146.0
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 180,
+      "track_id": 107,
+      "top_matches": [
+        {
+          "gt_id": 169,
+          "iou": 0.6300742065012286,
+          "visibility": 0.37431,
+          "box": [
+            655.0,
+            179.0,
+            46.0,
+            107.0
+          ]
+        },
+        {
+          "gt_id": 17,
+          "iou": 0.0,
+          "visibility": 1.0,
+          "box": [
+            73.0,
+            766.0,
+            61.0,
+            113.0
+          ]
+        },
+        {
+          "gt_id": 19,
+          "iou": 0.0,
+          "visibility": 1.0,
+          "box": [
+            1.0,
+            680.0,
+            32.0,
+            138.0
+          ]
+        }
+      ]
+    }
+  ],
+  "reference_state_transitions": [
+    {
+      "source_frame": 32,
+      "tracker_update": 32,
+      "id": 75,
+      "collections": {
+        "tracked_stracks": {
+          "state": 1,
+          "activated": false,
+          "start_update": 32,
+          "last_matched_update": 32
+        }
+      },
+      "in_tracker_output": false
+    },
+    {
+      "source_frame": 33,
+      "tracker_update": 33,
+      "id": 75,
+      "collections": {
+        "tracked_stracks": {
+          "state": 1,
+          "activated": true,
+          "start_update": 32,
+          "last_matched_update": 33
+        }
+      },
+      "in_tracker_output": true
+    },
+    {
+      "source_frame": 142,
+      "tracker_update": 142,
+      "id": 75,
+      "collections": {
+        "lost_stracks": {
+          "state": 2,
+          "activated": true,
+          "start_update": 32,
+          "last_matched_update": 141
+        }
+      },
+      "in_tracker_output": false
+    },
+    {
+      "source_frame": 172,
+      "tracker_update": 172,
+      "id": 75,
+      "collections": {
+        "lost_stracks": {
+          "state": 3,
+          "activated": true,
+          "start_update": 32,
+          "last_matched_update": 141
+        },
+        "removed_stracks": {
+          "state": 3,
+          "activated": true,
+          "start_update": 32,
+          "last_matched_update": 141
+        }
+      },
+      "in_tracker_output": false
+    },
+    {
+      "source_frame": 173,
+      "tracker_update": 173,
+      "id": 75,
+      "collections": {
+        "removed_stracks": {
+          "state": 3,
+          "activated": true,
+          "start_update": 32,
+          "last_matched_update": 141
+        }
+      },
+      "in_tracker_output": false
+    },
+    {
+      "source_frame": 179,
+      "tracker_update": 179,
+      "id": 107,
+      "collections": {
+        "tracked_stracks": {
+          "state": 1,
+          "activated": false,
+          "start_update": 179,
+          "last_matched_update": 179
+        }
+      },
+      "in_tracker_output": false
+    },
+    {
+      "source_frame": 180,
+      "tracker_update": 180,
+      "id": 107,
+      "collections": {
+        "tracked_stracks": {
+          "state": 1,
+          "activated": true,
+          "start_update": 179,
+          "last_matched_update": 180
+        }
+      },
+      "in_tracker_output": true
+    }
+  ],
+  "state_enum": {
+    "new": 0,
+    "tracked": 1,
+    "lost": 2,
+    "removed": 3
+  },
+  "input_sha256": {
+    "data/phase-3/dets/nano/MOT20-03.txt": "79a79cdd4e75e94fc43eddc0079cf3b0f5efcce92afca4eed534f3a3272b70e7",
+    "data/phase-3/tracks/end-to-end/nano/MOT20-03.txt": "946213c4d1b3f872b8550ca915994d82b8ddb79868a6b6d12d7d41c461682267",
+    "data/phase-3/tracks/python/nano/MOT20-03.txt": "4986f3717c42280c7d7efa7bcb8d0da423912032cab5e4987a53c3cd7227b6da",
+    "data/MOT20/train/MOT20-03/gt/gt.txt": "350fbc950c6dc00e3cc8a71358b3d0b8958906c8be57a7bf5fb9db34bff70f28"
+  },
+  "scope": "Owner-reported failure inspection; no detector/tracker setting changed."
+}

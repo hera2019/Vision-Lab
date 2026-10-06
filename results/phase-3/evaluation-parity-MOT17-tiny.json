@@ -1,0 +1,279 @@
+{
+  "stage": "parity",
+  "seconds": 20.57463109199989,
+  "versions": {
+    "numpy": "2.1.3",
+    "scipy": "1.14.1",
+    "lap": "0.5.12",
+    "cython_bbox": "0.1.5",
+    "motmetrics": "1.4.0",
+    "pandas": "2.2.3",
+    "onnxruntime": "1.30.0"
+  },
+  "results": {
+    "MOT17": {
+      "python": {
+        "tiny": {
+          "scores": {
+            "motmetrics": {
+              "MOT17-02-FRCNN": {
+                "mota": 55.93348043700554,
+                "idf1": 50.541949755095594,
+                "num_switches": 107,
+                "num_false_positives": 1282,
+                "num_misses": 6799,
+                "num_objects": 18581
+              },
+              "MOT17-04-FRCNN": {
+                "mota": 92.29976659587442,
+                "idf1": 84.60922350560661,
+                "num_switches": 90,
+                "num_false_positives": 1673,
+                "num_misses": 1899,
+                "num_objects": 47557
+              },
+              "MOT17-05-FRCNN": {
+                "mota": 69.03281769553274,
+                "idf1": 69.97969955339018,
+                "num_switches": 55,
+                "num_false_positives": 284,
+                "num_misses": 1803,
+                "num_objects": 6917
+              },
+              "MOT17-09-FRCNN": {
+                "mota": 79.6619718309859,
+                "idf1": 60.68137102619862,
+                "num_switches": 22,
+                "num_false_positives": 34,
+                "num_misses": 1027,
+                "num_objects": 5325
+              },
+              "MOT17-10-FRCNN": {
+                "mota": 68.81377054287718,
+                "idf1": 59.4021978021978,
+                "num_switches": 134,
+                "num_false_positives": 471,
+                "num_misses": 3399,
+                "num_objects": 12839
+              },
+              "MOT17-11-FRCNN": {
+                "mota": 76.4730818143281,
+                "idf1": 71.79339698608077,
+                "num_switches": 38,
+                "num_false_positives": 348,
+                "num_misses": 1834,
+                "num_objects": 9436
+              },
+              "MOT17-13-FRCNN": {
+                "mota": 62.394777529634084,
+                "idf1": 62.83349124819229,
+                "num_switches": 71,
+                "num_false_positives": 538,
+                "num_misses": 3769,
+                "num_objects": 11642
+              },
+              "OVERALL": {
+                "mota": 77.13474091026474,
+                "idf1": 71.56506655677691,
+                "num_switches": 517,
+                "num_false_positives": 4630,
+                "num_misses": 20530,
+                "num_objects": 112297
+              }
+            },
+            "TrackEval": {
+              "MOT17-02-FRCNN": {
+                "HOTA": 41.74662877792843,
+                "MOTA": 56.584683278617945,
+                "IDF1": 50.69984447900466,
+                "IDSW": 108
+              },
+              "MOT17-04-FRCNN": {
+                "HOTA": 74.78074569830537,
+                "MOTA": 92.35864331223584,
+                "IDF1": 84.6712247826454,
+                "IDSW": 102
+              },
+              "MOT17-05-FRCNN": {
+                "HOTA": 55.737348406985575,
+                "MOTA": 69.26413184906751,
+                "IDF1": 70.07073745832994,
+                "IDSW": 59
+              },
+              "MOT17-09-FRCNN": {
+                "HOTA": 53.05923246227336,
+                "MOTA": 79.73708920187794,
+                "IDF1": 60.70651610898167,
+                "IDSW": 22
+              },
+              "MOT17-10-FRCNN": {
+                "HOTA": 46.82712810504865,
+                "MOTA": 68.80598177428149,
+                "IDF1": 59.4021978021978,
+                "IDSW": 135
+              },
+              "MOT17-11-FRCNN": {
+                "HOTA": 64.01240615134493,
+                "MOTA": 77.26791013141161,
+                "IDF1": 72.087785157378,
+                "IDSW": 38
+              },
+              "MOT17-13-FRCNN": {
+                "HOTA": 49.81950568257297,
+                "MOTA": 62.57515890740423,
+                "IDF1": 62.93706293706294,
+                "IDSW": 73
+              },
+              "OVERALL": {
+                "HOTA": 61.85024662926679,
+                "MOTA": 77.3698317853549,
+                "IDF1": 71.66666666666667,
+                "IDSW": 537
+              }
+            }
+          },
+          "sha256": {
+            "MOT17-02-FRCNN": "086ec6630b7af443b5d435fce4c88e3261f35c456ecacbbe7d7d87c9e85cf8c0",
+            "MOT17-04-FRCNN": "d9b7a29a1ee160a6e052b0a66c37c8704589c6bb6bcfe3e35e8ad98f38d69c3d",
+            "MOT17-05-FRCNN": "bc4140d4123a9ec28f716a2864f9316452114f09d89190f006d823ca45456eae",
+            "MOT17-09-FRCNN": "e258d35166952f1f219efb90e2719747f75db887d0c485fd187fc5d09ff3b092",
+            "MOT17-10-FRCNN": "62b897f12a0a9f478eb608cf59cd61de2386e8028f4341201037b51caa17712e",
+            "MOT17-11-FRCNN": "07f2ea0fc31d4c2654afad953b083a34d698d1db695d9f4c910108cfc4c7ed63",
+            "MOT17-13-FRCNN": "b5d2888f2685d3762f3c6b3254068f3f8bcb31dd2b3b0c3bb31d5bcb0fdeb5ea"
+          }
+        }
+      },
+      "cpp": {
+        "tiny": {
+          "scores": {
+            "motmetrics": {
+              "MOT17-02-FRCNN": {
+                "mota": 55.93348043700554,
+                "idf1": 50.541949755095594,
+                "num_switches": 107,
+                "num_false_positives": 1282,
+                "num_misses": 6799,
+                "num_objects": 18581
+              },
+              "MOT17-04-FRCNN": {
+                "mota": 92.29976659587442,
+                "idf1": 84.60922350560661,
+                "num_switches": 90,
+                "num_false_positives": 1673,
+                "num_misses": 1899,
+                "num_objects": 47557
+              },
+              "MOT17-05-FRCNN": {
+                "mota": 69.03281769553274,
+                "idf1": 69.97969955339018,
+                "num_switches": 55,
+                "num_false_positives": 284,
+                "num_misses": 1803,
+                "num_objects": 6917
+              },
+              "MOT17-09-FRCNN": {
+                "mota": 79.6619718309859,
+                "idf1": 60.68137102619862,
+                "num_switches": 22,
+                "num_false_positives": 34,
+                "num_misses": 1027,
+                "num_objects": 5325
+              },
+              "MOT17-10-FRCNN": {
+                "mota": 68.81377054287718,
+                "idf1": 59.4021978021978,
+                "num_switches": 134,
+                "num_false_positives": 471,
+                "num_misses": 3399,
+                "num_objects": 12839
+              },
+              "MOT17-11-FRCNN": {
+                "mota": 76.4730818143281,
+                "idf1": 71.79339698608077,
+                "num_switches": 38,
+                "num_false_positives": 348,
+                "num_misses": 1834,
+                "num_objects": 9436
+              },
+              "MOT17-13-FRCNN": {
+                "mota": 62.394777529634084,
+                "idf1": 62.83349124819229,
+                "num_switches": 71,
+                "num_false_positives": 538,
+                "num_misses": 3769,
+                "num_objects": 11642
+              },
+              "OVERALL": {
+                "mota": 77.13474091026474,
+                "idf1": 71.56506655677691,
+                "num_switches": 517,
+                "num_false_positives": 4630,
+                "num_misses": 20530,
+                "num_objects": 112297
+              }
+            },
+            "TrackEval": {
+              "MOT17-02-FRCNN": {
+                "HOTA": 41.74662877792843,
+                "MOTA": 56.584683278617945,
+                "IDF1": 50.69984447900466,
+                "IDSW": 108
+              },
+              "MOT17-04-FRCNN": {
+                "HOTA": 74.78074569830537,
+                "MOTA": 92.35864331223584,
+                "IDF1": 84.6712247826454,
+                "IDSW": 102
+              },
+              "MOT17-05-FRCNN": {
+                "HOTA": 55.737348406985575,
+                "MOTA": 69.26413184906751,
+                "IDF1": 70.07073745832994,
+                "IDSW": 59
+              },
+              "MOT17-09-FRCNN": {
+                "HOTA": 53.05923246227336,
+                "MOTA": 79.73708920187794,
+                "IDF1": 60.70651610898167,
+                "IDSW": 22
+              },
+              "MOT17-10-FRCNN": {
+                "HOTA": 46.82712810504865,
+                "MOTA": 68.80598177428149,
+                "IDF1": 59.4021978021978,
+                "IDSW": 135
+              },
+              "MOT17-11-FRCNN": {
+                "HOTA": 64.01240615134493,
+                "MOTA": 77.26791013141161,
+                "IDF1": 72.087785157378,
+                "IDSW": 38
+              },
+              "MOT17-13-FRCNN": {
+                "HOTA": 49.81950568257297,
+                "MOTA": 62.57515890740423,
+                "IDF1": 62.93706293706294,
+                "IDSW": 73
+              },
+              "OVERALL": {
+                "HOTA": 61.85024662926679,
+                "MOTA": 77.3698317853549,
+                "IDF1": 71.66666666666667,
+                "IDSW": 537
+              }
+            }
+          },
+          "sha256": {
+            "MOT17-02-FRCNN": "6b415dcdfaa5b7410ecfcc07e75ba105b47253ddd0a88ae18c53fac49d556943",
+            "MOT17-04-FRCNN": "51b33b4196c521e1cd964a992258cfa6dc21dba0662bcd2d668eee9cb85e265d",
+            "MOT17-05-FRCNN": "d192ce55fc9ff4c95f8e29a3307c0e05add8cf3c365ae617668e7a31cc342ab9",
+            "MOT17-09-FRCNN": "c227600a4221110b4faaf026f3912fa1273b6147ac0a7b4e8d49db465da23b3a",
+            "MOT17-10-FRCNN": "18651923e0ee1808c6a743911f383768db2d0ec041afda9ccc2ed3eb9261a7e4",
+            "MOT17-11-FRCNN": "cd3aa3cc0d27c961eb4ccee3a2c20fb5853b9b6756c7b4e489c6d163fdf86fcd",
+            "MOT17-13-FRCNN": "af05ff3aa5d9c3c6c8a5fe0130e2f264ee242d3b7dcb0d345bf4d2541394691a"
+          }
+        }
+      }
+    }
+  }
+}

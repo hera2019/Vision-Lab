@@ -1,0 +1,14 @@
+{
+  "status": "probe-assertion-failed",
+  "operation": "First check_container_safety.py run after owner approved dependency install",
+  "assertion": "NoNewPrivs == 1 and sysfs interface names == ['lo']",
+  "observed_followup": {
+    "uid": 502,
+    "CapEff": "0000000000000000",
+    "NoNewPrivs": 1,
+    "interfaces": ["lo", "ip6_vti0", "tunl0", "ip6tnl0", "ip_vti0", "gre0", "ip6gre0", "gretap0", "sit0", "bonding_masters", "erspan0"],
+    "ipv4_route_rows": 0,
+    "tmpfs_options": "rw,nosuid,nodev,noexec,relatime,size=1048576k"
+  },
+  "resolution": "Check interface UP/LOOPBACK flags, absence of external routes and ENETUNREACH on a reserved external address. Kernel down tunnel names do not imply connectivity. Runtime protections unchanged."
+}

@@ -1,0 +1,70 @@
+# -------------------------------------------------------------------------
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT License. See License.txt in the project root for
+# license information.
+# --------------------------------------------------------------------------
+from __future__ import annotations
+
+import copy
+import logging
+import os
+import tempfile
+from enum import Enum
+from pathlib import Path
+
+import numpy
+import onnx
+from ml_dtypes import float8_e4m3fn, int4, uint4
+from onnx import ModelProto, TensorProto, external_data_helper
+from onnx import onnx_pb as onnx_proto
+from onnx.helper import make_graph, make_model, make_node, make_tensor_value_info
+from onnx.reference import ReferenceEvaluator
+
+from onnxruntime import GraphOptimizationLevel, InferenceSession, SessionOptions
+
+try:
+    from onnx.reference.op_run import to_array_extended
+except ImportError:
+    # old version of onnx.
+    to_array_extended = None
+
+
+__producer__ = "onnx.quantize"
+__version__ = "0.1.0"
+onnx_domain = "ai.onnx"
+ms_domain = "com.microsoft"
+QUANT_OP_NAME = "QuantizeLinear"
+QUANT_INPUT_SUFFIX = "_QuantizeLinear_Input"
+DEQUANT_OP_NAME = "DequantizeLinear"
+DEQUANT_OUTPUT_SUFFIX = "_DequantizeLinear_Output"
+TENSOR_NAME_QUANT_SUFFIX = "_quantized"
+MODEL_SIZE_THRESHOLD = 2147483648  # Quant model should use external data if >= 2GB
+
+FLOAT8_DISTRIBUTIONS = {}
+FLOAT8_TYPES = (
+    onnx_proto.TensorProto.FLOAT8E4M3FN,
+    onnx_proto.TensorProto.FLOAT8E4M3FNUZ,
+    onnx_proto.TensorProto.FLOAT8E5M2,
+    onnx_proto.TensorProto.FLOAT8E5M2FNUZ,
+)
+
+type_to_name = {getattr(TensorProto, k): k for k in dir(TensorProto) if isinstance(getattr(TensorProto, k), int)}
+
+# Quantization mode
+# IntegerOps: Use IntegerOps in quantized model. Only ConvInteger and MatMulInteger ops are supported now.
+# QLinearOps: Use QLinearOps in quantized model. Only QLinearConv and QLinearMatMul ops are supported now.
+
+
+class QuantizationMode(Enum):
+    IntegerOps = 0
+    QLinearOps = 1
+
+    def __str__(self):
+        return self.name
+
+    @staticmethod
+    def from_string(mode):
+        try:
+            return QuantizationMode[mode]
+        except KeyError:
+            raise ValueError()  # noqa: B904

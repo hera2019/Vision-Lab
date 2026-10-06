@@ -1,0 +1,6 @@
+Baseline: all 168 frame/ID/box rows equal stored C++.
+{"variant": "baseline", "metrics": {"mota": 51.09540636042402, "idf1": 65.35500427715996, "num_switches": 10, "num_false_positives": 95, "num_misses": 587, "num_objects": 1415}, "gt14_id_chain": [3, 4, 18]}
+{"variant": "retention-42", "metrics": {"mota": 51.51943462897526, "idf1": 65.59865092748736, "num_switches": 8, "num_false_positives": 110, "num_misses": 568, "num_objects": 1415}, "gt14_id_chain": [3, 4, 12]}
+{"variant": "motion-14", "metrics": {"mota": 51.73144876325089, "idf1": 69.803250641574, "num_switches": 3, "num_false_positives": 94, "num_misses": 586, "num_objects": 1415}, "gt14_id_chain": [3]}
+{"variant": "motion-retention-42", "metrics": {"mota": 51.30742049469965, "idf1": 68.05614632071459, "num_switches": 2, "num_false_positives": 104, "num_misses": 583, "num_objects": 1415}, "gt14_id_chain": [3]}
+Saved results/continuity-pilot.json

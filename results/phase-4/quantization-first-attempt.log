@@ -1,0 +1,11 @@
+nano: preprocessing and 112-frame MOT17-only calibration
+Traceback (most recent call last):
+  File "/work/python/quantize_phase4.py", line 88, in <module>
+    main()
+  File "/work/python/quantize_phase4.py", line 55, in main
+    quantize_static(prepared, output, Reader(), quant_format=QuantFormat.QDQ,
+  File "/opt/venv/lib/python3.12/site-packages/onnxruntime/quantization/quantize.py", line 859, in quantize_static
+    calibrator.collect_data(calibration_data_reader)
+  File "/opt/venv/lib/python3.12/site-packages/onnxruntime/quantization/calibrate.py", line 529, in collect_data
+    raise ValueError("No data is collected.")
+ValueError: No data is collected.

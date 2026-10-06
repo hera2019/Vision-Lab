@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "package_added": {
+    "ml_dtypes": "0.6.0"
+  },
+  "packages_changed": {},
+  "python_syntax_checked": [
+    "quantize_phase4.py",
+    "evaluate_phase4.py",
+    "report_phase4.py",
+    "check_container_safety.py",
+    "check_int8_threads.py"
+  ],
+  "calibration_samples_per_model": 112,
+  "assets_model_hashes_and_sizes_match": true,
+  "phase4_model_baselines_unchanged": true
+}

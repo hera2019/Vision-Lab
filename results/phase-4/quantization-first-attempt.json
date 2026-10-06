@@ -1,0 +1,10 @@
+{
+  "status": "failed-before-quantized-model",
+  "model": "nano",
+  "exit_code": 1,
+  "error": "ValueError: No data is collected.",
+  "initial_option": {"CalibMaxIntermediateOutputs": 1},
+  "source_inspection": "ORT 1.30 MinMaxCalibrater.collect_data clears the intermediate outputs at the cap without computing/merging the range; with cap 1 every observation is discarded.",
+  "correction": "Cap 128 is above the fixed 112 input frames, so no observation is discarded. Assert reader consumed 112. Scheme/data/thresholds unchanged; 6 GiB runtime limit unchanged.",
+  "log": "results/phase-4/quantization-first-attempt.log"
+}

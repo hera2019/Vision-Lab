@@ -1,0 +1,10 @@
+{
+  "status": "pass",
+  "categories": 3,
+  "audited_sequence_counts_match_upstream": true,
+  "all_three_crop_hashes_match": true,
+  "small_target_edge_context_verified": true,
+  "small_target_no_detection_match_frames": 8,
+  "identity_chain": "13->22; five frames each",
+  "baseline_changed": false
+}

@@ -1,0 +1,389 @@
+{
+  "status": "complete-held-out-int8-evaluation",
+  "threads": 4,
+  "configuration": "Frozen A1; original tracker; 608x1088; no tuning/recalibration.",
+  "models": {
+    "nano": {
+      "scores": {
+        "motmetrics": {
+          "MOT20-01": {
+            "mota": 0.21137393054856402,
+            "idf1": 0.6104272991093765,
+            "num_switches": 2,
+            "num_false_positives": 36,
+            "num_misses": 19790,
+            "num_objects": 19870
+          },
+          "MOT20-02": {
+            "mota": 0.1027516769849135,
+            "idf1": 0.4993805883447908,
+            "num_switches": 96,
+            "num_false_positives": 398,
+            "num_misses": 154089,
+            "num_objects": 154742
+          },
+          "MOT20-03": {
+            "mota": -0.20213098342780622,
+            "idf1": 3.592565003431266,
+            "num_switches": 2826,
+            "num_false_positives": 12566,
+            "num_misses": 298900,
+            "num_objects": 313658
+          },
+          "MOT20-05": {
+            "mota": -0.07256197937939302,
+            "idf1": 0.35304718469472796,
+            "num_switches": 345,
+            "num_false_positives": 2059,
+            "num_misses": 644409,
+            "num_objects": 646344
+          },
+          "OVERALL": {
+            "mota": -0.07949840209975356,
+            "idf1": 1.323452423487639,
+            "num_switches": 3269,
+            "num_false_positives": 15059,
+            "num_misses": 1117188,
+            "num_objects": 1134614
+          }
+        },
+        "TrackEval": {
+          "MOT20-01": {
+            "HOTA": 0.9110757715138094,
+            "MOTA": 0.2315047810770005,
+            "IDF1": 0.6006006006006006,
+            "IDSW": 2
+          },
+          "MOT20-02": {
+            "HOTA": 0.6059163518506006,
+            "MOTA": 0.13506352509338124,
+            "IDF1": 0.4983079363244653,
+            "IDSW": 102
+          },
+          "MOT20-03": {
+            "HOTA": 3.2316161149074247,
+            "MOTA": 0.017535022221655434,
+            "IDF1": 3.6033332156350415,
+            "IDSW": 3303
+          },
+          "MOT20-05": {
+            "HOTA": 0.4931534233770495,
+            "MOTA": 0.021041426856287057,
+            "IDF1": 0.35246331841905576,
+            "IDSW": 353
+          },
+          "OVERALL": {
+            "HOTA": 1.775528453608954,
+            "MOTA": 0.03930852254599362,
+            "IDF1": 1.3243259942742982,
+            "IDSW": 3760
+          }
+        }
+      },
+      "sha256": {
+        "MOT20-01": "1abb0c23002ec11be7d175f41230aab88d998d54f5757cf4b5c4311c63237118",
+        "MOT20-02": "9cfe7eeb0037aa8d524030e277998ffba1567b6655f98a9af46fee35d3080fa2",
+        "MOT20-03": "692bfa65e6ee0da74e461224480fcb112cef1cfaa610410fc2d21eb891b9b76e",
+        "MOT20-05": "a0cb83dbde0e0b1940508e6632da58dfb05e3a5b02ad4748015fa07adc2231f8"
+      },
+      "coverage": {
+        "MOT20-01": {
+          "processed_frames": 429,
+          "emitted_rows": 116
+        },
+        "MOT20-02": {
+          "processed_frames": 2782,
+          "emitted_rows": 1051
+        },
+        "MOT20-03": {
+          "processed_frames": 2405,
+          "emitted_rows": 27324
+        },
+        "MOT20-05": {
+          "processed_frames": 3315,
+          "emitted_rows": 3994
+        }
+      },
+      "seconds_evaluation": 18.28973121600211,
+      "baseline": {
+        "motmetrics": {
+          "MOT20-01": {
+            "mota": 59.144438852541526,
+            "idf1": 57.26435152374203,
+            "num_switches": 113,
+            "num_false_positives": 1770,
+            "num_misses": 6235,
+            "num_objects": 19870
+          },
+          "MOT20-02": {
+            "mota": 57.11054529474868,
+            "idf1": 48.223208812438465,
+            "num_switches": 841,
+            "num_false_positives": 12604,
+            "num_misses": 52923,
+            "num_objects": 154742
+          },
+          "MOT20-03": {
+            "mota": 63.95979059995282,
+            "idf1": 65.59913543610288,
+            "num_switches": 786,
+            "num_false_positives": 28395,
+            "num_misses": 83862,
+            "num_objects": 313658
+          },
+          "MOT20-05": {
+            "mota": 51.81110987338011,
+            "idf1": 44.931580718952006,
+            "num_switches": 2900,
+            "num_false_positives": 90231,
+            "num_misses": 218335,
+            "num_objects": 646344
+          },
+          "OVERALL": {
+            "mota": 56.02072599139443,
+            "idf1": 51.36987945844744,
+            "num_switches": 4640,
+            "num_false_positives": 133000,
+            "num_misses": 361355,
+            "num_objects": 1134614
+          }
+        },
+        "TrackEval": {
+          "MOT20-01": {
+            "HOTA": 47.23054213312274,
+            "MOTA": 64.21238047307499,
+            "IDF1": 59.11794871794872,
+            "IDSW": 114
+          },
+          "MOT20-02": {
+            "HOTA": 41.07236009093464,
+            "MOTA": 61.71756859805353,
+            "IDF1": 49.597076318485556,
+            "IDSW": 839
+          },
+          "MOT20-03": {
+            "HOTA": 48.86228961976236,
+            "MOTA": 67.7275886475078,
+            "IDF1": 67.00164332666476,
+            "IDSW": 805
+          },
+          "MOT20-05": {
+            "HOTA": 38.1823651847849,
+            "MOTA": 59.96110430359066,
+            "IDF1": 47.098216501758586,
+            "IDSW": 2840
+          },
+          "OVERALL": {
+            "HOTA": 42.06929816580634,
+            "MOTA": 62.42211007443941,
+            "IDF1": 53.31482258609942,
+            "IDSW": 4598
+          }
+        }
+      },
+      "overall_delta_pp": {
+        "motmetrics": {
+          "mota": -56.10022439349418,
+          "idf1": -50.046427034959805
+        },
+        "TrackEval": {
+          "MOTA": -62.382801551893415,
+          "IDF1": -51.99049659182512,
+          "HOTA": -40.29376971219738
+        }
+      }
+    },
+    "tiny": {
+      "scores": {
+        "motmetrics": {
+          "MOT20-01": {
+            "mota": 61.78158027176648,
+            "idf1": 62.23194748358863,
+            "num_switches": 120,
+            "num_false_positives": 2147,
+            "num_misses": 5327,
+            "num_objects": 19870
+          },
+          "MOT20-02": {
+            "mota": 63.56192888808469,
+            "idf1": 55.38930254409817,
+            "num_switches": 759,
+            "num_false_positives": 13553,
+            "num_misses": 42073,
+            "num_objects": 154742
+          },
+          "MOT20-03": {
+            "mota": 66.64296781845194,
+            "idf1": 72.58724189119233,
+            "num_switches": 605,
+            "num_false_positives": 30042,
+            "num_misses": 73980,
+            "num_objects": 313658
+          },
+          "MOT20-05": {
+            "mota": 55.88927877415122,
+            "idf1": 51.178275443579345,
+            "num_switches": 2410,
+            "num_false_positives": 87035,
+            "num_misses": 195662,
+            "num_objects": 646344
+          },
+          "OVERALL": {
+            "mota": 60.01168679392287,
+            "idf1": 57.929852951826966,
+            "num_switches": 3894,
+            "num_false_positives": 132777,
+            "num_misses": 317042,
+            "num_objects": 1134614
+          }
+        },
+        "TrackEval": {
+          "MOT20-01": {
+            "HOTA": 51.62543300961432,
+            "MOTA": 68.94313034725718,
+            "IDF1": 64.86069878967801,
+            "IDSW": 115
+          },
+          "MOT20-02": {
+            "HOTA": 46.728620040733986,
+            "MOTA": 68.65815357175168,
+            "IDF1": 56.99595414699933,
+            "IDSW": 789
+          },
+          "MOT20-03": {
+            "HOTA": 53.08161199843558,
+            "MOTA": 70.61544739812152,
+            "IDF1": 74.18472071844789,
+            "IDSW": 619
+          },
+          "MOT20-05": {
+            "HOTA": 43.1542569195075,
+            "MOTA": 64.55710890794994,
+            "IDF1": 53.804406324027696,
+            "IDSW": 2340
+          },
+          "OVERALL": {
+            "HOTA": 46.892588659005604,
+            "MOTA": 66.86802736437237,
+            "IDF1": 60.24074729622383,
+            "IDSW": 3863
+          }
+        }
+      },
+      "sha256": {
+        "MOT20-01": "3b452c0f57ed4f8cfebada5fbfdd84a6b9d4782ad7675b50a0e475fea53d16fa",
+        "MOT20-02": "f43f8a6d536d46bd7552e99866a04536707c28cc4b22c41de0a4adf5dad6fbf3",
+        "MOT20-03": "d5d15477db779c239f432a0064df4454945cf877252ae8a758db94b74a30e59c",
+        "MOT20-05": "ec8a86e8ffa8b30b4f36be54b5eb3d09a9be13c87b5fca17229c51233221c75e"
+      },
+      "coverage": {
+        "MOT20-01": {
+          "processed_frames": 429,
+          "emitted_rows": 16690
+        },
+        "MOT20-02": {
+          "processed_frames": 2782,
+          "emitted_rows": 126222
+        },
+        "MOT20-03": {
+          "processed_frames": 2405,
+          "emitted_rows": 269720
+        },
+        "MOT20-05": {
+          "processed_frames": 3315,
+          "emitted_rows": 537717
+        }
+      },
+      "seconds_evaluation": 44.78278972899716,
+      "baseline": {
+        "motmetrics": {
+          "MOT20-01": {
+            "mota": 63.49270256668345,
+            "idf1": 59.81907581972779,
+            "num_switches": 93,
+            "num_false_positives": 2116,
+            "num_misses": 5045,
+            "num_objects": 19870
+          },
+          "MOT20-02": {
+            "mota": 64.43176383916455,
+            "idf1": 55.750609197280454,
+            "num_switches": 655,
+            "num_false_positives": 13209,
+            "num_misses": 41175,
+            "num_objects": 154742
+          },
+          "MOT20-03": {
+            "mota": 66.95987349278514,
+            "idf1": 72.31336994345368,
+            "num_switches": 503,
+            "num_false_positives": 32179,
+            "num_misses": 70951,
+            "num_objects": 313658
+          },
+          "MOT20-05": {
+            "mota": 57.34160137635686,
+            "idf1": 54.07412957690194,
+            "num_switches": 2138,
+            "num_false_positives": 91017,
+            "num_misses": 182565,
+            "num_objects": 646344
+          },
+          "OVERALL": {
+            "mota": 61.07522029518408,
+            "idf1": 59.490619839630966,
+            "num_switches": 3389,
+            "num_false_positives": 138521,
+            "num_misses": 299736,
+            "num_objects": 1134614
+          }
+        },
+        "TrackEval": {
+          "MOT20-01": {
+            "HOTA": 51.56269404165561,
+            "MOTA": 70.48314041268243,
+            "IDF1": 62.30307151762439,
+            "IDSW": 85
+          },
+          "MOT20-02": {
+            "HOTA": 47.7104678768838,
+            "MOTA": 69.52411110105854,
+            "IDF1": 57.38780585933214,
+            "IDSW": 651
+          },
+          "MOT20-03": {
+            "HOTA": 54.2064464342087,
+            "MOTA": 71.22598499002098,
+            "IDF1": 74.00833711581704,
+            "IDSW": 513
+          },
+          "MOT20-05": {
+            "HOTA": 45.80328757683619,
+            "MOTA": 66.08725384624906,
+            "IDF1": 56.833058906254664,
+            "IDSW": 2063
+          },
+          "OVERALL": {
+            "HOTA": 48.77875889968304,
+            "MOTA": 68.05354067550726,
+            "IDF1": 61.882181260587096,
+            "IDSW": 3312
+          }
+        }
+      },
+      "overall_delta_pp": {
+        "motmetrics": {
+          "mota": -1.0635335012612117,
+          "idf1": -1.5607668878040002
+        },
+        "TrackEval": {
+          "MOTA": -1.1855133111348977,
+          "IDF1": -1.6414339643632658,
+          "HOTA": -1.886170240677437
+        }
+      }
+    }
+  },
+  "baseline_evaluation": "results/phase-3/evaluation-final.json",
+  "baseline_evaluation_sha256": "0a7e2e7c803f05ec30ff17cee4e73928bb5a86d049f65007749b9708d2726115"
+}

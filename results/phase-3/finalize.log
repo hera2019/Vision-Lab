@@ -1,0 +1,77 @@
+MOT17-02-FRCNN frame 500/600
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT17-02-FRCNN.txt
+MOT17-04-FRCNN frame 500/1050
+MOT17-04-FRCNN frame 1000/1050
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT17-04-FRCNN.txt
+MOT17-05-FRCNN frame 500/837
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT17-05-FRCNN.txt
+MOT17-09-FRCNN frame 500/525
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT17-09-FRCNN.txt
+MOT17-10-FRCNN frame 500/654
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT17-10-FRCNN.txt
+MOT17-11-FRCNN frame 500/900
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT17-11-FRCNN.txt
+MOT17-13-FRCNN frame 500/750
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT17-13-FRCNN.txt
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT20-01.txt
+MOT20-02 frame 500/2782
+MOT20-02 frame 1000/2782
+MOT20-02 frame 1500/2782
+MOT20-02 frame 2000/2782
+MOT20-02 frame 2500/2782
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT20-02.txt
+MOT20-03 frame 500/2405
+MOT20-03 frame 1000/2405
+MOT20-03 frame 1500/2405
+MOT20-03 frame 2000/2405
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT20-03.txt
+MOT20-05 frame 500/3315
+MOT20-05 frame 1000/3315
+MOT20-05 frame 1500/3315
+MOT20-05 frame 2000/3315
+MOT20-05 frame 2500/3315
+MOT20-05 frame 3000/3315
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT20-05.txt
+{"nano": {"MOT17-02-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-04-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-05-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-09-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-10-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-11-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-13-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT20-01": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT20-02": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT20-03": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT20-05": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}}, "tiny": {"MOT17-02-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-04-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-05-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-09-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-10-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-11-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-13-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT20-01": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT20-02": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT20-03": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT20-05": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}}}
+MOT17 python nano: {'mota': 69.23248172257496, 'idf1': 66.8414141565438, 'num_switches': 530, 'num_false_positives': 4858, 'num_misses': 29163, 'num_objects': 112297}
+MOT17 python tiny: {'mota': 77.13474091026474, 'idf1': 71.56506655677691, 'num_switches': 517, 'num_false_positives': 4630, 'num_misses': 20530, 'num_objects': 112297}
+MOT17 cpp nano: {'mota': 69.23248172257496, 'idf1': 66.8414141565438, 'num_switches': 530, 'num_false_positives': 4858, 'num_misses': 29163, 'num_objects': 112297}
+MOT17 cpp tiny: {'mota': 77.13474091026474, 'idf1': 71.56506655677691, 'num_switches': 517, 'num_false_positives': 4630, 'num_misses': 20530, 'num_objects': 112297}
+MOT17 end-to-end nano: {'mota': 69.23248172257496, 'idf1': 66.8414141565438, 'num_switches': 530, 'num_false_positives': 4858, 'num_misses': 29163, 'num_objects': 112297}
+MOT17 end-to-end tiny: {'mota': 77.13474091026474, 'idf1': 71.56506655677691, 'num_switches': 517, 'num_false_positives': 4630, 'num_misses': 20530, 'num_objects': 112297}
+MOT20 python nano: {'mota': 56.02072599139443, 'idf1': 51.36987945844744, 'num_switches': 4640, 'num_false_positives': 133000, 'num_misses': 361355, 'num_objects': 1134614}
+
+CLEAR Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Identity Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Evaluating 1 tracker(s) on 4 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating python-tiny
+
+MOT20 python tiny: {'mota': 61.07522029518408, 'idf1': 59.490619839630966, 'num_switches': 3389, 'num_false_positives': 138521, 'num_misses': 299736, 'num_objects': 1134614}
+MOT20 cpp nano: {'mota': 56.02072599139443, 'idf1': 51.36987945844744, 'num_switches': 4640, 'num_false_positives': 133000, 'num_misses': 361355, 'num_objects': 1134614}
+
+CLEAR Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Identity Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Evaluating 1 tracker(s) on 4 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating cpp-tiny
+
+MOT20 cpp tiny: {'mota': 61.07522029518408, 'idf1': 59.490619839630966, 'num_switches': 3389, 'num_false_positives': 138521, 'num_misses': 299736, 'num_objects': 1134614}
+MOT20 end-to-end nano: {'mota': 56.02072599139443, 'idf1': 51.36987945844744, 'num_switches': 4640, 'num_false_positives': 133000, 'num_misses': 361355, 'num_objects': 1134614}
+MOT20 end-to-end tiny: {'mota': 61.07522029518408, 'idf1': 59.490619839630966, 'num_switches': 3389, 'num_false_positives': 138521, 'num_misses': 299736, 'num_objects': 1134614}
+wrote /work/results/phase-3/evaluation-final.json
+{"criteria": {"3a": {"nano": {"MOT17-02-FRCNN": {"delta_pp": {"mota": 0.0, "idf1": 0.0}, "pass": true}, "MOT17-04-FRCNN": {"delta_pp": {"mota": 0.0, "idf1": 0.0}, "pass": true}, "MOT17-05-FRCNN": {"delta_pp": {"mota": 0.0, "idf1": 0.0}, "pass": true}, "MOT17-09-FRCNN": {"delta_pp": {"mota": 0.0, "idf1": 0.0}, "pass": true}, "MOT17-10-FRCNN": {"delta_pp": {"mota": 0.0, "idf1": 0.0}, "pass": true}, "MOT17-11-FRCNN": {"delta_pp": {"mota": 0.0, "idf1": 0.0}, "pass": true}, "MOT17-13-FRCNN": {"delta_pp": {"mota": 0.0, "idf1": 0.0}, "pass": true}}, "tiny": {"MOT17-02-FRCNN": {"delta_pp": {"mota": 0.0, "idf1": 0.0}, "pass": true}, "MOT17-04-FRCNN": {"delta_pp": {"mota": 0.0, "idf1": 0.0}, "pass": true}, "MOT17-05-FRCNN": {"delta_pp": {"mota": 0.0, "idf1": 0.0}, "pass": true}, "MOT17-09-FRCNN": {"delta_pp": {"mota": 0.0, "idf1": 0.0}, "pass": true}, "MOT17-10-FRCNN": {"delta_pp": {"mota": 0.0, "idf1": 0.0}, "pass": true}, "MOT17-11-FRCNN": {"delta_pp": {"mota": 0.0, "idf1": 0.0}, "pass": true}, "MOT17-13-FRCNN": {"delta_pp": {"mota": 0.0, "idf1": 0.0}, "pass": true}}}, "3b": {"nano": {"measured": {"mota": 69.23248172257496, "idf1": 66.8414141565438, "num_switches": 530, "num_false_positives": 4858, "num_misses": 29163, "num_objects": 112297}, "published": {"mota": 69.0, "idf1": 66.3}, "delta_pp": {"mota": 0.2324817225749598, "idf1": 0.5414141565438086}, "pass": true}, "tiny": {"measured": {"mota": 77.13474091026474, "idf1": 71.56506655677691, "num_switches": 517, "num_false_positives": 4630, "num_misses": 20530, "num_objects": 112297}, "published": {"mota": 77.1, "idf1": 71.5}, "delta_pp": {"mota": 0.034740910264744684, "idf1": 0.06506655677691242}, "pass": true}}}, "status": "pass", "end_to_end_identical": true}

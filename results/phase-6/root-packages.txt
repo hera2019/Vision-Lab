@@ -1,0 +1,7 @@
+g++	4:13.2.0-7ubuntu1
+libeigen3-dev	3.4.0-4build0.1
+libopencv-core-dev:arm64	4.6.0+dfsg-13.1ubuntu1
+libopencv-imgcodecs-dev:arm64	4.6.0+dfsg-13.1ubuntu1
+libopencv-imgproc-dev:arm64	4.6.0+dfsg-13.1ubuntu1
+libopencv-video-dev:arm64	4.6.0+dfsg-13.1ubuntu1
+libopencv-videoio-dev:arm64	4.6.0+dfsg-13.1ubuntu1

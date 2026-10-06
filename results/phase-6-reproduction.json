@@ -1,0 +1,384 @@
+{
+  "status": "phase-6-partial-local-validation-complete",
+  "fresh_clone_gate_passed": false,
+  "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+  "date": "2026-10-07",
+  "scope": "Isolated source snapshot; reused read-only assets and installed toolchain, two FP32 models only.",
+  "models": {
+    "nano": {
+      "outputs": {
+        "detections": {
+          "byte_identical": true,
+          "sha256": "4f63aa62ddd3a04b67904eb845e3a88e401cbdb9b4d4efe440e82ee2575be657",
+          "reference_slice_sha256": "4f63aa62ddd3a04b67904eb845e3a88e401cbdb9b4d4efe440e82ee2575be657"
+        },
+        "tracks": {
+          "byte_identical": true,
+          "sha256": "2d3d8f0c42a7e930aa9ea89dbb38cdfe39be4fe298679549d18e4f9181cba4bf",
+          "reference_slice_sha256": "2d3d8f0c42a7e930aa9ea89dbb38cdfe39be4fe298679549d18e4f9181cba4bf"
+        }
+      },
+      "runs": [
+        {
+          "fps": 26.543266201026395,
+          "csv_sha256": "b84b9e121adcaa72b5653161f200a4b73a9fcb53cac7792518567c435dad85b6",
+          "metadata": {
+            "warmup": 50,
+            "measured": 100,
+            "threads": 4,
+            "peak_rss_kib": 157528,
+            "total_tracks_including_warmup": 1872,
+            "opencv_threads": 1,
+            "cpu_max": "400000 100000",
+            "input_height": 608,
+            "input_width": 1088
+          }
+        },
+        {
+          "fps": 27.215398962610223,
+          "csv_sha256": "eaded97a4d9f96f3e0c307674f3f44a88a4cfc40b212ff6b6fc06c83be5e74f1",
+          "metadata": {
+            "warmup": 50,
+            "measured": 100,
+            "threads": 4,
+            "peak_rss_kib": 157544,
+            "total_tracks_including_warmup": 1872,
+            "opencv_threads": 1,
+            "cpu_max": "400000 100000",
+            "input_height": 608,
+            "input_width": 1088
+          }
+        },
+        {
+          "fps": 27.96672539484165,
+          "csv_sha256": "f92f5832279a2a407b1efb4248424fea6cb6f64a8bc3f09753c386ef41a8402c",
+          "metadata": {
+            "warmup": 50,
+            "measured": 100,
+            "threads": 4,
+            "peak_rss_kib": 157536,
+            "total_tracks_including_warmup": 1872,
+            "opencv_threads": 1,
+            "cpu_max": "400000 100000",
+            "input_height": 608,
+            "input_width": 1088
+          }
+        }
+      ],
+      "median_fps": 27.215398962610223,
+      "original_median_fps": 27.344467367147377,
+      "original_repeat_interval": [
+        26.424624714573092,
+        27.816148640392438
+      ],
+      "median_inside_original_repeat_interval": true
+    },
+    "tiny": {
+      "outputs": {
+        "detections": {
+          "byte_identical": true,
+          "sha256": "a68ce52212e0caf505d33cbe57b8753ec093996a50770294deba23ad4586ea6b",
+          "reference_slice_sha256": "a68ce52212e0caf505d33cbe57b8753ec093996a50770294deba23ad4586ea6b"
+        },
+        "tracks": {
+          "byte_identical": true,
+          "sha256": "2662d663d77b75056aad3420065bb58a0fca1bf864b0c5651eb6652a95fae596",
+          "reference_slice_sha256": "2662d663d77b75056aad3420065bb58a0fca1bf864b0c5651eb6652a95fae596"
+        }
+      },
+      "runs": [
+        {
+          "fps": 10.188325332426338,
+          "csv_sha256": "abd62a98e80450cce44765f20376ead28b02a3705caef676090c1a18ef838be2",
+          "metadata": {
+            "warmup": 50,
+            "measured": 100,
+            "threads": 4,
+            "peak_rss_kib": 210420,
+            "total_tracks_including_warmup": 2835,
+            "opencv_threads": 1,
+            "cpu_max": "400000 100000",
+            "input_height": 608,
+            "input_width": 1088
+          }
+        },
+        {
+          "fps": 10.086459613797297,
+          "csv_sha256": "d0ee228f688e8ae2fd1b1af2dcb0ea86d9f90fdca5988631f10fbc909c2d506f",
+          "metadata": {
+            "warmup": 50,
+            "measured": 100,
+            "threads": 4,
+            "peak_rss_kib": 210524,
+            "total_tracks_including_warmup": 2835,
+            "opencv_threads": 1,
+            "cpu_max": "400000 100000",
+            "input_height": 608,
+            "input_width": 1088
+          }
+        },
+        {
+          "fps": 10.130506499186227,
+          "csv_sha256": "9fd5ec9ff4ae258068dc4d15d8a0b6c555e5a9a2ff5e473fd8c9284b928da741",
+          "metadata": {
+            "warmup": 50,
+            "measured": 100,
+            "threads": 4,
+            "peak_rss_kib": 210720,
+            "total_tracks_including_warmup": 2835,
+            "opencv_threads": 1,
+            "cpu_max": "400000 100000",
+            "input_height": 608,
+            "input_width": 1088
+          }
+        }
+      ],
+      "median_fps": 10.130506499186227,
+      "original_median_fps": 9.757257910269068,
+      "original_repeat_interval": [
+        9.739540929568594,
+        9.895603035592405
+      ],
+      "median_inside_original_repeat_interval": false
+    }
+  },
+  "edge_fixture": {
+    "left_lines": 87,
+    "right_lines": 87,
+    "byte_identical": false,
+    "identical_line_share": 0.0,
+    "same_frame_and_id": true,
+    "max_box_difference": 0.0,
+    "max_score_difference": 2.384185793236071e-08
+  },
+  "edge_fixture_pass": true,
+  "preflight": {
+    "models": {
+      "nano": "8741ff7182a44d47d69379015983069532bed92ea33590e2253dc7acb0197868",
+      "tiny": "4d50a6a3fc1bf1c836015c665ab3d4d1c73bbbcf0fad96b7a2d3af78b558d665"
+    },
+    "external_revisions": {
+      "ByteTrack": "d1bf0191adff59bc8fcfeaa0b33d3d1642552a99",
+      "TrackEval": "12c8791b303e0a0b50f753af204249e622d0281a"
+    },
+    "sequences": {
+      "MOT17-02-FRCNN": {
+        "frames": 600,
+        "gt_sha256": "2e3ecb488da8886d3200d402b2b08890c6d2879923839444e9b74fa43a551440"
+      },
+      "MOT17-04-FRCNN": {
+        "frames": 1050,
+        "gt_sha256": "f8cfbe36ef38a2e1857d7ebfe7d754b2355a3ffb9e1f9cedea435e86e4fbc948"
+      },
+      "MOT17-05-FRCNN": {
+        "frames": 837,
+        "gt_sha256": "ed74c54176b21b38cb690eda79a4755cf16e4c4a9ca2f019b0ba8904636174f5"
+      },
+      "MOT17-09-FRCNN": {
+        "frames": 525,
+        "gt_sha256": "592f0d5b519c03b35bb1578c33d726460f63abb91ea0c515f87e8d6d76be001d"
+      },
+      "MOT17-10-FRCNN": {
+        "frames": 654,
+        "gt_sha256": "f8cca05d98fa36d8b6f2b807e03d32407d00d40299d679e4da320e42862677c0"
+      },
+      "MOT17-11-FRCNN": {
+        "frames": 900,
+        "gt_sha256": "4952d6e4efc705c90688e434fd138a55ada2c0d5f576ba3847ee102fc18aff93"
+      },
+      "MOT17-13-FRCNN": {
+        "frames": 750,
+        "gt_sha256": "4827603ef87bbd61123cb4c5f194b3bf23531bd78ed9cd916084e53dca998013"
+      },
+      "MOT20-01": {
+        "frames": 429,
+        "gt_sha256": "89fd0196d67a5eb6011a470dc2a49b02255403b49e8848031cdf99add8a36d9c"
+      },
+      "MOT20-02": {
+        "frames": 2782,
+        "gt_sha256": "10abe457a67d9919a9cbfe821d3619c8e6174c2b0ed7ecf4cb68c1fd6cad58de"
+      },
+      "MOT20-03": {
+        "frames": 2405,
+        "gt_sha256": "350fbc950c6dc00e3cc8a71358b3d0b8958906c8be57a7bf5fb9db34bff70f28"
+      },
+      "MOT20-05": {
+        "frames": 3315,
+        "gt_sha256": "6da1ad9a528c39203c181aa93fc492d194358c50856695a7fe17656c928f5c17"
+      }
+    },
+    "status": "pass",
+    "representative_image_sha256": "41ff65408c5338f4a83035fd12e9f5f7b658ee82feacf4512655677032636597",
+    "limitations": "Hashes cover original models, GT and one representative image; all image counts checked. This is not a full image-byte integrity scan."
+  },
+  "built_image": "sha256:bcc7e355e5100f457196206e2d260e2ca87f48b8d98a12b010123aa71895ead4 arm64 linux",
+  "toolchain_image": "sha256:8d19e5fe53a73a39841e5055cd1e177d22933b9119400b707983bcb7e19acba8 arm64 linux",
+  "code_sha256": {
+    "cpp/CMakeLists.txt": "2da6dabe4eec4323c7350631f89eb26fc1a500b76354b08270b1e64bc1ca815d",
+    "cpp/src/benchmark_pipeline.cpp": "364f92403ad93252cc7767066e440d811abe42d9e1fbcc3eb0ce222498411c56",
+    "cpp/src/detect_frames.cpp": "3ae9b4ef3f4aebcace9a92db8f78a3dd9d2cef3e318d8fbf091bfdf720360017",
+    "cpp/src/detect_sequence.cpp": "63e9b7018d52cd0e5e3369259b75357136bbe519eb7192fa7c5ab0449608182a",
+    "cpp/src/detector.cpp": "a05676e92a175e36d030520c332df1b0b2d5f392e80bd18a73125677de51b16f",
+    "cpp/src/detector.h": "37d880387e19322c4dbcd0b44051b481d98e4abb8e4b7fea04553e1c94ca32bb",
+    "cpp/src/env_check.cpp": "e1e4f3b2e66ab7a954f018c964eea0ba4d3d086d01b6a73a4a52815cce577f5e",
+    "cpp/src/sequence_io.h": "dfc71383b9c6a315469ad0b219bdaadab584763cdc4e53b6b044254741290ae3",
+    "cpp/src/track_sequence.cpp": "f712acde8c27c88584d31b4cf771e2c116a58fee08b89768dbf811d81899319c",
+    "cpp/src/tracker/LICENSE.ByteTrack": "e9d83751678cbaba6dfba902ea39215c423d93425e58f8450d6001f7261696f9",
+    "cpp/src/tracker/lapjv.cpp": "8714e7e1204d4daeb1349f3310ef73cf5dcd848e387664700d3370d0bd301157",
+    "cpp/src/tracker/lapjv.h": "f89cff1b5d1858217956fd022bf807c309b82443622f13a6e8c7fcf584cc5790",
+    "cpp/src/tracker/tracker.cpp": "f314ebf25f466a38798b09ce6809b44ea69a4173a403de70136b08b007bd2e09",
+    "cpp/src/tracker/tracker.h": "149d8a0f99aa1759e8b2291e7eb55f080ea66e5d21ae848afaefff124022c9aa",
+    "cpp/src/transcode_demo.cpp": "6ecb6e3260152be73a845e7059dc347fc831056ab3c8632c8a20bea07f6282d9",
+    "python/analyze_mobile_case.py": "9cef3669de649c127b02108170b0c839bdb5f73e547c8209a2b64fc159ce238d",
+    "python/analyze_occlusion_case.py": "c7e95fc915d302e4c135644926aa9d67d2380e5814aeed49b75a23d69182b14e",
+    "python/check_completed_model.py": "575a82ee7d7b234e0b9c42d5a86d76de80189c3f08b5261dd4a5e2a46efea456",
+    "python/check_container_safety.py": "deb0014f3b4de0e944e47869ae812606ff86e4180f1b6e13c61a37b5ea28ba2b",
+    "python/check_cpp_detector.py": "95c1863fa12c64a56429032d57f04773f598564fd81f06f4f188c282dd338c87",
+    "python/check_export_parity.py": "f8a83db54997eb1e3c6fd5333dbd4d3ed369ace8e4cf1de58f4b4787ff96de26",
+    "python/check_int8_threads.py": "eb2910aa1839e5c11df34df13f416d07e224d94730a6cfc917ec141d027a01c1",
+    "python/check_score_boundaries.py": "38e58410f83f590b05d44f5420ff6cd3176a585b7176aaaa24b6615d4b59351c",
+    "python/check_sequence_parity.py": "b6185360c3bea62a293db2943e3416096c52b786ea96f68060339cdfd06f4c35",
+    "python/check_thread_determinism.py": "ae8e9656cfddfe0af35a8ce12603fbcf475dcf4372d763cf4b82ca4824207f88",
+    "python/compare_tracking.py": "3bc5646e108829921a18c1905ea5271a2695d87cc044a1e8d404f5d678976945",
+    "python/continuity_motion.py": "c7a715e3defe13911cbfffaf116d8a84ec7924e80355c4b1fc228e3aac19a8f3",
+    "python/continuity_pilot.py": "17eda09df653fad8550b62a00e609f96ad666f77bbd0da97739e36122be45e54",
+    "python/diagnose_phase4_int8.py": "34c1b2b97e6adb66f8020ac7ff012bc0e80f9b27ff8f450fa755fb233609b992",
+    "python/draw_sample.py": "86738a6e9cac34cf293612186b1af06fcf1521f09b3aee5bcb3fd057f13f65df",
+    "python/evaluate_phase4.py": "65752b57b518aa915f7860432bab635a978c1c43ac6f58aeffe9e639718cfe62",
+    "python/evaluate_tracking.py": "ae8cce18e5930801641292869d464a376568b26f3730e46c7319e278aa5c8167",
+    "python/export_onnx.py": "a9b8025bee9999b41b1a1b5f68d428e4429661dc66d43bc281ad55a10934df65",
+    "python/finalize_demo_encoding.py": "1951bcfd9f45fc7c90d6ca6d5fe99ce169229bcfb81bdcc3a9b7d332121b296e",
+    "python/investigate_parity.py": "33e88fa74ccb1612b285709f8a964be6733dee1792ad2e09c84b49ff5848f2d4",
+    "python/phase3_common.py": "4d94760471afbaf4408c56ca9538c3f22620db4909bbc93bc54af468fdebea54",
+    "python/phase5_failures.py": "d68cce40b89908ddc35c2eb60ee3d7157061fef2cbc11b52ee99c3e0d3143611",
+    "python/phase6_preflight.py": "79c64fe61d835d45e694332adf80449cfe5d27caaecf85f92ce96a9dd6af39a5",
+    "python/phase6_smoke_report.py": "a74fc995518c3fd3cc1da1f07080fe62eff1e3817cab7ffe725895195e91b322",
+    "python/quantize_phase4.py": "e3a5014bf7bc44bba4c75ba8b203f38f30973c5748783b51d4d94ca29138ad8f",
+    "python/render_tracking_demo.py": "65334f228a11761bdfc923d7a4560abee33d7256c7052b1e1fc374cad7c8acfd",
+    "python/report_continuity_pilot.py": "2eb17b3ae5314308c1c0812dee6b0290427ff28aba480f182acb3d6181f73191",
+    "python/report_phase3.py": "9074c2df656d4005633f94f61fe4f39cd0523a28927249626bea7b20e9e3cd28",
+    "python/report_phase4.py": "6b20663d647fa74754564797b7a8ef9d3de42335d7788be53e46953257c57d7c",
+    "python/report_review_fixes.py": "f725bc4088274b48d8ce17d067e30fc9b8b0beee091d897b8628475cdaa8ac87",
+    "python/requirements-phase4.txt": "914c9aa8ce4ee20007da1e2edc7ad800ab7990887b46347190680bcc9c448769",
+    "python/requirements.txt": "4e6cf538bb17722ab15c88ebff92cf500e0430f54069237824d6d8072205dc9a",
+    "python/track_reference.py": "2602f60b7f6cbfc2c23d69dc1288970899a592e7c35d939e8d01178f2156d758",
+    "python/tracker_edge_cases.py": "221305d49c2e3dcff6fe988bf577378b865cf4219b9a1cb9f854a1659d6fb51b",
+    "python/vl_common.py": "83c71090607630520b821c7fc7633b69db1cffd79617319318826dca63a16304",
+    "scripts/continuity_pilot.sh": "89d33077da8bda5fe44cdacf6e2faddbc750286a84a65c67e1a9715c9a41999a",
+    "scripts/drun.sh": "6491a15980db26d343a8709144191c83ea9b0b25ef6908c70a26d38ab9552859",
+    "scripts/phase2_detector_parity.sh": "7dbc1ccae50cf88cbfc2ab5db80533fa908f28a3c1f8045b2791ddaf951eeecb",
+    "scripts/phase3_build.sh": "6c15f9ab3cb0c16a75f14c529099739d1ae6933ec440b1ee60fdeba6c664e923",
+    "scripts/phase3_demo.sh": "7a38f46fa80364706db874d72e19966087f7c52761506fcecffc51273d22d05a",
+    "scripts/phase3_detect.sh": "69e03f503d1965b2613ef79ebe59195349f6c665da5524b02c43e5cb730cd2fb",
+    "scripts/phase3_determinism.sh": "3dea2540b1aaee32fe87ca9bf25348d991cbbfebf83ad9eef221ee246de0f6c9",
+    "scripts/phase3_edge_cases.sh": "17ceeb501a4bd793bc1413fdc624361f216882f2a63d23df19d85d29516e01ad",
+    "scripts/phase3_end_to_end.sh": "288bed85a76f5b14fc7be09b0ad39e39c5aa77dc0c282f94a92ad3fa2e3094ef",
+    "scripts/phase3_evaluate.sh": "779e2e188562be5ca5f07b7cd44e46062442e4416d64503574f7ada4d736e176",
+    "scripts/phase3_finalize.sh": "42c75f7cbc92f0b9c8c2078f54e278a62463314d34cff3e4b92611d4792081db",
+    "scripts/phase3_report.sh": "b8d99fd615f60b9b2780e9977527c906a65ce033390229f85e38469db910e0f1",
+    "scripts/phase3_review_verify.sh": "eed549b5491aec29f5aeeb55f98218e3c3e5c07ecd6e014bbaf13b09c317c882",
+    "scripts/phase3_track.sh": "2a4ac01c00ceba4d44f1fb0618fde38a8ad081c8a88f624afa5c9a07dfac7256",
+    "scripts/phase4_accuracy.sh": "42719dd0fd0710764179e8cedb2518e04a99172656eddc294cf52bafa1568981",
+    "scripts/phase4_benchmark.sh": "184f9fb3a63c0999f5d4b233cad0a701af270ed89ca7f6217f225fe21db3761a",
+    "scripts/phase4_experiment.sh": "0510261cd5d46bea9c0d4b54fe1f2a1505566731889eba14274c7b1f14a83f51",
+    "scripts/phase4_int8_threads.sh": "4d08c1d7df9254f4b1da0fc9b1101dc94cfc4bf4f278b01236b5d0e7498e3242",
+    "scripts/phase4_quantize.sh": "4bfa60e448fda180f20cfb6215c8823b68f5c53f1aa2152f867719dfeb635be1",
+    "scripts/phase5_failures.sh": "ab8d8e17531fb527409439b6a81948ea7ab216b7a57401662d0d84aa1c17913c",
+    "scripts/phase6_snapshot.sh": "9483d1a83af688b942175ac7070c47950cfbe40d46d1655635e6c58f1c82b978",
+    "scripts/reproduce.sh": "1ccfdcfbdcc6e9e92807e6bf0a24c6511ab5e6d3e791f65be82b8220a96e150d"
+  },
+  "limitations": [
+    "HEAD lacks uncommitted Phase 3\u20136 code.",
+    "Fresh dependency build and full fresh-clone gate not passed.",
+    "Only FP32 four-thread speed, 50-frame outputs and synthetic behavior checked; no new full-quality/INT8/1/2-thread replication."
+  ],
+  "full_mode_executed": false,
+  "clone_inventory": {
+    "head": "6f0e68fbb5addcd0158330cb3bccb5a2641d8535",
+    "clean": true,
+    "required_source_missing": [
+      "README.md",
+      "scripts/reproduce.sh",
+      "cpp/src/track_sequence.cpp",
+      "cpp/src/benchmark_pipeline.cpp"
+    ],
+    "full_current_source_available": false
+  },
+  "source_archive_sha256": "5231f7fd9f438da4eff5143f7efa6a1902e70ea3e80c7dafa8a8e2a7a3f6b08a",
+  "standalone_cpp_build": {
+    "offline_exit_code": 1,
+    "online_build_succeeded": true,
+    "image": "sha256:013f8fafd8aab6cd893d21271056448d47418e6705870244296b66a9eee87835 arm64 linux",
+    "environment": {
+      "onnxruntime_version": "1.30.0",
+      "providers": [
+        "CPUExecutionProvider"
+      ],
+      "opencv_version": "4.6.0",
+      "jpeg_roundtrip": true,
+      "hardware_concurrency": 12
+    },
+    "packages": [
+      "g++\t4:13.2.0-7ubuntu1",
+      "libeigen3-dev\t3.4.0-4build0.1",
+      "libopencv-core-dev:arm64\t4.6.0+dfsg-13.1ubuntu1",
+      "libopencv-imgcodecs-dev:arm64\t4.6.0+dfsg-13.1ubuntu1",
+      "libopencv-imgproc-dev:arm64\t4.6.0+dfsg-13.1ubuntu1",
+      "libopencv-video-dev:arm64\t4.6.0+dfsg-13.1ubuntu1",
+      "libopencv-videoio-dev:arm64\t4.6.0+dfsg-13.1ubuntu1"
+    ],
+    "validation": {
+      "status": "root-cpp-build-and-50-frame-check-complete",
+      "checks": {
+        "nano": {
+          "detections": {
+            "byte_identical": true,
+            "sha256": "4f63aa62ddd3a04b67904eb845e3a88e401cbdb9b4d4efe440e82ee2575be657"
+          },
+          "tracks": {
+            "byte_identical": true,
+            "sha256": "2d3d8f0c42a7e930aa9ea89dbb38cdfe39be4fe298679549d18e4f9181cba4bf"
+          }
+        },
+        "tiny": {
+          "detections": {
+            "byte_identical": true,
+            "sha256": "a68ce52212e0caf505d33cbe57b8753ec093996a50770294deba23ad4586ea6b"
+          },
+          "tracks": {
+            "byte_identical": true,
+            "sha256": "2662d663d77b75056aad3420065bb58a0fca1bf864b0c5651eb6652a95fae596"
+          }
+        }
+      },
+      "all_byte_identical": true,
+      "scope": "Fresh root C++ dependency recipe after approved build-time download; no fresh Python dependency installation or full-clone experiment."
+    },
+    "limits": "Original C++ recipe tested; fresh Python dependency installation/full experiment not performed."
+  },
+  "retained_failures": [
+    {
+      "kind": "offline-root-build",
+      "log": "results/phase-6/root-build-offline.log"
+    },
+    {
+      "kind": "Docker-unshared-temporary-path",
+      "log": "results/phase-6/snapshot-first-attempt.log"
+    },
+    {
+      "kind": "read-only-missing-submount-directory",
+      "log": "results/phase-6/snapshot-mountpoint-attempt.log"
+    },
+    {
+      "kind": "tiny-smoke-median-outside-frozen-repeat-range",
+      "report": "results/phase-6-reproduction-local.json"
+    }
+  ],
+  "phase6_python_syntax": "pass",
+  "evidence_sha256": {
+    "results/phase-6/root-build-network.log": "f38aa93c6ee330e36e9599bc7e2b68dbd8d9b507acfbfb7b6593f11374438174",
+    "results/phase-6/root-check.json": "3ac898d97f6c6a86e4785f568cf706dff477153c3b4fa58629ed4aaab10b7277",
+    "results/phase-6/clone-files.txt": "386002946d77e9a5cf2f53a642cecd3fd2d27308d3cc3268489886734279da76",
+    "results/phase-6/preflight.json": "19bc9b7e082db58d896d4471218a2a7e4f9df3d0f4a1e935974c3f6022d8b2fb"
+  }
+}

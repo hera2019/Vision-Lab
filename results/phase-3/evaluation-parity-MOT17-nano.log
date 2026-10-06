@@ -1,0 +1,31 @@
+
+CLEAR Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Identity Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Evaluating 1 tracker(s) on 7 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating python-nano
+
+MOT17 python nano: {'mota': 69.23248172257496, 'idf1': 66.8414141565438, 'num_switches': 530, 'num_false_positives': 4858, 'num_misses': 29163, 'num_objects': 112297}
+
+CLEAR Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Identity Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Evaluating 1 tracker(s) on 7 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating cpp-nano
+
+MOT17 cpp nano: {'mota': 69.23248172257496, 'idf1': 66.8414141565438, 'num_switches': 530, 'num_false_positives': 4858, 'num_misses': 29163, 'num_objects': 112297}
+wrote /work/results/phase-3/evaluation-parity-MOT17-nano.json

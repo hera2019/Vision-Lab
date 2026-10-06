@@ -1,0 +1,6 @@
+# Reuse the accepted local runtime/toolchain; install or download nothing.
+FROM vision-lab:dev
+WORKDIR /src
+COPY cpp/ cpp/
+RUN cmake -S cpp -B build -G Ninja -DCMAKE_BUILD_TYPE=Release \
+    && cmake --build build

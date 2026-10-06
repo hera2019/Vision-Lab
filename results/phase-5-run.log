@@ -1,0 +1,4 @@
+{"sequence": "MOT20-01", "audit": {"CLR_TP": 13564, "CLR_FN": 6306, "CLR_FP": 691, "IDSW": 114}, "categories_found": ["identity-switch", "small-target-miss"]}
+{"sequence": "MOT20-02", "audit": {"CLR_TP": 101594, "CLR_FN": 53148, "CLR_FP": 5252, "IDSW": 839}, "categories_found": ["identity-switch", "small-target-miss"]}
+{"sequence": "MOT20-03", "audit": {"CLR_TP": 229710, "CLR_FN": 83948, "CLR_FP": 16472, "IDSW": 805}, "categories_found": ["identity-switch", "small-target-miss", "occlusion-fragmentation"]}
+{"status": "three-failure-categories-documented", "cases": {"identity-switch": {"sequence": "MOT20-01", "gt_id": 28, "frame_range": [185, 194], "crop_frames": [189, 190, 194]}, "small-target-miss": {"sequence": "MOT20-01", "gt_id": 39, "frame_range": [86, 93], "crop_frames": [86, 89, 93]}, "occlusion-fragmentation": {"sequence": "MOT20-03", "gt_id": 169, "frame_range": [130, 185], "crop_frames": [130, 155, 180]}}}

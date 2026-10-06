@@ -1,0 +1,494 @@
+{
+  "model": "nano",
+  "status": "quantized-smoke-pass",
+  "scheme": "Static QDQ; Conv only; S8S8; per-channel weights; MinMax; no reduced range",
+  "calibration_frames": [
+    {
+      "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000001.jpg",
+      "sha256": "41ff65408c5338f4a83035fd12e9f5f7b658ee82feacf4512655677032636597"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000040.jpg",
+      "sha256": "eebb01464ae7090debe7930aa993d8d3e1eb8749cee5c7b8888b4cf925030f39"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000080.jpg",
+      "sha256": "71f8344c361fa2661534f54381fd8a3fa4b81393fce9e8b507ad751b2bee54a4"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000120.jpg",
+      "sha256": "a909a609e6e42f37b1d6f1ea9a2fc18ec23ae8996184b33d4d180007c272ccf4"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000160.jpg",
+      "sha256": "1ca79c26b837293b25f8dd5b135851f04110ce8165aed2e9a59cda4c00be5e13"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000200.jpg",
+      "sha256": "34c0a672caf5d755e7820a28b39b290d41098a2068662bd24c8068a46a9a68e6"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000240.jpg",
+      "sha256": "9afaa7bf106733eccbb00176fea07ee12f6b253b5f4b9be684700e725e84d6bf"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000280.jpg",
+      "sha256": "d75160c815ea0176882a38deff7f6b59ae0afa83376374d95b01789591eb6786"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000320.jpg",
+      "sha256": "44baa7eb3a0e046e8c1a30c4ba9098334ce0713d9bedb2067ce1a90d5ef145f7"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000360.jpg",
+      "sha256": "405f303cb8c65db806f5640b9cf076cd9a60ddb401a613ad4abbc2ffe81d097c"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000400.jpg",
+      "sha256": "9ff4a0de375e9e5f5bcd15b4b49d86a8f5ab071856390e0a6b9e451f6a9a20b7"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000440.jpg",
+      "sha256": "f5ec3a78e13493cac4868caaadcc72a80e954274257559378e18bec7d1acd239"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000480.jpg",
+      "sha256": "275f98af807b28c025485b34b777d2577e1b7d31e3b06d61010f57eddd1fd49d"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000520.jpg",
+      "sha256": "95d66ea4a95d96523bb5b31b8b838ff0e774b627c171663f006c6cce8ce5ddc0"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000560.jpg",
+      "sha256": "5ea48c490b4d315e9f0959dabb01770682c96fac23936dad9b91ca4e4e7c8be6"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000600.jpg",
+      "sha256": "70b9ee9af88602cac0b27019a9e5210f6fe6b4c1ea996d5c13fd860f324a1daa"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-04-FRCNN/img1/000001.jpg",
+      "sha256": "53f3d86aad1aa4912b2919bae344919b54d193e72c1c7169ce8bc4685408053c"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-04-FRCNN/img1/000070.jpg",
+      "sha256": "70f25fe531b294ee7fa09f44ddb41b022f59bc16768480ad5f1cee196cfda275"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-04-FRCNN/img1/000140.jpg",
+      "sha256": "5bb1e7591a9bd15c8169200838c999d100998ae91fc4a75b47a16524f029f500"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-04-FRCNN/img1/000210.jpg",
+      "sha256": "2bb847bb13291a4c0876e37a487490ba98b05a049e153c0bf803a5f6b9332208"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-04-FRCNN/img1/000280.jpg",
+      "sha256": "34c8cc7bf11d5b84e0efba546513403ad517158a33c0975edefbd35b252715d9"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-04-FRCNN/img1/000350.jpg",
+      "sha256": "a4a5743df1810bfa9111b662527e8517414c6c4417a2666486fddf556833f70f"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-04-FRCNN/img1/000420.jpg",
+      "sha256": "91644d6cf5c7f1d65c532b9186e7ff1b0ce81f546401d9bfae76c5dca32470de"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-04-FRCNN/img1/000490.jpg",
+      "sha256": "0d3a8dde4f5b7a0e22157e351887d3539f4665f546ac292535208349d3e001ea"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-04-FRCNN/img1/000560.jpg",
+      "sha256": "288bab4d559987d1fc55d74d8e9c931b3b2a448551290e544c7b8829a4b125cf"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-04-FRCNN/img1/000630.jpg",
+      "sha256": "f07c991d715839d3cdfb986652d9052da26e3da0d6bf531fce44fdbc13fba243"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-04-FRCNN/img1/000700.jpg",
+      "sha256": "949de4dfe32431e2616d1816cb312d21867d142c9f4854def62c1ebdde936002"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-04-FRCNN/img1/000770.jpg",
+      "sha256": "69279318932bbc63398a34a04fe63cfe4fa3fcaa1bfb92094549e6df5afdf878"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-04-FRCNN/img1/000840.jpg",
+      "sha256": "0ff6d473bb948fb4ba3af2182066273121a92f3ccd83a58f792f5ab70e244a77"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-04-FRCNN/img1/000910.jpg",
+      "sha256": "3c9554c86bded5979a8c0db9aa8a88a37083358d33787fb97f4dffb0a3c782eb"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-04-FRCNN/img1/000980.jpg",
+      "sha256": "ce7c9ac994fc15c8033511c3010c43d41f0d1d284724657765bd192f5e25a813"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-04-FRCNN/img1/001050.jpg",
+      "sha256": "01d915628242a779ae16d3e99a2b5a8104bfe3dbee9732fdf907565fa30a3745"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000001.jpg",
+      "sha256": "9f4f112b29e93846501db27d2bcc2c99795715aa6376d5b5662d75f2e2f196d7"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000056.jpg",
+      "sha256": "b005aec555e1b5313885259c168acf478c2a84dceac0ac82cf392d0900d8ec0f"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000112.jpg",
+      "sha256": "204a0cafcfab2b50e3d985848d4939e84e73da387e5549d6fba6e4c5b993c167"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000168.jpg",
+      "sha256": "da6120f781afe5d698fe0b12495b52adb54f56f07171100e7b2da8fa0269ac5a"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000223.jpg",
+      "sha256": "d0e7744e0a4b7ab88b0cfcb7a2300741972f2783b81fcfaa795e8ca08d28ebc6"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000279.jpg",
+      "sha256": "8ac88bfbc54a6044c513dde32d74be92c50178384a958d85a49a359813d33b01"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000335.jpg",
+      "sha256": "f5afbb788d7193938452ede9710cba73599e75658d0e26c9f614631b8a8ab1f7"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000391.jpg",
+      "sha256": "56859ef1db4b8fbeaba805892c412913bea84a4e88078ed9b7e0bcc2a2a376d6"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000446.jpg",
+      "sha256": "576178f7a78334b7f434e873d375b59f71c8a2135bdfb1751716799e9a1d07e3"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000502.jpg",
+      "sha256": "5dfe53bcfbdd486d7c463a4a482b1755b5df52f97c2fbfa0b083b4eeb456f4bf"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000558.jpg",
+      "sha256": "81955e4fdce4850f128e22024079b2a112531b13edb911ec060d36be1f49eace"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000614.jpg",
+      "sha256": "8c5d49d5cb0c0249fecb8ebd30579ff96693b77b3e6de0872d1a47c729decc2b"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000669.jpg",
+      "sha256": "b2fdf2829eb967eafea4dcf2c4a7119f7cb4fbde32cd6d8a438b6da7e179aa7b"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000725.jpg",
+      "sha256": "411d7ed3fa2f715906340fde40bb76ff0a36afdeb26fdb654c7238029f42cff0"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000781.jpg",
+      "sha256": "589d42ec624037bf156f77fb9253ec90fec2fbfc7176c419a6d1566de8d8035c"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000837.jpg",
+      "sha256": "93ee8525b2363065eaeeaeac3929759560c090a87c44778703dd9a94d481496a"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-09-FRCNN/img1/000001.jpg",
+      "sha256": "e4b1c40c44d53489f191e1099156ad57d3963d8c434615750fba0065a8a572af"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-09-FRCNN/img1/000035.jpg",
+      "sha256": "4d6b5f57f1933731eacf970fd1821562a788c4b9cba68c61f10e2bab6880b63e"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-09-FRCNN/img1/000070.jpg",
+      "sha256": "cfd58754b7214972b03d17166285651bfae0bd32e25354e36b1192eb040f3ef0"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-09-FRCNN/img1/000105.jpg",
+      "sha256": "e923328180e64fe8f9d2dce1c7aa2ce98b0a34834bcb2c11baa5e0044ec528c9"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-09-FRCNN/img1/000140.jpg",
+      "sha256": "090410618a8790d9bd47c6a8ef64e21372fe5f498fef86e8b499c34400db5a34"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-09-FRCNN/img1/000175.jpg",
+      "sha256": "0efe43fe9b2967b005c8722f226c675a0a329d949f9d7453bdd40b0b6338685f"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-09-FRCNN/img1/000210.jpg",
+      "sha256": "daced68e1df3a2b0bebf11e9f83e51170c71fbb326223e949b05fd69f6870180"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-09-FRCNN/img1/000245.jpg",
+      "sha256": "c598a189cf80ea852caefe7107272ca40279c2b90e331afa0f9422f2509eae2b"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-09-FRCNN/img1/000280.jpg",
+      "sha256": "e807dc2ac783baeaf72a74230e554c922a24321671b9f56a33fe677ef0bccfce"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-09-FRCNN/img1/000315.jpg",
+      "sha256": "f414e7494b49a3139dd954a3f93f85e4f454ab57a1ac439d5c872849a7dcb3ca"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-09-FRCNN/img1/000350.jpg",
+      "sha256": "d1dac6c4cfdee1126b1ce343de7f095d694096751b848707b66d53bb27a01095"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-09-FRCNN/img1/000385.jpg",
+      "sha256": "2455fb55e434ece1fd8703e3dfe87554803d7d442e7405725ba53ca0d53da59f"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-09-FRCNN/img1/000420.jpg",
+      "sha256": "0a380a2d2e908f0302a063f630d0ab3f7e9b92c1d575a72a1f36fe2d33af1c7a"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-09-FRCNN/img1/000455.jpg",
+      "sha256": "3341bfeff6a6a5d0f757e920c5840e47d489bf50e0800cccd023cb67fd690ce5"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-09-FRCNN/img1/000490.jpg",
+      "sha256": "6d73c9a0e78cd28e7dd3bd6d01a015109f4ca962c83466f5951d9d36644c8131"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-09-FRCNN/img1/000525.jpg",
+      "sha256": "38ba82bdba8518919ee8d6c22872a1710e16b4e43387ebf409adea93f686ebf1"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-10-FRCNN/img1/000001.jpg",
+      "sha256": "bc655b86e7dcd9993df950217534f2f6cbf85217faba544dce956b834fb053a0"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-10-FRCNN/img1/000044.jpg",
+      "sha256": "f740c87961fca787f7434e78a1b6227197fd46faad598a71d672a7aa0c641707"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-10-FRCNN/img1/000088.jpg",
+      "sha256": "5949dc74778b1cd20462a6c0487187fac9a9210e8abf7a1fc5e30d5c8a430857"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-10-FRCNN/img1/000131.jpg",
+      "sha256": "c186fffebf2e7e11ed4831ab13093466353f1a804d647fa85930f3ece9e57149"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-10-FRCNN/img1/000175.jpg",
+      "sha256": "2276c0267b4451d9f51d9baabf5a3b91dc4bd96218c33538a8a2c278717cfbe2"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-10-FRCNN/img1/000218.jpg",
+      "sha256": "62cb2ba017efc7868b0ff06ce948eefe1ee9600b85c347af280157dea2701800"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-10-FRCNN/img1/000262.jpg",
+      "sha256": "b05f46d95b59dfd7381765357e7d35263a389f35ab2b1ea02a3bb3e974522015"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-10-FRCNN/img1/000305.jpg",
+      "sha256": "11ffb56ff168b2c67a152c2f5f570083b23135e1080726246fa4d96ef6573993"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-10-FRCNN/img1/000349.jpg",
+      "sha256": "c1cd86f90160e91336ff29b1f581af50ecc055c70494fe6443bbf7432f7696cd"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-10-FRCNN/img1/000392.jpg",
+      "sha256": "9f2d203f1a949f0680a60b2dc809e0f5c5d4e9379a5911e1919d27c9a728b2b0"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-10-FRCNN/img1/000436.jpg",
+      "sha256": "7b412e7b130732c997edf58be75964040427999bd399b8491bf9cf987a5103df"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-10-FRCNN/img1/000479.jpg",
+      "sha256": "93e3a07fcd0b6e112b905316177834a24c89a290416a23181ab24f00bc6d5662"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-10-FRCNN/img1/000523.jpg",
+      "sha256": "8445e57d9dc4662a59e2399fc2f0ed91398c6cb4d4ae341ead37a8aa6bf8aed0"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-10-FRCNN/img1/000566.jpg",
+      "sha256": "3cea81dd8313b119e4ee33b74d21f89746463e83324ba8ea5d720bae05998241"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-10-FRCNN/img1/000610.jpg",
+      "sha256": "3574c2d61b76e0f2160e23eb78364c56cba20d6901aa429019c2d5c2ad44128c"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-10-FRCNN/img1/000654.jpg",
+      "sha256": "c9113976657bcde5adfcb1351a03713a8652b0352d0ac05598fe945f4d248309"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-11-FRCNN/img1/000001.jpg",
+      "sha256": "45c999f9f2bff3d308cf8cd877ff63b95394f53e7319c1b9c444acff77d73b3c"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-11-FRCNN/img1/000060.jpg",
+      "sha256": "a6641e3771424fe694920f9fb1fae874556d38f33c7494bfd5e492411fc1dd76"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-11-FRCNN/img1/000120.jpg",
+      "sha256": "890b72892c6a991d7a0cd50f4ba04dffc33d8bebc9b74adb2f7c44a847e7c13f"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-11-FRCNN/img1/000180.jpg",
+      "sha256": "7406223275adc60eb3a0a04ce3b886cfcb72358c16e6d56cad6b1d398ebccad6"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-11-FRCNN/img1/000240.jpg",
+      "sha256": "4e3bf0445b287f253a761b3e46c323199069e21f0d41b1935922181de48d0176"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-11-FRCNN/img1/000300.jpg",
+      "sha256": "325e3e091620ec9a6af05b5d48ab1312f79ef99162414f4bef928db917f3a0f4"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-11-FRCNN/img1/000360.jpg",
+      "sha256": "13258eb8bc0969f15b569172dcd55cbc4c0cfcd5f7d2576e154518d3de2c0c7a"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-11-FRCNN/img1/000420.jpg",
+      "sha256": "0d609120c50d72e23848aa5fa90a0694696b44dee63eb4af92588923044a33c9"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-11-FRCNN/img1/000480.jpg",
+      "sha256": "f29efd45c894dffce4c935076ae2c14a565a97b62bf997f96c280df071415866"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-11-FRCNN/img1/000540.jpg",
+      "sha256": "94f867725c2b98112ea9f2c1511e9d670c1b1ea685de0992dfef19f7812b0ee9"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-11-FRCNN/img1/000600.jpg",
+      "sha256": "d60c9908206a1d90ad914bc65b9ce32c29c2fdaedf5ba72725ee697d7085df62"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-11-FRCNN/img1/000660.jpg",
+      "sha256": "90dea679dd75d77c12bb30c4828a9795dc82df9b813b5c6c067bd842f5406f2a"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-11-FRCNN/img1/000720.jpg",
+      "sha256": "de6aa0ca6145d6ff2a94878933d8e36b07e26f7a4c9731267c5fd872483f0c49"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-11-FRCNN/img1/000780.jpg",
+      "sha256": "22e89c67874424202780c85db9a000b7d047a395d03e430f825aec7c19a1cbee"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-11-FRCNN/img1/000840.jpg",
+      "sha256": "1ba42e40f19da16d3532165ac884a9d3ca6cc54027429b3d910a6c1bf8ada43a"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-11-FRCNN/img1/000900.jpg",
+      "sha256": "7cfe2604d35a177d3ada38658cf0152455ba5e2572ffdb0d40ec048d1b9691f7"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-13-FRCNN/img1/000001.jpg",
+      "sha256": "27e89bfe934685c07452eeac6f44346ef0da54f28587a1001f44ad8ab8f22388"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-13-FRCNN/img1/000050.jpg",
+      "sha256": "a740af94a81002597b8aeb2cef091fccc536af5b0a0f6ce8c8124e6cd1c17aaa"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-13-FRCNN/img1/000100.jpg",
+      "sha256": "ab82e310103b945b01c24d2ffc1a55a676036d3fcfd946ddd94ae11a34697f57"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-13-FRCNN/img1/000150.jpg",
+      "sha256": "383bbf33fc2c36db32adb079ebb6909a0662f1971352b250472fe1250199ce83"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-13-FRCNN/img1/000200.jpg",
+      "sha256": "83236c6fead67f7f53873ffb8476b8040577718dd8487b23565e9f59534594a7"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-13-FRCNN/img1/000250.jpg",
+      "sha256": "8a981eed02600234237786025df9e8bf5a2c0d9d57118f00a84ae982a4c00318"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-13-FRCNN/img1/000300.jpg",
+      "sha256": "961fddf73242bdd38d8a5a9995ef60a02fbc097f8a7f10b0776eb3b680b88b22"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-13-FRCNN/img1/000350.jpg",
+      "sha256": "0ca7de122cc7a9e76d1f4527bed5642e5ad4b8af176568886aaef1fe801e2147"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-13-FRCNN/img1/000400.jpg",
+      "sha256": "eab49b69eeb4816aaac41f2699479a4ead316672e6d1fef49efd912721eea05a"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-13-FRCNN/img1/000450.jpg",
+      "sha256": "a0ba536808ded3eff990b5ec39025a80abc6734c3588f36edb7bdd6dc67b7be6"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-13-FRCNN/img1/000500.jpg",
+      "sha256": "4786d3b131c8564bb6d98676e072cfd02b6268df416448667e497fa1546e8fac"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-13-FRCNN/img1/000550.jpg",
+      "sha256": "1c46b06b95fe0472d0f28ce7740dfaaac30f3960d2434a513fa39b6d89eb604c"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-13-FRCNN/img1/000600.jpg",
+      "sha256": "6b17ac0233bb7bdeb6ca3bb8891343368cabe65f6bcffb0584d3d5f83d1c5ee6"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-13-FRCNN/img1/000650.jpg",
+      "sha256": "b5fbeb3fb4d50d90d846a9e34899a1410abb2db487c3353be0ece9571e51faca"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-13-FRCNN/img1/000700.jpg",
+      "sha256": "951fdf7ac66dfbb6b6dce58ee218581bdeee02862aa8d11704d491f992589935"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-13-FRCNN/img1/000750.jpg",
+      "sha256": "af6cc6e55aa78b133677e2db2d6219697826a9d147b63543187d2adf225d83fc"
+    }
+  ],
+  "source_sha256": "8741ff7182a44d47d69379015983069532bed92ea33590e2253dc7acb0197868",
+  "calibration_reader_samples": 112,
+  "calib_intermediate_cap": 128,
+  "preprocessed_sha256": "8756969103789a9dd85670426cf66abc8738d57a1beef427304b1fbbf1ee0da5",
+  "int8_sha256": "b91974f59ad63ec7b99568270e0ad8961570b88415ec6fc77db256c200df9d9f",
+  "source_bytes": 3652051,
+  "int8_bytes": 1392158,
+  "node_types": {
+    "DequantizeLinear": 436,
+    "Slice": 6,
+    "Concat": 18,
+    "QuantizeLinear": 210,
+    "Conv": 113,
+    "Sigmoid": 110,
+    "Mul": 104,
+    "Add": 7,
+    "MaxPool": 3,
+    "Resize": 2,
+    "Reshape": 3,
+    "Transpose": 1
+  },
+  "initializer_types": {
+    "7": 8,
+    "1": 437,
+    "3": 436,
+    "6": 226
+  },
+  "smoke_shape": [
+    1,
+    13566,
+    6
+  ],
+  "smoke_all_finite": true,
+  "seconds": 14.084207214000344,
+  "versions": {
+    "onnxruntime": "1.30.0",
+    "onnx": "1.17.0",
+    "ml_dtypes": "0.6.0"
+  }
+}

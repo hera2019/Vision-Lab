@@ -1,0 +1,5 @@
+# Owner approved the pinned dependency download on 2026-10-06.
+FROM vision-lab:pytools
+COPY python/requirements-phase4.txt /tmp/requirements-phase4.txt
+RUN pip install --no-cache-dir --no-deps --only-binary=:all: --require-hashes \
+    -r /tmp/requirements-phase4.txt

@@ -1,0 +1,29 @@
+{
+  "sequence": "MOT17-02-FRCNN",
+  "model": "nano",
+  "evaluator": "motmetrics 1.4.0",
+  "scores": {
+    "python": {
+      "mota": 41.935310263172056,
+      "idf1": 43.55742296918768
+    },
+    "cpp": {
+      "mota": 41.935310263172056,
+      "idf1": 43.55742296918768
+    }
+  },
+  "delta_pp": {
+    "mota": 0.0,
+    "idf1": 0.0
+  },
+  "pass": true,
+  "output_comparison": {
+    "left_lines": 9979,
+    "right_lines": 9979,
+    "byte_identical": false,
+    "identical_line_share": 0.029962922136486624,
+    "same_frame_and_id": true,
+    "max_box_difference": 0.0,
+    "max_score_difference": 2.8610229518832853e-08
+  }
+}

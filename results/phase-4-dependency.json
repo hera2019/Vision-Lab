@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-06",
+  "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+  "status": "owner-approved-installed-import-pass",
+  "owner_authorization": "2026-10-06: 允许下载; 请继续实验测试",
+  "resolution": "Separate phase4-pytools image built; ml_dtypes 0.6.0 installed with wheel hashes and no-deps; quantization import passes.",
+  "build_log": "results/phase-4/dependency-build.log",
+  "observed_error": "ModuleNotFoundError: No module named 'ml_dtypes'",
+  "operation": "Import onnxruntime.quantization.quantize_static in existing pytools image",
+  "proposed_dependency": {
+    "name": "ml_dtypes",
+    "version": "0.6.0",
+    "source": "https://pypi.org/project/ml-dtypes/0.6.0/#files",
+    "license": "Apache-2.0; bundled Eigen MPL-2.0",
+    "cp312_linux_arm64_wheel_size_kb_published": 360.2,
+    "arm64_sha256": "37da32aa97749251025666d62372775019594577b9c9e9cfda83bed48d778fdb",
+    "amd64_sha256": "3b4a480aa8fd54a1805b8ac10f3f91763926a74f73c0c364c10f9231854f4170",
+    "target": "Separate vision-lab:phase4-pytools image; no host install",
+    "extra_dependency_installation": false,
+    "download_executed": true
+  },
+  "unaffected_work": "Controlled FP32 benchmarks with existing C++ runtime"
+}

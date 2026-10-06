@@ -1,0 +1,103 @@
+{
+  "stage": "self",
+  "seconds": 31.13052176400015,
+  "versions": {
+    "numpy": "2.1.3",
+    "scipy": "1.14.1",
+    "lap": "0.5.12",
+    "cython_bbox": "0.1.5",
+    "motmetrics": "1.4.0",
+    "pandas": "2.2.3",
+    "onnxruntime": "1.30.0"
+  },
+  "results": {
+    "MOT17": {
+      "TrackEval": {
+        "MOT17-02-FRCNN": {
+          "HOTA": 100.0,
+          "MOTA": 100.0,
+          "IDF1": 100.0,
+          "IDSW": 0
+        },
+        "MOT17-04-FRCNN": {
+          "HOTA": 100.0,
+          "MOTA": 100.0,
+          "IDF1": 100.0,
+          "IDSW": 0
+        },
+        "MOT17-05-FRCNN": {
+          "HOTA": 100.0,
+          "MOTA": 100.0,
+          "IDF1": 100.0,
+          "IDSW": 0
+        },
+        "MOT17-09-FRCNN": {
+          "HOTA": 100.0,
+          "MOTA": 100.0,
+          "IDF1": 100.0,
+          "IDSW": 0
+        },
+        "MOT17-10-FRCNN": {
+          "HOTA": 100.0,
+          "MOTA": 100.0,
+          "IDF1": 100.0,
+          "IDSW": 0
+        },
+        "MOT17-11-FRCNN": {
+          "HOTA": 100.0,
+          "MOTA": 100.0,
+          "IDF1": 100.0,
+          "IDSW": 0
+        },
+        "MOT17-13-FRCNN": {
+          "HOTA": 100.0,
+          "MOTA": 100.0,
+          "IDF1": 100.0,
+          "IDSW": 0
+        },
+        "OVERALL": {
+          "HOTA": 100.0,
+          "MOTA": 100.0,
+          "IDF1": 100.0,
+          "IDSW": 0
+        }
+      },
+      "pass": true
+    },
+    "MOT20": {
+      "TrackEval": {
+        "MOT20-01": {
+          "HOTA": 100.0,
+          "MOTA": 100.0,
+          "IDF1": 100.0,
+          "IDSW": 0
+        },
+        "MOT20-02": {
+          "HOTA": 100.0,
+          "MOTA": 100.0,
+          "IDF1": 100.0,
+          "IDSW": 0
+        },
+        "MOT20-03": {
+          "HOTA": 100.0,
+          "MOTA": 100.0,
+          "IDF1": 100.0,
+          "IDSW": 0
+        },
+        "MOT20-05": {
+          "HOTA": 100.0,
+          "MOTA": 100.0,
+          "IDF1": 100.0,
+          "IDSW": 0
+        },
+        "OVERALL": {
+          "HOTA": 100.0,
+          "MOTA": 100.0,
+          "IDF1": 100.0,
+          "IDSW": 0
+        }
+      },
+      "pass": true
+    }
+  }
+}

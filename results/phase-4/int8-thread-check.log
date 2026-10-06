@@ -1,0 +1,5 @@
+wrote 50 frames: /work/data/phase-4/determinism/nano-t1.txt
+wrote 50 frames: /work/data/phase-4/determinism/nano-t4.txt
+wrote 50 frames: /work/data/phase-4/determinism/tiny-t1.txt
+wrote 50 frames: /work/data/phase-4/determinism/tiny-t4.txt
+{"scope": "MOT17-02 frames 1\u201350; consistency check only, not full held-out per-thread accuracy.", "models": {"nano": {"byte_identical_1_4": true, "sha256": {"nano-t1.txt": "86b45c9c92893ebf6751ad4135e325b5f1a200f2eabd941a70a5e33e9cbb48c6", "nano-t4.txt": "86b45c9c92893ebf6751ad4135e325b5f1a200f2eabd941a70a5e33e9cbb48c6"}}, "tiny": {"byte_identical_1_4": true, "sha256": {"tiny-t1.txt": "964dd1af2911e1aef21cdee3bb57aabe7df92da6befdef8714d93c1d313a24d9", "tiny-t4.txt": "964dd1af2911e1aef21cdee3bb57aabe7df92da6befdef8714d93c1d313a24d9"}}}, "accuracy_threads": 4}

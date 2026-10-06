@@ -1,0 +1,14 @@
+{"preflight": "pass", "models": 2, "sequences": 11}
+Synthetic-edge-cases: 0.01s -> /work/data/phase-6/edge-python.txt
+wrote tracks: /work/data/phase-6/edge-cpp.txt
+wrote 50 frames: /work/data/phase-6/nano-detections.txt
+wrote tracks: /work/data/phase-6/nano-tracks.txt
+nano four-thread smoke benchmark repeat 1 complete
+nano four-thread smoke benchmark repeat 2 complete
+nano four-thread smoke benchmark repeat 3 complete
+wrote 50 frames: /work/data/phase-6/tiny-detections.txt
+wrote tracks: /work/data/phase-6/tiny-tracks.txt
+tiny four-thread smoke benchmark repeat 1 complete
+tiny four-thread smoke benchmark repeat 2 complete
+tiny four-thread smoke benchmark repeat 3 complete
+{"status": "local-source-snapshot-smoke-complete", "models": {"nano": {"fps": 27.215398962610223, "speed_check": true}, "tiny": {"fps": 10.130506499186227, "speed_check": false}}, "fresh_clone_gate_passed": false}

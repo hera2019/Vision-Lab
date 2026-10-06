@@ -1,0 +1,59 @@
+{
+  "nano": {
+    "MOT17-02-FRCNN": {
+      "high_comparison_difference": 0,
+      "low_comparison_difference": 0,
+      "new_track_comparison_difference": 0
+    },
+    "MOT17-04-FRCNN": {
+      "high_comparison_difference": 0,
+      "low_comparison_difference": 0,
+      "new_track_comparison_difference": 0
+    },
+    "MOT17-05-FRCNN": {
+      "high_comparison_difference": 0,
+      "low_comparison_difference": 0,
+      "new_track_comparison_difference": 0
+    },
+    "MOT17-09-FRCNN": {
+      "high_comparison_difference": 0,
+      "low_comparison_difference": 0,
+      "new_track_comparison_difference": 0
+    },
+    "MOT17-10-FRCNN": {
+      "high_comparison_difference": 0,
+      "low_comparison_difference": 0,
+      "new_track_comparison_difference": 0
+    },
+    "MOT17-11-FRCNN": {
+      "high_comparison_difference": 0,
+      "low_comparison_difference": 0,
+      "new_track_comparison_difference": 0
+    },
+    "MOT17-13-FRCNN": {
+      "high_comparison_difference": 0,
+      "low_comparison_difference": 0,
+      "new_track_comparison_difference": 0
+    },
+    "MOT20-01": {
+      "high_comparison_difference": 0,
+      "low_comparison_difference": 0,
+      "new_track_comparison_difference": 0
+    },
+    "MOT20-02": {
+      "high_comparison_difference": 0,
+      "low_comparison_difference": 0,
+      "new_track_comparison_difference": 0
+    },
+    "MOT20-03": {
+      "high_comparison_difference": 0,
+      "low_comparison_difference": 0,
+      "new_track_comparison_difference": 0
+    },
+    "MOT20-05": {
+      "high_comparison_difference": 0,
+      "low_comparison_difference": 0,
+      "new_track_comparison_difference": 0
+    }
+  }
+}

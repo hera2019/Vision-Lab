@@ -1,0 +1,27 @@
+{
+  "status": "root-cpp-build-and-50-frame-check-complete",
+  "checks": {
+    "nano": {
+      "detections": {
+        "byte_identical": true,
+        "sha256": "4f63aa62ddd3a04b67904eb845e3a88e401cbdb9b4d4efe440e82ee2575be657"
+      },
+      "tracks": {
+        "byte_identical": true,
+        "sha256": "2d3d8f0c42a7e930aa9ea89dbb38cdfe39be4fe298679549d18e4f9181cba4bf"
+      }
+    },
+    "tiny": {
+      "detections": {
+        "byte_identical": true,
+        "sha256": "a68ce52212e0caf505d33cbe57b8753ec093996a50770294deba23ad4586ea6b"
+      },
+      "tracks": {
+        "byte_identical": true,
+        "sha256": "2662d663d77b75056aad3420065bb58a0fca1bf864b0c5651eb6652a95fae596"
+      }
+    }
+  },
+  "all_byte_identical": true,
+  "scope": "Fresh root C++ dependency recipe after approved build-time download; no fresh Python dependency installation or full-clone experiment."
+}

@@ -1,9 +1,60 @@
 # Vision Lab — Work Plan
 
-Status: **Phase 2 done (C++ detector matches Python), Phase 3 next** · Started 2026-10-06 · Target 2026-10-13
+Status: **Phase 4–5 evidence complete; Phase 6 entry point and local isolated validation complete, fresh-clone/full acceptance pending; independent review pending** · Started 2026-10-06 · Target 2026-10-13
 
 Detailed test plan and acceptance criteria: [01-phase-0-plan.md](01-phase-0-plan.md).
 Detector: ByteTrack's YOLOX nano/tiny checkpoints (decided 2026-10-06).
+
+Review: [Opus verdict](reviews/phase-3.md); [follow-up verification](../results/phase-3-review-fixes.md).
+The reviewer has not re-reviewed the follow-up changes. The separately
+[predeclared continuity pilot](CONTINUITY_PILOT.md) and its
+[results](../results/continuity-pilot.md) use exposed MOT17 development footage
+and synthetic examples, not new held-out accuracy evidence. The accepted
+baseline settings, outputs and demos stay unchanged. Owner-reported failures:
+[pillar](../results/phase-3-occlusion-case-75-107.md),
+[moving street](../results/phase-3-mobile-case-3-4-18.md).
+
+Phase 4: [executor execution protocol](PHASE4_EXECUTION.md),
+[complete measurements](../results/phase-4-performance.md),
+[initial FP32 results](../results/phase-4-performance-fp32.md), and
+[approved dependency installation](../results/phase-4-dependency.md). All 18 initial
+FP32 runs completed with fixed warm-up/repeats/quotas. The owner authorized the
+missing dependency on 2026-10-06; both INT8 models are generated using the same
+112 MOT17 calibration frames. Paired speed tests and full MOT20 accuracy are
+complete: 36 paired repeats and all 8,931 held-out MOT20 frames per model.
+At four threads, nano FP32/INT8 measures 27.34/25.46 FPS and tiny 9.76/18.25 FPS.
+Nano INT8 loses 56.1002 pp MOTA; tiny loses 1.0635 pp, above the fixed 1.0 pp cap.
+Neither INT8 model is accepted at any tested budget; baseline unchanged.
+[Read-only development diagnostics](../results/phase-4-int8-diagnostic.md) confirm
+matching input preprocessing and identical original/preprocessed FP32 outputs
+on three frames; the specific INT8 failure cause remains unisolated.
+Final speed ratios use the paired matrix.
+
+Phase 5: [executor protocol](PHASE5_EXECUTION.md),
+[three-category failure report](../results/phase-5-failures.md), and
+[beginner walkthrough](walkthrough/phase-5.md). Owner-reported MOT20-03
+occlusion (75→107), MOT20-01 identity correspondence switch (13→22), and
+small/truncated target detection misses each include frame intervals, crops,
+per-frame GT/detection/track evidence and provenance. CLEAR audit counts match
+upstream on the three scanned sequences. These are illustrative examples,
+not frequency estimates or tuned improvements. Mandatory Phase 5 evidence is
+complete; independent review pending. Mean-shift remains an optional deferred
+bonus. Phase 6 fresh-clone reproduction is the next mandatory stage.
+
+Phase 6: [README](../README.md), [execution protocol](PHASE6_EXECUTION.md),
+[reproduction record](../results/phase-6-reproduction.md), and
+[walkthrough](walkthrough/phase-6.md). One-command smoke/full profiles added;
+full execution remains untested. The isolated source snapshot reproduces
+both FP32 models' first-50-frame detections/tracks byte for byte and passes
+Python/C++ synthetic behavior. Nano four-thread FPS 27.215 is inside the
+original repeat interval; tiny 10.131 is outside, despite being faster, and
+that strict check failure stays. Standalone root C++ dependency build succeeds
+after the authorized download and produces identical 50-frame outputs.
+Initial offline-build and mount failures remain recorded. Actual clean HEAD
+clone is `6f0e68f` and lacks current Phase 3–6 source. Complete-source commit,
+fresh clone and full numerical/environment validation are still required;
+no commit/push performed. Fresh Python dependency installation has not been
+tested. Local snapshots are not counted as fresh-clone acceptance.
 
 ## Goal
 

@@ -1,0 +1,3 @@
+docker: Error response from daemon: failed to create task for container: failed to create shim task: OCI runtime create failed: runc create failed: unable to start container process: error during container init: error mounting "/host_mnt/Users/Hera/Documents/Vision-Lab/external" to rootfs at "/work/external": create mountpoint for /work/external mount: make mountpoint "/work/external": mkdirat /var/lib/docker/rootfs/overlayfs/c07220a77ce4aba08d31d319a327fd7ecbc3120cc9a59d9895d600e58dd5a9fa/work/external: read-only file system
+
+Run 'docker run --help' for more information

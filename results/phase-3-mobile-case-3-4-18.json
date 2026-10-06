@@ -1,0 +1,2338 @@
+{
+  "sequence": "MOT17-05-FRCNN",
+  "model": "nano",
+  "source_fps": 14,
+  "demo_frame_range": [
+    1,
+    168
+  ],
+  "frozen_config": {
+    "track_thresh": 0.6,
+    "track_buffer": 14,
+    "match_thresh": 0.9,
+    "mot20": false
+  },
+  "tracker_frame_rate_argument": 30,
+  "max_time_lost_updates": 14,
+  "segments": {
+    "3": {
+      "first_row": [
+        4.0,
+        3.0,
+        253.6,
+        198.3,
+        24.1,
+        62.5,
+        0.77,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "last_row": [
+        20.0,
+        3.0,
+        367.3,
+        187.6,
+        23.4,
+        59.6,
+        0.21,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "emitted_frames": 17,
+      "gt_best_matches": [
+        {
+          "frame": 4,
+          "gt_id": 14,
+          "iou": 0.8165467625899273,
+          "visibility": 0.76923,
+          "gt_box": [
+            255.0,
+            197.0,
+            25.0,
+            66.0
+          ]
+        },
+        {
+          "frame": 5,
+          "gt_id": 14,
+          "iou": 0.7660615717293605,
+          "visibility": 0.79167,
+          "gt_box": [
+            265.0,
+            201.0,
+            23.0,
+            64.0
+          ]
+        },
+        {
+          "frame": 6,
+          "gt_id": 14,
+          "iou": 0.8752590136759237,
+          "visibility": 0.8,
+          "gt_box": [
+            271.0,
+            201.0,
+            24.0,
+            64.0
+          ]
+        },
+        {
+          "frame": 7,
+          "gt_id": 14,
+          "iou": 0.8254563416331763,
+          "visibility": 0.84,
+          "gt_box": [
+            278.0,
+            201.0,
+            24.0,
+            65.0
+          ]
+        },
+        {
+          "frame": 8,
+          "gt_id": 14,
+          "iou": 0.8611160634694247,
+          "visibility": 0.88,
+          "gt_box": [
+            285.0,
+            201.0,
+            24.0,
+            66.0
+          ]
+        },
+        {
+          "frame": 9,
+          "gt_id": 14,
+          "iou": 0.7929429591947175,
+          "visibility": 0.92,
+          "gt_box": [
+            292.0,
+            201.0,
+            24.0,
+            66.0
+          ]
+        },
+        {
+          "frame": 10,
+          "gt_id": 14,
+          "iou": 0.7813006837335017,
+          "visibility": 1.0,
+          "gt_box": [
+            300.0,
+            201.0,
+            24.0,
+            67.0
+          ]
+        },
+        {
+          "frame": 11,
+          "gt_id": 14,
+          "iou": 0.6286151199464788,
+          "visibility": 1.0,
+          "gt_box": [
+            309.0,
+            202.0,
+            25.0,
+            67.0
+          ]
+        },
+        {
+          "frame": 12,
+          "gt_id": 14,
+          "iou": 0.8368735163414868,
+          "visibility": 1.0,
+          "gt_box": [
+            317.0,
+            201.0,
+            25.0,
+            68.0
+          ]
+        },
+        {
+          "frame": 13,
+          "gt_id": 14,
+          "iou": 0.720453298522429,
+          "visibility": 1.0,
+          "gt_box": [
+            326.0,
+            202.0,
+            25.0,
+            68.0
+          ]
+        },
+        {
+          "frame": 14,
+          "gt_id": 14,
+          "iou": 0.8729991629478614,
+          "visibility": 1.0,
+          "gt_box": [
+            334.0,
+            201.0,
+            25.0,
+            68.0
+          ]
+        },
+        {
+          "frame": 15,
+          "gt_id": 14,
+          "iou": 0.7378009468196798,
+          "visibility": 0.96296,
+          "gt_box": [
+            341.0,
+            199.0,
+            26.0,
+            69.0
+          ]
+        },
+        {
+          "frame": 16,
+          "gt_id": 14,
+          "iou": 0.7589417065097473,
+          "visibility": 0.37037,
+          "gt_box": [
+            349.0,
+            198.0,
+            26.0,
+            69.0
+          ]
+        },
+        {
+          "frame": 17,
+          "gt_id": 14,
+          "iou": 0.8872052539958855,
+          "visibility": 0.0,
+          "gt_box": [
+            357.0,
+            197.0,
+            26.0,
+            69.0
+          ]
+        },
+        {
+          "frame": 18,
+          "gt_id": 14,
+          "iou": 0.8337229842061512,
+          "visibility": 0.0,
+          "gt_box": [
+            361.0,
+            196.0,
+            26.0,
+            70.0
+          ]
+        },
+        {
+          "frame": 19,
+          "gt_id": 5,
+          "iou": 0.5681159420289866,
+          "visibility": 0.0,
+          "gt_box": [
+            356.0,
+            182.0,
+            22.0,
+            84.0
+          ]
+        },
+        {
+          "frame": 20,
+          "gt_id": 14,
+          "iou": 0.5373784335120256,
+          "visibility": 0.0,
+          "gt_box": [
+            369.0,
+            195.0,
+            26.0,
+            71.0
+          ]
+        }
+      ],
+      "gt_best_match_counts_iou_at_least_0_5": {
+        "14": 16,
+        "5": 1
+      },
+      "python_same_frames_ids_boxes": true
+    },
+    "4": {
+      "first_row": [
+        5.0,
+        4.0,
+        238.7,
+        195.2,
+        26.7,
+        70.4,
+        0.84,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "last_row": [
+        51.0,
+        4.0,
+        532.5,
+        200.2,
+        24.4,
+        61.6,
+        0.27,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "emitted_frames": 28,
+      "gt_best_matches": [
+        {
+          "frame": 5,
+          "gt_id": 4,
+          "iou": 0.8253837821686019,
+          "visibility": 0.94085,
+          "gt_box": [
+            240.0,
+            196.0,
+            29.0,
+            70.0
+          ]
+        },
+        {
+          "frame": 6,
+          "gt_id": 4,
+          "iou": 0.8173692515242689,
+          "visibility": 0.96892,
+          "gt_box": [
+            247.0,
+            196.0,
+            28.0,
+            70.0
+          ]
+        },
+        {
+          "frame": 7,
+          "gt_id": 4,
+          "iou": 0.8327265873763792,
+          "visibility": 0.9668,
+          "gt_box": [
+            254.0,
+            197.0,
+            27.0,
+            70.0
+          ]
+        },
+        {
+          "frame": 8,
+          "gt_id": 4,
+          "iou": 0.9288896654145204,
+          "visibility": 0.88956,
+          "gt_box": [
+            262.0,
+            198.0,
+            25.0,
+            69.0
+          ]
+        },
+        {
+          "frame": 9,
+          "gt_id": 4,
+          "iou": 0.8810010214504596,
+          "visibility": 0.92343,
+          "gt_box": [
+            269.0,
+            198.0,
+            24.0,
+            69.0
+          ]
+        },
+        {
+          "frame": 10,
+          "gt_id": 4,
+          "iou": 0.915430242131971,
+          "visibility": 0.92343,
+          "gt_box": [
+            277.0,
+            198.0,
+            24.0,
+            69.0
+          ]
+        },
+        {
+          "frame": 11,
+          "gt_id": 4,
+          "iou": 0.864794676188931,
+          "visibility": 0.96116,
+          "gt_box": [
+            285.0,
+            200.0,
+            24.0,
+            68.0
+          ]
+        },
+        {
+          "frame": 12,
+          "gt_id": 4,
+          "iou": 0.8158581116327596,
+          "visibility": 0.95894,
+          "gt_box": [
+            294.0,
+            200.0,
+            23.0,
+            68.0
+          ]
+        },
+        {
+          "frame": 13,
+          "gt_id": 4,
+          "iou": 0.8186575291523893,
+          "visibility": 0.66667,
+          "gt_box": [
+            302.0,
+            201.0,
+            23.0,
+            67.0
+          ]
+        },
+        {
+          "frame": 14,
+          "gt_id": 4,
+          "iou": 0.7233503934841223,
+          "visibility": 0.66667,
+          "gt_box": [
+            310.0,
+            199.0,
+            23.0,
+            69.0
+          ]
+        },
+        {
+          "frame": 15,
+          "gt_id": 4,
+          "iou": 0.6280058108583648,
+          "visibility": 0.95949,
+          "gt_box": [
+            318.0,
+            197.0,
+            23.0,
+            71.0
+          ]
+        },
+        {
+          "frame": 16,
+          "gt_id": 4,
+          "iou": 0.6347750639495418,
+          "visibility": 0.70833,
+          "gt_box": [
+            325.0,
+            194.0,
+            23.0,
+            73.0
+          ]
+        },
+        {
+          "frame": 17,
+          "gt_id": 4,
+          "iou": 0.7751910202560315,
+          "visibility": 1.0,
+          "gt_box": [
+            333.0,
+            192.0,
+            23.0,
+            75.0
+          ]
+        },
+        {
+          "frame": 18,
+          "gt_id": 4,
+          "iou": 0.618449741987063,
+          "visibility": 0.12,
+          "gt_box": [
+            335.0,
+            192.0,
+            24.0,
+            76.0
+          ]
+        },
+        {
+          "frame": 19,
+          "gt_id": 4,
+          "iou": 0.6650278466171031,
+          "visibility": 0.0,
+          "gt_box": [
+            337.0,
+            190.0,
+            24.0,
+            78.0
+          ]
+        },
+        {
+          "frame": 31,
+          "gt_id": 14,
+          "iou": 0.6113339824732232,
+          "visibility": 0.22222,
+          "gt_box": [
+            407.0,
+            188.0,
+            26.0,
+            79.0
+          ]
+        },
+        {
+          "frame": 32,
+          "gt_id": 14,
+          "iou": 0.8646565650184553,
+          "visibility": 1.0,
+          "gt_box": [
+            409.0,
+            189.0,
+            26.0,
+            79.0
+          ]
+        },
+        {
+          "frame": 33,
+          "gt_id": 14,
+          "iou": 0.8415375676184389,
+          "visibility": 1.0,
+          "gt_box": [
+            419.0,
+            186.0,
+            26.0,
+            80.0
+          ]
+        },
+        {
+          "frame": 34,
+          "gt_id": 14,
+          "iou": 0.758030677075225,
+          "visibility": 1.0,
+          "gt_box": [
+            430.0,
+            186.0,
+            26.0,
+            82.0
+          ]
+        },
+        {
+          "frame": 35,
+          "gt_id": 14,
+          "iou": 0.7738383062982929,
+          "visibility": 1.0,
+          "gt_box": [
+            438.0,
+            186.0,
+            27.0,
+            83.0
+          ]
+        },
+        {
+          "frame": 36,
+          "gt_id": 14,
+          "iou": 0.8093849834534329,
+          "visibility": 1.0,
+          "gt_box": [
+            446.0,
+            186.0,
+            27.0,
+            85.0
+          ]
+        },
+        {
+          "frame": 37,
+          "gt_id": 14,
+          "iou": 0.7960457856399578,
+          "visibility": 1.0,
+          "gt_box": [
+            454.0,
+            186.0,
+            27.0,
+            86.0
+          ]
+        },
+        {
+          "frame": 38,
+          "gt_id": 14,
+          "iou": 0.787107294196638,
+          "visibility": 1.0,
+          "gt_box": [
+            457.0,
+            186.0,
+            27.0,
+            87.0
+          ]
+        },
+        {
+          "frame": 39,
+          "gt_id": 14,
+          "iou": 0.7292505077775109,
+          "visibility": 1.0,
+          "gt_box": [
+            459.0,
+            185.0,
+            28.0,
+            88.0
+          ]
+        },
+        {
+          "frame": 40,
+          "gt_id": 14,
+          "iou": 0.6793996084402881,
+          "visibility": 0.55172,
+          "gt_box": [
+            462.0,
+            185.0,
+            28.0,
+            89.0
+          ]
+        },
+        {
+          "frame": 41,
+          "gt_id": 14,
+          "iou": 0.6550286607608126,
+          "visibility": 0.0,
+          "gt_box": [
+            466.0,
+            184.0,
+            28.0,
+            90.0
+          ]
+        },
+        {
+          "frame": 50,
+          "gt_id": 117,
+          "iou": 0.680763639212682,
+          "visibility": 1.0,
+          "gt_box": [
+            533.0,
+            204.0,
+            22.0,
+            46.0
+          ]
+        },
+        {
+          "frame": 51,
+          "gt_id": 117,
+          "iou": 0.6681966517205687,
+          "visibility": 0.0,
+          "gt_box": [
+            535.0,
+            203.0,
+            22.0,
+            46.0
+          ]
+        }
+      ],
+      "gt_best_match_counts_iou_at_least_0_5": {
+        "4": 15,
+        "14": 11,
+        "117": 2
+      },
+      "python_same_frames_ids_boxes": true
+    },
+    "18": {
+      "first_row": [
+        65.0,
+        18.0,
+        500.5,
+        185.1,
+        31.4,
+        84.7,
+        0.82,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "last_row": [
+        168.0,
+        18.0,
+        493.2,
+        179.4,
+        37.8,
+        95.4,
+        0.83,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "emitted_frames": 78,
+      "gt_best_matches": [
+        {
+          "frame": 65,
+          "gt_id": 14,
+          "iou": 0.7334749034749029,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            178.0,
+            37.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 66,
+          "gt_id": 14,
+          "iou": 0.7302757859900698,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            178.0,
+            37.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 67,
+          "gt_id": 14,
+          "iou": 0.7155819084390532,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            178.0,
+            37.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 68,
+          "gt_id": 14,
+          "iou": 0.7337085539147412,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            178.0,
+            37.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 69,
+          "gt_id": 14,
+          "iou": 0.7445360824742255,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            178.0,
+            37.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 70,
+          "gt_id": 14,
+          "iou": 0.7380551685706325,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            178.0,
+            37.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 71,
+          "gt_id": 14,
+          "iou": 0.7497854555586504,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            178.0,
+            37.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 72,
+          "gt_id": 14,
+          "iou": 0.76382989056068,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            178.0,
+            36.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 73,
+          "gt_id": 14,
+          "iou": 0.7605784650630024,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            178.0,
+            36.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 74,
+          "gt_id": 14,
+          "iou": 0.722960486287621,
+          "visibility": 0.0,
+          "gt_box": [
+            496.0,
+            178.0,
+            36.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 75,
+          "gt_id": 14,
+          "iou": 0.6210714285714305,
+          "visibility": 0.0,
+          "gt_box": [
+            496.0,
+            177.0,
+            36.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 76,
+          "gt_id": 14,
+          "iou": 0.6031195335276984,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 87,
+          "gt_id": 14,
+          "iou": 0.7866627393225327,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 88,
+          "gt_id": 14,
+          "iou": 0.7868020304568533,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 89,
+          "gt_id": 14,
+          "iou": 0.7833505568951661,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 90,
+          "gt_id": 14,
+          "iou": 0.7873555922305451,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 91,
+          "gt_id": 14,
+          "iou": 0.7988665912615581,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 92,
+          "gt_id": 14,
+          "iou": 0.777596338470998,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 93,
+          "gt_id": 14,
+          "iou": 0.7419269669767251,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 94,
+          "gt_id": 14,
+          "iou": 0.7674220963172813,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 95,
+          "gt_id": 14,
+          "iou": 0.750828029946473,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 96,
+          "gt_id": 14,
+          "iou": 0.7030358538776549,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 97,
+          "gt_id": 14,
+          "iou": 0.7952342440545258,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 98,
+          "gt_id": 14,
+          "iou": 0.7592774282911052,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 99,
+          "gt_id": 14,
+          "iou": 0.7544303797468355,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 100,
+          "gt_id": 14,
+          "iou": 0.7593036409861672,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 101,
+          "gt_id": 14,
+          "iou": 0.7521102982554864,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 102,
+          "gt_id": 14,
+          "iou": 0.783450129427952,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 103,
+          "gt_id": 14,
+          "iou": 0.7733130295758733,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 104,
+          "gt_id": 14,
+          "iou": 0.7386334625293001,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 105,
+          "gt_id": 14,
+          "iou": 0.7508309522421143,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 106,
+          "gt_id": 14,
+          "iou": 0.733608745097128,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 107,
+          "gt_id": 14,
+          "iou": 0.7265174149715559,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 108,
+          "gt_id": 14,
+          "iou": 0.7106032149689693,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 109,
+          "gt_id": 14,
+          "iou": 0.53822680412371,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 119,
+          "gt_id": 14,
+          "iou": 0.8725773195876317,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 120,
+          "gt_id": 14,
+          "iou": 0.8757349042709848,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 121,
+          "gt_id": 14,
+          "iou": 0.876276877761414,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 122,
+          "gt_id": 14,
+          "iou": 0.8777319587628865,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 123,
+          "gt_id": 14,
+          "iou": 0.8579204712812936,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 124,
+          "gt_id": 14,
+          "iou": 0.8874497075935932,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            34.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 125,
+          "gt_id": 14,
+          "iou": 0.8485591569092307,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            34.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 126,
+          "gt_id": 14,
+          "iou": 0.8246322877901832,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            34.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 127,
+          "gt_id": 14,
+          "iou": 0.7926686302528372,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            34.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 128,
+          "gt_id": 14,
+          "iou": 0.7691712055751594,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            34.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 129,
+          "gt_id": 14,
+          "iou": 0.7596530858273141,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            34.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 130,
+          "gt_id": 14,
+          "iou": 0.7651807958276096,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            34.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 131,
+          "gt_id": 14,
+          "iou": 0.7744584005531218,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 132,
+          "gt_id": 14,
+          "iou": 0.7857613560176716,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 133,
+          "gt_id": 14,
+          "iou": 0.8046712999886076,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 134,
+          "gt_id": 14,
+          "iou": 0.8042286609240422,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 135,
+          "gt_id": 14,
+          "iou": 0.8439190542977342,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 136,
+          "gt_id": 14,
+          "iou": 0.821850335987616,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 137,
+          "gt_id": 14,
+          "iou": 0.8274836406900663,
+          "visibility": 0.0,
+          "gt_box": [
+            497.0,
+            177.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 138,
+          "gt_id": 14,
+          "iou": 0.7561672219407332,
+          "visibility": 0.0,
+          "gt_box": [
+            496.0,
+            177.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 139,
+          "gt_id": 14,
+          "iou": 0.7850419334424193,
+          "visibility": 0.0,
+          "gt_box": [
+            496.0,
+            177.0,
+            35.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 140,
+          "gt_id": 14,
+          "iou": 0.7726470479215541,
+          "visibility": 0.0,
+          "gt_box": [
+            496.0,
+            178.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 141,
+          "gt_id": 14,
+          "iou": 0.7582214907924977,
+          "visibility": 0.0,
+          "gt_box": [
+            496.0,
+            178.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 142,
+          "gt_id": 14,
+          "iou": 0.7503517059166662,
+          "visibility": 0.0,
+          "gt_box": [
+            496.0,
+            178.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 143,
+          "gt_id": 14,
+          "iou": 0.7266546943547467,
+          "visibility": 0.0,
+          "gt_box": [
+            496.0,
+            178.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 144,
+          "gt_id": 14,
+          "iou": 0.7375107635408867,
+          "visibility": 0.0,
+          "gt_box": [
+            496.0,
+            178.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 145,
+          "gt_id": 14,
+          "iou": 0.7298398083205285,
+          "visibility": 0.0,
+          "gt_box": [
+            496.0,
+            178.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 146,
+          "gt_id": 14,
+          "iou": 0.6328861765213881,
+          "visibility": 0.0,
+          "gt_box": [
+            496.0,
+            178.0,
+            35.0,
+            97.0
+          ]
+        },
+        {
+          "frame": 154,
+          "gt_id": 14,
+          "iou": 0.7290846805016857,
+          "visibility": 0.0,
+          "gt_box": [
+            496.0,
+            178.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 155,
+          "gt_id": 14,
+          "iou": 0.7518610421836233,
+          "visibility": 0.0,
+          "gt_box": [
+            496.0,
+            178.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 156,
+          "gt_id": 14,
+          "iou": 0.803791038391616,
+          "visibility": 0.0,
+          "gt_box": [
+            496.0,
+            178.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 157,
+          "gt_id": 14,
+          "iou": 0.8802096597471065,
+          "visibility": 0.0,
+          "gt_box": [
+            496.0,
+            178.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 158,
+          "gt_id": 14,
+          "iou": 0.8866308763094755,
+          "visibility": 0.0,
+          "gt_box": [
+            496.0,
+            178.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 159,
+          "gt_id": 14,
+          "iou": 0.9136027252437449,
+          "visibility": 0.0,
+          "gt_box": [
+            496.0,
+            178.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 160,
+          "gt_id": 14,
+          "iou": 0.9061256961018296,
+          "visibility": 0.0,
+          "gt_box": [
+            496.0,
+            178.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 161,
+          "gt_id": 14,
+          "iou": 0.9031101148781169,
+          "visibility": 0.22857,
+          "gt_box": [
+            496.0,
+            178.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 162,
+          "gt_id": 14,
+          "iou": 0.9003456669371246,
+          "visibility": 0.54286,
+          "gt_box": [
+            496.0,
+            178.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 163,
+          "gt_id": 14,
+          "iou": 0.8956971411845059,
+          "visibility": 0.82857,
+          "gt_box": [
+            496.0,
+            178.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 164,
+          "gt_id": 14,
+          "iou": 0.8932494906862436,
+          "visibility": 0.8,
+          "gt_box": [
+            496.0,
+            178.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 165,
+          "gt_id": 14,
+          "iou": 0.8894324370273277,
+          "visibility": 0.77143,
+          "gt_box": [
+            496.0,
+            178.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 166,
+          "gt_id": 14,
+          "iou": 0.886624708419524,
+          "visibility": 0.74286,
+          "gt_box": [
+            496.0,
+            178.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 167,
+          "gt_id": 14,
+          "iou": 0.8820245627093413,
+          "visibility": 0.71429,
+          "gt_box": [
+            496.0,
+            178.0,
+            34.0,
+            98.0
+          ]
+        },
+        {
+          "frame": 168,
+          "gt_id": 14,
+          "iou": 0.8779489622467873,
+          "visibility": 0.68571,
+          "gt_box": [
+            496.0,
+            178.0,
+            34.0,
+            98.0
+          ]
+        }
+      ],
+      "gt_best_match_counts_iou_at_least_0_5": {
+        "14": 78
+      },
+      "python_same_frames_ids_boxes": true
+    }
+  },
+  "reference_state_transitions": [
+    {
+      "source_frame": 3,
+      "tracker_update": 3,
+      "id": 3,
+      "collections": {
+        "tracked_stracks": {
+          "state": 1,
+          "activated": false,
+          "start_update": 3,
+          "last_matched_update": 3
+        }
+      },
+      "in_tracker_output": false
+    },
+    {
+      "source_frame": 4,
+      "tracker_update": 4,
+      "id": 3,
+      "collections": {
+        "tracked_stracks": {
+          "state": 1,
+          "activated": true,
+          "start_update": 3,
+          "last_matched_update": 4
+        }
+      },
+      "in_tracker_output": true
+    },
+    {
+      "source_frame": 4,
+      "tracker_update": 4,
+      "id": 4,
+      "collections": {
+        "tracked_stracks": {
+          "state": 1,
+          "activated": false,
+          "start_update": 4,
+          "last_matched_update": 4
+        }
+      },
+      "in_tracker_output": false
+    },
+    {
+      "source_frame": 5,
+      "tracker_update": 5,
+      "id": 4,
+      "collections": {
+        "tracked_stracks": {
+          "state": 1,
+          "activated": true,
+          "start_update": 4,
+          "last_matched_update": 5
+        }
+      },
+      "in_tracker_output": true
+    },
+    {
+      "source_frame": 20,
+      "tracker_update": 20,
+      "id": 4,
+      "collections": {
+        "lost_stracks": {
+          "state": 2,
+          "activated": true,
+          "start_update": 4,
+          "last_matched_update": 19
+        }
+      },
+      "in_tracker_output": false
+    },
+    {
+      "source_frame": 21,
+      "tracker_update": 21,
+      "id": 3,
+      "collections": {
+        "lost_stracks": {
+          "state": 2,
+          "activated": true,
+          "start_update": 3,
+          "last_matched_update": 20
+        }
+      },
+      "in_tracker_output": false
+    },
+    {
+      "source_frame": 31,
+      "tracker_update": 31,
+      "id": 4,
+      "collections": {
+        "tracked_stracks": {
+          "state": 1,
+          "activated": true,
+          "start_update": 4,
+          "last_matched_update": 31
+        }
+      },
+      "in_tracker_output": true
+    },
+    {
+      "source_frame": 35,
+      "tracker_update": 35,
+      "id": 3,
+      "collections": {
+        "lost_stracks": {
+          "state": 3,
+          "activated": true,
+          "start_update": 3,
+          "last_matched_update": 20
+        },
+        "removed_stracks": {
+          "state": 3,
+          "activated": true,
+          "start_update": 3,
+          "last_matched_update": 20
+        }
+      },
+      "in_tracker_output": false
+    },
+    {
+      "source_frame": 36,
+      "tracker_update": 36,
+      "id": 3,
+      "collections": {
+        "removed_stracks": {
+          "state": 3,
+          "activated": true,
+          "start_update": 3,
+          "last_matched_update": 20
+        }
+      },
+      "in_tracker_output": false
+    },
+    {
+      "source_frame": 42,
+      "tracker_update": 42,
+      "id": 4,
+      "collections": {
+        "lost_stracks": {
+          "state": 2,
+          "activated": true,
+          "start_update": 4,
+          "last_matched_update": 41
+        }
+      },
+      "in_tracker_output": false
+    },
+    {
+      "source_frame": 50,
+      "tracker_update": 50,
+      "id": 4,
+      "collections": {
+        "tracked_stracks": {
+          "state": 1,
+          "activated": true,
+          "start_update": 4,
+          "last_matched_update": 50
+        }
+      },
+      "in_tracker_output": true
+    },
+    {
+      "source_frame": 52,
+      "tracker_update": 52,
+      "id": 4,
+      "collections": {
+        "lost_stracks": {
+          "state": 2,
+          "activated": true,
+          "start_update": 4,
+          "last_matched_update": 51
+        }
+      },
+      "in_tracker_output": false
+    },
+    {
+      "source_frame": 64,
+      "tracker_update": 64,
+      "id": 18,
+      "collections": {
+        "tracked_stracks": {
+          "state": 1,
+          "activated": false,
+          "start_update": 64,
+          "last_matched_update": 64
+        }
+      },
+      "in_tracker_output": false
+    },
+    {
+      "source_frame": 65,
+      "tracker_update": 65,
+      "id": 18,
+      "collections": {
+        "tracked_stracks": {
+          "state": 1,
+          "activated": true,
+          "start_update": 64,
+          "last_matched_update": 65
+        }
+      },
+      "in_tracker_output": true
+    },
+    {
+      "source_frame": 66,
+      "tracker_update": 66,
+      "id": 4,
+      "collections": {
+        "lost_stracks": {
+          "state": 3,
+          "activated": true,
+          "start_update": 4,
+          "last_matched_update": 51
+        },
+        "removed_stracks": {
+          "state": 3,
+          "activated": true,
+          "start_update": 4,
+          "last_matched_update": 51
+        }
+      },
+      "in_tracker_output": false
+    },
+    {
+      "source_frame": 67,
+      "tracker_update": 67,
+      "id": 4,
+      "collections": {
+        "removed_stracks": {
+          "state": 3,
+          "activated": true,
+          "start_update": 4,
+          "last_matched_update": 51
+        }
+      },
+      "in_tracker_output": false
+    },
+    {
+      "source_frame": 77,
+      "tracker_update": 77,
+      "id": 18,
+      "collections": {
+        "lost_stracks": {
+          "state": 2,
+          "activated": true,
+          "start_update": 64,
+          "last_matched_update": 76
+        }
+      },
+      "in_tracker_output": false
+    },
+    {
+      "source_frame": 87,
+      "tracker_update": 87,
+      "id": 18,
+      "collections": {
+        "tracked_stracks": {
+          "state": 1,
+          "activated": true,
+          "start_update": 64,
+          "last_matched_update": 87
+        }
+      },
+      "in_tracker_output": true
+    },
+    {
+      "source_frame": 110,
+      "tracker_update": 110,
+      "id": 18,
+      "collections": {
+        "lost_stracks": {
+          "state": 2,
+          "activated": true,
+          "start_update": 64,
+          "last_matched_update": 109
+        }
+      },
+      "in_tracker_output": false
+    },
+    {
+      "source_frame": 119,
+      "tracker_update": 119,
+      "id": 18,
+      "collections": {
+        "tracked_stracks": {
+          "state": 1,
+          "activated": true,
+          "start_update": 64,
+          "last_matched_update": 119
+        }
+      },
+      "in_tracker_output": true
+    },
+    {
+      "source_frame": 147,
+      "tracker_update": 147,
+      "id": 18,
+      "collections": {
+        "lost_stracks": {
+          "state": 2,
+          "activated": true,
+          "start_update": 64,
+          "last_matched_update": 146
+        }
+      },
+      "in_tracker_output": false
+    },
+    {
+      "source_frame": 154,
+      "tracker_update": 154,
+      "id": 18,
+      "collections": {
+        "tracked_stracks": {
+          "state": 1,
+          "activated": true,
+          "start_update": 64,
+          "last_matched_update": 154
+        }
+      },
+      "in_tracker_output": true
+    }
+  ],
+  "association_probes": [
+    {
+      "source_frame": 31,
+      "track_id": 4,
+      "state_before_assignment": 2,
+      "cost_limit": 0.9,
+      "predicted_box": [
+        418.179568069208,
+        181.67242749946058,
+        26.711331511206254,
+        70.34184750352826
+      ],
+      "candidates": [
+        {
+          "index": 0,
+          "score": 0.9145702123641968,
+          "box": [
+            39.30394744873047,
+            76.0145492553711,
+            146.8197021484375,
+            365.967041015625
+          ],
+          "gt_match": {
+            "gt_id": 1,
+            "iou": 0.86190191489121,
+            "visibility": 1.0,
+            "gt_box": [
+              56.0,
+              78.0,
+              129.0,
+              359.0
+            ]
+          },
+          "inclusive_iou": 0.0,
+          "assignment_cost": 1.0,
+          "selected": false
+        },
+        {
+          "index": 1,
+          "score": 0.8508599400520325,
+          "box": [
+            223.2429656982422,
+            93.36688232421875,
+            145.0015106201172,
+            335.7325744628906
+          ],
+          "gt_match": {
+            "gt_id": 125,
+            "iou": 0.8398464902007954,
+            "visibility": 1.0,
+            "gt_box": [
+              241.0,
+              95.0,
+              133.0,
+              334.0
+            ]
+          },
+          "inclusive_iou": 0.0,
+          "assignment_cost": 1.0,
+          "selected": false
+        },
+        {
+          "index": 2,
+          "score": 0.695263147354126,
+          "box": [
+            87.31793212890625,
+            85.84656524658203,
+            107.62429809570312,
+            300.86529541015625
+          ],
+          "gt_match": {
+            "gt_id": 2,
+            "iou": 0.7638758837532668,
+            "visibility": 0.13978,
+            "gt_box": [
+              106.0,
+              79.0,
+              92.0,
+              298.0
+            ]
+          },
+          "inclusive_iou": 0.0,
+          "assignment_cost": 1.0,
+          "selected": false
+        },
+        {
+          "index": 3,
+          "score": 0.6645210981369019,
+          "box": [
+            407.2699890136719,
+            190.42747497558594,
+            20.986297607421875,
+            57.3525390625
+          ],
+          "gt_match": {
+            "gt_id": 14,
+            "iou": 0.5859870756119344,
+            "visibility": 0.22222,
+            "gt_box": [
+              407.0,
+              188.0,
+              26.0,
+              79.0
+            ]
+          },
+          "inclusive_iou": 0.247306316890472,
+          "assignment_cost": 0.8356597347237509,
+          "selected": true
+        },
+        {
+          "index": 4,
+          "score": 0.6409481763839722,
+          "box": [
+            388.9222106933594,
+            174.19732666015625,
+            28.1033935546875,
+            73.81852722167969
+          ],
+          "gt_match": {
+            "gt_id": 5,
+            "iou": 0.5456475398703612,
+            "visibility": 0.0,
+            "gt_box": [
+              396.0,
+              174.0,
+              27.0,
+              86.0
+            ]
+          },
+          "inclusive_iou": 0.0,
+          "assignment_cost": 1.0,
+          "selected": false
+        }
+      ]
+    },
+    {
+      "source_frame": 31,
+      "track_id": 3,
+      "state_before_assignment": 2,
+      "cost_limit": 0.9,
+      "predicted_box": [
+        436.5008917743246,
+        170.90627604292868,
+        23.03948887614209,
+        58.800586124186225
+      ],
+      "candidates": [
+        {
+          "index": 0,
+          "score": 0.9145702123641968,
+          "box": [
+            39.30394744873047,
+            76.0145492553711,
+            146.8197021484375,
+            365.967041015625
+          ],
+          "gt_match": {
+            "gt_id": 1,
+            "iou": 0.86190191489121,
+            "visibility": 1.0,
+            "gt_box": [
+              56.0,
+              78.0,
+              129.0,
+              359.0
+            ]
+          },
+          "inclusive_iou": 0.0,
+          "assignment_cost": 1.0,
+          "selected": false
+        },
+        {
+          "index": 1,
+          "score": 0.8508599400520325,
+          "box": [
+            223.2429656982422,
+            93.36688232421875,
+            145.0015106201172,
+            335.7325744628906
+          ],
+          "gt_match": {
+            "gt_id": 125,
+            "iou": 0.8398464902007954,
+            "visibility": 1.0,
+            "gt_box": [
+              241.0,
+              95.0,
+              133.0,
+              334.0
+            ]
+          },
+          "inclusive_iou": 0.0,
+          "assignment_cost": 1.0,
+          "selected": false
+        },
+        {
+          "index": 2,
+          "score": 0.695263147354126,
+          "box": [
+            87.31793212890625,
+            85.84656524658203,
+            107.62429809570312,
+            300.86529541015625
+          ],
+          "gt_match": {
+            "gt_id": 2,
+            "iou": 0.7638758837532668,
+            "visibility": 0.13978,
+            "gt_box": [
+              106.0,
+              79.0,
+              92.0,
+              298.0
+            ]
+          },
+          "inclusive_iou": 0.0,
+          "assignment_cost": 1.0,
+          "selected": false
+        },
+        {
+          "index": 3,
+          "score": 0.6645210981369019,
+          "box": [
+            407.2699890136719,
+            190.42747497558594,
+            20.986297607421875,
+            57.3525390625
+          ],
+          "gt_match": {
+            "gt_id": 14,
+            "iou": 0.5859870756119344,
+            "visibility": 0.22222,
+            "gt_box": [
+              407.0,
+              188.0,
+              26.0,
+              79.0
+            ]
+          },
+          "inclusive_iou": 0.0,
+          "assignment_cost": 1.0,
+          "selected": false
+        },
+        {
+          "index": 4,
+          "score": 0.6409481763839722,
+          "box": [
+            388.9222106933594,
+            174.19732666015625,
+            28.1033935546875,
+            73.81852722167969
+          ],
+          "gt_match": {
+            "gt_id": 5,
+            "iou": 0.5456475398703612,
+            "visibility": 0.0,
+            "gt_box": [
+              396.0,
+              174.0,
+              27.0,
+              86.0
+            ]
+          },
+          "inclusive_iou": 0.0,
+          "assignment_cost": 1.0,
+          "selected": false
+        }
+      ]
+    },
+    {
+      "source_frame": 50,
+      "track_id": 4,
+      "state_before_assignment": 2,
+      "cost_limit": 0.9,
+      "predicted_box": [
+        523.4460882833804,
+        190.30979296757653,
+        33.90934563889373,
+        84.63277418740222
+      ],
+      "candidates": [
+        {
+          "index": 0,
+          "score": 0.85284423828125,
+          "box": [
+            12.498526573181152,
+            3.6941046714782715,
+            215.6193389892578,
+            534.7828979492188
+          ],
+          "gt_match": {
+            "gt_id": 1,
+            "iou": 0.9646026684342224,
+            "visibility": 0.90667,
+            "gt_box": [
+              15.0,
+              5.0,
+              214.0,
+              524.0
+            ]
+          },
+          "inclusive_iou": 0.0,
+          "assignment_cost": 1.0,
+          "selected": false
+        },
+        {
+          "index": 1,
+          "score": 0.8295744061470032,
+          "box": [
+            278.15374755859375,
+            -0.9231889247894287,
+            247.9315185546875,
+            541.0673828125
+          ],
+          "gt_match": {
+            "gt_id": 125,
+            "iou": 0.8693405599428328,
+            "visibility": 0.92261,
+            "gt_box": [
+              287.0,
+              28.0,
+              238.0,
+              490.0
+            ]
+          },
+          "inclusive_iou": 0.002264520360816813,
+          "assignment_cost": 0.9981214118664676,
+          "selected": false
+        },
+        {
+          "index": 2,
+          "score": 0.7616403698921204,
+          "box": [
+            115.5799331665039,
+            30.472509384155273,
+            129.58059692382812,
+            384.8675231933594
+          ],
+          "gt_match": {
+            "gt_id": 2,
+            "iou": 0.9560940661426238,
+            "visibility": 0.1145,
+            "gt_box": [
+              114.0,
+              38.0,
+              130.0,
+              379.0
+            ]
+          },
+          "inclusive_iou": 0.0,
+          "assignment_cost": 1.0,
+          "selected": false
+        },
+        {
+          "index": 3,
+          "score": 0.6745451092720032,
+          "box": [
+            543.9976196289062,
+            206.70079040527344,
+            16.49871826171875,
+            40.13145446777344
+          ],
+          "gt_match": {
+            "gt_id": 117,
+            "iou": 0.3582266041141863,
+            "visibility": 1.0,
+            "gt_box": [
+              533.0,
+              204.0,
+              22.0,
+              46.0
+            ]
+          },
+          "inclusive_iou": 0.18936788845549035,
+          "assignment_cost": 0.8722628169891827,
+          "selected": false
+        },
+        {
+          "index": 4,
+          "score": 0.6072385907173157,
+          "box": [
+            531.53271484375,
+            203.657958984375,
+            17.75006103515625,
+            46.59864807128906
+          ],
+          "gt_match": {
+            "gt_id": 117,
+            "iou": 0.687086646861176,
+            "visibility": 1.0,
+            "gt_box": [
+              533.0,
+              204.0,
+              22.0,
+              46.0
+            ]
+          },
+          "inclusive_iou": 0.29854897298329086,
+          "assignment_cost": 0.8187095423855245,
+          "selected": true
+        }
+      ]
+    }
+  ],
+  "replay_all_frames_ids_boxes_equal_cpp": true,
+  "gt_correspondence_method": "Highest continuous-box IoU to marked class-1 GT; no trajectory interpolation.",
+  "state_enum": {
+    "new": 0,
+    "tracked": 1,
+    "lost": 2,
+    "removed": 3
+  },
+  "input_sha256": {
+    "data/phase-3/dets/nano/MOT17-05-FRCNN.txt": "896d2e68b678cd6b4a6c9db6723fa86cf94190d79a9bb4fac6689374dd3e2b27",
+    "data/phase-3/tracks/end-to-end/nano/MOT17-05-FRCNN.txt": "6d2a61fe41f448709fe54ceab8a0ee6be98178fb75b607e4d1f2626e6afdf939",
+    "data/phase-3/tracks/python/nano/MOT17-05-FRCNN.txt": "0338f143e2154c6cbdf047a99fdf43924c17d7e87a3b2ed362bc553a9bd85f7e",
+    "data/MOT17/train/MOT17-05-FRCNN/gt/gt.txt": "ed74c54176b21b38cb690eda79a4755cf16e4c4a9ca2f019b0ba8904636174f5"
+  },
+  "scope": "Owner-reported failure inspection only; no tracking/detection settings changed."
+}

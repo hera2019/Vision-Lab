@@ -1,0 +1,16 @@
+{
+  "left_lines": 87,
+  "right_lines": 88,
+  "byte_identical": false,
+  "identical_line_share": 0.0,
+  "same_frame_and_id": false,
+  "pass": false,
+  "covers": [
+    "high/low confidence",
+    "empty-frame skip",
+    "lost recovery",
+    "expiry",
+    "unconfirmed removal",
+    "float32 threshold equality at 0.1, 0.6 and 0.7"
+  ]
+}

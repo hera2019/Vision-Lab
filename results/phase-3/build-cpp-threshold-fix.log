@@ -1,0 +1,89 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.43kB 0.0s done
+#1 DONE 0.0s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1
+#2 ...
+
+#3 [auth] docker/dockerfile:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1
+#2 DONE 1.4s
+
+#4 docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#4 resolve docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e 0.0s done
+#4 CACHED
+
+#5 [internal] load metadata for docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+#5 ...
+
+#6 [auth] library/ubuntu:pull token for registry-1.docker.io
+#6 DONE 0.0s
+
+#5 [internal] load metadata for docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+#5 DONE 1.0s
+
+#7 [internal] load .dockerignore
+#7 transferring context: 151B done
+#7 DONE 0.0s
+
+#8 [base 1/3] FROM docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+#8 resolve docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55 0.0s done
+#8 DONE 0.0s
+
+#9 [internal] load build context
+#9 transferring context: 39.33kB done
+#9 DONE 0.0s
+
+#10 [base 2/3] RUN apt-get update && apt-get install -y --no-install-recommends       build-essential cmake ninja-build ca-certificates curl       libeigen3-dev       libopencv-core-dev libopencv-imgproc-dev libopencv-imgcodecs-dev       libopencv-videoio-dev libopencv-video-dev     && rm -rf /var/lib/apt/lists/*
+#10 CACHED
+
+#11 [base 3/3] RUN case "arm64" in       arm64) ORT_ARCH=aarch64; ORT_SHA256=e16a27a8ed330bbc698df7330b0cf56e722f354e3bcc92118682c74ef3c3e3da ;;       amd64) ORT_ARCH=x64;     ORT_SHA256=a5ed5a3cac51fbb2e90da632ae43d19212faaa20e76484e62bcb7c23ddb3b3fd ;;       *) echo "unsupported arch: arm64" >&2; exit 1 ;;     esac     && curl -fsSL -o /tmp/ort.tgz       "https://github.com/microsoft/onnxruntime/releases/download/v1.30.0/onnxruntime-linux-${ORT_ARCH}-1.30.0.tgz"     && echo "${ORT_SHA256}  /tmp/ort.tgz" | sha256sum -c -     && mkdir -p /opt/onnxruntime     && tar -xzf /tmp/ort.tgz -C /opt/onnxruntime --strip-components=1     && rm /tmp/ort.tgz
+#11 CACHED
+
+#12 [build 1/3] WORKDIR /src
+#12 CACHED
+
+#13 [build 2/3] COPY cpp/ cpp/
+#13 DONE 0.0s
+
+#14 [build 3/3] RUN cmake -S cpp -B build -G Ninja -DCMAKE_BUILD_TYPE=Release     && cmake --build build
+#14 0.385 -- The CXX compiler identification is GNU 13.3.0
+#14 0.404 -- Detecting CXX compiler ABI info
+#14 0.467 -- Detecting CXX compiler ABI info - done
+#14 0.472 -- Check for working CXX compiler: /usr/bin/c++ - skipped
+#14 0.473 -- Detecting CXX compile features
+#14 0.473 -- Detecting CXX compile features - done
+#14 0.500 -- Configuring done (0.2s)
+#14 0.518 -- Generating done (0.0s)
+#14 0.520 -- Build files have been written to: /src/build
+#14 0.673 [1/13] Building CXX object CMakeFiles/vl_tracker.dir/src/tracker/lapjv.cpp.o
+#14 2.352 [2/13] Building CXX object CMakeFiles/env_check.dir/src/env_check.cpp.o
+#14 2.718 [3/13] Building CXX object CMakeFiles/detect_frames.dir/src/detect_frames.cpp.o
+#14 2.868 [4/13] Building CXX object CMakeFiles/vl_detector.dir/src/detector.cpp.o
+#14 2.903 [5/13] Building CXX object CMakeFiles/detect_sequence.dir/src/detect_sequence.cpp.o
+#14 2.946 [6/13] Linking CXX static library libvl_detector.a
+#14 3.304 [7/13] Linking CXX executable detect_sequence
+#14 3.357 [8/13] Linking CXX executable detect_frames
+#14 3.389 [9/13] Linking CXX executable env_check
+#14 3.932 [10/13] Building CXX object CMakeFiles/track_sequence.dir/src/track_sequence.cpp.o
+#14 6.364 [11/13] Building CXX object CMakeFiles/vl_tracker.dir/src/tracker/tracker.cpp.o
+#14 6.371 [12/13] Linking CXX static library libvl_tracker.a
+#14 6.546 [13/13] Linking CXX executable track_sequence
+#14 DONE 6.6s
+
+#15 exporting to image
+#15 exporting layers 0.1s done
+#15 exporting manifest sha256:457e53c2494dd953e30f8864a4a070d657d656f5bc73a770f3adb75e72d18102 done
+#15 exporting config sha256:5e3217e7bcf7bddbfb3f1aa27e29f493120b8c6b5ebe220edb6ddfef66702d49 done
+#15 exporting attestation manifest sha256:e50450c369d0bbc6572d9862045952507211d4b609cc57a30707ca95812cef86 0.0s done
+#15 exporting manifest list sha256:89dff185b04fafabfa5baf762883bfcb65e2e8c9f7dc1cbeb102107b63b3f403
+#15 exporting manifest list sha256:89dff185b04fafabfa5baf762883bfcb65e2e8c9f7dc1cbeb102107b63b3f403 done
+#15 naming to docker.io/library/vision-lab:dev done
+#15 unpacking to docker.io/library/vision-lab:dev 0.1s done
+#15 DONE 0.2s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/rmk90nbx1vnqa2oadfswsdkzl

@@ -1,0 +1,45 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.reproduce
+#1 transferring dockerfile: 374B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/vision-lab:phase4
+#2 DONE 0.1s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 151B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 752B done
+#4 DONE 0.0s
+
+#5 [1/4] FROM docker.io/library/vision-lab:phase4@sha256:8d19e5fe53a73a39841e5055cd1e177d22933b9119400b707983bcb7e19acba8
+#5 resolve docker.io/library/vision-lab:phase4@sha256:8d19e5fe53a73a39841e5055cd1e177d22933b9119400b707983bcb7e19acba8 done
+#5 DONE 0.0s
+
+#6 [2/4] WORKDIR /src
+#6 DONE 0.0s
+
+#7 [3/4] COPY cpp/ cpp/
+#7 DONE 0.0s
+
+#8 [4/4] RUN cmake -S cpp -B build -G Ninja -DCMAKE_BUILD_TYPE=Release     && cmake --build build
+#8 0.063 -- Configuring done (0.0s)
+#8 0.075 -- Generating done (0.0s)
+#8 0.077 -- Build files have been written to: /src/build
+#8 0.092 ninja: no work to do.
+#8 DONE 0.1s
+
+#9 exporting to image
+#9 exporting layers 0.0s done
+#9 exporting manifest sha256:39e8ec4d3667c5c6463649c3985e468f96318c7301cdf7600ae9016271aba3a6 done
+#9 exporting config sha256:c8e73b86501ab3daba3fc89c45c1469bc501b49e2cee50584e86c2706e6fe1d6 done
+#9 exporting attestation manifest sha256:149a5cfbd3122fa88ad8edbb177156773b31dc5e531f1d29ac7759391bb2577e done
+#9 exporting manifest list sha256:bcc7e355e5100f457196206e2d260e2ca87f48b8d98a12b010123aa71895ead4 done
+#9 naming to docker.io/library/vision-lab:phase6-smoke done
+#9 unpacking to docker.io/library/vision-lab:phase6-smoke 0.0s done
+#9 DONE 0.1s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/pus7z0zd7zh9xuaafn6lb88cr

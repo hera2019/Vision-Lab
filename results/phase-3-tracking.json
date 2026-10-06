@@ -1,0 +1,2697 @@
+{
+  "date": "2026-10-06",
+  "status": "pass",
+  "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+  "accuracy_threads": 4,
+  "criteria": {
+    "3a": {
+      "nano": {
+        "MOT17-02-FRCNN": {
+          "delta_pp": {
+            "mota": 0.0,
+            "idf1": 0.0
+          },
+          "pass": true
+        },
+        "MOT17-04-FRCNN": {
+          "delta_pp": {
+            "mota": 0.0,
+            "idf1": 0.0
+          },
+          "pass": true
+        },
+        "MOT17-05-FRCNN": {
+          "delta_pp": {
+            "mota": 0.0,
+            "idf1": 0.0
+          },
+          "pass": true
+        },
+        "MOT17-09-FRCNN": {
+          "delta_pp": {
+            "mota": 0.0,
+            "idf1": 0.0
+          },
+          "pass": true
+        },
+        "MOT17-10-FRCNN": {
+          "delta_pp": {
+            "mota": 0.0,
+            "idf1": 0.0
+          },
+          "pass": true
+        },
+        "MOT17-11-FRCNN": {
+          "delta_pp": {
+            "mota": 0.0,
+            "idf1": 0.0
+          },
+          "pass": true
+        },
+        "MOT17-13-FRCNN": {
+          "delta_pp": {
+            "mota": 0.0,
+            "idf1": 0.0
+          },
+          "pass": true
+        }
+      },
+      "tiny": {
+        "MOT17-02-FRCNN": {
+          "delta_pp": {
+            "mota": 0.0,
+            "idf1": 0.0
+          },
+          "pass": true
+        },
+        "MOT17-04-FRCNN": {
+          "delta_pp": {
+            "mota": 0.0,
+            "idf1": 0.0
+          },
+          "pass": true
+        },
+        "MOT17-05-FRCNN": {
+          "delta_pp": {
+            "mota": 0.0,
+            "idf1": 0.0
+          },
+          "pass": true
+        },
+        "MOT17-09-FRCNN": {
+          "delta_pp": {
+            "mota": 0.0,
+            "idf1": 0.0
+          },
+          "pass": true
+        },
+        "MOT17-10-FRCNN": {
+          "delta_pp": {
+            "mota": 0.0,
+            "idf1": 0.0
+          },
+          "pass": true
+        },
+        "MOT17-11-FRCNN": {
+          "delta_pp": {
+            "mota": 0.0,
+            "idf1": 0.0
+          },
+          "pass": true
+        },
+        "MOT17-13-FRCNN": {
+          "delta_pp": {
+            "mota": 0.0,
+            "idf1": 0.0
+          },
+          "pass": true
+        }
+      }
+    },
+    "3b": {
+      "nano": {
+        "measured": {
+          "mota": 69.23248172257496,
+          "idf1": 66.8414141565438,
+          "num_switches": 530,
+          "num_false_positives": 4858,
+          "num_misses": 29163,
+          "num_objects": 112297
+        },
+        "published": {
+          "mota": 69.0,
+          "idf1": 66.3
+        },
+        "delta_pp": {
+          "mota": 0.2324817225749598,
+          "idf1": 0.5414141565438086
+        },
+        "pass": true
+      },
+      "tiny": {
+        "measured": {
+          "mota": 77.13474091026474,
+          "idf1": 71.56506655677691,
+          "num_switches": 517,
+          "num_false_positives": 4630,
+          "num_misses": 20530,
+          "num_objects": 112297
+        },
+        "published": {
+          "mota": 77.1,
+          "idf1": 71.5
+        },
+        "delta_pp": {
+          "mota": 0.034740910264744684,
+          "idf1": 0.06506655677691242
+        },
+        "pass": true
+      }
+    }
+  },
+  "end_to_end_equals_cached_cpp": true,
+  "comparisons": {
+    "MOT17": {
+      "nano": {
+        "MOT17-02-FRCNN": {
+          "cpp_vs_python": {
+            "left_lines": 9979,
+            "right_lines": 9979,
+            "byte_identical": false,
+            "identical_line_share": 0.029962922136486624,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 2.8610229518832853e-08
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 9979,
+            "right_lines": 9979,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        },
+        "MOT17-04-FRCNN": {
+          "cpp_vs_python": {
+            "left_lines": 45829,
+            "right_lines": 45829,
+            "byte_identical": false,
+            "identical_line_share": 0.017936241244626765,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 2.8610229518832853e-08
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 45829,
+            "right_lines": 45829,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        },
+        "MOT17-05-FRCNN": {
+          "cpp_vs_python": {
+            "left_lines": 5169,
+            "right_lines": 5169,
+            "byte_identical": false,
+            "identical_line_share": 0.01489649835558135,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 2.8610229518832853e-08
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 5169,
+            "right_lines": 5169,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        },
+        "MOT17-09-FRCNN": {
+          "cpp_vs_python": {
+            "left_lines": 4249,
+            "right_lines": 4249,
+            "byte_identical": false,
+            "identical_line_share": 0.010826076723935044,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 2.8610229518832853e-08
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 4249,
+            "right_lines": 4249,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        },
+        "MOT17-10-FRCNN": {
+          "cpp_vs_python": {
+            "left_lines": 8585,
+            "right_lines": 8585,
+            "byte_identical": false,
+            "identical_line_share": 0.029004076878276063,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 2.8610229518832853e-08
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 8585,
+            "right_lines": 8585,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        },
+        "MOT17-11-FRCNN": {
+          "cpp_vs_python": {
+            "left_lines": 7213,
+            "right_lines": 7213,
+            "byte_identical": false,
+            "identical_line_share": 0.015943435463746013,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 2.8610229518832853e-08
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 7213,
+            "right_lines": 7213,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        },
+        "MOT17-13-FRCNN": {
+          "cpp_vs_python": {
+            "left_lines": 6968,
+            "right_lines": 6968,
+            "byte_identical": false,
+            "identical_line_share": 0.040040183696900114,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 2.8610229518832853e-08
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 6968,
+            "right_lines": 6968,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        }
+      },
+      "tiny": {
+        "MOT17-02-FRCNN": {
+          "cpp_vs_python": {
+            "left_lines": 13064,
+            "right_lines": 13064,
+            "byte_identical": false,
+            "identical_line_share": 0.023882424984690752,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 2.8610229518832853e-08
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 13064,
+            "right_lines": 13064,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        },
+        "MOT17-04-FRCNN": {
+          "cpp_vs_python": {
+            "left_lines": 47331,
+            "right_lines": 47331,
+            "byte_identical": false,
+            "identical_line_share": 0.011113223891318587,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 2.8610229518832853e-08
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 47331,
+            "right_lines": 47331,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        },
+        "MOT17-05-FRCNN": {
+          "cpp_vs_python": {
+            "left_lines": 5398,
+            "right_lines": 5398,
+            "byte_identical": false,
+            "identical_line_share": 0.017413856984068173,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 2.8610229518832853e-08
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 5398,
+            "right_lines": 5398,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        },
+        "MOT17-09-FRCNN": {
+          "cpp_vs_python": {
+            "left_lines": 4332,
+            "right_lines": 4332,
+            "byte_identical": false,
+            "identical_line_share": 0.006925207756232687,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 2.8610229518832853e-08
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 4332,
+            "right_lines": 4332,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        },
+        "MOT17-10-FRCNN": {
+          "cpp_vs_python": {
+            "left_lines": 9911,
+            "right_lines": 9911,
+            "byte_identical": false,
+            "identical_line_share": 0.02714155988295833,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 2.8610229518832853e-08
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 9911,
+            "right_lines": 9911,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        },
+        "MOT17-11-FRCNN": {
+          "cpp_vs_python": {
+            "left_lines": 7950,
+            "right_lines": 7950,
+            "byte_identical": false,
+            "identical_line_share": 0.008930817610062893,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 2.8610229518832853e-08
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 7950,
+            "right_lines": 7950,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        },
+        "MOT17-13-FRCNN": {
+          "cpp_vs_python": {
+            "left_lines": 8411,
+            "right_lines": 8411,
+            "byte_identical": false,
+            "identical_line_share": 0.03661871358934728,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 2.8610229518832853e-08
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 8411,
+            "right_lines": 8411,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        }
+      }
+    },
+    "MOT20": {
+      "nano": {
+        "MOT20-01": {
+          "cpp_vs_python": {
+            "left_lines": 15405,
+            "right_lines": 15405,
+            "byte_identical": false,
+            "identical_line_share": 0.03076923076923077,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 2.8610229518832853e-08
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 15405,
+            "right_lines": 15405,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        },
+        "MOT20-02": {
+          "cpp_vs_python": {
+            "left_lines": 114423,
+            "right_lines": 114423,
+            "byte_identical": false,
+            "identical_line_share": 0.030046406753886895,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.009999990463256836
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 114423,
+            "right_lines": 114423,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        },
+        "MOT20-03": {
+          "cpp_vs_python": {
+            "left_lines": 258191,
+            "right_lines": 258191,
+            "byte_identical": false,
+            "identical_line_share": 0.03692227846826574,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 2.8610229518832853e-08
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 258191,
+            "right_lines": 258191,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        },
+        "MOT20-05": {
+          "cpp_vs_python": {
+            "left_lines": 518240,
+            "right_lines": 518240,
+            "byte_identical": false,
+            "identical_line_share": 0.04108907070083359,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 2.8610229518832853e-08
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 518240,
+            "right_lines": 518240,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        }
+      },
+      "tiny": {
+        "MOT20-01": {
+          "cpp_vs_python": {
+            "left_lines": 16941,
+            "right_lines": 16941,
+            "byte_identical": false,
+            "identical_line_share": 0.022843987958207898,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 2.8610229518832853e-08
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 16941,
+            "right_lines": 16941,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        },
+        "MOT20-02": {
+          "cpp_vs_python": {
+            "left_lines": 126776,
+            "right_lines": 126776,
+            "byte_identical": false,
+            "identical_line_share": 0.025533223954060706,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 2.8610229518832853e-08
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 126776,
+            "right_lines": 126776,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        },
+        "MOT20-03": {
+          "cpp_vs_python": {
+            "left_lines": 274886,
+            "right_lines": 274886,
+            "byte_identical": false,
+            "identical_line_share": 0.02630545025938025,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 2.8610229518832853e-08
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 274886,
+            "right_lines": 274886,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        },
+        "MOT20-05": {
+          "cpp_vs_python": {
+            "left_lines": 554796,
+            "right_lines": 554796,
+            "byte_identical": false,
+            "identical_line_share": 0.034551438727027595,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.00999998569488525
+          },
+          "end_to_end_vs_cached_cpp": {
+            "left_lines": 554796,
+            "right_lines": 554796,
+            "byte_identical": true,
+            "identical_line_share": 1.0,
+            "same_frame_and_id": true,
+            "max_box_difference": 0.0,
+            "max_score_difference": 0.0
+          }
+        }
+      }
+    }
+  },
+  "evaluation": {
+    "stage": "final",
+    "seconds": 106.43462683999951,
+    "versions": {
+      "numpy": "2.1.3",
+      "scipy": "1.14.1",
+      "lap": "0.5.12",
+      "cython_bbox": "0.1.5",
+      "motmetrics": "1.4.0",
+      "pandas": "2.2.3",
+      "onnxruntime": "1.30.0"
+    },
+    "results": {
+      "MOT17": {
+        "python": {
+          "nano": {
+            "scores": {
+              "motmetrics": {
+                "MOT17-02-FRCNN": {
+                  "mota": 41.935310263172056,
+                  "idf1": 43.55742296918768,
+                  "num_switches": 83,
+                  "num_false_positives": 1052,
+                  "num_misses": 9654,
+                  "num_objects": 18581
+                },
+                "MOT17-04-FRCNN": {
+                  "mota": 87.30155392476397,
+                  "idf1": 79.42089820744009,
+                  "num_switches": 131,
+                  "num_false_positives": 2090,
+                  "num_misses": 3818,
+                  "num_objects": 47557
+                },
+                "MOT17-05-FRCNN": {
+                  "mota": 64.60893450918029,
+                  "idf1": 61.260963097799106,
+                  "num_switches": 68,
+                  "num_false_positives": 316,
+                  "num_misses": 2064,
+                  "num_objects": 6917
+                },
+                "MOT17-09-FRCNN": {
+                  "mota": 75.34272300469483,
+                  "idf1": 63.693336118654685,
+                  "num_switches": 23,
+                  "num_false_positives": 107,
+                  "num_misses": 1183,
+                  "num_objects": 5325
+                },
+                "MOT17-10-FRCNN": {
+                  "mota": 59.607446062777484,
+                  "idf1": 56.36669156086632,
+                  "num_switches": 122,
+                  "num_false_positives": 405,
+                  "num_misses": 4659,
+                  "num_objects": 12839
+                },
+                "MOT17-11-FRCNN": {
+                  "mota": 70.31581178465451,
+                  "idf1": 71.22349690672112,
+                  "num_switches": 20,
+                  "num_false_positives": 279,
+                  "num_misses": 2502,
+                  "num_objects": 9436
+                },
+                "MOT17-13-FRCNN": {
+                  "mota": 48.67720322968562,
+                  "idf1": 52.83181085437937,
+                  "num_switches": 83,
+                  "num_false_positives": 609,
+                  "num_misses": 5283,
+                  "num_objects": 11642
+                },
+                "OVERALL": {
+                  "mota": 69.23248172257496,
+                  "idf1": 66.8414141565438,
+                  "num_switches": 530,
+                  "num_false_positives": 4858,
+                  "num_misses": 29163,
+                  "num_objects": 112297
+                }
+              },
+              "TrackEval": {
+                "MOT17-02-FRCNN": {
+                  "HOTA": 35.050542942527876,
+                  "MOTA": 42.968623863085945,
+                  "IDF1": 43.86540973766903,
+                  "IDSW": 90
+                },
+                "MOT17-04-FRCNN": {
+                  "HOTA": 67.27473377103553,
+                  "MOTA": 87.31417036398426,
+                  "IDF1": 79.42089820744009,
+                  "IDSW": 131
+                },
+                "MOT17-05-FRCNN": {
+                  "HOTA": 48.79189872090598,
+                  "MOTA": 64.79687725892728,
+                  "IDF1": 61.33200795228628,
+                  "IDSW": 71
+                },
+                "MOT17-09-FRCNN": {
+                  "HOTA": 53.326088437564955,
+                  "MOTA": 75.6244131455399,
+                  "IDF1": 63.819989534275244,
+                  "IDSW": 25
+                },
+                "MOT17-10-FRCNN": {
+                  "HOTA": 44.069993795051,
+                  "MOTA": 59.71648882311706,
+                  "IDF1": 56.416725064237326,
+                  "IDSW": 127
+                },
+                "MOT17-11-FRCNN": {
+                  "HOTA": 61.47598879017265,
+                  "MOTA": 70.72912250953794,
+                  "IDF1": 71.3907284768212,
+                  "IDSW": 20
+                },
+                "MOT17-13-FRCNN": {
+                  "HOTA": 42.168451800679016,
+                  "MOTA": 49.15822023707267,
+                  "IDF1": 52.97984696626792,
+                  "IDSW": 83
+                },
+                "OVERALL": {
+                  "HOTA": 55.984228589218475,
+                  "MOTA": 69.53079779513254,
+                  "IDF1": 66.96046701249068,
+                  "IDSW": 547
+                }
+              }
+            },
+            "sha256": {
+              "MOT17-02-FRCNN": "698b2ab787ad5cff4f1f38aceb67971ae0d426720e2209a39b2ecce58e929db4",
+              "MOT17-04-FRCNN": "cf2b977152d39b14419762213afbe16a1806d783f2c30f17f8542154153645e8",
+              "MOT17-05-FRCNN": "0338f143e2154c6cbdf047a99fdf43924c17d7e87a3b2ed362bc553a9bd85f7e",
+              "MOT17-09-FRCNN": "5ca3e3fb1ca7027f95651f9352498a4a85293663b0812bbe5906f748c31f5072",
+              "MOT17-10-FRCNN": "bf2b08a81d05d149e9f0ab7f851b6230b975930571882d9cfc11aac166aad6c4",
+              "MOT17-11-FRCNN": "97c399357a6f3662bc5474b7c9db55b7723e777cfbfb32caa013be3c5b0b5115",
+              "MOT17-13-FRCNN": "c101de735c306d84116023408c3ea066bf1bf5eed1c9483679f2326497b3f000"
+            },
+            "reused_from": "evaluation-parity-MOT17-nano.json"
+          },
+          "tiny": {
+            "scores": {
+              "motmetrics": {
+                "MOT17-02-FRCNN": {
+                  "mota": 55.93348043700554,
+                  "idf1": 50.541949755095594,
+                  "num_switches": 107,
+                  "num_false_positives": 1282,
+                  "num_misses": 6799,
+                  "num_objects": 18581
+                },
+                "MOT17-04-FRCNN": {
+                  "mota": 92.29976659587442,
+                  "idf1": 84.60922350560661,
+                  "num_switches": 90,
+                  "num_false_positives": 1673,
+                  "num_misses": 1899,
+                  "num_objects": 47557
+                },
+                "MOT17-05-FRCNN": {
+                  "mota": 69.03281769553274,
+                  "idf1": 69.97969955339018,
+                  "num_switches": 55,
+                  "num_false_positives": 284,
+                  "num_misses": 1803,
+                  "num_objects": 6917
+                },
+                "MOT17-09-FRCNN": {
+                  "mota": 79.6619718309859,
+                  "idf1": 60.68137102619862,
+                  "num_switches": 22,
+                  "num_false_positives": 34,
+                  "num_misses": 1027,
+                  "num_objects": 5325
+                },
+                "MOT17-10-FRCNN": {
+                  "mota": 68.81377054287718,
+                  "idf1": 59.4021978021978,
+                  "num_switches": 134,
+                  "num_false_positives": 471,
+                  "num_misses": 3399,
+                  "num_objects": 12839
+                },
+                "MOT17-11-FRCNN": {
+                  "mota": 76.4730818143281,
+                  "idf1": 71.79339698608077,
+                  "num_switches": 38,
+                  "num_false_positives": 348,
+                  "num_misses": 1834,
+                  "num_objects": 9436
+                },
+                "MOT17-13-FRCNN": {
+                  "mota": 62.394777529634084,
+                  "idf1": 62.83349124819229,
+                  "num_switches": 71,
+                  "num_false_positives": 538,
+                  "num_misses": 3769,
+                  "num_objects": 11642
+                },
+                "OVERALL": {
+                  "mota": 77.13474091026474,
+                  "idf1": 71.56506655677691,
+                  "num_switches": 517,
+                  "num_false_positives": 4630,
+                  "num_misses": 20530,
+                  "num_objects": 112297
+                }
+              },
+              "TrackEval": {
+                "MOT17-02-FRCNN": {
+                  "HOTA": 41.74662877792843,
+                  "MOTA": 56.584683278617945,
+                  "IDF1": 50.69984447900466,
+                  "IDSW": 108
+                },
+                "MOT17-04-FRCNN": {
+                  "HOTA": 74.78074569830537,
+                  "MOTA": 92.35864331223584,
+                  "IDF1": 84.6712247826454,
+                  "IDSW": 102
+                },
+                "MOT17-05-FRCNN": {
+                  "HOTA": 55.737348406985575,
+                  "MOTA": 69.26413184906751,
+                  "IDF1": 70.07073745832994,
+                  "IDSW": 59
+                },
+                "MOT17-09-FRCNN": {
+                  "HOTA": 53.05923246227336,
+                  "MOTA": 79.73708920187794,
+                  "IDF1": 60.70651610898167,
+                  "IDSW": 22
+                },
+                "MOT17-10-FRCNN": {
+                  "HOTA": 46.82712810504865,
+                  "MOTA": 68.80598177428149,
+                  "IDF1": 59.4021978021978,
+                  "IDSW": 135
+                },
+                "MOT17-11-FRCNN": {
+                  "HOTA": 64.01240615134493,
+                  "MOTA": 77.26791013141161,
+                  "IDF1": 72.087785157378,
+                  "IDSW": 38
+                },
+                "MOT17-13-FRCNN": {
+                  "HOTA": 49.81950568257297,
+                  "MOTA": 62.57515890740423,
+                  "IDF1": 62.93706293706294,
+                  "IDSW": 73
+                },
+                "OVERALL": {
+                  "HOTA": 61.85024662926679,
+                  "MOTA": 77.3698317853549,
+                  "IDF1": 71.66666666666667,
+                  "IDSW": 537
+                }
+              }
+            },
+            "sha256": {
+              "MOT17-02-FRCNN": "086ec6630b7af443b5d435fce4c88e3261f35c456ecacbbe7d7d87c9e85cf8c0",
+              "MOT17-04-FRCNN": "d9b7a29a1ee160a6e052b0a66c37c8704589c6bb6bcfe3e35e8ad98f38d69c3d",
+              "MOT17-05-FRCNN": "bc4140d4123a9ec28f716a2864f9316452114f09d89190f006d823ca45456eae",
+              "MOT17-09-FRCNN": "e258d35166952f1f219efb90e2719747f75db887d0c485fd187fc5d09ff3b092",
+              "MOT17-10-FRCNN": "62b897f12a0a9f478eb608cf59cd61de2386e8028f4341201037b51caa17712e",
+              "MOT17-11-FRCNN": "07f2ea0fc31d4c2654afad953b083a34d698d1db695d9f4c910108cfc4c7ed63",
+              "MOT17-13-FRCNN": "b5d2888f2685d3762f3c6b3254068f3f8bcb31dd2b3b0c3bb31d5bcb0fdeb5ea"
+            },
+            "reused_from": "evaluation-parity-MOT17-tiny.json"
+          }
+        },
+        "cpp": {
+          "nano": {
+            "scores": {
+              "motmetrics": {
+                "MOT17-02-FRCNN": {
+                  "mota": 41.935310263172056,
+                  "idf1": 43.55742296918768,
+                  "num_switches": 83,
+                  "num_false_positives": 1052,
+                  "num_misses": 9654,
+                  "num_objects": 18581
+                },
+                "MOT17-04-FRCNN": {
+                  "mota": 87.30155392476397,
+                  "idf1": 79.42089820744009,
+                  "num_switches": 131,
+                  "num_false_positives": 2090,
+                  "num_misses": 3818,
+                  "num_objects": 47557
+                },
+                "MOT17-05-FRCNN": {
+                  "mota": 64.60893450918029,
+                  "idf1": 61.260963097799106,
+                  "num_switches": 68,
+                  "num_false_positives": 316,
+                  "num_misses": 2064,
+                  "num_objects": 6917
+                },
+                "MOT17-09-FRCNN": {
+                  "mota": 75.34272300469483,
+                  "idf1": 63.693336118654685,
+                  "num_switches": 23,
+                  "num_false_positives": 107,
+                  "num_misses": 1183,
+                  "num_objects": 5325
+                },
+                "MOT17-10-FRCNN": {
+                  "mota": 59.607446062777484,
+                  "idf1": 56.36669156086632,
+                  "num_switches": 122,
+                  "num_false_positives": 405,
+                  "num_misses": 4659,
+                  "num_objects": 12839
+                },
+                "MOT17-11-FRCNN": {
+                  "mota": 70.31581178465451,
+                  "idf1": 71.22349690672112,
+                  "num_switches": 20,
+                  "num_false_positives": 279,
+                  "num_misses": 2502,
+                  "num_objects": 9436
+                },
+                "MOT17-13-FRCNN": {
+                  "mota": 48.67720322968562,
+                  "idf1": 52.83181085437937,
+                  "num_switches": 83,
+                  "num_false_positives": 609,
+                  "num_misses": 5283,
+                  "num_objects": 11642
+                },
+                "OVERALL": {
+                  "mota": 69.23248172257496,
+                  "idf1": 66.8414141565438,
+                  "num_switches": 530,
+                  "num_false_positives": 4858,
+                  "num_misses": 29163,
+                  "num_objects": 112297
+                }
+              },
+              "TrackEval": {
+                "MOT17-02-FRCNN": {
+                  "HOTA": 35.050542942527876,
+                  "MOTA": 42.968623863085945,
+                  "IDF1": 43.86540973766903,
+                  "IDSW": 90
+                },
+                "MOT17-04-FRCNN": {
+                  "HOTA": 67.27473377103553,
+                  "MOTA": 87.31417036398426,
+                  "IDF1": 79.42089820744009,
+                  "IDSW": 131
+                },
+                "MOT17-05-FRCNN": {
+                  "HOTA": 48.79189872090598,
+                  "MOTA": 64.79687725892728,
+                  "IDF1": 61.33200795228628,
+                  "IDSW": 71
+                },
+                "MOT17-09-FRCNN": {
+                  "HOTA": 53.326088437564955,
+                  "MOTA": 75.6244131455399,
+                  "IDF1": 63.819989534275244,
+                  "IDSW": 25
+                },
+                "MOT17-10-FRCNN": {
+                  "HOTA": 44.069993795051,
+                  "MOTA": 59.71648882311706,
+                  "IDF1": 56.416725064237326,
+                  "IDSW": 127
+                },
+                "MOT17-11-FRCNN": {
+                  "HOTA": 61.47598879017265,
+                  "MOTA": 70.72912250953794,
+                  "IDF1": 71.3907284768212,
+                  "IDSW": 20
+                },
+                "MOT17-13-FRCNN": {
+                  "HOTA": 42.168451800679016,
+                  "MOTA": 49.15822023707267,
+                  "IDF1": 52.97984696626792,
+                  "IDSW": 83
+                },
+                "OVERALL": {
+                  "HOTA": 55.984228589218475,
+                  "MOTA": 69.53079779513254,
+                  "IDF1": 66.96046701249068,
+                  "IDSW": 547
+                }
+              }
+            },
+            "sha256": {
+              "MOT17-02-FRCNN": "cda7da61204827b5f3aa3f2f20d704d6b451245255e338bed7359d8eb6354588",
+              "MOT17-04-FRCNN": "fe5c351c61b19644273a77d20536773386e0b7502b00fa585cda911a273eabbb",
+              "MOT17-05-FRCNN": "6d2a61fe41f448709fe54ceab8a0ee6be98178fb75b607e4d1f2626e6afdf939",
+              "MOT17-09-FRCNN": "63b735417293517b2c16574da2be9133653c8be99ea1f2b8b2e053854e61e52c",
+              "MOT17-10-FRCNN": "3a0e3cc339fa93f9ba410bc31a70ccd4937f0e621c836c7bcbed7547bbe5f9f9",
+              "MOT17-11-FRCNN": "edcb9e209f72780c0d19557d50f0e07dddffceb8a82c76fa3f6257b4c9e732df",
+              "MOT17-13-FRCNN": "cd765554e71863874f8f406348ca59d10ba36bd955df16c013235cdc85d6289e"
+            },
+            "reused_from": "evaluation-parity-MOT17-nano.json"
+          },
+          "tiny": {
+            "scores": {
+              "motmetrics": {
+                "MOT17-02-FRCNN": {
+                  "mota": 55.93348043700554,
+                  "idf1": 50.541949755095594,
+                  "num_switches": 107,
+                  "num_false_positives": 1282,
+                  "num_misses": 6799,
+                  "num_objects": 18581
+                },
+                "MOT17-04-FRCNN": {
+                  "mota": 92.29976659587442,
+                  "idf1": 84.60922350560661,
+                  "num_switches": 90,
+                  "num_false_positives": 1673,
+                  "num_misses": 1899,
+                  "num_objects": 47557
+                },
+                "MOT17-05-FRCNN": {
+                  "mota": 69.03281769553274,
+                  "idf1": 69.97969955339018,
+                  "num_switches": 55,
+                  "num_false_positives": 284,
+                  "num_misses": 1803,
+                  "num_objects": 6917
+                },
+                "MOT17-09-FRCNN": {
+                  "mota": 79.6619718309859,
+                  "idf1": 60.68137102619862,
+                  "num_switches": 22,
+                  "num_false_positives": 34,
+                  "num_misses": 1027,
+                  "num_objects": 5325
+                },
+                "MOT17-10-FRCNN": {
+                  "mota": 68.81377054287718,
+                  "idf1": 59.4021978021978,
+                  "num_switches": 134,
+                  "num_false_positives": 471,
+                  "num_misses": 3399,
+                  "num_objects": 12839
+                },
+                "MOT17-11-FRCNN": {
+                  "mota": 76.4730818143281,
+                  "idf1": 71.79339698608077,
+                  "num_switches": 38,
+                  "num_false_positives": 348,
+                  "num_misses": 1834,
+                  "num_objects": 9436
+                },
+                "MOT17-13-FRCNN": {
+                  "mota": 62.394777529634084,
+                  "idf1": 62.83349124819229,
+                  "num_switches": 71,
+                  "num_false_positives": 538,
+                  "num_misses": 3769,
+                  "num_objects": 11642
+                },
+                "OVERALL": {
+                  "mota": 77.13474091026474,
+                  "idf1": 71.56506655677691,
+                  "num_switches": 517,
+                  "num_false_positives": 4630,
+                  "num_misses": 20530,
+                  "num_objects": 112297
+                }
+              },
+              "TrackEval": {
+                "MOT17-02-FRCNN": {
+                  "HOTA": 41.74662877792843,
+                  "MOTA": 56.584683278617945,
+                  "IDF1": 50.69984447900466,
+                  "IDSW": 108
+                },
+                "MOT17-04-FRCNN": {
+                  "HOTA": 74.78074569830537,
+                  "MOTA": 92.35864331223584,
+                  "IDF1": 84.6712247826454,
+                  "IDSW": 102
+                },
+                "MOT17-05-FRCNN": {
+                  "HOTA": 55.737348406985575,
+                  "MOTA": 69.26413184906751,
+                  "IDF1": 70.07073745832994,
+                  "IDSW": 59
+                },
+                "MOT17-09-FRCNN": {
+                  "HOTA": 53.05923246227336,
+                  "MOTA": 79.73708920187794,
+                  "IDF1": 60.70651610898167,
+                  "IDSW": 22
+                },
+                "MOT17-10-FRCNN": {
+                  "HOTA": 46.82712810504865,
+                  "MOTA": 68.80598177428149,
+                  "IDF1": 59.4021978021978,
+                  "IDSW": 135
+                },
+                "MOT17-11-FRCNN": {
+                  "HOTA": 64.01240615134493,
+                  "MOTA": 77.26791013141161,
+                  "IDF1": 72.087785157378,
+                  "IDSW": 38
+                },
+                "MOT17-13-FRCNN": {
+                  "HOTA": 49.81950568257297,
+                  "MOTA": 62.57515890740423,
+                  "IDF1": 62.93706293706294,
+                  "IDSW": 73
+                },
+                "OVERALL": {
+                  "HOTA": 61.85024662926679,
+                  "MOTA": 77.3698317853549,
+                  "IDF1": 71.66666666666667,
+                  "IDSW": 537
+                }
+              }
+            },
+            "sha256": {
+              "MOT17-02-FRCNN": "6b415dcdfaa5b7410ecfcc07e75ba105b47253ddd0a88ae18c53fac49d556943",
+              "MOT17-04-FRCNN": "51b33b4196c521e1cd964a992258cfa6dc21dba0662bcd2d668eee9cb85e265d",
+              "MOT17-05-FRCNN": "d192ce55fc9ff4c95f8e29a3307c0e05add8cf3c365ae617668e7a31cc342ab9",
+              "MOT17-09-FRCNN": "c227600a4221110b4faaf026f3912fa1273b6147ac0a7b4e8d49db465da23b3a",
+              "MOT17-10-FRCNN": "18651923e0ee1808c6a743911f383768db2d0ec041afda9ccc2ed3eb9261a7e4",
+              "MOT17-11-FRCNN": "cd3aa3cc0d27c961eb4ccee3a2c20fb5853b9b6756c7b4e489c6d163fdf86fcd",
+              "MOT17-13-FRCNN": "af05ff3aa5d9c3c6c8a5fe0130e2f264ee242d3b7dcb0d345bf4d2541394691a"
+            },
+            "reused_from": "evaluation-parity-MOT17-tiny.json"
+          }
+        },
+        "end-to-end": {
+          "nano": {
+            "scores": {
+              "motmetrics": {
+                "MOT17-02-FRCNN": {
+                  "mota": 41.935310263172056,
+                  "idf1": 43.55742296918768,
+                  "num_switches": 83,
+                  "num_false_positives": 1052,
+                  "num_misses": 9654,
+                  "num_objects": 18581
+                },
+                "MOT17-04-FRCNN": {
+                  "mota": 87.30155392476397,
+                  "idf1": 79.42089820744009,
+                  "num_switches": 131,
+                  "num_false_positives": 2090,
+                  "num_misses": 3818,
+                  "num_objects": 47557
+                },
+                "MOT17-05-FRCNN": {
+                  "mota": 64.60893450918029,
+                  "idf1": 61.260963097799106,
+                  "num_switches": 68,
+                  "num_false_positives": 316,
+                  "num_misses": 2064,
+                  "num_objects": 6917
+                },
+                "MOT17-09-FRCNN": {
+                  "mota": 75.34272300469483,
+                  "idf1": 63.693336118654685,
+                  "num_switches": 23,
+                  "num_false_positives": 107,
+                  "num_misses": 1183,
+                  "num_objects": 5325
+                },
+                "MOT17-10-FRCNN": {
+                  "mota": 59.607446062777484,
+                  "idf1": 56.36669156086632,
+                  "num_switches": 122,
+                  "num_false_positives": 405,
+                  "num_misses": 4659,
+                  "num_objects": 12839
+                },
+                "MOT17-11-FRCNN": {
+                  "mota": 70.31581178465451,
+                  "idf1": 71.22349690672112,
+                  "num_switches": 20,
+                  "num_false_positives": 279,
+                  "num_misses": 2502,
+                  "num_objects": 9436
+                },
+                "MOT17-13-FRCNN": {
+                  "mota": 48.67720322968562,
+                  "idf1": 52.83181085437937,
+                  "num_switches": 83,
+                  "num_false_positives": 609,
+                  "num_misses": 5283,
+                  "num_objects": 11642
+                },
+                "OVERALL": {
+                  "mota": 69.23248172257496,
+                  "idf1": 66.8414141565438,
+                  "num_switches": 530,
+                  "num_false_positives": 4858,
+                  "num_misses": 29163,
+                  "num_objects": 112297
+                }
+              },
+              "TrackEval": {
+                "MOT17-02-FRCNN": {
+                  "HOTA": 35.050542942527876,
+                  "MOTA": 42.968623863085945,
+                  "IDF1": 43.86540973766903,
+                  "IDSW": 90
+                },
+                "MOT17-04-FRCNN": {
+                  "HOTA": 67.27473377103553,
+                  "MOTA": 87.31417036398426,
+                  "IDF1": 79.42089820744009,
+                  "IDSW": 131
+                },
+                "MOT17-05-FRCNN": {
+                  "HOTA": 48.79189872090598,
+                  "MOTA": 64.79687725892728,
+                  "IDF1": 61.33200795228628,
+                  "IDSW": 71
+                },
+                "MOT17-09-FRCNN": {
+                  "HOTA": 53.326088437564955,
+                  "MOTA": 75.6244131455399,
+                  "IDF1": 63.819989534275244,
+                  "IDSW": 25
+                },
+                "MOT17-10-FRCNN": {
+                  "HOTA": 44.069993795051,
+                  "MOTA": 59.71648882311706,
+                  "IDF1": 56.416725064237326,
+                  "IDSW": 127
+                },
+                "MOT17-11-FRCNN": {
+                  "HOTA": 61.47598879017265,
+                  "MOTA": 70.72912250953794,
+                  "IDF1": 71.3907284768212,
+                  "IDSW": 20
+                },
+                "MOT17-13-FRCNN": {
+                  "HOTA": 42.168451800679016,
+                  "MOTA": 49.15822023707267,
+                  "IDF1": 52.97984696626792,
+                  "IDSW": 83
+                },
+                "OVERALL": {
+                  "HOTA": 55.984228589218475,
+                  "MOTA": 69.53079779513254,
+                  "IDF1": 66.96046701249068,
+                  "IDSW": 547
+                }
+              }
+            },
+            "sha256": {
+              "MOT17-02-FRCNN": "cda7da61204827b5f3aa3f2f20d704d6b451245255e338bed7359d8eb6354588",
+              "MOT17-04-FRCNN": "fe5c351c61b19644273a77d20536773386e0b7502b00fa585cda911a273eabbb",
+              "MOT17-05-FRCNN": "6d2a61fe41f448709fe54ceab8a0ee6be98178fb75b607e4d1f2626e6afdf939",
+              "MOT17-09-FRCNN": "63b735417293517b2c16574da2be9133653c8be99ea1f2b8b2e053854e61e52c",
+              "MOT17-10-FRCNN": "3a0e3cc339fa93f9ba410bc31a70ccd4937f0e621c836c7bcbed7547bbe5f9f9",
+              "MOT17-11-FRCNN": "edcb9e209f72780c0d19557d50f0e07dddffceb8a82c76fa3f6257b4c9e732df",
+              "MOT17-13-FRCNN": "cd765554e71863874f8f406348ca59d10ba36bd955df16c013235cdc85d6289e"
+            },
+            "reused_from": "cpp evaluation; all end-to-end file bytes identical"
+          },
+          "tiny": {
+            "scores": {
+              "motmetrics": {
+                "MOT17-02-FRCNN": {
+                  "mota": 55.93348043700554,
+                  "idf1": 50.541949755095594,
+                  "num_switches": 107,
+                  "num_false_positives": 1282,
+                  "num_misses": 6799,
+                  "num_objects": 18581
+                },
+                "MOT17-04-FRCNN": {
+                  "mota": 92.29976659587442,
+                  "idf1": 84.60922350560661,
+                  "num_switches": 90,
+                  "num_false_positives": 1673,
+                  "num_misses": 1899,
+                  "num_objects": 47557
+                },
+                "MOT17-05-FRCNN": {
+                  "mota": 69.03281769553274,
+                  "idf1": 69.97969955339018,
+                  "num_switches": 55,
+                  "num_false_positives": 284,
+                  "num_misses": 1803,
+                  "num_objects": 6917
+                },
+                "MOT17-09-FRCNN": {
+                  "mota": 79.6619718309859,
+                  "idf1": 60.68137102619862,
+                  "num_switches": 22,
+                  "num_false_positives": 34,
+                  "num_misses": 1027,
+                  "num_objects": 5325
+                },
+                "MOT17-10-FRCNN": {
+                  "mota": 68.81377054287718,
+                  "idf1": 59.4021978021978,
+                  "num_switches": 134,
+                  "num_false_positives": 471,
+                  "num_misses": 3399,
+                  "num_objects": 12839
+                },
+                "MOT17-11-FRCNN": {
+                  "mota": 76.4730818143281,
+                  "idf1": 71.79339698608077,
+                  "num_switches": 38,
+                  "num_false_positives": 348,
+                  "num_misses": 1834,
+                  "num_objects": 9436
+                },
+                "MOT17-13-FRCNN": {
+                  "mota": 62.394777529634084,
+                  "idf1": 62.83349124819229,
+                  "num_switches": 71,
+                  "num_false_positives": 538,
+                  "num_misses": 3769,
+                  "num_objects": 11642
+                },
+                "OVERALL": {
+                  "mota": 77.13474091026474,
+                  "idf1": 71.56506655677691,
+                  "num_switches": 517,
+                  "num_false_positives": 4630,
+                  "num_misses": 20530,
+                  "num_objects": 112297
+                }
+              },
+              "TrackEval": {
+                "MOT17-02-FRCNN": {
+                  "HOTA": 41.74662877792843,
+                  "MOTA": 56.584683278617945,
+                  "IDF1": 50.69984447900466,
+                  "IDSW": 108
+                },
+                "MOT17-04-FRCNN": {
+                  "HOTA": 74.78074569830537,
+                  "MOTA": 92.35864331223584,
+                  "IDF1": 84.6712247826454,
+                  "IDSW": 102
+                },
+                "MOT17-05-FRCNN": {
+                  "HOTA": 55.737348406985575,
+                  "MOTA": 69.26413184906751,
+                  "IDF1": 70.07073745832994,
+                  "IDSW": 59
+                },
+                "MOT17-09-FRCNN": {
+                  "HOTA": 53.05923246227336,
+                  "MOTA": 79.73708920187794,
+                  "IDF1": 60.70651610898167,
+                  "IDSW": 22
+                },
+                "MOT17-10-FRCNN": {
+                  "HOTA": 46.82712810504865,
+                  "MOTA": 68.80598177428149,
+                  "IDF1": 59.4021978021978,
+                  "IDSW": 135
+                },
+                "MOT17-11-FRCNN": {
+                  "HOTA": 64.01240615134493,
+                  "MOTA": 77.26791013141161,
+                  "IDF1": 72.087785157378,
+                  "IDSW": 38
+                },
+                "MOT17-13-FRCNN": {
+                  "HOTA": 49.81950568257297,
+                  "MOTA": 62.57515890740423,
+                  "IDF1": 62.93706293706294,
+                  "IDSW": 73
+                },
+                "OVERALL": {
+                  "HOTA": 61.85024662926679,
+                  "MOTA": 77.3698317853549,
+                  "IDF1": 71.66666666666667,
+                  "IDSW": 537
+                }
+              }
+            },
+            "sha256": {
+              "MOT17-02-FRCNN": "6b415dcdfaa5b7410ecfcc07e75ba105b47253ddd0a88ae18c53fac49d556943",
+              "MOT17-04-FRCNN": "51b33b4196c521e1cd964a992258cfa6dc21dba0662bcd2d668eee9cb85e265d",
+              "MOT17-05-FRCNN": "d192ce55fc9ff4c95f8e29a3307c0e05add8cf3c365ae617668e7a31cc342ab9",
+              "MOT17-09-FRCNN": "c227600a4221110b4faaf026f3912fa1273b6147ac0a7b4e8d49db465da23b3a",
+              "MOT17-10-FRCNN": "18651923e0ee1808c6a743911f383768db2d0ec041afda9ccc2ed3eb9261a7e4",
+              "MOT17-11-FRCNN": "cd3aa3cc0d27c961eb4ccee3a2c20fb5853b9b6756c7b4e489c6d163fdf86fcd",
+              "MOT17-13-FRCNN": "af05ff3aa5d9c3c6c8a5fe0130e2f264ee242d3b7dcb0d345bf4d2541394691a"
+            },
+            "reused_from": "cpp evaluation; all end-to-end file bytes identical"
+          }
+        }
+      },
+      "MOT20": {
+        "python": {
+          "nano": {
+            "scores": {
+              "motmetrics": {
+                "MOT20-01": {
+                  "mota": 59.144438852541526,
+                  "idf1": 57.26435152374203,
+                  "num_switches": 113,
+                  "num_false_positives": 1770,
+                  "num_misses": 6235,
+                  "num_objects": 19870
+                },
+                "MOT20-02": {
+                  "mota": 57.11054529474868,
+                  "idf1": 48.223208812438465,
+                  "num_switches": 841,
+                  "num_false_positives": 12604,
+                  "num_misses": 52923,
+                  "num_objects": 154742
+                },
+                "MOT20-03": {
+                  "mota": 63.95979059995282,
+                  "idf1": 65.59913543610288,
+                  "num_switches": 786,
+                  "num_false_positives": 28395,
+                  "num_misses": 83862,
+                  "num_objects": 313658
+                },
+                "MOT20-05": {
+                  "mota": 51.81110987338011,
+                  "idf1": 44.931580718952006,
+                  "num_switches": 2900,
+                  "num_false_positives": 90231,
+                  "num_misses": 218335,
+                  "num_objects": 646344
+                },
+                "OVERALL": {
+                  "mota": 56.02072599139443,
+                  "idf1": 51.36987945844744,
+                  "num_switches": 4640,
+                  "num_false_positives": 133000,
+                  "num_misses": 361355,
+                  "num_objects": 1134614
+                }
+              },
+              "TrackEval": {
+                "MOT20-01": {
+                  "HOTA": 47.23054213312274,
+                  "MOTA": 64.21238047307499,
+                  "IDF1": 59.11794871794872,
+                  "IDSW": 114
+                },
+                "MOT20-02": {
+                  "HOTA": 41.07236009093464,
+                  "MOTA": 61.71756859805353,
+                  "IDF1": 49.597076318485556,
+                  "IDSW": 839
+                },
+                "MOT20-03": {
+                  "HOTA": 48.86228961976236,
+                  "MOTA": 67.7275886475078,
+                  "IDF1": 67.00164332666476,
+                  "IDSW": 805
+                },
+                "MOT20-05": {
+                  "HOTA": 38.1823651847849,
+                  "MOTA": 59.96110430359066,
+                  "IDF1": 47.098216501758586,
+                  "IDSW": 2840
+                },
+                "OVERALL": {
+                  "HOTA": 42.06929816580634,
+                  "MOTA": 62.42211007443941,
+                  "IDF1": 53.31482258609942,
+                  "IDSW": 4598
+                }
+              }
+            },
+            "sha256": {
+              "MOT20-01": "967e31554b69d933093a8d3bdcee646d3d62dda8ac1d0a181ecb1c76fe7ecd42",
+              "MOT20-02": "e3c42bc55ad31a44634bbe9bb7625995ea681a24fed98572f97fa0e69e0bf65b",
+              "MOT20-03": "4986f3717c42280c7d7efa7bcb8d0da423912032cab5e4987a53c3cd7227b6da",
+              "MOT20-05": "25ec3c1797ccd7142c18c1685469e085ab3ad5fbad0bf309f2a9c653ac622234"
+            },
+            "reused_from": "evaluation-parity-MOT20-nano.json"
+          },
+          "tiny": {
+            "scores": {
+              "motmetrics": {
+                "MOT20-01": {
+                  "mota": 63.49270256668345,
+                  "idf1": 59.81907581972779,
+                  "num_switches": 93,
+                  "num_false_positives": 2116,
+                  "num_misses": 5045,
+                  "num_objects": 19870
+                },
+                "MOT20-02": {
+                  "mota": 64.43176383916455,
+                  "idf1": 55.750609197280454,
+                  "num_switches": 655,
+                  "num_false_positives": 13209,
+                  "num_misses": 41175,
+                  "num_objects": 154742
+                },
+                "MOT20-03": {
+                  "mota": 66.95987349278514,
+                  "idf1": 72.31336994345368,
+                  "num_switches": 503,
+                  "num_false_positives": 32179,
+                  "num_misses": 70951,
+                  "num_objects": 313658
+                },
+                "MOT20-05": {
+                  "mota": 57.34160137635686,
+                  "idf1": 54.07412957690194,
+                  "num_switches": 2138,
+                  "num_false_positives": 91017,
+                  "num_misses": 182565,
+                  "num_objects": 646344
+                },
+                "OVERALL": {
+                  "mota": 61.07522029518408,
+                  "idf1": 59.490619839630966,
+                  "num_switches": 3389,
+                  "num_false_positives": 138521,
+                  "num_misses": 299736,
+                  "num_objects": 1134614
+                }
+              },
+              "TrackEval": {
+                "MOT20-01": {
+                  "HOTA": 51.56269404165561,
+                  "MOTA": 70.48314041268243,
+                  "IDF1": 62.30307151762439,
+                  "IDSW": 85
+                },
+                "MOT20-02": {
+                  "HOTA": 47.7104678768838,
+                  "MOTA": 69.52411110105854,
+                  "IDF1": 57.38780585933214,
+                  "IDSW": 651
+                },
+                "MOT20-03": {
+                  "HOTA": 54.2064464342087,
+                  "MOTA": 71.22598499002098,
+                  "IDF1": 74.00833711581704,
+                  "IDSW": 513
+                },
+                "MOT20-05": {
+                  "HOTA": 45.80328757683619,
+                  "MOTA": 66.08725384624906,
+                  "IDF1": 56.833058906254664,
+                  "IDSW": 2063
+                },
+                "OVERALL": {
+                  "HOTA": 48.77875889968304,
+                  "MOTA": 68.05354067550726,
+                  "IDF1": 61.882181260587096,
+                  "IDSW": 3312
+                }
+              }
+            },
+            "sha256": {
+              "MOT20-01": "15d9082cd9d312f30c44205c00876b7604be3c430acb94af84a1cc47dd5554e5",
+              "MOT20-02": "1a98ef648f482ffbb3f80a8f5f4e1c5876426e87ad4edf742266f301c1bdc584",
+              "MOT20-03": "b5b39b3e976670eb63bf00558c9d1cc74148ab4f822a005cf8a4f6aaa3232a79",
+              "MOT20-05": "90702ece6878ecfda8cf4c223a9cc442e54abde0185e0a46f655f7972a2820ac"
+            }
+          }
+        },
+        "cpp": {
+          "nano": {
+            "scores": {
+              "motmetrics": {
+                "MOT20-01": {
+                  "mota": 59.144438852541526,
+                  "idf1": 57.26435152374203,
+                  "num_switches": 113,
+                  "num_false_positives": 1770,
+                  "num_misses": 6235,
+                  "num_objects": 19870
+                },
+                "MOT20-02": {
+                  "mota": 57.11054529474868,
+                  "idf1": 48.223208812438465,
+                  "num_switches": 841,
+                  "num_false_positives": 12604,
+                  "num_misses": 52923,
+                  "num_objects": 154742
+                },
+                "MOT20-03": {
+                  "mota": 63.95979059995282,
+                  "idf1": 65.59913543610288,
+                  "num_switches": 786,
+                  "num_false_positives": 28395,
+                  "num_misses": 83862,
+                  "num_objects": 313658
+                },
+                "MOT20-05": {
+                  "mota": 51.81110987338011,
+                  "idf1": 44.931580718952006,
+                  "num_switches": 2900,
+                  "num_false_positives": 90231,
+                  "num_misses": 218335,
+                  "num_objects": 646344
+                },
+                "OVERALL": {
+                  "mota": 56.02072599139443,
+                  "idf1": 51.36987945844744,
+                  "num_switches": 4640,
+                  "num_false_positives": 133000,
+                  "num_misses": 361355,
+                  "num_objects": 1134614
+                }
+              },
+              "TrackEval": {
+                "MOT20-01": {
+                  "HOTA": 47.23054213312274,
+                  "MOTA": 64.21238047307499,
+                  "IDF1": 59.11794871794872,
+                  "IDSW": 114
+                },
+                "MOT20-02": {
+                  "HOTA": 41.07236009093464,
+                  "MOTA": 61.71756859805353,
+                  "IDF1": 49.597076318485556,
+                  "IDSW": 839
+                },
+                "MOT20-03": {
+                  "HOTA": 48.86228961976236,
+                  "MOTA": 67.7275886475078,
+                  "IDF1": 67.00164332666476,
+                  "IDSW": 805
+                },
+                "MOT20-05": {
+                  "HOTA": 38.1823651847849,
+                  "MOTA": 59.96110430359066,
+                  "IDF1": 47.098216501758586,
+                  "IDSW": 2840
+                },
+                "OVERALL": {
+                  "HOTA": 42.06929816580634,
+                  "MOTA": 62.42211007443941,
+                  "IDF1": 53.31482258609942,
+                  "IDSW": 4598
+                }
+              }
+            },
+            "sha256": {
+              "MOT20-01": "a6082850c17f03428ae957178f245c3638c30bc690dce5e9ae3631ee0f79ad51",
+              "MOT20-02": "734977a349789e3db2ad3f0f6727ba8086f034229ce0f14489a8255bf055f77b",
+              "MOT20-03": "946213c4d1b3f872b8550ca915994d82b8ddb79868a6b6d12d7d41c461682267",
+              "MOT20-05": "ce8935c3e80e15463c322fa1551a93d8cf79045936119943b9b58bc52887f31f"
+            },
+            "reused_from": "evaluation-parity-MOT20-nano.json"
+          },
+          "tiny": {
+            "scores": {
+              "motmetrics": {
+                "MOT20-01": {
+                  "mota": 63.49270256668345,
+                  "idf1": 59.81907581972779,
+                  "num_switches": 93,
+                  "num_false_positives": 2116,
+                  "num_misses": 5045,
+                  "num_objects": 19870
+                },
+                "MOT20-02": {
+                  "mota": 64.43176383916455,
+                  "idf1": 55.750609197280454,
+                  "num_switches": 655,
+                  "num_false_positives": 13209,
+                  "num_misses": 41175,
+                  "num_objects": 154742
+                },
+                "MOT20-03": {
+                  "mota": 66.95987349278514,
+                  "idf1": 72.31336994345368,
+                  "num_switches": 503,
+                  "num_false_positives": 32179,
+                  "num_misses": 70951,
+                  "num_objects": 313658
+                },
+                "MOT20-05": {
+                  "mota": 57.34160137635686,
+                  "idf1": 54.07412957690194,
+                  "num_switches": 2138,
+                  "num_false_positives": 91017,
+                  "num_misses": 182565,
+                  "num_objects": 646344
+                },
+                "OVERALL": {
+                  "mota": 61.07522029518408,
+                  "idf1": 59.490619839630966,
+                  "num_switches": 3389,
+                  "num_false_positives": 138521,
+                  "num_misses": 299736,
+                  "num_objects": 1134614
+                }
+              },
+              "TrackEval": {
+                "MOT20-01": {
+                  "HOTA": 51.56269404165561,
+                  "MOTA": 70.48314041268243,
+                  "IDF1": 62.30307151762439,
+                  "IDSW": 85
+                },
+                "MOT20-02": {
+                  "HOTA": 47.7104678768838,
+                  "MOTA": 69.52411110105854,
+                  "IDF1": 57.38780585933214,
+                  "IDSW": 651
+                },
+                "MOT20-03": {
+                  "HOTA": 54.2064464342087,
+                  "MOTA": 71.22598499002098,
+                  "IDF1": 74.00833711581704,
+                  "IDSW": 513
+                },
+                "MOT20-05": {
+                  "HOTA": 45.80328757683619,
+                  "MOTA": 66.08725384624906,
+                  "IDF1": 56.833058906254664,
+                  "IDSW": 2063
+                },
+                "OVERALL": {
+                  "HOTA": 48.77875889968304,
+                  "MOTA": 68.05354067550726,
+                  "IDF1": 61.882181260587096,
+                  "IDSW": 3312
+                }
+              }
+            },
+            "sha256": {
+              "MOT20-01": "b63c9808550e4176143dbfa593688b564b66530d7ff88308c96ffd255ba68dcd",
+              "MOT20-02": "c0b0ddfb9399ebf86995795aecb74146089b2bc1e46ef8f90ceda51544bfbd90",
+              "MOT20-03": "1d35ffe10718a4f7f1e3dfeeaed9e81191b813eb2007882f8560dac585226eb0",
+              "MOT20-05": "ca47d1658125c15570a89eb662318c53ff98953f76b35a48100f9f445b7634a5"
+            }
+          }
+        },
+        "end-to-end": {
+          "nano": {
+            "scores": {
+              "motmetrics": {
+                "MOT20-01": {
+                  "mota": 59.144438852541526,
+                  "idf1": 57.26435152374203,
+                  "num_switches": 113,
+                  "num_false_positives": 1770,
+                  "num_misses": 6235,
+                  "num_objects": 19870
+                },
+                "MOT20-02": {
+                  "mota": 57.11054529474868,
+                  "idf1": 48.223208812438465,
+                  "num_switches": 841,
+                  "num_false_positives": 12604,
+                  "num_misses": 52923,
+                  "num_objects": 154742
+                },
+                "MOT20-03": {
+                  "mota": 63.95979059995282,
+                  "idf1": 65.59913543610288,
+                  "num_switches": 786,
+                  "num_false_positives": 28395,
+                  "num_misses": 83862,
+                  "num_objects": 313658
+                },
+                "MOT20-05": {
+                  "mota": 51.81110987338011,
+                  "idf1": 44.931580718952006,
+                  "num_switches": 2900,
+                  "num_false_positives": 90231,
+                  "num_misses": 218335,
+                  "num_objects": 646344
+                },
+                "OVERALL": {
+                  "mota": 56.02072599139443,
+                  "idf1": 51.36987945844744,
+                  "num_switches": 4640,
+                  "num_false_positives": 133000,
+                  "num_misses": 361355,
+                  "num_objects": 1134614
+                }
+              },
+              "TrackEval": {
+                "MOT20-01": {
+                  "HOTA": 47.23054213312274,
+                  "MOTA": 64.21238047307499,
+                  "IDF1": 59.11794871794872,
+                  "IDSW": 114
+                },
+                "MOT20-02": {
+                  "HOTA": 41.07236009093464,
+                  "MOTA": 61.71756859805353,
+                  "IDF1": 49.597076318485556,
+                  "IDSW": 839
+                },
+                "MOT20-03": {
+                  "HOTA": 48.86228961976236,
+                  "MOTA": 67.7275886475078,
+                  "IDF1": 67.00164332666476,
+                  "IDSW": 805
+                },
+                "MOT20-05": {
+                  "HOTA": 38.1823651847849,
+                  "MOTA": 59.96110430359066,
+                  "IDF1": 47.098216501758586,
+                  "IDSW": 2840
+                },
+                "OVERALL": {
+                  "HOTA": 42.06929816580634,
+                  "MOTA": 62.42211007443941,
+                  "IDF1": 53.31482258609942,
+                  "IDSW": 4598
+                }
+              }
+            },
+            "sha256": {
+              "MOT20-01": "a6082850c17f03428ae957178f245c3638c30bc690dce5e9ae3631ee0f79ad51",
+              "MOT20-02": "734977a349789e3db2ad3f0f6727ba8086f034229ce0f14489a8255bf055f77b",
+              "MOT20-03": "946213c4d1b3f872b8550ca915994d82b8ddb79868a6b6d12d7d41c461682267",
+              "MOT20-05": "ce8935c3e80e15463c322fa1551a93d8cf79045936119943b9b58bc52887f31f"
+            },
+            "reused_from": "cpp evaluation; all end-to-end file bytes identical"
+          },
+          "tiny": {
+            "scores": {
+              "motmetrics": {
+                "MOT20-01": {
+                  "mota": 63.49270256668345,
+                  "idf1": 59.81907581972779,
+                  "num_switches": 93,
+                  "num_false_positives": 2116,
+                  "num_misses": 5045,
+                  "num_objects": 19870
+                },
+                "MOT20-02": {
+                  "mota": 64.43176383916455,
+                  "idf1": 55.750609197280454,
+                  "num_switches": 655,
+                  "num_false_positives": 13209,
+                  "num_misses": 41175,
+                  "num_objects": 154742
+                },
+                "MOT20-03": {
+                  "mota": 66.95987349278514,
+                  "idf1": 72.31336994345368,
+                  "num_switches": 503,
+                  "num_false_positives": 32179,
+                  "num_misses": 70951,
+                  "num_objects": 313658
+                },
+                "MOT20-05": {
+                  "mota": 57.34160137635686,
+                  "idf1": 54.07412957690194,
+                  "num_switches": 2138,
+                  "num_false_positives": 91017,
+                  "num_misses": 182565,
+                  "num_objects": 646344
+                },
+                "OVERALL": {
+                  "mota": 61.07522029518408,
+                  "idf1": 59.490619839630966,
+                  "num_switches": 3389,
+                  "num_false_positives": 138521,
+                  "num_misses": 299736,
+                  "num_objects": 1134614
+                }
+              },
+              "TrackEval": {
+                "MOT20-01": {
+                  "HOTA": 51.56269404165561,
+                  "MOTA": 70.48314041268243,
+                  "IDF1": 62.30307151762439,
+                  "IDSW": 85
+                },
+                "MOT20-02": {
+                  "HOTA": 47.7104678768838,
+                  "MOTA": 69.52411110105854,
+                  "IDF1": 57.38780585933214,
+                  "IDSW": 651
+                },
+                "MOT20-03": {
+                  "HOTA": 54.2064464342087,
+                  "MOTA": 71.22598499002098,
+                  "IDF1": 74.00833711581704,
+                  "IDSW": 513
+                },
+                "MOT20-05": {
+                  "HOTA": 45.80328757683619,
+                  "MOTA": 66.08725384624906,
+                  "IDF1": 56.833058906254664,
+                  "IDSW": 2063
+                },
+                "OVERALL": {
+                  "HOTA": 48.77875889968304,
+                  "MOTA": 68.05354067550726,
+                  "IDF1": 61.882181260587096,
+                  "IDSW": 3312
+                }
+              }
+            },
+            "sha256": {
+              "MOT20-01": "b63c9808550e4176143dbfa593688b564b66530d7ff88308c96ffd255ba68dcd",
+              "MOT20-02": "c0b0ddfb9399ebf86995795aecb74146089b2bc1e46ef8f90ceda51544bfbd90",
+              "MOT20-03": "1d35ffe10718a4f7f1e3dfeeaed9e81191b813eb2007882f8560dac585226eb0",
+              "MOT20-05": "ca47d1658125c15570a89eb662318c53ff98953f76b35a48100f9f445b7634a5"
+            },
+            "reused_from": "cpp evaluation; all end-to-end file bytes identical"
+          }
+        }
+      }
+    }
+  },
+  "determinism": {
+    "sequence": "MOT17-02-FRCNN",
+    "frames": [
+      1,
+      50
+    ],
+    "bit_identical": {
+      "nano": true,
+      "tiny": true
+    },
+    "accuracy_threads": 4
+  },
+  "ground_truth_self_test": {
+    "stage": "self",
+    "seconds": 31.13052176400015,
+    "versions": {
+      "numpy": "2.1.3",
+      "scipy": "1.14.1",
+      "lap": "0.5.12",
+      "cython_bbox": "0.1.5",
+      "motmetrics": "1.4.0",
+      "pandas": "2.2.3",
+      "onnxruntime": "1.30.0"
+    },
+    "results": {
+      "MOT17": {
+        "TrackEval": {
+          "MOT17-02-FRCNN": {
+            "HOTA": 100.0,
+            "MOTA": 100.0,
+            "IDF1": 100.0,
+            "IDSW": 0
+          },
+          "MOT17-04-FRCNN": {
+            "HOTA": 100.0,
+            "MOTA": 100.0,
+            "IDF1": 100.0,
+            "IDSW": 0
+          },
+          "MOT17-05-FRCNN": {
+            "HOTA": 100.0,
+            "MOTA": 100.0,
+            "IDF1": 100.0,
+            "IDSW": 0
+          },
+          "MOT17-09-FRCNN": {
+            "HOTA": 100.0,
+            "MOTA": 100.0,
+            "IDF1": 100.0,
+            "IDSW": 0
+          },
+          "MOT17-10-FRCNN": {
+            "HOTA": 100.0,
+            "MOTA": 100.0,
+            "IDF1": 100.0,
+            "IDSW": 0
+          },
+          "MOT17-11-FRCNN": {
+            "HOTA": 100.0,
+            "MOTA": 100.0,
+            "IDF1": 100.0,
+            "IDSW": 0
+          },
+          "MOT17-13-FRCNN": {
+            "HOTA": 100.0,
+            "MOTA": 100.0,
+            "IDF1": 100.0,
+            "IDSW": 0
+          },
+          "OVERALL": {
+            "HOTA": 100.0,
+            "MOTA": 100.0,
+            "IDF1": 100.0,
+            "IDSW": 0
+          }
+        },
+        "pass": true
+      },
+      "MOT20": {
+        "TrackEval": {
+          "MOT20-01": {
+            "HOTA": 100.0,
+            "MOTA": 100.0,
+            "IDF1": 100.0,
+            "IDSW": 0
+          },
+          "MOT20-02": {
+            "HOTA": 100.0,
+            "MOTA": 100.0,
+            "IDF1": 100.0,
+            "IDSW": 0
+          },
+          "MOT20-03": {
+            "HOTA": 100.0,
+            "MOTA": 100.0,
+            "IDF1": 100.0,
+            "IDSW": 0
+          },
+          "MOT20-05": {
+            "HOTA": 100.0,
+            "MOTA": 100.0,
+            "IDF1": 100.0,
+            "IDSW": 0
+          },
+          "OVERALL": {
+            "HOTA": 100.0,
+            "MOTA": 100.0,
+            "IDF1": 100.0,
+            "IDSW": 0
+          }
+        },
+        "pass": true
+      }
+    }
+  },
+  "edge_cases": {
+    "left_lines": 87,
+    "right_lines": 87,
+    "byte_identical": false,
+    "identical_line_share": 0.0,
+    "same_frame_and_id": true,
+    "max_box_difference": 0.0,
+    "max_score_difference": 2.384185793236071e-08,
+    "pass": true,
+    "covers": [
+      "high/low confidence",
+      "empty-frame skip",
+      "lost recovery",
+      "expiry",
+      "unconfirmed removal",
+      "float32 threshold equality at 0.1, 0.6 and 0.7"
+    ]
+  },
+  "detection_cache_sha256": {
+    "MOT17": {
+      "nano": {
+        "MOT17-02-FRCNN": "d63f1bec00cf0265b6c887ceda61bfc903fbe04edb94355443a4ca2a0e267ea4",
+        "MOT17-04-FRCNN": "c36d6b876c11b08b1a244ed4c3edd5c36532d6d32b35b7de77b5c933b47e9704",
+        "MOT17-05-FRCNN": "896d2e68b678cd6b4a6c9db6723fa86cf94190d79a9bb4fac6689374dd3e2b27",
+        "MOT17-09-FRCNN": "794886cc0682ff12cb70e69548a0ba1016c230ab14a3e77d03069c669736c90c",
+        "MOT17-10-FRCNN": "b9864c1d5e13f06bcee1b9245074e86b597b4d73dda65beba32b2508d4bbc364",
+        "MOT17-11-FRCNN": "1190c50d4d06782a72f74c1b56a2d40da936e76ac9e5c81759320bb1e73d7d0e",
+        "MOT17-13-FRCNN": "968f3bf43eb6657c820aab705cd63bd7f9cd9c5ce5117df4f3da75f80e73dd02"
+      },
+      "tiny": {
+        "MOT17-02-FRCNN": "23a9599d068c1e2cf37e073dbf0ebd8e14e91420c8ffd69ad4b7e24619306a48",
+        "MOT17-04-FRCNN": "217b437ddc293c933d79481778267ea4d7f7215dcd76bba11214a8792d3d2328",
+        "MOT17-05-FRCNN": "78202968f0900a7ed9861e37f5f07edadab8feca10e17279eab2304fa22cdeb2",
+        "MOT17-09-FRCNN": "61534f3958b5a2917bcaf67d4e0e37b1c186a2b49f592b3361833995504caf89",
+        "MOT17-10-FRCNN": "c9a16da538fce6a619f46de47ab74397d49d1df78db31c91d45f8b4d30b551e3",
+        "MOT17-11-FRCNN": "6884d88504c11449bf2bd0f67e97ba7e587a4067210a15a3572b7bc99a6a6949",
+        "MOT17-13-FRCNN": "e490de8232a9e2f65630ebcdec56ba3dbbaab09a4c040d4a0315dd85cdcbf242"
+      }
+    },
+    "MOT20": {
+      "nano": {
+        "MOT20-01": "a3b72afcd58b2a57bca887a75dc54d7fed68617f2eee26d29280141481132ddc",
+        "MOT20-02": "6ca3e84b66871dd09abf721a67eed109ebfa614f6b5d32873f3a12eb36a5599d",
+        "MOT20-03": "79a79cdd4e75e94fc43eddc0079cf3b0f5efcce92afca4eed534f3a3272b70e7",
+        "MOT20-05": "f0834a797f2b6862baf1b48fbca6f49a558f25e019373cfbec107c5c1bf34f6e"
+      },
+      "tiny": {
+        "MOT20-01": "0fed3840eb785406201a8ccd2dda386ea3b87285758be3d953c4d5edb71c8dce",
+        "MOT20-02": "3624b5ffde3191bfdd537592390d4bcaa81c4bc0c24ebd37aafd084fa044482d",
+        "MOT20-03": "ee4b701e15dcbf6fc529bbe4843619b5082ebc7628968825ac1b7f80cacd10b6",
+        "MOT20-05": "bf3d988adf196514dc9451b81e8fbb8e6604ba2e9ad16fd5776c61a7f7a8672d"
+      }
+    }
+  },
+  "threshold_correction": {
+    "issue": "I-7",
+    "before_fix_fixture": {
+      "left_lines": 87,
+      "right_lines": 88,
+      "byte_identical": false,
+      "identical_line_share": 0.0,
+      "same_frame_and_id": false,
+      "pass": false,
+      "covers": [
+        "high/low confidence",
+        "empty-frame skip",
+        "lost recovery",
+        "expiry",
+        "unconfirmed removal",
+        "float32 threshold equality at 0.1, 0.6 and 0.7"
+      ]
+    },
+    "after_fix_fixture": {
+      "left_lines": 87,
+      "right_lines": 87,
+      "byte_identical": false,
+      "identical_line_share": 0.0,
+      "same_frame_and_id": true,
+      "max_box_difference": 0.0,
+      "max_score_difference": 2.384185793236071e-08,
+      "pass": true,
+      "covers": [
+        "high/low confidence",
+        "empty-frame skip",
+        "lost recovery",
+        "expiry",
+        "unconfirmed removal",
+        "float32 threshold equality at 0.1, 0.6 and 0.7"
+      ]
+    },
+    "actual_cache_boundary_counts": {
+      "nano": {
+        "MOT17-02-FRCNN": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        },
+        "MOT17-04-FRCNN": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        },
+        "MOT17-05-FRCNN": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        },
+        "MOT17-09-FRCNN": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        },
+        "MOT17-10-FRCNN": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        },
+        "MOT17-11-FRCNN": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        },
+        "MOT17-13-FRCNN": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        },
+        "MOT20-01": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        },
+        "MOT20-02": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        },
+        "MOT20-03": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        },
+        "MOT20-05": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        }
+      },
+      "tiny": {
+        "MOT17-02-FRCNN": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        },
+        "MOT17-04-FRCNN": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        },
+        "MOT17-05-FRCNN": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        },
+        "MOT17-09-FRCNN": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        },
+        "MOT17-10-FRCNN": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        },
+        "MOT17-11-FRCNN": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        },
+        "MOT17-13-FRCNN": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        },
+        "MOT20-01": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        },
+        "MOT20-02": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        },
+        "MOT20-03": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        },
+        "MOT20-05": {
+          "high_comparison_difference": 0,
+          "low_comparison_difference": 0,
+          "new_track_comparison_difference": 0
+        }
+      }
+    }
+  },
+  "stage_timings_observational": {
+    "MOT17": {
+      "nano": {
+        "MOT17-02-FRCNN": {
+          "frames": 600,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 1.47421929,
+            "inference_ms": 29.8638314,
+            "postprocess_ms": 0.135376034,
+            "tracking_ms": 0.13724945500000002
+          },
+          "python_reference_tracker_loop_seconds": 0.8179634180000903
+        },
+        "MOT17-04-FRCNN": {
+          "frames": 1050,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 2.36767166,
+            "inference_ms": 47.7210998,
+            "postprocess_ms": 0.168216167,
+            "tracking_ms": 0.451671065
+          },
+          "python_reference_tracker_loop_seconds": 3.4038352930001565
+        },
+        "MOT17-05-FRCNN": {
+          "frames": 837,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 1.96562561,
+            "inference_ms": 36.093775,
+            "postprocess_ms": 0.036159919,
+            "tracking_ms": 0.055095726
+          },
+          "python_reference_tracker_loop_seconds": 0.511446167000031
+        },
+        "MOT17-09-FRCNN": {
+          "frames": 525,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 1.1384713400000002,
+            "inference_ms": 19.9444676,
+            "postprocess_ms": 0.022863067,
+            "tracking_ms": 0.059767422
+          },
+          "python_reference_tracker_loop_seconds": 0.29429316599998856
+        },
+        "MOT17-10-FRCNN": {
+          "frames": 654,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 1.49318017,
+            "inference_ms": 24.557776999999998,
+            "postprocess_ms": 0.056775571,
+            "tracking_ms": 0.081950148
+          },
+          "python_reference_tracker_loop_seconds": 0.7026104589999704
+        },
+        "MOT17-11-FRCNN": {
+          "frames": 900,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 2.0579185499999997,
+            "inference_ms": 35.4893027,
+            "postprocess_ms": 0.055604833,
+            "tracking_ms": 0.074093279
+          },
+          "python_reference_tracker_loop_seconds": 0.6042179169999145
+        },
+        "MOT17-13-FRCNN": {
+          "frames": 750,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 1.56003131,
+            "inference_ms": 27.5357736,
+            "postprocess_ms": 0.060588081,
+            "tracking_ms": 0.07619361499999999
+          },
+          "python_reference_tracker_loop_seconds": 0.645993001000079
+        }
+      },
+      "tiny": {
+        "MOT17-02-FRCNN": {
+          "frames": 600,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 1.39866149,
+            "inference_ms": 88.41795549999999,
+            "postprocess_ms": 0.11475036400000001,
+            "tracking_ms": 0.14395782099999999
+          },
+          "python_reference_tracker_loop_seconds": 1.0680046669999683
+        },
+        "MOT17-04-FRCNN": {
+          "frames": 1050,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 2.3455002,
+            "inference_ms": 127.14672879999999,
+            "postprocess_ms": 0.126879457,
+            "tracking_ms": 0.37351804
+          },
+          "python_reference_tracker_loop_seconds": 3.0479685430000245
+        },
+        "MOT17-05-FRCNN": {
+          "frames": 837,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 1.86921673,
+            "inference_ms": 95.07177650000001,
+            "postprocess_ms": 0.029564368,
+            "tracking_ms": 0.061152676
+          },
+          "python_reference_tracker_loop_seconds": 0.5938579999997273
+        },
+        "MOT17-09-FRCNN": {
+          "frames": 525,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 1.1268012699999999,
+            "inference_ms": 58.1713887,
+            "postprocess_ms": 0.017407209000000003,
+            "tracking_ms": 0.040611207
+          },
+          "python_reference_tracker_loop_seconds": 0.3239598750001278
+        },
+        "MOT17-10-FRCNN": {
+          "frames": 654,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 1.4834230800000001,
+            "inference_ms": 71.05768929999999,
+            "postprocess_ms": 0.043670749,
+            "tracking_ms": 0.07711014799999999
+          },
+          "python_reference_tracker_loop_seconds": 0.6412136670001019
+        },
+        "MOT17-11-FRCNN": {
+          "frames": 900,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 2.01214753,
+            "inference_ms": 104.2204227,
+            "postprocess_ms": 0.045313709,
+            "tracking_ms": 0.089631454
+          },
+          "python_reference_tracker_loop_seconds": 0.6927904590002072
+        },
+        "MOT17-13-FRCNN": {
+          "frames": 750,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 1.97906653,
+            "inference_ms": 129.317228,
+            "postprocess_ms": 0.057807381,
+            "tracking_ms": 0.12360264600000001
+          },
+          "python_reference_tracker_loop_seconds": 1.1150711260002026
+        }
+      }
+    },
+    "MOT20": {
+      "nano": {
+        "MOT20-01": {
+          "frames": 429,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 0.8799057299999999,
+            "inference_ms": 16.4874653,
+            "postprocess_ms": 0.070323473,
+            "tracking_ms": 0.14349812
+          },
+          "python_reference_tracker_loop_seconds": 0.9035511259999112
+        },
+        "MOT20-02": {
+          "frames": 2782,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 5.75836368,
+            "inference_ms": 104.1400502,
+            "postprocess_ms": 0.511512348,
+            "tracking_ms": 1.285702168
+          },
+          "python_reference_tracker_loop_seconds": 7.63426316999994
+        },
+        "MOT20-03": {
+          "frames": 2405,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 4.878861329999999,
+            "inference_ms": 88.4411073,
+            "postprocess_ms": 1.570299079,
+            "tracking_ms": 3.0068105679999997
+          },
+          "python_reference_tracker_loop_seconds": 17.040642131999903
+        },
+        "MOT20-05": {
+          "frames": 3315,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 7.30680403,
+            "inference_ms": 137.3609814,
+            "postprocess_ms": 4.8992588470000005,
+            "tracking_ms": 7.576586235
+          },
+          "python_reference_tracker_loop_seconds": 35.29306389200019
+        }
+      },
+      "tiny": {
+        "MOT20-01": {
+          "frames": 429,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 0.95161695,
+            "inference_ms": 60.1550111,
+            "postprocess_ms": 0.06375713799999999,
+            "tracking_ms": 0.142913768
+          },
+          "python_reference_tracker_loop_seconds": 1.863378917999853
+        },
+        "MOT20-02": {
+          "frames": 2782,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 6.41037884,
+            "inference_ms": 401.88194219999997,
+            "postprocess_ms": 0.47541288400000004,
+            "tracking_ms": 1.4381924910000001
+          },
+          "python_reference_tracker_loop_seconds": 10.77907458799973
+        },
+        "MOT20-03": {
+          "frames": 2405,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 5.10821082,
+            "inference_ms": 309.8383461,
+            "postprocess_ms": 1.4656563009999999,
+            "tracking_ms": 3.11177606
+          },
+          "python_reference_tracker_loop_seconds": 19.397792134000156
+        },
+        "MOT20-05": {
+          "frames": 3315,
+          "threads": [
+            4
+          ],
+          "stage_total_seconds": {
+            "preprocess_ms": 6.9273549800000005,
+            "inference_ms": 409.2178667,
+            "postprocess_ms": 4.499716665,
+            "tracking_ms": 7.3076888040000005
+          },
+          "python_reference_tracker_loop_seconds": 32.386440639000284
+        }
+      }
+    }
+  },
+  "demos": {
+    "MOT17-02-FRCNN-nano": {
+      "sequence": "MOT17-02-FRCNN",
+      "model": "nano",
+      "tracks": "/work/data/phase-3/tracks/end-to-end/nano/MOT17-02-FRCNN.txt",
+      "frame_range": [
+        1,
+        360
+      ],
+      "fps": 30,
+      "size": [
+        1280,
+        720
+      ],
+      "decoded_frames": 360,
+      "unique_ids": 39,
+      "trail_seconds": 2,
+      "render_seconds": 5.871427211000082,
+      "sha256": "9ad77a96b0ce9fa9d63a5dd757defa1dc4eec174f64407d82d8a9489cdee32f9",
+      "source": "https://motchallenge.net/",
+      "license": "CC BY-NC-SA 3.0",
+      "note": "Playback rate is the source rate, not measured inference throughput. Colors identify tracker IDs; identity switches remain visible.",
+      "codec": "H.264 / avc1",
+      "encoded_frames_verified": 360
+    },
+    "MOT17-05-FRCNN-nano": {
+      "sequence": "MOT17-05-FRCNN",
+      "model": "nano",
+      "tracks": "/work/data/phase-3/tracks/end-to-end/nano/MOT17-05-FRCNN.txt",
+      "frame_range": [
+        1,
+        168
+      ],
+      "fps": 14,
+      "size": [
+        640,
+        480
+      ],
+      "decoded_frames": 168,
+      "unique_ids": 21,
+      "trail_seconds": 2,
+      "render_seconds": 0.809540874999584,
+      "sha256": "7428e6add30b70eec75edcd22c5c51740a7d49071e5a9a4a0fa8621489fb78ae",
+      "source": "https://motchallenge.net/",
+      "license": "CC BY-NC-SA 3.0",
+      "note": "Playback rate is the source rate, not measured inference throughput. Colors identify tracker IDs; identity switches remain visible.",
+      "codec": "H.264 / avc1",
+      "encoded_frames_verified": 168
+    },
+    "MOT20-03-nano": {
+      "sequence": "MOT20-03",
+      "model": "nano",
+      "tracks": "/work/data/phase-3/tracks/end-to-end/nano/MOT20-03.txt",
+      "frame_range": [
+        1,
+        300
+      ],
+      "fps": 25,
+      "size": [
+        958,
+        720
+      ],
+      "decoded_frames": 300,
+      "unique_ids": 117,
+      "trail_seconds": 2,
+      "render_seconds": 5.039654211000197,
+      "sha256": "f6a70304b74b355fba873dcd33e8ca1429904942fb79efad60fc02ed9fcadab3",
+      "source": "https://motchallenge.net/",
+      "license": "CC BY-NC-SA 3.0",
+      "note": "Playback rate is the source rate, not measured inference throughput. Colors identify tracker IDs; identity switches remain visible.",
+      "codec": "H.264 / avc1",
+      "encoded_frames_verified": 300
+    }
+  },
+  "timing_limitations": "Concurrent accuracy runs; no warm-up exclusion or repeat benchmark. Stage sums omit image decoding and are not end-to-end throughput. Phase 4 has not run.",
+  "cpp_environment": {
+    "onnxruntime_version": "1.30.0",
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "opencv_version": "4.6.0",
+    "jpeg_roundtrip": true,
+    "hardware_concurrency": 12
+  },
+  "image_versions": [
+    "[\"vision-lab:dev\"] sha256:89dff185b04fafabfa5baf762883bfcb65e2e8c9f7dc1cbeb102107b63b3f403 arm64 linux",
+    "[\"vision-lab:pytools\"] sha256:e111d4e69e660e4ab0b2e1d7c06f097f535353d909a923bc909c5a55188816bb arm64 linux"
+  ],
+  "python_environment": [
+    "contourpy==1.4.0",
+    "cycler==0.12.1",
+    "Cython==3.3.0",
+    "cython_bbox==0.1.5",
+    "filelock==4.0.12",
+    "flatbuffers==25.12.19",
+    "fonttools==4.66.1",
+    "fsspec==2026.9.0",
+    "Jinja2==3.1.6",
+    "kiwisolver==1.5.1",
+    "lap==0.5.12",
+    "loguru==0.7.2",
+    "MarkupSafe==3.0.4",
+    "matplotlib==3.9.2",
+    "motmetrics==1.4.0",
+    "mpmath==1.3.0",
+    "networkx==3.7",
+    "numpy==2.1.3",
+    "onnx==1.17.0",
+    "onnxruntime==1.30.0",
+    "opencv-python-headless==4.10.0.84",
+    "packaging==26.3",
+    "pandas==2.2.3",
+    "pillow==12.3.0",
+    "pip==24.0",
+    "protobuf==7.36.2",
+    "pycocotools==2.0.8",
+    "pyparsing==3.3.3",
+    "python-dateutil==2.9.0.post0",
+    "pytz==2026.5",
+    "scipy==1.14.1",
+    "setuptools==84.0.0",
+    "six==1.17.0",
+    "sympy==1.13.1",
+    "tabulate==0.9.0",
+    "thop==0.1.1.post2209072238",
+    "torch==2.5.1",
+    "torchvision==0.20.1",
+    "typing_extensions==4.16.0",
+    "tzdata==2026.5",
+    "xmltodict==1.0.4"
+  ],
+  "demo_image_version": [
+    "[\"vision-lab:dev\"] sha256:109eb3213e86d6cb2e671362617ac53972727299ea366a782763066a51548513 arm64 linux"
+  ],
+  "cpp_binaries_unchanged_after_demo_target": true,
+  "execution_notes": {
+    "streaming_driver": {
+      "initial_exit_code": 2,
+      "all_sequence_outputs_written": true,
+      "log": "phase-3/tracking-run.log",
+      "resolution": "completed script passes syntax checks; final C++ outputs regenerated and all end-to-end files match"
+    },
+    "artifact_encoder": {
+      "first_attempt": "tmpfs execution refused",
+      "log": "phase-3/demo-encoding-first-attempt.log",
+      "resolution": "normal image-build target; unchanged container protections"
+    }
+  },
+  "data_boundaries": "MOT17 train: fidelity only; MOT20 train: held-out, no tuning; existing research-only pedestrian weights."
+}

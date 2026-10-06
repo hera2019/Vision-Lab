@@ -1,0 +1,101 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.43kB done
+#1 DONE 0.0s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1
+#2 DONE 0.8s
+
+#3 docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#3 resolve docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e 0.0s done
+#3 CACHED
+
+#4 [internal] load metadata for docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+#4 DONE 0.0s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 151B done
+#5 DONE 0.0s
+
+#6 [base 1/3] FROM docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+#6 resolve docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55 done
+#6 CACHED
+
+#7 [internal] load build context
+#7 transferring context: 752B done
+#7 DONE 0.0s
+
+#8 [base 2/3] RUN apt-get update && apt-get install -y --no-install-recommends       build-essential cmake ninja-build ca-certificates curl       libeigen3-dev       libopencv-core-dev libopencv-imgproc-dev libopencv-imgcodecs-dev       libopencv-videoio-dev libopencv-video-dev     && rm -rf /var/lib/apt/lists/*
+#8 0.047 Ign:1 http://ports.ubuntu.com/ubuntu-ports noble InRelease
+#8 0.047 Ign:2 http://ports.ubuntu.com/ubuntu-ports noble-updates InRelease
+#8 0.047 Ign:3 http://ports.ubuntu.com/ubuntu-ports noble-backports InRelease
+#8 0.047 Ign:4 http://ports.ubuntu.com/ubuntu-ports noble-security InRelease
+#8 1.048 Ign:1 http://ports.ubuntu.com/ubuntu-ports noble InRelease
+#8 1.049 Ign:2 http://ports.ubuntu.com/ubuntu-ports noble-updates InRelease
+#8 1.049 Ign:3 http://ports.ubuntu.com/ubuntu-ports noble-backports InRelease
+#8 1.049 Ign:4 http://ports.ubuntu.com/ubuntu-ports noble-security InRelease
+#8 3.053 Ign:1 http://ports.ubuntu.com/ubuntu-ports noble InRelease
+#8 3.053 Ign:2 http://ports.ubuntu.com/ubuntu-ports noble-updates InRelease
+#8 3.053 Ign:3 http://ports.ubuntu.com/ubuntu-ports noble-backports InRelease
+#8 3.053 Ign:4 http://ports.ubuntu.com/ubuntu-ports noble-security InRelease
+#8 7.054 Err:1 http://ports.ubuntu.com/ubuntu-ports noble InRelease
+#8 7.054   Temporary failure resolving 'ports.ubuntu.com'
+#8 7.054 Err:2 http://ports.ubuntu.com/ubuntu-ports noble-updates InRelease
+#8 7.054   Temporary failure resolving 'ports.ubuntu.com'
+#8 7.055 Err:3 http://ports.ubuntu.com/ubuntu-ports noble-backports InRelease
+#8 7.055   Temporary failure resolving 'ports.ubuntu.com'
+#8 7.055 Err:4 http://ports.ubuntu.com/ubuntu-ports noble-security InRelease
+#8 7.055   Temporary failure resolving 'ports.ubuntu.com'
+#8 7.061 Reading package lists...
+#8 7.072 W: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/dists/noble/InRelease  Temporary failure resolving 'ports.ubuntu.com'
+#8 7.072 W: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/dists/noble-updates/InRelease  Temporary failure resolving 'ports.ubuntu.com'
+#8 7.072 W: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/dists/noble-backports/InRelease  Temporary failure resolving 'ports.ubuntu.com'
+#8 7.072 W: Failed to fetch http://ports.ubuntu.com/ubuntu-ports/dists/noble-security/InRelease  Temporary failure resolving 'ports.ubuntu.com'
+#8 7.072 W: Some index files failed to download. They have been ignored, or old ones used instead.
+#8 7.080 Reading package lists...
+#8 7.087 Building dependency tree...
+#8 7.087 Reading state information...
+#8 7.088 Package ca-certificates is not available, but is referred to by another package.
+#8 7.088 This may mean that the package is missing, has been obsoleted, or
+#8 7.088 is only available from another source
+#8 7.088 
+#8 7.088 E: Unable to locate package build-essential
+#8 7.088 E: Unable to locate package cmake
+#8 7.088 E: Unable to locate package ninja-build
+#8 7.088 E: Package 'ca-certificates' has no installation candidate
+#8 7.088 E: Unable to locate package curl
+#8 7.088 E: Unable to locate package libeigen3-dev
+#8 7.088 E: Unable to locate package libopencv-core-dev
+#8 7.088 E: Unable to locate package libopencv-imgproc-dev
+#8 7.088 E: Unable to locate package libopencv-imgcodecs-dev
+#8 7.088 E: Unable to locate package libopencv-videoio-dev
+#8 7.088 E: Unable to locate package libopencv-video-dev
+#8 ERROR: process "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends       build-essential cmake ninja-build ca-certificates curl       libeigen3-dev       libopencv-core-dev libopencv-imgproc-dev libopencv-imgcodecs-dev       libopencv-videoio-dev libopencv-video-dev     && rm -rf /var/lib/apt/lists/*" did not complete successfully: exit code: 100
+------
+ > [base 2/3] RUN apt-get update && apt-get install -y --no-install-recommends       build-essential cmake ninja-build ca-certificates curl       libeigen3-dev       libopencv-core-dev libopencv-imgproc-dev libopencv-imgcodecs-dev       libopencv-videoio-dev libopencv-video-dev     && rm -rf /var/lib/apt/lists/*:
+7.088 E: Unable to locate package cmake
+7.088 E: Unable to locate package ninja-build
+7.088 E: Package 'ca-certificates' has no installation candidate
+7.088 E: Unable to locate package curl
+7.088 E: Unable to locate package libeigen3-dev
+7.088 E: Unable to locate package libopencv-core-dev
+7.088 E: Unable to locate package libopencv-imgproc-dev
+7.088 E: Unable to locate package libopencv-imgcodecs-dev
+7.088 E: Unable to locate package libopencv-videoio-dev
+7.088 E: Unable to locate package libopencv-video-dev
+------
+Dockerfile:6
+--------------------
+   5 |     ARG DEBIAN_FRONTEND=noninteractive
+   6 | >>> RUN apt-get update && apt-get install -y --no-install-recommends \
+   7 | >>>       build-essential cmake ninja-build ca-certificates curl \
+   8 | >>>       libeigen3-dev \
+   9 | >>>       libopencv-core-dev libopencv-imgproc-dev libopencv-imgcodecs-dev \
+  10 | >>>       libopencv-videoio-dev libopencv-video-dev \
+  11 | >>>     && rm -rf /var/lib/apt/lists/*
+  12 |     
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c apt-get update && apt-get install -y --no-install-recommends       build-essential cmake ninja-build ca-certificates curl       libeigen3-dev       libopencv-core-dev libopencv-imgproc-dev libopencv-imgcodecs-dev       libopencv-videoio-dev libopencv-video-dev     && rm -rf /var/lib/apt/lists/*" did not complete successfully: exit code: 100
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/6soaamb7a7w5hhp25h98pb3ww

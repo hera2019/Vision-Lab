@@ -1,0 +1,235 @@
+{
+  "scope": "Read-only diagnosis on MOT17-02 frames 1/51/150; no held-out input, modified model or alternative quality score.",
+  "preprocessing": [
+    {
+      "frame": 1,
+      "sha256": "41ff65408c5338f4a83035fd12e9f5f7b658ee82feacf4512655677032636597",
+      "python_vs_cpp_formula_max_abs": 4.76837158203125e-07
+    },
+    {
+      "frame": 51,
+      "sha256": "d074198e39fac1b1925454b642f591d6d0919e0385b8121aa235ae26b51d4f02",
+      "python_vs_cpp_formula_max_abs": 4.76837158203125e-07
+    },
+    {
+      "frame": 150,
+      "sha256": "1b8feca9b1c9bea06042488b90241d785fbd702ffdd16f9f5071bdd1b195c530",
+      "python_vs_cpp_formula_max_abs": 4.76837158203125e-07
+    }
+  ],
+  "models": {
+    "nano": {
+      "fp32-original": [
+        {
+          "frame": 1,
+          "raw_max_abs_diff_from_fp32": 0.0,
+          "confidence_max": 0.871982216835022,
+          "candidates_at_0_01": 498,
+          "post_nms_boxes_at_0_01": 184,
+          "post_nms_boxes_at_0_6": 10
+        },
+        {
+          "frame": 51,
+          "raw_max_abs_diff_from_fp32": 0.0,
+          "confidence_max": 0.8789481520652771,
+          "candidates_at_0_01": 411,
+          "post_nms_boxes_at_0_01": 141,
+          "post_nms_boxes_at_0_6": 10
+        },
+        {
+          "frame": 150,
+          "raw_max_abs_diff_from_fp32": 0.0,
+          "confidence_max": 0.8823134899139404,
+          "candidates_at_0_01": 509,
+          "post_nms_boxes_at_0_01": 200,
+          "post_nms_boxes_at_0_6": 14
+        }
+      ],
+      "fp32-preprocessed": [
+        {
+          "frame": 1,
+          "raw_max_abs_diff_from_fp32": 0.0,
+          "confidence_max": 0.871982216835022,
+          "candidates_at_0_01": 498,
+          "post_nms_boxes_at_0_01": 184,
+          "post_nms_boxes_at_0_6": 10
+        },
+        {
+          "frame": 51,
+          "raw_max_abs_diff_from_fp32": 0.0,
+          "confidence_max": 0.8789481520652771,
+          "candidates_at_0_01": 411,
+          "post_nms_boxes_at_0_01": 141,
+          "post_nms_boxes_at_0_6": 10
+        },
+        {
+          "frame": 150,
+          "raw_max_abs_diff_from_fp32": 0.0,
+          "confidence_max": 0.8823134899139404,
+          "candidates_at_0_01": 509,
+          "post_nms_boxes_at_0_01": 200,
+          "post_nms_boxes_at_0_6": 14
+        }
+      ],
+      "int8-optimized": [
+        {
+          "frame": 1,
+          "raw_max_abs_diff_from_fp32": 8.695770263671875,
+          "confidence_max": 0.8089678287506104,
+          "candidates_at_0_01": 571,
+          "post_nms_boxes_at_0_01": 510,
+          "post_nms_boxes_at_0_6": 16
+        },
+        {
+          "frame": 51,
+          "raw_max_abs_diff_from_fp32": 8.942108154296875,
+          "confidence_max": 0.9156337976455688,
+          "candidates_at_0_01": 526,
+          "post_nms_boxes_at_0_01": 463,
+          "post_nms_boxes_at_0_6": 27
+        },
+        {
+          "frame": 150,
+          "raw_max_abs_diff_from_fp32": 10.138469696044922,
+          "confidence_max": 0.8928949236869812,
+          "candidates_at_0_01": 583,
+          "post_nms_boxes_at_0_01": 504,
+          "post_nms_boxes_at_0_6": 26
+        }
+      ],
+      "int8-optimization-disabled": [
+        {
+          "frame": 1,
+          "raw_max_abs_diff_from_fp32": 9.677654266357422,
+          "confidence_max": 0.8914540410041809,
+          "candidates_at_0_01": 527,
+          "post_nms_boxes_at_0_01": 450,
+          "post_nms_boxes_at_0_6": 18
+        },
+        {
+          "frame": 51,
+          "raw_max_abs_diff_from_fp32": 9.320417404174805,
+          "confidence_max": 0.8998608589172363,
+          "candidates_at_0_01": 562,
+          "post_nms_boxes_at_0_01": 487,
+          "post_nms_boxes_at_0_6": 15
+        },
+        {
+          "frame": 150,
+          "raw_max_abs_diff_from_fp32": 9.587874412536621,
+          "confidence_max": 0.9179654717445374,
+          "candidates_at_0_01": 590,
+          "post_nms_boxes_at_0_01": 493,
+          "post_nms_boxes_at_0_6": 31
+        }
+      ]
+    },
+    "tiny": {
+      "fp32-original": [
+        {
+          "frame": 1,
+          "raw_max_abs_diff_from_fp32": 0.0,
+          "confidence_max": 0.909971296787262,
+          "candidates_at_0_01": 462,
+          "post_nms_boxes_at_0_01": 139,
+          "post_nms_boxes_at_0_6": 17
+        },
+        {
+          "frame": 51,
+          "raw_max_abs_diff_from_fp32": 0.0,
+          "confidence_max": 0.9070411324501038,
+          "candidates_at_0_01": 385,
+          "post_nms_boxes_at_0_01": 118,
+          "post_nms_boxes_at_0_6": 16
+        },
+        {
+          "frame": 150,
+          "raw_max_abs_diff_from_fp32": 0.0,
+          "confidence_max": 0.9040295481681824,
+          "candidates_at_0_01": 476,
+          "post_nms_boxes_at_0_01": 153,
+          "post_nms_boxes_at_0_6": 23
+        }
+      ],
+      "fp32-preprocessed": [
+        {
+          "frame": 1,
+          "raw_max_abs_diff_from_fp32": 0.0,
+          "confidence_max": 0.909971296787262,
+          "candidates_at_0_01": 462,
+          "post_nms_boxes_at_0_01": 139,
+          "post_nms_boxes_at_0_6": 17
+        },
+        {
+          "frame": 51,
+          "raw_max_abs_diff_from_fp32": 0.0,
+          "confidence_max": 0.9070411324501038,
+          "candidates_at_0_01": 385,
+          "post_nms_boxes_at_0_01": 118,
+          "post_nms_boxes_at_0_6": 16
+        },
+        {
+          "frame": 150,
+          "raw_max_abs_diff_from_fp32": 0.0,
+          "confidence_max": 0.9040295481681824,
+          "candidates_at_0_01": 476,
+          "post_nms_boxes_at_0_01": 153,
+          "post_nms_boxes_at_0_6": 23
+        }
+      ],
+      "int8-optimized": [
+        {
+          "frame": 1,
+          "raw_max_abs_diff_from_fp32": 7.071172714233398,
+          "confidence_max": 0.915291428565979,
+          "candidates_at_0_01": 494,
+          "post_nms_boxes_at_0_01": 150,
+          "post_nms_boxes_at_0_6": 17
+        },
+        {
+          "frame": 51,
+          "raw_max_abs_diff_from_fp32": 9.141350746154785,
+          "confidence_max": 0.906786322593689,
+          "candidates_at_0_01": 387,
+          "post_nms_boxes_at_0_01": 124,
+          "post_nms_boxes_at_0_6": 16
+        },
+        {
+          "frame": 150,
+          "raw_max_abs_diff_from_fp32": 6.853851318359375,
+          "confidence_max": 0.915105938911438,
+          "candidates_at_0_01": 474,
+          "post_nms_boxes_at_0_01": 163,
+          "post_nms_boxes_at_0_6": 20
+        }
+      ],
+      "int8-optimization-disabled": [
+        {
+          "frame": 1,
+          "raw_max_abs_diff_from_fp32": 7.196500778198242,
+          "confidence_max": 0.9155839085578918,
+          "candidates_at_0_01": 493,
+          "post_nms_boxes_at_0_01": 157,
+          "post_nms_boxes_at_0_6": 16
+        },
+        {
+          "frame": 51,
+          "raw_max_abs_diff_from_fp32": 8.923243522644043,
+          "confidence_max": 0.906786322593689,
+          "candidates_at_0_01": 390,
+          "post_nms_boxes_at_0_01": 126,
+          "post_nms_boxes_at_0_6": 16
+        },
+        {
+          "frame": 150,
+          "raw_max_abs_diff_from_fp32": 7.082664966583252,
+          "confidence_max": 0.915105938911438,
+          "candidates_at_0_01": 484,
+          "post_nms_boxes_at_0_01": 165,
+          "post_nms_boxes_at_0_6": 20
+        }
+      ]
+    }
+  },
+  "note": "Optimization-disabled INT8 is diagnostic only. It is not benchmarked or proposed as a replacement. No setting, model, threshold or calibration changes."
+}

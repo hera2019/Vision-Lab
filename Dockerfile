@@ -43,7 +43,7 @@ CMD ["/src/build/env_check"]
 FROM ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55 AS pytools
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y --no-install-recommends \
-      python3 python3-venv ca-certificates \
+      python3 python3-venv ca-certificates build-essential python3-dev \
     && rm -rf /var/lib/apt/lists/*
 COPY python/requirements.txt /tmp/requirements.txt
 RUN python3 -m venv /opt/venv \

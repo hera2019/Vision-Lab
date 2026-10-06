@@ -1,0 +1,230 @@
+{
+  "date": "2026-10-06",
+  "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+  "review_source": "docs/reviews/phase-3.md",
+  "status": "follow-ups-addressed",
+  "F1": {
+    "walkthrough_words_whitespace_count": 1613,
+    "sha256": "5914a761571e7c53c3e3706be3679c5aa15772d2ad8369689be026b63a614813",
+    "english_then_chinese": true,
+    "result_table_and_new_terms_present": true
+  },
+  "F2": {
+    "outputs": [
+      {
+        "model": "nano",
+        "sequence": "MOT17-02-FRCNN",
+        "byte_identical": true,
+        "sha256": "cda7da61204827b5f3aa3f2f20d704d6b451245255e338bed7359d8eb6354588",
+        "baseline_sha256": "cda7da61204827b5f3aa3f2f20d704d6b451245255e338bed7359d8eb6354588"
+      },
+      {
+        "model": "nano",
+        "sequence": "MOT17-04-FRCNN",
+        "byte_identical": true,
+        "sha256": "fe5c351c61b19644273a77d20536773386e0b7502b00fa585cda911a273eabbb",
+        "baseline_sha256": "fe5c351c61b19644273a77d20536773386e0b7502b00fa585cda911a273eabbb"
+      },
+      {
+        "model": "nano",
+        "sequence": "MOT17-05-FRCNN",
+        "byte_identical": true,
+        "sha256": "6d2a61fe41f448709fe54ceab8a0ee6be98178fb75b607e4d1f2626e6afdf939",
+        "baseline_sha256": "6d2a61fe41f448709fe54ceab8a0ee6be98178fb75b607e4d1f2626e6afdf939"
+      },
+      {
+        "model": "nano",
+        "sequence": "MOT17-09-FRCNN",
+        "byte_identical": true,
+        "sha256": "63b735417293517b2c16574da2be9133653c8be99ea1f2b8b2e053854e61e52c",
+        "baseline_sha256": "63b735417293517b2c16574da2be9133653c8be99ea1f2b8b2e053854e61e52c"
+      },
+      {
+        "model": "nano",
+        "sequence": "MOT17-10-FRCNN",
+        "byte_identical": true,
+        "sha256": "3a0e3cc339fa93f9ba410bc31a70ccd4937f0e621c836c7bcbed7547bbe5f9f9",
+        "baseline_sha256": "3a0e3cc339fa93f9ba410bc31a70ccd4937f0e621c836c7bcbed7547bbe5f9f9"
+      },
+      {
+        "model": "nano",
+        "sequence": "MOT17-11-FRCNN",
+        "byte_identical": true,
+        "sha256": "edcb9e209f72780c0d19557d50f0e07dddffceb8a82c76fa3f6257b4c9e732df",
+        "baseline_sha256": "edcb9e209f72780c0d19557d50f0e07dddffceb8a82c76fa3f6257b4c9e732df"
+      },
+      {
+        "model": "nano",
+        "sequence": "MOT17-13-FRCNN",
+        "byte_identical": true,
+        "sha256": "cd765554e71863874f8f406348ca59d10ba36bd955df16c013235cdc85d6289e",
+        "baseline_sha256": "cd765554e71863874f8f406348ca59d10ba36bd955df16c013235cdc85d6289e"
+      },
+      {
+        "model": "nano",
+        "sequence": "MOT20-01",
+        "byte_identical": true,
+        "sha256": "a6082850c17f03428ae957178f245c3638c30bc690dce5e9ae3631ee0f79ad51",
+        "baseline_sha256": "a6082850c17f03428ae957178f245c3638c30bc690dce5e9ae3631ee0f79ad51"
+      },
+      {
+        "model": "nano",
+        "sequence": "MOT20-02",
+        "byte_identical": true,
+        "sha256": "734977a349789e3db2ad3f0f6727ba8086f034229ce0f14489a8255bf055f77b",
+        "baseline_sha256": "734977a349789e3db2ad3f0f6727ba8086f034229ce0f14489a8255bf055f77b"
+      },
+      {
+        "model": "nano",
+        "sequence": "MOT20-03",
+        "byte_identical": true,
+        "sha256": "946213c4d1b3f872b8550ca915994d82b8ddb79868a6b6d12d7d41c461682267",
+        "baseline_sha256": "946213c4d1b3f872b8550ca915994d82b8ddb79868a6b6d12d7d41c461682267"
+      },
+      {
+        "model": "nano",
+        "sequence": "MOT20-05",
+        "byte_identical": true,
+        "sha256": "ce8935c3e80e15463c322fa1551a93d8cf79045936119943b9b58bc52887f31f",
+        "baseline_sha256": "ce8935c3e80e15463c322fa1551a93d8cf79045936119943b9b58bc52887f31f"
+      },
+      {
+        "model": "tiny",
+        "sequence": "MOT17-02-FRCNN",
+        "byte_identical": true,
+        "sha256": "6b415dcdfaa5b7410ecfcc07e75ba105b47253ddd0a88ae18c53fac49d556943",
+        "baseline_sha256": "6b415dcdfaa5b7410ecfcc07e75ba105b47253ddd0a88ae18c53fac49d556943"
+      },
+      {
+        "model": "tiny",
+        "sequence": "MOT17-04-FRCNN",
+        "byte_identical": true,
+        "sha256": "51b33b4196c521e1cd964a992258cfa6dc21dba0662bcd2d668eee9cb85e265d",
+        "baseline_sha256": "51b33b4196c521e1cd964a992258cfa6dc21dba0662bcd2d668eee9cb85e265d"
+      },
+      {
+        "model": "tiny",
+        "sequence": "MOT17-05-FRCNN",
+        "byte_identical": true,
+        "sha256": "d192ce55fc9ff4c95f8e29a3307c0e05add8cf3c365ae617668e7a31cc342ab9",
+        "baseline_sha256": "d192ce55fc9ff4c95f8e29a3307c0e05add8cf3c365ae617668e7a31cc342ab9"
+      },
+      {
+        "model": "tiny",
+        "sequence": "MOT17-09-FRCNN",
+        "byte_identical": true,
+        "sha256": "c227600a4221110b4faaf026f3912fa1273b6147ac0a7b4e8d49db465da23b3a",
+        "baseline_sha256": "c227600a4221110b4faaf026f3912fa1273b6147ac0a7b4e8d49db465da23b3a"
+      },
+      {
+        "model": "tiny",
+        "sequence": "MOT17-10-FRCNN",
+        "byte_identical": true,
+        "sha256": "18651923e0ee1808c6a743911f383768db2d0ec041afda9ccc2ed3eb9261a7e4",
+        "baseline_sha256": "18651923e0ee1808c6a743911f383768db2d0ec041afda9ccc2ed3eb9261a7e4"
+      },
+      {
+        "model": "tiny",
+        "sequence": "MOT17-11-FRCNN",
+        "byte_identical": true,
+        "sha256": "cd3aa3cc0d27c961eb4ccee3a2c20fb5853b9b6756c7b4e489c6d163fdf86fcd",
+        "baseline_sha256": "cd3aa3cc0d27c961eb4ccee3a2c20fb5853b9b6756c7b4e489c6d163fdf86fcd"
+      },
+      {
+        "model": "tiny",
+        "sequence": "MOT17-13-FRCNN",
+        "byte_identical": true,
+        "sha256": "af05ff3aa5d9c3c6c8a5fe0130e2f264ee242d3b7dcb0d345bf4d2541394691a",
+        "baseline_sha256": "af05ff3aa5d9c3c6c8a5fe0130e2f264ee242d3b7dcb0d345bf4d2541394691a"
+      },
+      {
+        "model": "tiny",
+        "sequence": "MOT20-01",
+        "byte_identical": true,
+        "sha256": "b63c9808550e4176143dbfa593688b564b66530d7ff88308c96ffd255ba68dcd",
+        "baseline_sha256": "b63c9808550e4176143dbfa593688b564b66530d7ff88308c96ffd255ba68dcd"
+      },
+      {
+        "model": "tiny",
+        "sequence": "MOT20-02",
+        "byte_identical": true,
+        "sha256": "c0b0ddfb9399ebf86995795aecb74146089b2bc1e46ef8f90ceda51544bfbd90",
+        "baseline_sha256": "c0b0ddfb9399ebf86995795aecb74146089b2bc1e46ef8f90ceda51544bfbd90"
+      },
+      {
+        "model": "tiny",
+        "sequence": "MOT20-03",
+        "byte_identical": true,
+        "sha256": "1d35ffe10718a4f7f1e3dfeeaed9e81191b813eb2007882f8560dac585226eb0",
+        "baseline_sha256": "1d35ffe10718a4f7f1e3dfeeaed9e81191b813eb2007882f8560dac585226eb0"
+      },
+      {
+        "model": "tiny",
+        "sequence": "MOT20-05",
+        "byte_identical": true,
+        "sha256": "ca47d1658125c15570a89eb662318c53ff98953f76b35a48100f9f445b7634a5",
+        "baseline_sha256": "ca47d1658125c15570a89eb662318c53ff98953f76b35a48100f9f445b7634a5"
+      }
+    ],
+    "all_22_byte_identical": true,
+    "behavioral_fixture": {
+      "left_lines": 87,
+      "right_lines": 87,
+      "byte_identical": false,
+      "identical_line_share": 0.0,
+      "same_frame_and_id": true,
+      "max_box_difference": 0.0,
+      "max_score_difference": 2.384185793236071e-08,
+      "pass": true
+    },
+    "tracker_source_sha256": "f314ebf25f466a38798b09ce6809b44ea69a4173a403de70136b08b007bd2e09",
+    "image_tag": "vision-lab:review-fixes",
+    "image_versions": [
+      "[\"vision-lab:dev\"] sha256:109eb3213e86d6cb2e671362617ac53972727299ea366a782763066a51548513 arm64 linux",
+      "[\"vision-lab:review-fixes\"] sha256:9ee75f0421117932018a7de9392d6142b2efa50f08db12ecf407c94afea240e4 arm64 linux"
+    ],
+    "build_log": "results/phase-3/review-fixes-offline-rebuild.log",
+    "initial_build_failure": {
+      "log": "results/phase-3/review-fixes-build.log",
+      "reason": "Changing build network mode missed dependency-layer cache; apt could not run offline.",
+      "resolution": "Reuse accepted local vision-lab:dev toolchain via Dockerfile.review-fixes; no packages downloaded."
+    }
+  },
+  "F3": {
+    "score_boundary_rows": [
+      {
+        "model": "nano",
+        "sequence": "MOT20-02",
+        "frame": 1286,
+        "id": 204,
+        "python_score": 0.699999988079071,
+        "cpp_score": 0.69,
+        "difference": 0.009999988079071098
+      },
+      {
+        "model": "nano",
+        "sequence": "MOT20-02",
+        "frame": 1835,
+        "id": 191,
+        "python_score": 0.7400000095367432,
+        "cpp_score": 0.75,
+        "difference": 0.009999990463256836
+      },
+      {
+        "model": "tiny",
+        "sequence": "MOT20-05",
+        "frame": 1350,
+        "id": 778,
+        "python_score": 0.6399999856948853,
+        "cpp_score": 0.63,
+        "difference": 0.00999998569488525
+      }
+    ],
+    "documentation_corrected": [
+      "docs/ISSUES.md",
+      "results/phase-3-tracking.md",
+      "python/report_phase3.py"
+    ]
+  },
+  "limitations": "Follow-up verification by executor; reviewer has not re-reviewed these changes. No detector rerun needed because tracker outputs are byte-identical."
+}

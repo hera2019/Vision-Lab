@@ -31,3 +31,22 @@ target_link_libraries(vl_detector PUBLIC onnxruntime ${OpenCV_LIBS})
 
 add_executable(detect_frames src/detect_frames.cpp)
 target_link_libraries(detect_frames PRIVATE vl_detector)
+
+# Phase 3 additions; Phase 0-2 detector targets above remain unchanged.
+find_package(Eigen3 REQUIRED)
+add_library(vl_tracker STATIC src/tracker/tracker.cpp src/tracker/lapjv.cpp)
+target_link_libraries(vl_tracker PUBLIC vl_detector Eigen3::Eigen)
+add_executable(detect_sequence src/detect_sequence.cpp)
+target_link_libraries(detect_sequence PRIVATE vl_detector)
+add_executable(track_sequence src/track_sequence.cpp)
+target_link_libraries(track_sequence PRIVATE vl_tracker)
+
+# Artifact encoding uses the existing system OpenCV/FFmpeg video backend.
+find_library(OpenCV_VIDEOIO_LIB opencv_videoio REQUIRED)
+add_executable(transcode_demo src/transcode_demo.cpp)
+target_include_directories(transcode_demo PRIVATE ${OpenCV_INCLUDE_DIR})
+target_link_libraries(transcode_demo PRIVATE ${OpenCV_VIDEOIO_LIB} ${OpenCV_LIBS})
+
+# Phase 4 additive benchmark; no changes to baseline detector/tracker targets.
+add_executable(benchmark_pipeline src/benchmark_pipeline.cpp)
+target_link_libraries(benchmark_pipeline PRIVATE vl_tracker)

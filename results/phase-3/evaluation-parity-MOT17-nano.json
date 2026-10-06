@@ -1,0 +1,279 @@
+{
+  "stage": "parity",
+  "seconds": 13.186905339000077,
+  "versions": {
+    "numpy": "2.1.3",
+    "scipy": "1.14.1",
+    "lap": "0.5.12",
+    "cython_bbox": "0.1.5",
+    "motmetrics": "1.4.0",
+    "pandas": "2.2.3",
+    "onnxruntime": "1.30.0"
+  },
+  "results": {
+    "MOT17": {
+      "python": {
+        "nano": {
+          "scores": {
+            "motmetrics": {
+              "MOT17-02-FRCNN": {
+                "mota": 41.935310263172056,
+                "idf1": 43.55742296918768,
+                "num_switches": 83,
+                "num_false_positives": 1052,
+                "num_misses": 9654,
+                "num_objects": 18581
+              },
+              "MOT17-04-FRCNN": {
+                "mota": 87.30155392476397,
+                "idf1": 79.42089820744009,
+                "num_switches": 131,
+                "num_false_positives": 2090,
+                "num_misses": 3818,
+                "num_objects": 47557
+              },
+              "MOT17-05-FRCNN": {
+                "mota": 64.60893450918029,
+                "idf1": 61.260963097799106,
+                "num_switches": 68,
+                "num_false_positives": 316,
+                "num_misses": 2064,
+                "num_objects": 6917
+              },
+              "MOT17-09-FRCNN": {
+                "mota": 75.34272300469483,
+                "idf1": 63.693336118654685,
+                "num_switches": 23,
+                "num_false_positives": 107,
+                "num_misses": 1183,
+                "num_objects": 5325
+              },
+              "MOT17-10-FRCNN": {
+                "mota": 59.607446062777484,
+                "idf1": 56.36669156086632,
+                "num_switches": 122,
+                "num_false_positives": 405,
+                "num_misses": 4659,
+                "num_objects": 12839
+              },
+              "MOT17-11-FRCNN": {
+                "mota": 70.31581178465451,
+                "idf1": 71.22349690672112,
+                "num_switches": 20,
+                "num_false_positives": 279,
+                "num_misses": 2502,
+                "num_objects": 9436
+              },
+              "MOT17-13-FRCNN": {
+                "mota": 48.67720322968562,
+                "idf1": 52.83181085437937,
+                "num_switches": 83,
+                "num_false_positives": 609,
+                "num_misses": 5283,
+                "num_objects": 11642
+              },
+              "OVERALL": {
+                "mota": 69.23248172257496,
+                "idf1": 66.8414141565438,
+                "num_switches": 530,
+                "num_false_positives": 4858,
+                "num_misses": 29163,
+                "num_objects": 112297
+              }
+            },
+            "TrackEval": {
+              "MOT17-02-FRCNN": {
+                "HOTA": 35.050542942527876,
+                "MOTA": 42.968623863085945,
+                "IDF1": 43.86540973766903,
+                "IDSW": 90
+              },
+              "MOT17-04-FRCNN": {
+                "HOTA": 67.27473377103553,
+                "MOTA": 87.31417036398426,
+                "IDF1": 79.42089820744009,
+                "IDSW": 131
+              },
+              "MOT17-05-FRCNN": {
+                "HOTA": 48.79189872090598,
+                "MOTA": 64.79687725892728,
+                "IDF1": 61.33200795228628,
+                "IDSW": 71
+              },
+              "MOT17-09-FRCNN": {
+                "HOTA": 53.326088437564955,
+                "MOTA": 75.6244131455399,
+                "IDF1": 63.819989534275244,
+                "IDSW": 25
+              },
+              "MOT17-10-FRCNN": {
+                "HOTA": 44.069993795051,
+                "MOTA": 59.71648882311706,
+                "IDF1": 56.416725064237326,
+                "IDSW": 127
+              },
+              "MOT17-11-FRCNN": {
+                "HOTA": 61.47598879017265,
+                "MOTA": 70.72912250953794,
+                "IDF1": 71.3907284768212,
+                "IDSW": 20
+              },
+              "MOT17-13-FRCNN": {
+                "HOTA": 42.168451800679016,
+                "MOTA": 49.15822023707267,
+                "IDF1": 52.97984696626792,
+                "IDSW": 83
+              },
+              "OVERALL": {
+                "HOTA": 55.984228589218475,
+                "MOTA": 69.53079779513254,
+                "IDF1": 66.96046701249068,
+                "IDSW": 547
+              }
+            }
+          },
+          "sha256": {
+            "MOT17-02-FRCNN": "698b2ab787ad5cff4f1f38aceb67971ae0d426720e2209a39b2ecce58e929db4",
+            "MOT17-04-FRCNN": "cf2b977152d39b14419762213afbe16a1806d783f2c30f17f8542154153645e8",
+            "MOT17-05-FRCNN": "0338f143e2154c6cbdf047a99fdf43924c17d7e87a3b2ed362bc553a9bd85f7e",
+            "MOT17-09-FRCNN": "5ca3e3fb1ca7027f95651f9352498a4a85293663b0812bbe5906f748c31f5072",
+            "MOT17-10-FRCNN": "bf2b08a81d05d149e9f0ab7f851b6230b975930571882d9cfc11aac166aad6c4",
+            "MOT17-11-FRCNN": "97c399357a6f3662bc5474b7c9db55b7723e777cfbfb32caa013be3c5b0b5115",
+            "MOT17-13-FRCNN": "c101de735c306d84116023408c3ea066bf1bf5eed1c9483679f2326497b3f000"
+          }
+        }
+      },
+      "cpp": {
+        "nano": {
+          "scores": {
+            "motmetrics": {
+              "MOT17-02-FRCNN": {
+                "mota": 41.935310263172056,
+                "idf1": 43.55742296918768,
+                "num_switches": 83,
+                "num_false_positives": 1052,
+                "num_misses": 9654,
+                "num_objects": 18581
+              },
+              "MOT17-04-FRCNN": {
+                "mota": 87.30155392476397,
+                "idf1": 79.42089820744009,
+                "num_switches": 131,
+                "num_false_positives": 2090,
+                "num_misses": 3818,
+                "num_objects": 47557
+              },
+              "MOT17-05-FRCNN": {
+                "mota": 64.60893450918029,
+                "idf1": 61.260963097799106,
+                "num_switches": 68,
+                "num_false_positives": 316,
+                "num_misses": 2064,
+                "num_objects": 6917
+              },
+              "MOT17-09-FRCNN": {
+                "mota": 75.34272300469483,
+                "idf1": 63.693336118654685,
+                "num_switches": 23,
+                "num_false_positives": 107,
+                "num_misses": 1183,
+                "num_objects": 5325
+              },
+              "MOT17-10-FRCNN": {
+                "mota": 59.607446062777484,
+                "idf1": 56.36669156086632,
+                "num_switches": 122,
+                "num_false_positives": 405,
+                "num_misses": 4659,
+                "num_objects": 12839
+              },
+              "MOT17-11-FRCNN": {
+                "mota": 70.31581178465451,
+                "idf1": 71.22349690672112,
+                "num_switches": 20,
+                "num_false_positives": 279,
+                "num_misses": 2502,
+                "num_objects": 9436
+              },
+              "MOT17-13-FRCNN": {
+                "mota": 48.67720322968562,
+                "idf1": 52.83181085437937,
+                "num_switches": 83,
+                "num_false_positives": 609,
+                "num_misses": 5283,
+                "num_objects": 11642
+              },
+              "OVERALL": {
+                "mota": 69.23248172257496,
+                "idf1": 66.8414141565438,
+                "num_switches": 530,
+                "num_false_positives": 4858,
+                "num_misses": 29163,
+                "num_objects": 112297
+              }
+            },
+            "TrackEval": {
+              "MOT17-02-FRCNN": {
+                "HOTA": 35.050542942527876,
+                "MOTA": 42.968623863085945,
+                "IDF1": 43.86540973766903,
+                "IDSW": 90
+              },
+              "MOT17-04-FRCNN": {
+                "HOTA": 67.27473377103553,
+                "MOTA": 87.31417036398426,
+                "IDF1": 79.42089820744009,
+                "IDSW": 131
+              },
+              "MOT17-05-FRCNN": {
+                "HOTA": 48.79189872090598,
+                "MOTA": 64.79687725892728,
+                "IDF1": 61.33200795228628,
+                "IDSW": 71
+              },
+              "MOT17-09-FRCNN": {
+                "HOTA": 53.326088437564955,
+                "MOTA": 75.6244131455399,
+                "IDF1": 63.819989534275244,
+                "IDSW": 25
+              },
+              "MOT17-10-FRCNN": {
+                "HOTA": 44.069993795051,
+                "MOTA": 59.71648882311706,
+                "IDF1": 56.416725064237326,
+                "IDSW": 127
+              },
+              "MOT17-11-FRCNN": {
+                "HOTA": 61.47598879017265,
+                "MOTA": 70.72912250953794,
+                "IDF1": 71.3907284768212,
+                "IDSW": 20
+              },
+              "MOT17-13-FRCNN": {
+                "HOTA": 42.168451800679016,
+                "MOTA": 49.15822023707267,
+                "IDF1": 52.97984696626792,
+                "IDSW": 83
+              },
+              "OVERALL": {
+                "HOTA": 55.984228589218475,
+                "MOTA": 69.53079779513254,
+                "IDF1": 66.96046701249068,
+                "IDSW": 547
+              }
+            }
+          },
+          "sha256": {
+            "MOT17-02-FRCNN": "cda7da61204827b5f3aa3f2f20d704d6b451245255e338bed7359d8eb6354588",
+            "MOT17-04-FRCNN": "fe5c351c61b19644273a77d20536773386e0b7502b00fa585cda911a273eabbb",
+            "MOT17-05-FRCNN": "6d2a61fe41f448709fe54ceab8a0ee6be98178fb75b607e4d1f2626e6afdf939",
+            "MOT17-09-FRCNN": "63b735417293517b2c16574da2be9133653c8be99ea1f2b8b2e053854e61e52c",
+            "MOT17-10-FRCNN": "3a0e3cc339fa93f9ba410bc31a70ccd4937f0e621c836c7bcbed7547bbe5f9f9",
+            "MOT17-11-FRCNN": "edcb9e209f72780c0d19557d50f0e07dddffceb8a82c76fa3f6257b4c9e732df",
+            "MOT17-13-FRCNN": "cd765554e71863874f8f406348ca59d10ba36bd955df16c013235cdc85d6289e"
+          }
+        }
+      }
+    }
+  }
+}

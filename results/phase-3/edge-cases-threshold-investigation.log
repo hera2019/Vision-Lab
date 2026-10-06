@@ -1,0 +1,8 @@
+Synthetic-edge-cases: 0.02s -> /work/data/phase-3/edge-cases/python.txt
+wrote tracks: /work/data/phase-3/edge-cases/cpp.txt
+{"left_lines": 87, "right_lines": 88, "byte_identical": false, "identical_line_share": 0.0, "same_frame_and_id": false, "pass": false, "covers": ["high/low confidence", "empty-frame skip", "lost recovery", "expiry", "unconfirmed removal", "float32 threshold equality at 0.1, 0.6 and 0.7"]}
+Traceback (most recent call last):
+  File "/work/python/tracker_edge_cases.py", line 39, in <module>
+    if not result['pass']:raise RuntimeError('tracker behavioral fixture mismatch')
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: tracker behavioral fixture mismatch

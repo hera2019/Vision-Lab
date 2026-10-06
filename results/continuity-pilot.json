@@ -1,0 +1,1212 @@
+{
+  "date": "2026-10-06",
+  "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+  "scope": "Exposed, training-seen MOT17 development diagnostics only; not acceptance or held-out accuracy.",
+  "sequence": "MOT17-05-FRCNN",
+  "frame_range": [
+    1,
+    168
+  ],
+  "source_fps": 14,
+  "model": "nano",
+  "baseline_replay_equal_cpp": true,
+  "baseline_inputs_unchanged": true,
+  "synthetic_retention_cases": [
+    {
+      "case": "same-person-same-position",
+      "true_return_identity": 2,
+      "absent_frames": [
+        4,
+        24
+      ],
+      "input_sha256": "2064cdafa25ba1e7e10288e15e353dd59c4003eda2d404330649557179f8888a",
+      "outcomes": {
+        "14": {
+          "initial_id": 2,
+          "return_id": 3,
+          "first_return_output_frame": 26,
+          "same_tracker_id": false,
+          "correct_identity_relation": false
+        },
+        "42": {
+          "initial_id": 2,
+          "return_id": 2,
+          "first_return_output_frame": 25,
+          "same_tracker_id": true,
+          "correct_identity_relation": true
+        }
+      }
+    },
+    {
+      "case": "different-person-same-position",
+      "true_return_identity": 3,
+      "absent_frames": [
+        4,
+        24
+      ],
+      "input_sha256": "2064cdafa25ba1e7e10288e15e353dd59c4003eda2d404330649557179f8888a",
+      "outcomes": {
+        "14": {
+          "initial_id": 2,
+          "return_id": 3,
+          "first_return_output_frame": 26,
+          "same_tracker_id": false,
+          "correct_identity_relation": true
+        },
+        "42": {
+          "initial_id": 2,
+          "return_id": 2,
+          "first_return_output_frame": 25,
+          "same_tracker_id": true,
+          "correct_identity_relation": false
+        }
+      }
+    },
+    {
+      "case": "same-person-displaced",
+      "true_return_identity": 2,
+      "absent_frames": [
+        4,
+        24
+      ],
+      "input_sha256": "7918a589c6cbf11662763a825a1f8caa2c3687fe23b4e648795832798931b3e0",
+      "outcomes": {
+        "14": {
+          "initial_id": 2,
+          "return_id": 3,
+          "first_return_output_frame": 26,
+          "same_tracker_id": false,
+          "correct_identity_relation": false
+        },
+        "42": {
+          "initial_id": 2,
+          "return_id": 3,
+          "first_return_output_frame": 26,
+          "same_tracker_id": false,
+          "correct_identity_relation": false
+        }
+      }
+    }
+  ],
+  "motion_sanity_checks": {
+    "known_translation": {
+      "accepted": true,
+      "reason": "accepted",
+      "translation_pixels": [
+        7.994820814724412,
+        -5.998507197902236
+      ],
+      "corners": 500,
+      "valid_pairs": 484,
+      "inliers": 484,
+      "inlier_fraction": 1.0,
+      "estimated_scale": 1.0000094379872686,
+      "estimated_rotation_degrees": -0.0008348424467925642,
+      "candidate_translation_pixels": [
+        7.994820814724412,
+        -5.998507197902236
+      ]
+    },
+    "blank_rejection": {
+      "accepted": false,
+      "reason": "fewer-than-20-corners",
+      "translation_pixels": [
+        0.0,
+        0.0
+      ]
+    },
+    "center_only_transform": true,
+    "pass": true
+  },
+  "camera_motion": {
+    "pairs": 167,
+    "accepted": 142,
+    "log": "data/continuity-pilot/camera-motion.json",
+    "sha256": "ada9140553ad1ebba9a3623e073ef3280f3480b8a7eb9c56350b957e4fd5db40"
+  },
+  "variants": {
+    "baseline": {
+      "buffer_updates": 14,
+      "motion_compensation": false,
+      "development_prefix_motmetrics": {
+        "mota": 51.09540636042402,
+        "idf1": 65.35500427715996,
+        "num_switches": 10,
+        "num_false_positives": 95,
+        "num_misses": 587,
+        "num_objects": 1415
+      },
+      "target_gt14": {
+        "visible_annotated_frames": 33,
+        "frames_with_matching_box": 31,
+        "ordered_id_chain": [
+          3,
+          4,
+          18
+        ],
+        "identity_changes_across_recognized_frames": 2,
+        "per_frame": [
+          {
+            "frame": 2,
+            "visibility": 0.46154,
+            "id": null,
+            "best_iou": 0.0
+          },
+          {
+            "frame": 3,
+            "visibility": 1.0,
+            "id": null,
+            "best_iou": 0.0
+          },
+          {
+            "frame": 4,
+            "visibility": 0.76923,
+            "id": 3,
+            "best_iou": 0.8165467625899273
+          },
+          {
+            "frame": 5,
+            "visibility": 0.79167,
+            "id": 3,
+            "best_iou": 0.7660615717293605
+          },
+          {
+            "frame": 6,
+            "visibility": 0.8,
+            "id": 3,
+            "best_iou": 0.8752590136759237
+          },
+          {
+            "frame": 7,
+            "visibility": 0.84,
+            "id": 3,
+            "best_iou": 0.8254563416331763
+          },
+          {
+            "frame": 8,
+            "visibility": 0.88,
+            "id": 3,
+            "best_iou": 0.8611160634694247
+          },
+          {
+            "frame": 9,
+            "visibility": 0.92,
+            "id": 3,
+            "best_iou": 0.7929429591947175
+          },
+          {
+            "frame": 10,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.7813006837335017
+          },
+          {
+            "frame": 11,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.6286151199464788
+          },
+          {
+            "frame": 12,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.8368735163414868
+          },
+          {
+            "frame": 13,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.720453298522429
+          },
+          {
+            "frame": 14,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.8729991629478614
+          },
+          {
+            "frame": 15,
+            "visibility": 0.96296,
+            "id": 3,
+            "best_iou": 0.7378009468196798
+          },
+          {
+            "frame": 16,
+            "visibility": 0.37037,
+            "id": 3,
+            "best_iou": 0.7589417065097473
+          },
+          {
+            "frame": 31,
+            "visibility": 0.22222,
+            "id": 4,
+            "best_iou": 0.6113339824732232
+          },
+          {
+            "frame": 32,
+            "visibility": 1.0,
+            "id": 4,
+            "best_iou": 0.8646565650184553
+          },
+          {
+            "frame": 33,
+            "visibility": 1.0,
+            "id": 4,
+            "best_iou": 0.8415375676184389
+          },
+          {
+            "frame": 34,
+            "visibility": 1.0,
+            "id": 4,
+            "best_iou": 0.758030677075225
+          },
+          {
+            "frame": 35,
+            "visibility": 1.0,
+            "id": 4,
+            "best_iou": 0.7738383062982929
+          },
+          {
+            "frame": 36,
+            "visibility": 1.0,
+            "id": 4,
+            "best_iou": 0.8093849834534329
+          },
+          {
+            "frame": 37,
+            "visibility": 1.0,
+            "id": 4,
+            "best_iou": 0.7960457856399578
+          },
+          {
+            "frame": 38,
+            "visibility": 1.0,
+            "id": 4,
+            "best_iou": 0.787107294196638
+          },
+          {
+            "frame": 39,
+            "visibility": 1.0,
+            "id": 4,
+            "best_iou": 0.7292505077775109
+          },
+          {
+            "frame": 40,
+            "visibility": 0.55172,
+            "id": 4,
+            "best_iou": 0.6793996084402881
+          },
+          {
+            "frame": 161,
+            "visibility": 0.22857,
+            "id": 18,
+            "best_iou": 0.9031101148781169
+          },
+          {
+            "frame": 162,
+            "visibility": 0.54286,
+            "id": 18,
+            "best_iou": 0.9003456669371246
+          },
+          {
+            "frame": 163,
+            "visibility": 0.82857,
+            "id": 18,
+            "best_iou": 0.8956971411845059
+          },
+          {
+            "frame": 164,
+            "visibility": 0.8,
+            "id": 18,
+            "best_iou": 0.8932494906862436
+          },
+          {
+            "frame": 165,
+            "visibility": 0.77143,
+            "id": 18,
+            "best_iou": 0.8894324370273277
+          },
+          {
+            "frame": 166,
+            "visibility": 0.74286,
+            "id": 18,
+            "best_iou": 0.886624708419524
+          },
+          {
+            "frame": 167,
+            "visibility": 0.71429,
+            "id": 18,
+            "best_iou": 0.8820245627093413
+          },
+          {
+            "frame": 168,
+            "visibility": 0.68571,
+            "id": 18,
+            "best_iou": 0.8779489622467873
+          }
+        ]
+      },
+      "output": "data/continuity-pilot/baseline.txt",
+      "output_sha256": "980b7837df6822d95b2e60cd35406b6fbdc4ed126b62f22ae4009677c58dc44f",
+      "seconds_tracking_and_scoring_observational": 0.06676816700201016
+    },
+    "retention-42": {
+      "buffer_updates": 42,
+      "motion_compensation": false,
+      "development_prefix_motmetrics": {
+        "mota": 51.51943462897526,
+        "idf1": 65.59865092748736,
+        "num_switches": 8,
+        "num_false_positives": 110,
+        "num_misses": 568,
+        "num_objects": 1415
+      },
+      "target_gt14": {
+        "visible_annotated_frames": 33,
+        "frames_with_matching_box": 31,
+        "ordered_id_chain": [
+          3,
+          4,
+          12
+        ],
+        "identity_changes_across_recognized_frames": 2,
+        "per_frame": [
+          {
+            "frame": 2,
+            "visibility": 0.46154,
+            "id": null,
+            "best_iou": 0.0
+          },
+          {
+            "frame": 3,
+            "visibility": 1.0,
+            "id": null,
+            "best_iou": 0.0
+          },
+          {
+            "frame": 4,
+            "visibility": 0.76923,
+            "id": 3,
+            "best_iou": 0.8165467625899273
+          },
+          {
+            "frame": 5,
+            "visibility": 0.79167,
+            "id": 3,
+            "best_iou": 0.7660615717293605
+          },
+          {
+            "frame": 6,
+            "visibility": 0.8,
+            "id": 3,
+            "best_iou": 0.8752590136759237
+          },
+          {
+            "frame": 7,
+            "visibility": 0.84,
+            "id": 3,
+            "best_iou": 0.8254563416331763
+          },
+          {
+            "frame": 8,
+            "visibility": 0.88,
+            "id": 3,
+            "best_iou": 0.8611160634694247
+          },
+          {
+            "frame": 9,
+            "visibility": 0.92,
+            "id": 3,
+            "best_iou": 0.7929429591947175
+          },
+          {
+            "frame": 10,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.7813006837335017
+          },
+          {
+            "frame": 11,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.6286151199464788
+          },
+          {
+            "frame": 12,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.8368735163414868
+          },
+          {
+            "frame": 13,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.720453298522429
+          },
+          {
+            "frame": 14,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.8729991629478614
+          },
+          {
+            "frame": 15,
+            "visibility": 0.96296,
+            "id": 3,
+            "best_iou": 0.7378009468196798
+          },
+          {
+            "frame": 16,
+            "visibility": 0.37037,
+            "id": 3,
+            "best_iou": 0.7589417065097473
+          },
+          {
+            "frame": 31,
+            "visibility": 0.22222,
+            "id": 4,
+            "best_iou": 0.6113339824732232
+          },
+          {
+            "frame": 32,
+            "visibility": 1.0,
+            "id": 4,
+            "best_iou": 0.8646565650184553
+          },
+          {
+            "frame": 33,
+            "visibility": 1.0,
+            "id": 4,
+            "best_iou": 0.8415375676184389
+          },
+          {
+            "frame": 34,
+            "visibility": 1.0,
+            "id": 4,
+            "best_iou": 0.758030677075225
+          },
+          {
+            "frame": 35,
+            "visibility": 1.0,
+            "id": 4,
+            "best_iou": 0.7738383062982929
+          },
+          {
+            "frame": 36,
+            "visibility": 1.0,
+            "id": 4,
+            "best_iou": 0.8093849834534329
+          },
+          {
+            "frame": 37,
+            "visibility": 1.0,
+            "id": 4,
+            "best_iou": 0.7960457856399578
+          },
+          {
+            "frame": 38,
+            "visibility": 1.0,
+            "id": 4,
+            "best_iou": 0.787107294196638
+          },
+          {
+            "frame": 39,
+            "visibility": 1.0,
+            "id": 4,
+            "best_iou": 0.7292505077775109
+          },
+          {
+            "frame": 40,
+            "visibility": 0.55172,
+            "id": 4,
+            "best_iou": 0.6793996084402881
+          },
+          {
+            "frame": 161,
+            "visibility": 0.22857,
+            "id": 12,
+            "best_iou": 0.9031101148781169
+          },
+          {
+            "frame": 162,
+            "visibility": 0.54286,
+            "id": 12,
+            "best_iou": 0.9003456669371246
+          },
+          {
+            "frame": 163,
+            "visibility": 0.82857,
+            "id": 12,
+            "best_iou": 0.8956971411845059
+          },
+          {
+            "frame": 164,
+            "visibility": 0.8,
+            "id": 12,
+            "best_iou": 0.8932494906862436
+          },
+          {
+            "frame": 165,
+            "visibility": 0.77143,
+            "id": 12,
+            "best_iou": 0.8894324370273277
+          },
+          {
+            "frame": 166,
+            "visibility": 0.74286,
+            "id": 12,
+            "best_iou": 0.886624708419524
+          },
+          {
+            "frame": 167,
+            "visibility": 0.71429,
+            "id": 12,
+            "best_iou": 0.8820245627093413
+          },
+          {
+            "frame": 168,
+            "visibility": 0.68571,
+            "id": 12,
+            "best_iou": 0.8779489622467873
+          }
+        ]
+      },
+      "output": "data/continuity-pilot/retention-42.txt",
+      "output_sha256": "bf19cfda60448481e9e9698a91028b1308df989552dfb7bcb6f35351daefca25",
+      "seconds_tracking_and_scoring_observational": 0.13112912499855156
+    },
+    "motion-14": {
+      "buffer_updates": 14,
+      "motion_compensation": true,
+      "development_prefix_motmetrics": {
+        "mota": 51.73144876325089,
+        "idf1": 69.803250641574,
+        "num_switches": 3,
+        "num_false_positives": 94,
+        "num_misses": 586,
+        "num_objects": 1415
+      },
+      "target_gt14": {
+        "visible_annotated_frames": 33,
+        "frames_with_matching_box": 30,
+        "ordered_id_chain": [
+          3
+        ],
+        "identity_changes_across_recognized_frames": 0,
+        "per_frame": [
+          {
+            "frame": 2,
+            "visibility": 0.46154,
+            "id": null,
+            "best_iou": 0.0
+          },
+          {
+            "frame": 3,
+            "visibility": 1.0,
+            "id": null,
+            "best_iou": 0.0
+          },
+          {
+            "frame": 4,
+            "visibility": 0.76923,
+            "id": 3,
+            "best_iou": 0.8165467625899273
+          },
+          {
+            "frame": 5,
+            "visibility": 0.79167,
+            "id": 3,
+            "best_iou": 0.8874293012224055
+          },
+          {
+            "frame": 6,
+            "visibility": 0.8,
+            "id": 3,
+            "best_iou": 0.9414649095923996
+          },
+          {
+            "frame": 7,
+            "visibility": 0.84,
+            "id": 3,
+            "best_iou": 0.8239820527201366
+          },
+          {
+            "frame": 8,
+            "visibility": 0.88,
+            "id": 3,
+            "best_iou": 0.924010820773508
+          },
+          {
+            "frame": 9,
+            "visibility": 0.92,
+            "id": 3,
+            "best_iou": 0.8189304930273431
+          },
+          {
+            "frame": 10,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.843139190523198
+          },
+          {
+            "frame": 11,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.6594472469470055
+          },
+          {
+            "frame": 12,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.8802492106747347
+          },
+          {
+            "frame": 13,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.720461435862023
+          },
+          {
+            "frame": 14,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.8729991629478614
+          },
+          {
+            "frame": 15,
+            "visibility": 0.96296,
+            "id": 3,
+            "best_iou": 0.6619688534986949
+          },
+          {
+            "frame": 16,
+            "visibility": 0.37037,
+            "id": 3,
+            "best_iou": 0.8091353996737363
+          },
+          {
+            "frame": 31,
+            "visibility": 0.22222,
+            "id": null,
+            "best_iou": 0.17864902231878335
+          },
+          {
+            "frame": 32,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.6541717276935647
+          },
+          {
+            "frame": 33,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.7860245105249717
+          },
+          {
+            "frame": 34,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.7865937378742192
+          },
+          {
+            "frame": 35,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.7622394053315109
+          },
+          {
+            "frame": 36,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.8011126564673154
+          },
+          {
+            "frame": 37,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.7937813690984441
+          },
+          {
+            "frame": 38,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.7815750574838496
+          },
+          {
+            "frame": 39,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.779224331629165
+          },
+          {
+            "frame": 40,
+            "visibility": 0.55172,
+            "id": 3,
+            "best_iou": 0.7148122142546238
+          },
+          {
+            "frame": 161,
+            "visibility": 0.22857,
+            "id": 3,
+            "best_iou": 0.8635111554965396
+          },
+          {
+            "frame": 162,
+            "visibility": 0.54286,
+            "id": 3,
+            "best_iou": 0.900345666937124
+          },
+          {
+            "frame": 163,
+            "visibility": 0.82857,
+            "id": 3,
+            "best_iou": 0.8956971411845064
+          },
+          {
+            "frame": 164,
+            "visibility": 0.8,
+            "id": 3,
+            "best_iou": 0.8932494906862436
+          },
+          {
+            "frame": 165,
+            "visibility": 0.77143,
+            "id": 3,
+            "best_iou": 0.8894324370273281
+          },
+          {
+            "frame": 166,
+            "visibility": 0.74286,
+            "id": 3,
+            "best_iou": 0.886624708419524
+          },
+          {
+            "frame": 167,
+            "visibility": 0.71429,
+            "id": 3,
+            "best_iou": 0.8820245627093408
+          },
+          {
+            "frame": 168,
+            "visibility": 0.68571,
+            "id": 3,
+            "best_iou": 0.8779489622467869
+          }
+        ]
+      },
+      "output": "data/continuity-pilot/motion-14.txt",
+      "output_sha256": "bf873d6c922d6ea07cf4289e92232dbdf32a1a3f5bb4ae8eb3ca99af58846fc9",
+      "seconds_tracking_and_scoring_observational": 0.1557375000011234
+    },
+    "motion-retention-42": {
+      "buffer_updates": 42,
+      "motion_compensation": true,
+      "development_prefix_motmetrics": {
+        "mota": 51.30742049469965,
+        "idf1": 68.05614632071459,
+        "num_switches": 2,
+        "num_false_positives": 104,
+        "num_misses": 583,
+        "num_objects": 1415
+      },
+      "target_gt14": {
+        "visible_annotated_frames": 33,
+        "frames_with_matching_box": 30,
+        "ordered_id_chain": [
+          3
+        ],
+        "identity_changes_across_recognized_frames": 0,
+        "per_frame": [
+          {
+            "frame": 2,
+            "visibility": 0.46154,
+            "id": null,
+            "best_iou": 0.0
+          },
+          {
+            "frame": 3,
+            "visibility": 1.0,
+            "id": null,
+            "best_iou": 0.0
+          },
+          {
+            "frame": 4,
+            "visibility": 0.76923,
+            "id": 3,
+            "best_iou": 0.8165467625899273
+          },
+          {
+            "frame": 5,
+            "visibility": 0.79167,
+            "id": 3,
+            "best_iou": 0.8874293012224055
+          },
+          {
+            "frame": 6,
+            "visibility": 0.8,
+            "id": 3,
+            "best_iou": 0.9414649095923996
+          },
+          {
+            "frame": 7,
+            "visibility": 0.84,
+            "id": 3,
+            "best_iou": 0.8239820527201366
+          },
+          {
+            "frame": 8,
+            "visibility": 0.88,
+            "id": 3,
+            "best_iou": 0.924010820773508
+          },
+          {
+            "frame": 9,
+            "visibility": 0.92,
+            "id": 3,
+            "best_iou": 0.8189304930273431
+          },
+          {
+            "frame": 10,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.843139190523198
+          },
+          {
+            "frame": 11,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.6594472469470055
+          },
+          {
+            "frame": 12,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.8802492106747347
+          },
+          {
+            "frame": 13,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.720461435862023
+          },
+          {
+            "frame": 14,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.8729991629478614
+          },
+          {
+            "frame": 15,
+            "visibility": 0.96296,
+            "id": 3,
+            "best_iou": 0.6619688534986949
+          },
+          {
+            "frame": 16,
+            "visibility": 0.37037,
+            "id": 3,
+            "best_iou": 0.8091353996737363
+          },
+          {
+            "frame": 31,
+            "visibility": 0.22222,
+            "id": null,
+            "best_iou": 0.17864902231878335
+          },
+          {
+            "frame": 32,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.6541717276935647
+          },
+          {
+            "frame": 33,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.7860245105249717
+          },
+          {
+            "frame": 34,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.7865937378742192
+          },
+          {
+            "frame": 35,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.7622394053315109
+          },
+          {
+            "frame": 36,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.8011126564673154
+          },
+          {
+            "frame": 37,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.7937813690984441
+          },
+          {
+            "frame": 38,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.7815750574838496
+          },
+          {
+            "frame": 39,
+            "visibility": 1.0,
+            "id": 3,
+            "best_iou": 0.779224331629165
+          },
+          {
+            "frame": 40,
+            "visibility": 0.55172,
+            "id": 3,
+            "best_iou": 0.7148122142546238
+          },
+          {
+            "frame": 161,
+            "visibility": 0.22857,
+            "id": 3,
+            "best_iou": 0.8635111554965396
+          },
+          {
+            "frame": 162,
+            "visibility": 0.54286,
+            "id": 3,
+            "best_iou": 0.900345666937124
+          },
+          {
+            "frame": 163,
+            "visibility": 0.82857,
+            "id": 3,
+            "best_iou": 0.8956971411845064
+          },
+          {
+            "frame": 164,
+            "visibility": 0.8,
+            "id": 3,
+            "best_iou": 0.8932494906862436
+          },
+          {
+            "frame": 165,
+            "visibility": 0.77143,
+            "id": 3,
+            "best_iou": 0.8894324370273281
+          },
+          {
+            "frame": 166,
+            "visibility": 0.74286,
+            "id": 3,
+            "best_iou": 0.886624708419524
+          },
+          {
+            "frame": 167,
+            "visibility": 0.71429,
+            "id": 3,
+            "best_iou": 0.8820245627093408
+          },
+          {
+            "frame": 168,
+            "visibility": 0.68571,
+            "id": 3,
+            "best_iou": 0.8779489622467869
+          }
+        ]
+      },
+      "output": "data/continuity-pilot/motion-retention-42.txt",
+      "output_sha256": "022228d2da0d41088331e122573678d93df00f1c58db111a50ec0b98d20b5db3",
+      "seconds_tracking_and_scoring_observational": 0.19369420800285297
+    }
+  },
+  "input_sha256": {
+    "data/phase-3/dets/nano/MOT17-05-FRCNN.txt": "896d2e68b678cd6b4a6c9db6723fa86cf94190d79a9bb4fac6689374dd3e2b27",
+    "data/phase-3/tracks/end-to-end/nano/MOT17-05-FRCNN.txt": "6d2a61fe41f448709fe54ceab8a0ee6be98178fb75b607e4d1f2626e6afdf939",
+    "data/MOT17/train/MOT17-05-FRCNN/gt/gt.txt": "ed74c54176b21b38cb690eda79a4755cf16e4c4a9ca2f019b0ba8904636174f5",
+    "docs/CONTINUITY_PILOT.md": "e50eaaf3d2942e1d925835a049c308c2c21cdbad06f3ecb8700c153d792da562"
+  },
+  "source_image_sha256": {
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000001.jpg": "9f4f112b29e93846501db27d2bcc2c99795715aa6376d5b5662d75f2e2f196d7",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000002.jpg": "1494429af24fbbf38c3d6d7376fa1abd6bcae706edaf07a743bdbd1f9c2dbc4b",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000003.jpg": "cc651fa8e1ac9e0a00e0719e1b7965201783f5c9a46fc3d80c3b332d20dcbb39",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000004.jpg": "2ae8d52dc9c355580d448501d4859cc0aa6ab42e60b44c872b6b06ee924eee80",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000005.jpg": "b4ce167c58e4bfc71e7153129d4a65d8af1fc8526e09e0bc73e8e7ac677cf060",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000006.jpg": "bd8b2ddbbcb19f84847ee0fcd3f78f938b25832a494c12e2130e6c679bbbb71f",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000007.jpg": "4260e30ec6c190bedb5aa38dafa117aa9ce6cd062902cf1da75543fa05e5d786",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000008.jpg": "353bf54138eb07826ede8cc82142c4c5adf80fc4d6ceae4af95a81c38299c41a",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000009.jpg": "385c2cc5fdb792d672c66855cf6b9780fbf680044afbea46f122a727fd6633ee",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000010.jpg": "fbb29fe6df59b32614b249e6c99854d1c06fdc851dd4a5868d7716cec2e02564",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000011.jpg": "3ac1b6ad5a9e24bb182da4d355306e17814c44280cde9fa94166691ad6e7a0fc",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000012.jpg": "adc14657a314703da3e47bc2631cf0eb9586a4b55b835039375bcb2de235b0d0",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000013.jpg": "fd80d0400016f438bbfb758a7eb88dc61fa51bfb701ace0105502e93c4e743e2",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000014.jpg": "007d545002f6e18db73e5ac86c16438c9897cb995dd2a050e43c10ae1b6ddf5d",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000015.jpg": "bee973c7597e12a0883e03d75ac4887f29d605ae4b4e98583d76d3fcf7afb6c0",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000016.jpg": "c95f90394ba2441c21be216922acd0280ce1c2531396019fcf7e9802a6095253",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000017.jpg": "9bc13fd0bc93465afb320487039f81cc6dd8433bcc632c924f0d9d460125c56d",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000018.jpg": "571400114449d080c9ce3be6037bd537442b125303bffee20cc64e422db6303e",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000019.jpg": "045c4ea57a46fd8c30ac0a3a5e535532dcaf1df6d9d2cdc82eb81702736a56cf",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000020.jpg": "fbea87ffa77863a4026826dd593659ab7f579b4c15c8ea4da76358624c825aed",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000021.jpg": "3db10378c94499fe9f16378125da952cb6dee4f91d23dcf4a3a56cb2d09cb0ec",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000022.jpg": "1b08ee4bb27f669b086b7204713d293cdfcb1b467ce6d1f8c49ea1797846950b",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000023.jpg": "e95bc79a459199dea3783491d0eddeaf5a45267ca922366359d9c4824baa3812",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000024.jpg": "70ca7447889303689b69540d13a809e52700c27154f2d0481bdac37d025c8c16",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000025.jpg": "7eba44f42c79176aaf09f34319f800b8d6ba5f97f52b00a73e83ddd0b96be76c",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000026.jpg": "f449400180032660807715fa9330fa2e81c284927a5f8c74eaf8d6a79f5003c2",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000027.jpg": "f637fceabbab18a71728785c9cadaa33027e393692239562ff209cac85d154fa",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000028.jpg": "c970d3864f7e7a6af011f59ccdc3c1858bc68a068768a579ad60cf5cdb7a3375",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000029.jpg": "170096939885c1d6b729e2461305b9a47d83052b9665541ee3d84c2bfc53e0b4",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000030.jpg": "493f79580b88803270375da6a602b0a25659a8fd64f7ed7ec50326d0ad1ae984",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000031.jpg": "03dca292bd7d59b3f882843f412a1e3ef42b005c2bb786b69cf7337aff77865f",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000032.jpg": "468152693b58ec950c5210580b99bb315f4901e3eb19c0c914ba81d1057e110a",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000033.jpg": "cad3a09c8099641a6b6fcef2c3827509e289ab8e7f81bf52accd54bb1677d7dc",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000034.jpg": "b78ba8a62bf51720a3997f45ebb87e47bd2171005efec57b6c20ef7a0c809cb3",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000035.jpg": "ce8c1ade0e7a1197937d235a54cff59593b36737179ca956dcf2f8dfe14e5ab4",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000036.jpg": "152ada0fb3cff022c567409586dc28eb4265267e73cf1ecf93abdc652474c7be",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000037.jpg": "289e1a7b0339feac5468ee8a4506c63e1a4f7207623969a9e6469017c9f952cd",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000038.jpg": "8330e22c2dad9bb734565f2a1b283c7f78b5b38399d295c1bef68c37efc6a743",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000039.jpg": "7fcc58b438f5096a043f33777bdcf2216f90107f3d05a7b3afa5c7f93e2e2a28",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000040.jpg": "047516f97a40992e3376ece5749be18c9510dda8f7096367953756da07056969",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000041.jpg": "99c3cfafb5a498f90f1f1fd09e06a9d6f62d284c97a5ffabc883dca9cbc4aa4f",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000042.jpg": "f1e25fccf8140427c87b9af536e1b13e4a0fddf7990bad7be535e6f53f0f7d07",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000043.jpg": "0b94f0af9c7717891281f14741e16f09caada46eed4f8b9018554cded05fffa4",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000044.jpg": "ba65ea3cf3f61b689e4d43ea06547163999dc729d87432a16cc414bc7e2051bb",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000045.jpg": "41a8076c52750f4cb3222463356ea6cd533d1d614b54d41102e19f60fbc2baa4",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000046.jpg": "9e8d4aa8447837a75db963a1a67731cd6009a4e13a0468858645dfde3128c489",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000047.jpg": "0e0f4e0a2bcc79c671e2204628d061ccbdd5a2a0fada2a858656ff14ce7ec102",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000048.jpg": "0ffb83ae03e90fa1e67126477f26a4180bd6cc75b6fe0b1f0c489485aa0fa77c",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000049.jpg": "4c8fbdd5b69a335b1fa448a5a6d0e64f546f7eea6d49fb21a6ae8a2425cc2af4",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000050.jpg": "1efc1e2098db0d3500db7e31ca6c8f9afdfd17883112efb704d9df094f724a7a",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000051.jpg": "125f4a80dbd6b1236827cec142f0efed4ba75e4f77a38f61cb0df2d9d4c75281",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000052.jpg": "d6d916a8be06ac0ae6728544301bdd175ae3f693d2e326923ff7a07060a457df",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000053.jpg": "f9ae991ec015b5035981399ad0fcc82be579ed94527156f8335fe57a44022427",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000054.jpg": "b24969064d138745fa5dd634e3011f05080dec759c39c0ba8b9a643f79f72f01",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000055.jpg": "ad6fbe5d3906e4f93737d6c2be37c950d723175ce27c7ccca56333a428c9efa5",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000056.jpg": "b005aec555e1b5313885259c168acf478c2a84dceac0ac82cf392d0900d8ec0f",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000057.jpg": "1b886d95cb613c1b2a9aa7af4471bd09264ee597b4229752dc3736258738e3d1",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000058.jpg": "1e6d7f4735c018ab4965185b35ff8ef05c6400a291cbf12f409da3c1c758accb",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000059.jpg": "03d891c06f79e9b3b363d8a73409454962bff5d6ca42ea291c7264da8da2b0ef",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000060.jpg": "d27d4124f9fc5ce9c62489e8cc497ae22f7ee02614104ba6aedd46fa45fbd86c",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000061.jpg": "5b080c0548e6e65fb58881f0bdb4ea09c3973e147fc14e64a38a18112036dc55",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000062.jpg": "19223d87d5e486100fef53cd9e3a91e2d50eedf4dde1b473535a519cecb5f77c",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000063.jpg": "618ffb8651fe98335ed1a7b06334befab6b4576a4b756094e7ae6e1fca63e82d",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000064.jpg": "aeb9e1b0d85534f74eb8df06700c7bb9a1ab25726d94582782e49868311b22a7",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000065.jpg": "4b091b930041fd8799622bdc3611ef48974e543906c020e4ca7064efc04a7ac0",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000066.jpg": "3229a3a45a65beb7a6ed633d8bc81572dc2feae6d011139f71bfc34947e35ecb",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000067.jpg": "75ee14a58e3ba452c4c9bcda97b48ecc243f0ec56c39e9c21c56782ccdb49ec7",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000068.jpg": "4c2b0023a17d104685c5cfc6abd43b78914c81c20e8863644f869a97762afd46",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000069.jpg": "1eec403105c9a95fdace57752e92f6e6276ada68f1bc160d092547a0aabded42",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000070.jpg": "6770d9f0a2061753fc4689f91ad311a091af29c11952a2bfa730464921c0438d",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000071.jpg": "65b90d7b669a55f21a80f4a3840ff2e16b43b2ddc23d122eceac31a0f0f3e096",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000072.jpg": "234ec21cc16ec3a0f6a5aeb140383bd9fa635bf832a34e15934557c354fff3b3",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000073.jpg": "177bb11ea2bb3ba0ff4744d1d5fbb16f20ecc2ecd5b4fdd9ead5f7beae508d16",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000074.jpg": "5f5c87d6859fe9cae549a8a166e8c27299ecdf23971e1f3fbd72f0d0956d72db",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000075.jpg": "976277dd532cb095816917b4dd8b494ceb2a3f417b21bb4c168a007804147a52",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000076.jpg": "643b46fce2cb7cfa52353b78b8c7e9f43c6f90aeafd4190f8a1faa6fd289ef96",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000077.jpg": "1836d51d95595b09b538915050610f50dfdfce6362eff96c3f3e2433c7ca9924",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000078.jpg": "9c0d8d1fcee6c0507628db9b2262263a094b4497aebff4fec01eb95bb63995b4",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000079.jpg": "d6122a36d0fdb609162f9c26880639655da583fdc0dd3d2a85e029cabeb17ddf",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000080.jpg": "0366cd7205facde2062e282d23b1eeddb1a5016db242993c438a0497984b858b",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000081.jpg": "69495f37f1e5097598635279840d9bac025093e305fcfc12eb714bc59407e79a",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000082.jpg": "71b7fd1811be2f7cb759b21a71df20e264554c7ef7dfb968d940d2e3436f5023",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000083.jpg": "7ab210ca351b8a1ee39332067c67fab70f94ca65ab5fbbb4f6c198b56eb3f184",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000084.jpg": "663ff7e2c47b63c0b44866079f8a690581dc7cbce9c10b7669cfb709955b833f",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000085.jpg": "1542e2ea16ac80cebf5eff7fc2d3fde9669a34ec564c8723603c70255f14843e",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000086.jpg": "8533a6adf79dcb3ea09d67c0a1632219440972ee19d073948dd13f8765974305",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000087.jpg": "778c9e53271deac8c55233238e772e6e2c5b1f2c96750f75481ae07aaecda196",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000088.jpg": "1a073670e47704dbe8dbccc18f0e458dab544a774caaca1a8d3b3effe052bec9",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000089.jpg": "dfbc435ed1676dcf780d7a8a7acc548ff2bce6b8ee2a37d18afbcfe287a28a17",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000090.jpg": "7870b901c96df1878ba3fd72e0936171113d2cd16d244a6b12bef840b66ac8c3",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000091.jpg": "ee07006f3d2104fe96ea0de7789d377b772493345de8d1d1c6027332a0f8c18d",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000092.jpg": "23f4fc325d397f90c4cca264a4d2cdd0b5b92a990da0875f87ea129e61a4ed33",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000093.jpg": "363dfb8d046193d19b67da6e3d157fbff48ef6a0b78cecc77b3e5bfd594e92bb",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000094.jpg": "a48eac0e49a108d3e21d9db34291da74ca13d699334e9666ffa720f6fe3e2c33",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000095.jpg": "c00bd7812f5412e9a2938554b0bacf33644b791fdf7792b8b52485b3149fcb73",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000096.jpg": "79bc457e98f6c181901301ac7bbb312eb95e91744b7e9e2da3d6fde0be10d18a",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000097.jpg": "2a430909e73cb6c2f4425f91af530f45e43d4a505ded7547810bafb1f54df828",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000098.jpg": "a229c898a7b47ab108b5a8a4e6bfe92d50668b9d303faf7a9fe2f4db70db6d2b",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000099.jpg": "9bcb8906b0fcad649a879a95af19ab71fd9d511c66d1eb9dbcaf337ab22da137",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000100.jpg": "b30c34989ba8d3a17d3a345f525fa5dbb3d65172ef813013de1fd5515e93d6d1",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000101.jpg": "ee073d4a3e617f0d1efa08f348601c485bb62fd8b5950078746e521347385768",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000102.jpg": "125b9f86531a015f7fb2db544a02735f14218ebf6a0b0dca694ba23171654722",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000103.jpg": "3064c16bcb4b3e37cb0fd575a912714b287c5078f77567d10baa0e4a887f1491",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000104.jpg": "1881b4999a731e8e7101aa65e9976c4d0561f6410ce2662a4f9e1021b455ec55",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000105.jpg": "42302f1cf7bdaed488d238208169735cc87b330dfc89a2e581a2b7feec86feb7",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000106.jpg": "4f748261f3d0f16b87d4a76a0763eac15922e30c2d4738391a1c8921f2340a3c",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000107.jpg": "1a0923c073b231b76ca5978f42dec1c22b2544532cae61afd027636d415b8fe1",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000108.jpg": "6a844c08e61f5d6eb80c20a701d5dd5e26865821fefc550957614d6daa513627",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000109.jpg": "20c45f728dfe014bd307cf119460f09ad236db7e24c7747955796bd73375d35c",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000110.jpg": "e14404c49466cd8ca425d90af930aefacde6427cfe4c910edf519e2232ceb5d9",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000111.jpg": "ed5b16640a44d32e463559bd7cc7c04b6d8ba96edbe41cb07507fa3471d44094",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000112.jpg": "204a0cafcfab2b50e3d985848d4939e84e73da387e5549d6fba6e4c5b993c167",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000113.jpg": "c290ded782171c7c2ed44f3e8a8ee5e85c52c8a81c64dd9490539c00f4ae0344",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000114.jpg": "6bc4bead22a8a8f1b4e39850295d3b948541d2380ffce87fc9565761853d9ce4",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000115.jpg": "5414a796300e3b99c197b41de7c47f90ed5438ddaffb8180fc98bdb2a6079a61",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000116.jpg": "b4583a406657e6e30fb819070821c957ea85f9dacac696374ca9eacc220cc8a4",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000117.jpg": "8c0eac29a1240608886b7cdb498af593b1f7fc0b39dbe5bbc8709425f715b559",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000118.jpg": "0f56b2f96797c5dae637823fd6166e324b7e6d02f3009ef99208697fad811613",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000119.jpg": "3bc7e59b63cac65033b9c15ef2312b883882fac6b74c546317c28ae74ffdef91",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000120.jpg": "fce543709f957212e63519b77481438df0f8021b38d42df61be25fd5d99b53e1",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000121.jpg": "859f16b8aad50612a702d48af0a1bd528a200141a0cb12b211508541b2b17360",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000122.jpg": "1aadf2ed7e3c7e925fb2d8a2ac10f6e7f8add37e186087b1461250568b9fbb6d",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000123.jpg": "57230340823d016c7e13cef57b9564261daa2054bac46a7d8bbf50ffb80f85ec",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000124.jpg": "8abdc5e960aeb05bc2e01c73d0cd198ae878c7116b68f505cc235be84f12d4cb",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000125.jpg": "ebdf9c4f4e02164b7fb0683c1f14bf8d42068e0f59959f476a5121634f5fa054",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000126.jpg": "71c58b85fe174f7839e5941f931d5cd2f6dfd207007cf5b3cddfbf507dc0c329",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000127.jpg": "53155a5988684b95f336ae48109aa5b23764184a23c3531b1e3cfe21bc34891f",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000128.jpg": "444b3c192489e3072b539ec05e06ca80fd48b389378878a54c20d801dae42b75",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000129.jpg": "e11ce577f7c2ea310d84ad5601ad9cad2f4ebca66a609196be7d264abba181d5",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000130.jpg": "38b0e3711784f774b83fc568b64990259682161a65eaa1456e2e4736d2643e10",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000131.jpg": "c03f86155e4ece647a86c9c78cb05469e037c7211fd690a2138d51066ebfb0b7",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000132.jpg": "3896dc0f6fc93e0ed12459001ee348f88f2a10c6143765891c7f30dc391d26c4",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000133.jpg": "60d18c025854a1d2e76461cbcab3726024c0907207247776cb25f9edc1af9e5e",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000134.jpg": "bd05e822227cb02863454a7bb76f826b21c8061e837903ba1d9d06b2bed5bbd5",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000135.jpg": "df2517fcb065b5d5c1536410239f8ca318a0644cce2b938a8b6ee6a02cf72a63",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000136.jpg": "80a2a733e9c88b997bdebfd14b77474376fa8c41b9acc8bab102cfde993848a0",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000137.jpg": "56001e4164ca781cc11380d6e5655fb233e4448fde99cc14a1ac18f7188a088a",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000138.jpg": "04c0c58d65effe2ee14e757c98144fb3d58b8fa8856a1ca15562857e1ef0de4e",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000139.jpg": "ce4e79a635ef6b058e270753de7bb0375b36a8a9836a4bf4490445ae3d4b3408",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000140.jpg": "41e29916fc5d991f214eba8cf32f29a6478a3fc79f09fd3d3cbbde4a330e8121",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000141.jpg": "286ec96042edd01c946bf4969cba2217f0731a69ad33f8a2f103353ee527e3a9",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000142.jpg": "8ac7c4fe728f1125fb45cce3f61628eeab1309e01463af2cd6292a04d33c31da",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000143.jpg": "db7f0e19c405f759efcd81bc8263099196dab442f742a9185bc953156148456a",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000144.jpg": "5c42753e6714ee8f1013e19a8ecbfbabeb524525cc67163f146b2d308d273d00",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000145.jpg": "961109d340e9bad7fcffec1a32a5feabd311779dc189f39e694dd256abe6a0b9",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000146.jpg": "c64ccbc9e88c78ee77747acf666af49ca49dae9f3c32da0887231ba30a4c0d7f",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000147.jpg": "35cc4118b3fd85cfc1f94665e3f1efdb59f1f700a4d6df88be380572e9c7b2cb",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000148.jpg": "22525dd1dd4118678c62de32804194d3505674afd93d07f92548173a3ea9ba2f",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000149.jpg": "4f44a47081bfaa6f5954a1962db48d324abd32809c5818e6663b1609e0dbc431",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000150.jpg": "72bb6b079abc1ccc340df85dc4d5bb9690f1ca0efc5af403263cf7cc62a5c18d",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000151.jpg": "164f07b6a486819bd9cbb343426dce98e38f81fbf70ae34a24d421aa8c82c2a6",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000152.jpg": "88d1c989f0240a30df25c1d4022d9d3bc156b26b5ad2a9c94b512e9dc44244bb",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000153.jpg": "a66e849df2f0dcd9eefb864c4a577f5386c3ca1aece0a274a99ccdedd166e9ff",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000154.jpg": "9c5cc88a619666e376c32b7b6e4e946fa9d389c9c4b298dbd081bfd21742b627",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000155.jpg": "032e68d18b4d067e2b90742fd61cc6854ca61762f8bbdeca7757c9163efd40de",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000156.jpg": "df3148fe9b70df4fc16d386acdd89a62de74692053e8bd03e641a9818b8da57e",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000157.jpg": "00edcbe5c967114043f9ef3c69dc0bee0984c1f8ebc72c4b54318ee9b7ca12b2",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000158.jpg": "a75ee28d3a43234b3a2a4ef8ff5dd7c32cfd478ca546db72126e76e90dfe347c",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000159.jpg": "f396726caffe69d89a6657ff6aba44e7aaba635d8047f247a1df0aa50a9fca92",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000160.jpg": "07ae131785a74a99fe2a55a317222b45de9b1d00cabc4d0afb739fc28b6a873a",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000161.jpg": "6406989a65d406bdce1e62ec3c32f2bc3f8026b9f4f8e7f77bcf1407e13aaaf9",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000162.jpg": "700d20d754b5203a24bb9436a6bbb262c4522b5aee5714761bbb9e93d462cf10",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000163.jpg": "adcc45d48446b6391c8b7f476196479f2f7c50f2c8418f541991d68ea3048628",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000164.jpg": "6d3aa28ac42f8e79b0110359bf3592778e24f3f49d69abf566682f5300c46bb9",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000165.jpg": "79ac3e1faba145a350ac007e85bc301b6f477371d728b732396064bfcd31fb40",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000166.jpg": "d07b2ab6a59389487304968791ef1e7f18081aaa83b60eebad623fe3cc7c79b1",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000167.jpg": "8b968592f6a024ae913d21f91f41b21309d635e3407d28b791e3e98fcfb850fc",
+    "data/MOT17/train/MOT17-05-FRCNN/img1/000168.jpg": "da6120f781afe5d698fe0b12495b52adb54f56f07171100e7b2da8fa0269ac5a"
+  },
+  "versions": {
+    "opencv": "4.10.0",
+    "numpy": "2.1.3",
+    "motmetrics": "1.4.0"
+  },
+  "limitations": [
+    "One exposed 168-frame case; no generalization claim.",
+    "Translation only; no appearance matching or motion-estimate uncertainty model.",
+    "No modified MOT20 run; no C++ improvement port or performance benchmark.",
+    "All four predeclared variants reported; no post-result tuning."
+  ]
+}

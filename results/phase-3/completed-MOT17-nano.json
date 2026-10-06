@@ -1,0 +1,200 @@
+{
+  "model": "nano",
+  "evaluator": "motmetrics 1.4.0",
+  "3a": {
+    "per_sequence_delta_pp": {
+      "MOT17-02-FRCNN": {
+        "mota": 0.0,
+        "idf1": 0.0
+      },
+      "MOT17-04-FRCNN": {
+        "mota": 0.0,
+        "idf1": 0.0
+      },
+      "MOT17-05-FRCNN": {
+        "mota": 0.0,
+        "idf1": 0.0
+      },
+      "MOT17-09-FRCNN": {
+        "mota": 0.0,
+        "idf1": 0.0
+      },
+      "MOT17-10-FRCNN": {
+        "mota": 0.0,
+        "idf1": 0.0
+      },
+      "MOT17-11-FRCNN": {
+        "mota": 0.0,
+        "idf1": 0.0
+      },
+      "MOT17-13-FRCNN": {
+        "mota": 0.0,
+        "idf1": 0.0
+      }
+    },
+    "pass": true
+  },
+  "3b": {
+    "scores": {
+      "mota": 69.23248172257496,
+      "idf1": 66.8414141565438,
+      "num_switches": 530,
+      "num_false_positives": 4858,
+      "num_misses": 29163,
+      "num_objects": 112297
+    },
+    "published": {
+      "mota": 69.0,
+      "idf1": 66.3
+    },
+    "delta_pp": {
+      "mota": 0.2324817225749598,
+      "idf1": 0.5414141565438086
+    },
+    "pass": true,
+    "evaluation_input": "cached C++ outputs; end-to-end bytes independently checked"
+  },
+  "end_to_end_equals_cached_cpp": true,
+  "comparisons": {
+    "MOT17-02-FRCNN": {
+      "cpp_vs_python": {
+        "left_lines": 9979,
+        "right_lines": 9979,
+        "byte_identical": false,
+        "identical_line_share": 0.029962922136486624,
+        "same_frame_and_id": true,
+        "max_box_difference": 0.0,
+        "max_score_difference": 2.8610229518832853e-08
+      },
+      "end_to_end_vs_cached_cpp": {
+        "left_lines": 9979,
+        "right_lines": 9979,
+        "byte_identical": true,
+        "identical_line_share": 1.0,
+        "same_frame_and_id": true,
+        "max_box_difference": 0.0,
+        "max_score_difference": 0.0
+      }
+    },
+    "MOT17-04-FRCNN": {
+      "cpp_vs_python": {
+        "left_lines": 45829,
+        "right_lines": 45829,
+        "byte_identical": false,
+        "identical_line_share": 0.017936241244626765,
+        "same_frame_and_id": true,
+        "max_box_difference": 0.0,
+        "max_score_difference": 2.8610229518832853e-08
+      },
+      "end_to_end_vs_cached_cpp": {
+        "left_lines": 45829,
+        "right_lines": 45829,
+        "byte_identical": true,
+        "identical_line_share": 1.0,
+        "same_frame_and_id": true,
+        "max_box_difference": 0.0,
+        "max_score_difference": 0.0
+      }
+    },
+    "MOT17-05-FRCNN": {
+      "cpp_vs_python": {
+        "left_lines": 5169,
+        "right_lines": 5169,
+        "byte_identical": false,
+        "identical_line_share": 0.01489649835558135,
+        "same_frame_and_id": true,
+        "max_box_difference": 0.0,
+        "max_score_difference": 2.8610229518832853e-08
+      },
+      "end_to_end_vs_cached_cpp": {
+        "left_lines": 5169,
+        "right_lines": 5169,
+        "byte_identical": true,
+        "identical_line_share": 1.0,
+        "same_frame_and_id": true,
+        "max_box_difference": 0.0,
+        "max_score_difference": 0.0
+      }
+    },
+    "MOT17-09-FRCNN": {
+      "cpp_vs_python": {
+        "left_lines": 4249,
+        "right_lines": 4249,
+        "byte_identical": false,
+        "identical_line_share": 0.010826076723935044,
+        "same_frame_and_id": true,
+        "max_box_difference": 0.0,
+        "max_score_difference": 2.8610229518832853e-08
+      },
+      "end_to_end_vs_cached_cpp": {
+        "left_lines": 4249,
+        "right_lines": 4249,
+        "byte_identical": true,
+        "identical_line_share": 1.0,
+        "same_frame_and_id": true,
+        "max_box_difference": 0.0,
+        "max_score_difference": 0.0
+      }
+    },
+    "MOT17-10-FRCNN": {
+      "cpp_vs_python": {
+        "left_lines": 8585,
+        "right_lines": 8585,
+        "byte_identical": false,
+        "identical_line_share": 0.029004076878276063,
+        "same_frame_and_id": true,
+        "max_box_difference": 0.0,
+        "max_score_difference": 2.8610229518832853e-08
+      },
+      "end_to_end_vs_cached_cpp": {
+        "left_lines": 8585,
+        "right_lines": 8585,
+        "byte_identical": true,
+        "identical_line_share": 1.0,
+        "same_frame_and_id": true,
+        "max_box_difference": 0.0,
+        "max_score_difference": 0.0
+      }
+    },
+    "MOT17-11-FRCNN": {
+      "cpp_vs_python": {
+        "left_lines": 7213,
+        "right_lines": 7213,
+        "byte_identical": false,
+        "identical_line_share": 0.015943435463746013,
+        "same_frame_and_id": true,
+        "max_box_difference": 0.0,
+        "max_score_difference": 2.8610229518832853e-08
+      },
+      "end_to_end_vs_cached_cpp": {
+        "left_lines": 7213,
+        "right_lines": 7213,
+        "byte_identical": true,
+        "identical_line_share": 1.0,
+        "same_frame_and_id": true,
+        "max_box_difference": 0.0,
+        "max_score_difference": 0.0
+      }
+    },
+    "MOT17-13-FRCNN": {
+      "cpp_vs_python": {
+        "left_lines": 6968,
+        "right_lines": 6968,
+        "byte_identical": false,
+        "identical_line_share": 0.040040183696900114,
+        "same_frame_and_id": true,
+        "max_box_difference": 0.0,
+        "max_score_difference": 2.8610229518832853e-08
+      },
+      "end_to_end_vs_cached_cpp": {
+        "left_lines": 6968,
+        "right_lines": 6968,
+        "byte_identical": true,
+        "identical_line_share": 1.0,
+        "same_frame_and_id": true,
+        "max_box_difference": 0.0,
+        "max_score_difference": 0.0
+      }
+    }
+  }
+}

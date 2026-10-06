@@ -1,0 +1,859 @@
+{
+  "date": "2026-10-06",
+  "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+  "status": "fp32-benchmark-complete-int8-awaiting-dependency-approval",
+  "protocol": "docs/PHASE4_EXECUTION.md",
+  "input_size": [
+    608,
+    1088
+  ],
+  "sequence": "MOT17-02-FRCNN",
+  "warmup_frames": 50,
+  "measured_frames_per_repeat": 100,
+  "repeats": 3,
+  "runs": [
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 1,
+      "repeat": 1,
+      "fps": 11.325472898306158,
+      "metadata": {
+        "warmup": 50,
+        "measured": 100,
+        "threads": 1,
+        "peak_rss_kib": 156880,
+        "total_tracks_including_warmup": 1872,
+        "opencv_threads": 1,
+        "cpu_max": "100000 100000",
+        "input_height": 608,
+        "input_width": 1088
+      },
+      "timing_csv": "results/phase-4/benchmark-fp32/nano-fp32-t1-r1.csv",
+      "timing_sha256": "204b2d9c8f95f85e06b67c7ce2d154e9fea2edc7bf7d1a02d9583261e0b160ff"
+    },
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 1,
+      "repeat": 2,
+      "fps": 11.477424921161733,
+      "metadata": {
+        "warmup": 50,
+        "measured": 100,
+        "threads": 1,
+        "peak_rss_kib": 157012,
+        "total_tracks_including_warmup": 1872,
+        "opencv_threads": 1,
+        "cpu_max": "100000 100000",
+        "input_height": 608,
+        "input_width": 1088
+      },
+      "timing_csv": "results/phase-4/benchmark-fp32/nano-fp32-t1-r2.csv",
+      "timing_sha256": "24ecd19c118b56acc782411bbc01697b9eff0081cc45ac8bcc91f15a844a7a96"
+    },
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 1,
+      "repeat": 3,
+      "fps": 11.430706035194701,
+      "metadata": {
+        "warmup": 50,
+        "measured": 100,
+        "threads": 1,
+        "peak_rss_kib": 156876,
+        "total_tracks_including_warmup": 1872,
+        "opencv_threads": 1,
+        "cpu_max": "100000 100000",
+        "input_height": 608,
+        "input_width": 1088
+      },
+      "timing_csv": "results/phase-4/benchmark-fp32/nano-fp32-t1-r3.csv",
+      "timing_sha256": "c6c3d0defc8dd63747ea8bec9be8ac831e3df0bbe2ac68b894eef72da26a3214"
+    },
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 2,
+      "repeat": 1,
+      "fps": 18.472160923715954,
+      "metadata": {
+        "warmup": 50,
+        "measured": 100,
+        "threads": 2,
+        "peak_rss_kib": 157404,
+        "total_tracks_including_warmup": 1872,
+        "opencv_threads": 1,
+        "cpu_max": "200000 100000",
+        "input_height": 608,
+        "input_width": 1088
+      },
+      "timing_csv": "results/phase-4/benchmark-fp32/nano-fp32-t2-r1.csv",
+      "timing_sha256": "ce7983a35a94e580b555de57aed3839fe556248f546dd976aa4a3e0598692fe7"
+    },
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 2,
+      "repeat": 2,
+      "fps": 18.19380676915507,
+      "metadata": {
+        "warmup": 50,
+        "measured": 100,
+        "threads": 2,
+        "peak_rss_kib": 155776,
+        "total_tracks_including_warmup": 1872,
+        "opencv_threads": 1,
+        "cpu_max": "200000 100000",
+        "input_height": 608,
+        "input_width": 1088
+      },
+      "timing_csv": "results/phase-4/benchmark-fp32/nano-fp32-t2-r2.csv",
+      "timing_sha256": "1411ca6b31a27f02024590ac9b3d75a054b901bd2bd8337bbe973ef280cffb03"
+    },
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 2,
+      "repeat": 3,
+      "fps": 18.591936723560018,
+      "metadata": {
+        "warmup": 50,
+        "measured": 100,
+        "threads": 2,
+        "peak_rss_kib": 155780,
+        "total_tracks_including_warmup": 1872,
+        "opencv_threads": 1,
+        "cpu_max": "200000 100000",
+        "input_height": 608,
+        "input_width": 1088
+      },
+      "timing_csv": "results/phase-4/benchmark-fp32/nano-fp32-t2-r3.csv",
+      "timing_sha256": "5afacfa4912f6fcc0186ec2763b04bbf5326343493c119811af22887f2450964"
+    },
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 4,
+      "repeat": 1,
+      "fps": 26.344575560515928,
+      "metadata": {
+        "warmup": 50,
+        "measured": 100,
+        "threads": 4,
+        "peak_rss_kib": 157480,
+        "total_tracks_including_warmup": 1872,
+        "opencv_threads": 1,
+        "cpu_max": "400000 100000",
+        "input_height": 608,
+        "input_width": 1088
+      },
+      "timing_csv": "results/phase-4/benchmark-fp32/nano-fp32-t4-r1.csv",
+      "timing_sha256": "e2817bbc3ee8b9b04720165f20cf50116a12b5d1a1c6344a969c6a2e1b87652f"
+    },
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 4,
+      "repeat": 2,
+      "fps": 27.583678336902715,
+      "metadata": {
+        "warmup": 50,
+        "measured": 100,
+        "threads": 4,
+        "peak_rss_kib": 157192,
+        "total_tracks_including_warmup": 1872,
+        "opencv_threads": 1,
+        "cpu_max": "400000 100000",
+        "input_height": 608,
+        "input_width": 1088
+      },
+      "timing_csv": "results/phase-4/benchmark-fp32/nano-fp32-t4-r2.csv",
+      "timing_sha256": "a55e568753f457cc283726293093010b9e780f68e4294bcac7d886738a2ce55f"
+    },
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 4,
+      "repeat": 3,
+      "fps": 26.07071675035866,
+      "metadata": {
+        "warmup": 50,
+        "measured": 100,
+        "threads": 4,
+        "peak_rss_kib": 157396,
+        "total_tracks_including_warmup": 1872,
+        "opencv_threads": 1,
+        "cpu_max": "400000 100000",
+        "input_height": 608,
+        "input_width": 1088
+      },
+      "timing_csv": "results/phase-4/benchmark-fp32/nano-fp32-t4-r3.csv",
+      "timing_sha256": "035bcd0c31055d8fd2d6ce8a0aacca89a88dbafb0dffc05eadba7d2e8f56818d"
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 1,
+      "repeat": 1,
+      "fps": 3.1200720922260152,
+      "metadata": {
+        "warmup": 50,
+        "measured": 100,
+        "threads": 1,
+        "peak_rss_kib": 208764,
+        "total_tracks_including_warmup": 2835,
+        "opencv_threads": 1,
+        "cpu_max": "100000 100000",
+        "input_height": 608,
+        "input_width": 1088
+      },
+      "timing_csv": "results/phase-4/benchmark-fp32/tiny-fp32-t1-r1.csv",
+      "timing_sha256": "0f5d7144bf86929684e636832e18077cafbba48f6487744b670bd5f754cc8dc4"
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 1,
+      "repeat": 2,
+      "fps": 3.148460047841511,
+      "metadata": {
+        "warmup": 50,
+        "measured": 100,
+        "threads": 1,
+        "peak_rss_kib": 208524,
+        "total_tracks_including_warmup": 2835,
+        "opencv_threads": 1,
+        "cpu_max": "100000 100000",
+        "input_height": 608,
+        "input_width": 1088
+      },
+      "timing_csv": "results/phase-4/benchmark-fp32/tiny-fp32-t1-r2.csv",
+      "timing_sha256": "095860f203e8d5ce1ab00475573160b9b4f9234f9695fe02de4adb3f11c89ce3"
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 1,
+      "repeat": 3,
+      "fps": 3.1419752759935555,
+      "metadata": {
+        "warmup": 50,
+        "measured": 100,
+        "threads": 1,
+        "peak_rss_kib": 208092,
+        "total_tracks_including_warmup": 2835,
+        "opencv_threads": 1,
+        "cpu_max": "100000 100000",
+        "input_height": 608,
+        "input_width": 1088
+      },
+      "timing_csv": "results/phase-4/benchmark-fp32/tiny-fp32-t1-r3.csv",
+      "timing_sha256": "dd0abefef05e0ef4b5ee50ed8b3fe80a0b5a736c06f0376e092166b1ff769e77"
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 2,
+      "repeat": 1,
+      "fps": 5.813073694201161,
+      "metadata": {
+        "warmup": 50,
+        "measured": 100,
+        "threads": 2,
+        "peak_rss_kib": 208380,
+        "total_tracks_including_warmup": 2835,
+        "opencv_threads": 1,
+        "cpu_max": "200000 100000",
+        "input_height": 608,
+        "input_width": 1088
+      },
+      "timing_csv": "results/phase-4/benchmark-fp32/tiny-fp32-t2-r1.csv",
+      "timing_sha256": "918a0b5df004750701b7dcd15a12f8cd9df3215e938d75185c5b377c610733ea"
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 2,
+      "repeat": 2,
+      "fps": 5.82553089479085,
+      "metadata": {
+        "warmup": 50,
+        "measured": 100,
+        "threads": 2,
+        "peak_rss_kib": 209964,
+        "total_tracks_including_warmup": 2835,
+        "opencv_threads": 1,
+        "cpu_max": "200000 100000",
+        "input_height": 608,
+        "input_width": 1088
+      },
+      "timing_csv": "results/phase-4/benchmark-fp32/tiny-fp32-t2-r2.csv",
+      "timing_sha256": "1e8e9cc90cdac6bc76b68d968130fa14e691cb6ec528569f7959c82e888055ba"
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 2,
+      "repeat": 3,
+      "fps": 5.798396535427455,
+      "metadata": {
+        "warmup": 50,
+        "measured": 100,
+        "threads": 2,
+        "peak_rss_kib": 209604,
+        "total_tracks_including_warmup": 2835,
+        "opencv_threads": 1,
+        "cpu_max": "200000 100000",
+        "input_height": 608,
+        "input_width": 1088
+      },
+      "timing_csv": "results/phase-4/benchmark-fp32/tiny-fp32-t2-r3.csv",
+      "timing_sha256": "ef0c6731498da727ec56166599d23b64ea69c021505c7ce5050e56b3a3416220"
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 4,
+      "repeat": 1,
+      "fps": 9.510447492720624,
+      "metadata": {
+        "warmup": 50,
+        "measured": 100,
+        "threads": 4,
+        "peak_rss_kib": 210536,
+        "total_tracks_including_warmup": 2835,
+        "opencv_threads": 1,
+        "cpu_max": "400000 100000",
+        "input_height": 608,
+        "input_width": 1088
+      },
+      "timing_csv": "results/phase-4/benchmark-fp32/tiny-fp32-t4-r1.csv",
+      "timing_sha256": "d7af005bb054bcdd81e2c5d5a6dad25f1ed897f35f7040bae792f44ddc6fea8a"
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 4,
+      "repeat": 2,
+      "fps": 10.106223649645777,
+      "metadata": {
+        "warmup": 50,
+        "measured": 100,
+        "threads": 4,
+        "peak_rss_kib": 210020,
+        "total_tracks_including_warmup": 2835,
+        "opencv_threads": 1,
+        "cpu_max": "400000 100000",
+        "input_height": 608,
+        "input_width": 1088
+      },
+      "timing_csv": "results/phase-4/benchmark-fp32/tiny-fp32-t4-r2.csv",
+      "timing_sha256": "5ab7fab3b939b32be41c398a25756f890ce9d4d6fa99e3cda1ce583773e4ab0d"
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 4,
+      "repeat": 3,
+      "fps": 10.155303312945891,
+      "metadata": {
+        "warmup": 50,
+        "measured": 100,
+        "threads": 4,
+        "peak_rss_kib": 210328,
+        "total_tracks_including_warmup": 2835,
+        "opencv_threads": 1,
+        "cpu_max": "400000 100000",
+        "input_height": 608,
+        "input_width": 1088
+      },
+      "timing_csv": "results/phase-4/benchmark-fp32/tiny-fp32-t4-r3.csv",
+      "timing_sha256": "ac576a191f835d561fcc525f0e502e01f24dae1edc47f0df82c6c60b0cdeea56"
+    }
+  ],
+  "settings": [
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 1,
+      "median_repeat_fps": 11.430706035194701,
+      "repeat_fps": [
+        11.325472898306158,
+        11.477424921161733,
+        11.430706035194701
+      ],
+      "realtime_25_fps_gate": false,
+      "stages": {
+        "decode_ms": {
+          "mean_ms": 5.899897073333333,
+          "p50_ms": 5.7498545,
+          "p95_ms": 6.703223550000001
+        },
+        "preprocess_ms": {
+          "mean_ms": 2.7003920866666666,
+          "p50_ms": 2.6685835,
+          "p95_ms": 2.86170385
+        },
+        "inference_ms": {
+          "mean_ms": 78.82898017666666,
+          "p50_ms": 77.534958,
+          "p95_ms": 81.1380229
+        },
+        "postprocess_ms": {
+          "mean_ms": 0.1469895,
+          "p50_ms": 0.14566649999999998,
+          "p95_ms": 0.17250834999999998
+        },
+        "tracking_ms": {
+          "mean_ms": 0.05649972999999999,
+          "p50_ms": 0.057813,
+          "p95_ms": 0.07233925
+        },
+        "end_to_end_ms": {
+          "mean_ms": 87.63591708,
+          "p50_ms": 86.328021,
+          "p95_ms": 90.51277710000001
+        }
+      },
+      "peak_rss_mib_max": 153.33203125,
+      "model_bytes": 3652051,
+      "model_sha256": "8741ff7182a44d47d69379015983069532bed92ea33590e2253dc7acb0197868"
+    },
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 2,
+      "median_repeat_fps": 18.472160923715954,
+      "repeat_fps": [
+        18.472160923715954,
+        18.19380676915507,
+        18.591936723560018
+      ],
+      "realtime_25_fps_gate": false,
+      "stages": {
+        "decode_ms": {
+          "mean_ms": 6.1426336599999996,
+          "p50_ms": 6.093270499999999,
+          "p95_ms": 7.642464250000001
+        },
+        "preprocess_ms": {
+          "mean_ms": 2.7543609399999998,
+          "p50_ms": 2.7095415,
+          "p95_ms": 2.87632355
+        },
+        "inference_ms": {
+          "mean_ms": 45.191323743333335,
+          "p50_ms": 44.587979000000004,
+          "p95_ms": 46.44583575
+        },
+        "postprocess_ms": {
+          "mean_ms": 0.14708875333333335,
+          "p50_ms": 0.1485625,
+          "p95_ms": 0.1730691
+        },
+        "tracking_ms": {
+          "mean_ms": 0.05703307333333332,
+          "p50_ms": 0.058063000000000003,
+          "p95_ms": 0.07579614999999999
+        },
+        "end_to_end_ms": {
+          "mean_ms": 54.29534478,
+          "p50_ms": 53.8071255,
+          "p95_ms": 55.3575902
+        }
+      },
+      "peak_rss_mib_max": 153.71484375,
+      "model_bytes": 3652051,
+      "model_sha256": "8741ff7182a44d47d69379015983069532bed92ea33590e2253dc7acb0197868"
+    },
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 4,
+      "median_repeat_fps": 26.344575560515928,
+      "repeat_fps": [
+        26.344575560515928,
+        27.583678336902715,
+        26.07071675035866
+      ],
+      "realtime_25_fps_gate": true,
+      "stages": {
+        "decode_ms": {
+          "mean_ms": 5.374500683333333,
+          "p50_ms": 5.208958,
+          "p95_ms": 5.6234128000000005
+        },
+        "preprocess_ms": {
+          "mean_ms": 2.7647919166666663,
+          "p50_ms": 2.739021,
+          "p95_ms": 2.87563715
+        },
+        "inference_ms": {
+          "mean_ms": 29.17477124,
+          "p50_ms": 27.810625,
+          "p95_ms": 29.539556250000004
+        },
+        "postprocess_ms": {
+          "mean_ms": 0.14980042666666668,
+          "p50_ms": 0.14945799999999998,
+          "p95_ms": 0.1748351
+        },
+        "tracking_ms": {
+          "mean_ms": 0.05642157333333332,
+          "p50_ms": 0.0573125,
+          "p95_ms": 0.072792
+        },
+        "end_to_end_ms": {
+          "mean_ms": 37.52300431333333,
+          "p50_ms": 35.9815835,
+          "p95_ms": 39.034946500000004
+        }
+      },
+      "peak_rss_mib_max": 153.7890625,
+      "model_bytes": 3652051,
+      "model_sha256": "8741ff7182a44d47d69379015983069532bed92ea33590e2253dc7acb0197868"
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 1,
+      "median_repeat_fps": 3.1419752759935555,
+      "repeat_fps": [
+        3.1200720922260152,
+        3.148460047841511,
+        3.1419752759935555
+      ],
+      "realtime_25_fps_gate": false,
+      "stages": {
+        "decode_ms": {
+          "mean_ms": 5.35485555,
+          "p50_ms": 5.251646,
+          "p95_ms": 5.662933649999999
+        },
+        "preprocess_ms": {
+          "mean_ms": 2.6993624966666667,
+          "p50_ms": 2.6784999999999997,
+          "p95_ms": 2.86808575
+        },
+        "inference_ms": {
+          "mean_ms": 310.57371037666667,
+          "p50_ms": 308.3101875,
+          "p95_ms": 328.29373845000003
+        },
+        "postprocess_ms": {
+          "mean_ms": 0.10327581333333334,
+          "p50_ms": 0.09864600000000001,
+          "p95_ms": 0.12419820000000001
+        },
+        "tracking_ms": {
+          "mean_ms": 0.06289983333333334,
+          "p50_ms": 0.0614375,
+          "p95_ms": 0.0753518
+        },
+        "end_to_end_ms": {
+          "mean_ms": 318.79737642666663,
+          "p50_ms": 316.3997505,
+          "p95_ms": 336.52692945
+        }
+      },
+      "peak_rss_mib_max": 203.87109375,
+      "model_bytes": 20166903,
+      "model_sha256": "4d50a6a3fc1bf1c836015c665ab3d4d1c73bbbcf0fad96b7a2d3af78b558d665"
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 2,
+      "median_repeat_fps": 5.813073694201161,
+      "repeat_fps": [
+        5.813073694201161,
+        5.82553089479085,
+        5.798396535427455
+      ],
+      "realtime_25_fps_gate": false,
+      "stages": {
+        "decode_ms": {
+          "mean_ms": 5.319739306666667,
+          "p50_ms": 5.2692295,
+          "p95_ms": 5.590116350000001
+        },
+        "preprocess_ms": {
+          "mean_ms": 2.7212679333333334,
+          "p50_ms": 2.6964375,
+          "p95_ms": 2.84056905
+        },
+        "inference_ms": {
+          "mean_ms": 163.83869451666666,
+          "p50_ms": 162.47441650000002,
+          "p95_ms": 170.05494135
+        },
+        "postprocess_ms": {
+          "mean_ms": 0.10226136000000001,
+          "p50_ms": 0.100104,
+          "p95_ms": 0.12291905
+        },
+        "tracking_ms": {
+          "mean_ms": 0.06352180333333335,
+          "p50_ms": 0.0614585,
+          "p95_ms": 0.07624760000000001
+        },
+        "end_to_end_ms": {
+          "mean_ms": 172.04855938666665,
+          "p50_ms": 170.6516455,
+          "p95_ms": 178.3686208
+        }
+      },
+      "peak_rss_mib_max": 205.04296875,
+      "model_bytes": 20166903,
+      "model_sha256": "4d50a6a3fc1bf1c836015c665ab3d4d1c73bbbcf0fad96b7a2d3af78b558d665"
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 4,
+      "median_repeat_fps": 10.106223649645777,
+      "repeat_fps": [
+        9.510447492720624,
+        10.106223649645777,
+        10.155303312945891
+      ],
+      "realtime_25_fps_gate": false,
+      "stages": {
+        "decode_ms": {
+          "mean_ms": 5.616246686666667,
+          "p50_ms": 5.355021000000001,
+          "p95_ms": 6.3404729500000006
+        },
+        "preprocess_ms": {
+          "mean_ms": 2.7323243466666667,
+          "p50_ms": 2.727,
+          "p95_ms": 2.8870943500000004
+        },
+        "inference_ms": {
+          "mean_ms": 92.33395365999999,
+          "p50_ms": 89.3600205,
+          "p95_ms": 97.01275485000001
+        },
+        "postprocess_ms": {
+          "mean_ms": 0.10713862000000002,
+          "p50_ms": 0.101292,
+          "p95_ms": 0.13084795000000002
+        },
+        "tracking_ms": {
+          "mean_ms": 0.06325236,
+          "p50_ms": 0.0617915,
+          "p95_ms": 0.0738181
+        },
+        "end_to_end_ms": {
+          "mean_ms": 100.85572296000001,
+          "p50_ms": 97.776625,
+          "p95_ms": 105.89163330000001
+        }
+      },
+      "peak_rss_mib_max": 205.6015625,
+      "model_bytes": 20166903,
+      "model_sha256": "4d50a6a3fc1bf1c836015c665ab3d4d1c73bbbcf0fad96b7a2d3af78b558d665"
+    }
+  ],
+  "image_versions": [
+    "[\"vision-lab:phase4\"] sha256:8d19e5fe53a73a39841e5055cd1e177d22933b9119400b707983bcb7e19acba8 arm64 linux"
+  ],
+  "cpp_environment": {
+    "onnxruntime_version": "1.30.0",
+    "providers": [
+      "CPUExecutionProvider"
+    ],
+    "opencv_version": "4.6.0",
+    "jpeg_roundtrip": true,
+    "hardware_concurrency": 12
+  },
+  "vm_hardware": [
+    "7.0.14-linuxkit aarch64",
+    "12",
+    "6442450944"
+  ],
+  "benchmark_source_sha256": "364f92403ad93252cc7767066e440d811abe42d9e1fbcc3eb0ce222498411c56",
+  "input_frame_sha256": {
+    "MOT17-02-FRCNN/img1/000001.jpg": "41ff65408c5338f4a83035fd12e9f5f7b658ee82feacf4512655677032636597",
+    "MOT17-02-FRCNN/img1/000002.jpg": "9312a3137c9a12524d381d85c693ed39b67374fc1872eb6b1e5a91d66e73e6ea",
+    "MOT17-02-FRCNN/img1/000003.jpg": "a5c373bede979b5389009136380f39c38cad930dcbc453dd00438154f084b012",
+    "MOT17-02-FRCNN/img1/000004.jpg": "078c220b50b3a9b94c1a4b9d916b95bdf92aa47f6b249d0988bc091ceb690c80",
+    "MOT17-02-FRCNN/img1/000005.jpg": "5d2efe129b09179da0b7549b3c83b717abc439b2ed7a72a5bc30b0b44a9be35f",
+    "MOT17-02-FRCNN/img1/000006.jpg": "2e734d226ba350b906f774981d38bfa4eefc55b1b3c779ba2f7dc3299da04eef",
+    "MOT17-02-FRCNN/img1/000007.jpg": "ac8f6cb0f9c39e6b7cecc0779d6cb3407e5960c881ca21440d459a7da6526214",
+    "MOT17-02-FRCNN/img1/000008.jpg": "f2724ba92db72c0e196ba42c0b8a4af32c576c95d341475149010e947bc5cfd2",
+    "MOT17-02-FRCNN/img1/000009.jpg": "35a19bb59de5f6f28d0ac4afd203dd02fd161aeb7ecf81c0b9ea23dfe65ac8b4",
+    "MOT17-02-FRCNN/img1/000010.jpg": "a0842b39ca7243cd921cc84b0f09e6b6fddd0f30719852924c5d6ff257c24d13",
+    "MOT17-02-FRCNN/img1/000011.jpg": "b4946714238c6d8354f22b78e292f4d09bacd1c4472aed648ad2224e1eb19eb8",
+    "MOT17-02-FRCNN/img1/000012.jpg": "fcecfaf1a206dbc5e5c744c855d0da9899aca305c7e9c18bf9aadedf9c9e22a1",
+    "MOT17-02-FRCNN/img1/000013.jpg": "c8201b19c378c27efdd556e654ec5bbb06548a10805d9163141f94dde263246a",
+    "MOT17-02-FRCNN/img1/000014.jpg": "10bb983f5c5c94e4571b40353de1240b16ed09625b407cfdda470bc5f52fcbc3",
+    "MOT17-02-FRCNN/img1/000015.jpg": "2873c6ceec2b85f07583a90cb555fd2732f91861f07f338f9e82dca9a033f17e",
+    "MOT17-02-FRCNN/img1/000016.jpg": "68565d7cdc82a83b05b1402a6095238439624105cb74bb4a7712c903832de10e",
+    "MOT17-02-FRCNN/img1/000017.jpg": "88c45607ed18fc259e8d9d3af381c972d959320ad1479352e3898a5fcc3e1e58",
+    "MOT17-02-FRCNN/img1/000018.jpg": "f60db84b5d0f6bb235f976dd5fb1b47bd40c12339db6a0629308dab597660535",
+    "MOT17-02-FRCNN/img1/000019.jpg": "18ea398b986f79f3e5a1b3b0c279f69921639a448d64a8cab2cba2bf3568176f",
+    "MOT17-02-FRCNN/img1/000020.jpg": "bd84a48a8a4ec232cae2b0eae61cda84dd0a026b3609d765ce95f553e9be39c8",
+    "MOT17-02-FRCNN/img1/000021.jpg": "676bb5e34a68357ac769f9c9578d566f75d9e8f04543f74276b32dc13970e116",
+    "MOT17-02-FRCNN/img1/000022.jpg": "ebd07adfea877c38548ed2cca84fb4f03d98b50b41c04a67e15e649b13736d22",
+    "MOT17-02-FRCNN/img1/000023.jpg": "390ea0aa519b1a1d77976c5dda554eb41e4829944b935e570a50f99350894506",
+    "MOT17-02-FRCNN/img1/000024.jpg": "365f5060232d5fde4d45f23868e59b1f92e824edaa3064e1523d611cb321b440",
+    "MOT17-02-FRCNN/img1/000025.jpg": "c5de5167ba295f300388ccdadfcb7d80315c9b888a50c415de2c326962009e05",
+    "MOT17-02-FRCNN/img1/000026.jpg": "d382a36b1a428362665bfe1b71d7fe9c3186128b519512a7bbefe8d16ccd3986",
+    "MOT17-02-FRCNN/img1/000027.jpg": "a7fd5f9fd6caac0b01052f74d22a858072ffa74549ba8e2e94fc5877f3de2839",
+    "MOT17-02-FRCNN/img1/000028.jpg": "365b7d93de350d76597034581b9fcce1d233ac44e4fced0bd282e3269af58cfa",
+    "MOT17-02-FRCNN/img1/000029.jpg": "51452d19a8df75ada05b9e0497e953364921f0eee1128fe343e477701c2d7932",
+    "MOT17-02-FRCNN/img1/000030.jpg": "08cef49fec1bd2a5e158ce570ec28124001dfb5bfdc0adf899a2b548d4c9d1bc",
+    "MOT17-02-FRCNN/img1/000031.jpg": "4b3c01ad61fb679fa6d6effe03c29d0be393fe3319dc2efd4589498f38bd095c",
+    "MOT17-02-FRCNN/img1/000032.jpg": "e9c9d9cb8c427b335fe91e389583febd7a94cd9b4dee93d930c1da28b72fa55b",
+    "MOT17-02-FRCNN/img1/000033.jpg": "5e2f04093ec5f57aa789eddd585d0b94cebbe2396a884e24f915c44ae76d0d9a",
+    "MOT17-02-FRCNN/img1/000034.jpg": "9f5d55d09a9d4f343ae9392d11575cb749cfc7c41be609e728387f2d35a5d6ef",
+    "MOT17-02-FRCNN/img1/000035.jpg": "0549d465fa15e9b8c85e53ff2a5d9ef55fcfe6425e0b5cfb97b0bbca02db84d6",
+    "MOT17-02-FRCNN/img1/000036.jpg": "4e43a1171feb111b3d51ced74590e60bf0299a181a1eb25b07318651a43ce15f",
+    "MOT17-02-FRCNN/img1/000037.jpg": "6fc14f9a34d24431e80d4c6d35cde795704bca2000ecf7a269d759aae126e0bd",
+    "MOT17-02-FRCNN/img1/000038.jpg": "82d909362a713dbd6a40973a0c3fdbf80cf33c22462d35abbef7abafaa157bb3",
+    "MOT17-02-FRCNN/img1/000039.jpg": "df025442c8b994f498c66fd322f2ac2289d59a6b29868f45c771cfa06fd2cedd",
+    "MOT17-02-FRCNN/img1/000040.jpg": "eebb01464ae7090debe7930aa993d8d3e1eb8749cee5c7b8888b4cf925030f39",
+    "MOT17-02-FRCNN/img1/000041.jpg": "adaee1e355a7a6ffaf3d1371adef57f120140a5340d2d38c9583c13a8ebb8f02",
+    "MOT17-02-FRCNN/img1/000042.jpg": "9febaaea02976682bc114e5b17772372fe428d7a5b8f5c8fdbcc17d4d6e152ad",
+    "MOT17-02-FRCNN/img1/000043.jpg": "26a9c068db57c686a4a9d4b2a369df0fb819401f067bece7157a4824ccc18f44",
+    "MOT17-02-FRCNN/img1/000044.jpg": "e681e62dd5286fcca0109582ad40e5fa66d03a6cd0ad36649b9ed84e773347ce",
+    "MOT17-02-FRCNN/img1/000045.jpg": "092c3759dc31591541abb2c0211433dd83f4731d46aa417e44cb04bbb4f902a3",
+    "MOT17-02-FRCNN/img1/000046.jpg": "641fe85bb8c0f034cd734a65e3fa56ede35a83539421c8e34e249f35c63c98ed",
+    "MOT17-02-FRCNN/img1/000047.jpg": "64955abf868c8d850a3d3cbff916be928793124caa5d41adbe86b3b06b12486b",
+    "MOT17-02-FRCNN/img1/000048.jpg": "5f0d1106b44be28d6cc6bc160637e591ae12a8c87330d20bccbee1c4cf003615",
+    "MOT17-02-FRCNN/img1/000049.jpg": "06982f1e7d88916a3195d49504f2b794bec67b660e6e7bd620dc6e20d94bd641",
+    "MOT17-02-FRCNN/img1/000050.jpg": "f1af4167a1aac7bb44ef5c11419346e2a20a315e6d6fc108e2d805749d396cad",
+    "MOT17-02-FRCNN/img1/000051.jpg": "d074198e39fac1b1925454b642f591d6d0919e0385b8121aa235ae26b51d4f02",
+    "MOT17-02-FRCNN/img1/000052.jpg": "ae122a8e364fae657dbee813ae6f259fb416b13993de44cb986654b00d1716f9",
+    "MOT17-02-FRCNN/img1/000053.jpg": "01cabfc663936edfd6d82244cead1e6fe0f424cf193aeb22386465d280109547",
+    "MOT17-02-FRCNN/img1/000054.jpg": "e7ce5ec9228d24272534ce61b13e567ae690f403cea2dcfb9b0b19deec431c9f",
+    "MOT17-02-FRCNN/img1/000055.jpg": "4e4a633dfdfab9f6d778983907bbaadfd059643a0327d73991dea3a092da71c9",
+    "MOT17-02-FRCNN/img1/000056.jpg": "8a5e270929ee2ceec02894f73710e8a9b175e7caa24f49a2e0667eb68daf053c",
+    "MOT17-02-FRCNN/img1/000057.jpg": "83e159010a792eb4558be3fe65d45601f0891d70838d7a4c699ef43216c539dd",
+    "MOT17-02-FRCNN/img1/000058.jpg": "7a71da2413cf3b908740c80413f26de631b21088f2173055cf4b0b52f3cb6edc",
+    "MOT17-02-FRCNN/img1/000059.jpg": "a8a51e74cd8218952060a4cbaa8f57f892d30d3eae94aa4bb906b3cf2655ad64",
+    "MOT17-02-FRCNN/img1/000060.jpg": "49f9c138d836fcf58d461ffcd04d52f08d2f2f01ea0caeceaced3d40073cd507",
+    "MOT17-02-FRCNN/img1/000061.jpg": "aecd08dc0fecaa5405ba03e4cd4837cbfc91ba613b0be5dd33ea8ed385b990bf",
+    "MOT17-02-FRCNN/img1/000062.jpg": "e4fb101ff0c33c8d2267dedb3bf96f578d1a4ce78bda0a0f0d27a7d45105e21e",
+    "MOT17-02-FRCNN/img1/000063.jpg": "6b65cab40c20262d090d1675d85d5127fb5e8f71b38799963c0685bcb156480e",
+    "MOT17-02-FRCNN/img1/000064.jpg": "988fa5b2d452976432d9df1a61d1b7d3cda5ece1227ab90098dd831d7c06ca99",
+    "MOT17-02-FRCNN/img1/000065.jpg": "3c8d65045bf012e06b2a92314f7365fd1763bfb7babb592954888d187558148e",
+    "MOT17-02-FRCNN/img1/000066.jpg": "ec783cff6a613cf3be49f54893a81b59c37a5f60196c29e0144b26dfd72233af",
+    "MOT17-02-FRCNN/img1/000067.jpg": "19ca7525f5fd1cf24021c5b9e7755f51cd3f88569b0435130f999957b099e303",
+    "MOT17-02-FRCNN/img1/000068.jpg": "f681f2e47613f02224a868a7dad1f54ad516abc93da4d6ff0c148bd99f2e1558",
+    "MOT17-02-FRCNN/img1/000069.jpg": "76be2ca88c24b761189cc79de7f59fa07876d9af85ea68afba203396c3d26aa3",
+    "MOT17-02-FRCNN/img1/000070.jpg": "4f2fc1c82906973a7ac23dfbf221380f8bb3ff3092e99d82d92386a964b69dd3",
+    "MOT17-02-FRCNN/img1/000071.jpg": "31c9aeb0355ba7819ec68dcf837ee857db45191edec84414d27d07a84831d274",
+    "MOT17-02-FRCNN/img1/000072.jpg": "2a17f4b4e5333f187b6dbef45e6ff62ac687c430acf6a34d15cc4551cafc863e",
+    "MOT17-02-FRCNN/img1/000073.jpg": "915ccf7ea12ec31af84ea17bf351154af91525013bef0ee67e4d666020f19cfd",
+    "MOT17-02-FRCNN/img1/000074.jpg": "35390708b8f5625a6f614d9022b80792adb3162d9fe953f7ef546dabcbe934e5",
+    "MOT17-02-FRCNN/img1/000075.jpg": "5752bad44f6e8db06dba90954c203111eb588c772f531eeca46823dadecbaf04",
+    "MOT17-02-FRCNN/img1/000076.jpg": "c7ba49a038483356484ccbd514e01bc38fb7d0d1ed2513b0e9af57b9484a65ff",
+    "MOT17-02-FRCNN/img1/000077.jpg": "b822bacb7eb791baa6cb56aea00970f181f4d22a3463efdfe42e1aa841630541",
+    "MOT17-02-FRCNN/img1/000078.jpg": "24b42d0b5f389937e5522e6c90ced12894591e4ed673eda59dbdfef3864d8fa1",
+    "MOT17-02-FRCNN/img1/000079.jpg": "a2cdaa49ec65dbce9f8f7d535b2425b015b057886cb633ebca372415474b5208",
+    "MOT17-02-FRCNN/img1/000080.jpg": "71f8344c361fa2661534f54381fd8a3fa4b81393fce9e8b507ad751b2bee54a4",
+    "MOT17-02-FRCNN/img1/000081.jpg": "af4fa211ffda3373d1ff6db422020413a078e58eeb2fc1903b2cb7a5d8c810e4",
+    "MOT17-02-FRCNN/img1/000082.jpg": "ac61077751253c5eade2ec34591a7e279d0c747bb97dadc638b06f7e2b10bcc8",
+    "MOT17-02-FRCNN/img1/000083.jpg": "c0ee50eba0239d60667cce3ccaec2f0ae9c252b5676ba125fc55025802a7644d",
+    "MOT17-02-FRCNN/img1/000084.jpg": "41b9a2e55aa02ca7e5a6c10ff705441c8a1e0b6cd920802474041617c18fbb18",
+    "MOT17-02-FRCNN/img1/000085.jpg": "c9ab1a1cdc59b8d08a5e0ec1cf010d77d1698cab6d4a427d6e085f074c0fb950",
+    "MOT17-02-FRCNN/img1/000086.jpg": "0829d0f2955173467e049a3d0b279ff0ffb5be737a94a651f8d9283a1b84f724",
+    "MOT17-02-FRCNN/img1/000087.jpg": "32525adf07cd3754e4a66fef969ea3a4180fc1a713f6b59ea7bae62e56c2b663",
+    "MOT17-02-FRCNN/img1/000088.jpg": "9ce75eaf3600fd3bc68f79bfcf291f38657b2a0234528bc6a4bf6da69ec1bb53",
+    "MOT17-02-FRCNN/img1/000089.jpg": "37716cbc45a10b0d34c9b56dd071a13a62e389528b98e72cc1cebddf64ffd51b",
+    "MOT17-02-FRCNN/img1/000090.jpg": "0906709ea4f95cd5db39423cd640980796def6f9fd79d0170dd7c445b4c836f9",
+    "MOT17-02-FRCNN/img1/000091.jpg": "0a733a06eda4f1cd701cb95a6ac84ffda14e527158b2323ba776e08d5cc8ee30",
+    "MOT17-02-FRCNN/img1/000092.jpg": "1454fcadb9bd7c568d2d599421c2e814b3652f75dabd7adef17263ef8bfa6669",
+    "MOT17-02-FRCNN/img1/000093.jpg": "83f096f04722a165a7060a2f2643dc9eef8efaab870c831f2f7fed24a2c06fc2",
+    "MOT17-02-FRCNN/img1/000094.jpg": "ee2f6d9ea6a0ee7c8563a12bc9303429c68f8755110e958df3f59dddc4d964b9",
+    "MOT17-02-FRCNN/img1/000095.jpg": "75de097d40c42a57a2a0494745b0b01e4cb69080be4ee5f73beca00ad30714a2",
+    "MOT17-02-FRCNN/img1/000096.jpg": "21901c47d5b0b0631cb0f5f727a901cadd05b440ce9e1680df2e6431e268c735",
+    "MOT17-02-FRCNN/img1/000097.jpg": "507fb765d0656f6680fb3ff9b7804bfea452508e81cca67b9535188dd1267e86",
+    "MOT17-02-FRCNN/img1/000098.jpg": "6512a2d8ac5937a56b5c91b6333a8a31aa3e8d0d3be9c4b041b8ba7c1093b9ac",
+    "MOT17-02-FRCNN/img1/000099.jpg": "72310df7b6959a728fa9c3e6613497b3ee9df738fa1ee87c375a951d5559af2d",
+    "MOT17-02-FRCNN/img1/000100.jpg": "71f7b310a05d12a8c0f0fb7f91819f2b795285d4539adfbb3636aea1b808aeed",
+    "MOT17-02-FRCNN/img1/000101.jpg": "e17a4e61ce7b905ad94b735e0ed8feaba32254c77dee68c986eb95c2401db2df",
+    "MOT17-02-FRCNN/img1/000102.jpg": "3588e0e5a411ef1fb25e95f75e0d97ad466da12cc9408978e46a5472e57cc320",
+    "MOT17-02-FRCNN/img1/000103.jpg": "702e72eeaf7abc3dc9e5840df2c7b5a74fd569271d78e88b6157dda84aa6c240",
+    "MOT17-02-FRCNN/img1/000104.jpg": "4cc1436de6cc324aeaa8ee184a65f1e2a04ce4784439e6ff11714a766749ec32",
+    "MOT17-02-FRCNN/img1/000105.jpg": "6c94680412e80d42f41c60ebfb2598472ff49c67834b1ebff10768e8ee99871a",
+    "MOT17-02-FRCNN/img1/000106.jpg": "1877710dc1c457e43c82ea64342cb271125976fc55d96108dc31b0784387dc8d",
+    "MOT17-02-FRCNN/img1/000107.jpg": "50934904ece1fce159186d259a29e0c1290771088bd59d77f966ee2d21928ef5",
+    "MOT17-02-FRCNN/img1/000108.jpg": "49e550cbb574daa6e83239a8b92992091f635b8a71e846cc0caf1a7e9a63494d",
+    "MOT17-02-FRCNN/img1/000109.jpg": "0029f6fc3651ece29ff84fa120ebc08640af4b565c70248044f9e93a37080284",
+    "MOT17-02-FRCNN/img1/000110.jpg": "029a2cf50ff482fc46692b34a89706857ed412f41b3fb6883a98c679f678306b",
+    "MOT17-02-FRCNN/img1/000111.jpg": "b4b4d1965fed91d35930df8b6040a170e336547424c9acf06de11b3242370124",
+    "MOT17-02-FRCNN/img1/000112.jpg": "bd46e0aae928ef17e744ad7c949cf35ce303d0f0c9cf73c96b19f68812c04e0e",
+    "MOT17-02-FRCNN/img1/000113.jpg": "82022a9c15e7673cd935ae5e20a8b12fc05fe714e82524bd6c5a70ed0fb04199",
+    "MOT17-02-FRCNN/img1/000114.jpg": "e917a6dbd60225c309a5e3e9593b621eed6be28103873fa27f17a1fcdd0827de",
+    "MOT17-02-FRCNN/img1/000115.jpg": "79c78502079db7889d91f2c94d2d68619627bb1eda7ee0a58ebed58d1bf2beae",
+    "MOT17-02-FRCNN/img1/000116.jpg": "754138bdb6d88bbb8b682c3e69a426ff7d97519f791fc7e41d34387b3126b79c",
+    "MOT17-02-FRCNN/img1/000117.jpg": "d563e3cdeeaca43ea265b3c2dba0f6db4da06c8c5103098d501aab5b7dfc8035",
+    "MOT17-02-FRCNN/img1/000118.jpg": "cb9331978fce2fff0b9f33c91962c3506d6ff1e686ea709a20e28b59f2063f8d",
+    "MOT17-02-FRCNN/img1/000119.jpg": "e7df9395a65bb1f0bcb195e0d452e9660ceeff4915144ca01076ada6c4165601",
+    "MOT17-02-FRCNN/img1/000120.jpg": "a909a609e6e42f37b1d6f1ea9a2fc18ec23ae8996184b33d4d180007c272ccf4",
+    "MOT17-02-FRCNN/img1/000121.jpg": "8b6f5efbe42d4523e91e1e558f37ccb7f66fe54a679d29b9eed54294b04b5f32",
+    "MOT17-02-FRCNN/img1/000122.jpg": "f07c15c0876ac6b4aa45bdcdb45f6c7d951ad92fcddb33a6a71c084ceb7301b8",
+    "MOT17-02-FRCNN/img1/000123.jpg": "a6744b2af781a8451a32b5cfd3ab1fa99cfd31c9dac186ade88ef1412ca7a9ce",
+    "MOT17-02-FRCNN/img1/000124.jpg": "ce520d0017368e46682fc89bb4aa307f0c3980ddad9b7d8f6bb8e408b6b6f8ac",
+    "MOT17-02-FRCNN/img1/000125.jpg": "c09f4f705e9657a22025c771d25dd047842ba84b0352205bec8c6f4c90cf533e",
+    "MOT17-02-FRCNN/img1/000126.jpg": "c10f944b1bedeb0c9e881198555a065acf30df0b385019c692b3638e62fa1823",
+    "MOT17-02-FRCNN/img1/000127.jpg": "98347db4ad1405acc3b364b2b099e066aae74d9883fe37f3690271c8bb33b790",
+    "MOT17-02-FRCNN/img1/000128.jpg": "0961c11b0a8c8fc35fab5da42e3146399e8a0c87d2cc96a2b6daadcd6fdcbf57",
+    "MOT17-02-FRCNN/img1/000129.jpg": "612b33e2ba7f3c2b7cb09f9589dc4e28c53ac11a845a8de479961e5cc0000158",
+    "MOT17-02-FRCNN/img1/000130.jpg": "be887c7a1c850dd54e791cb802474507d2216bdc8c5383faf3a9a0f7727477a1",
+    "MOT17-02-FRCNN/img1/000131.jpg": "c9ae8e6685e475ae2103c58c3d1110f0fc9cee177690b3902b0b338c27c81ffc",
+    "MOT17-02-FRCNN/img1/000132.jpg": "24c1f2ca96f58374768077b74e9ac6dbafbd2193ddd9ae40a86022d05135119a",
+    "MOT17-02-FRCNN/img1/000133.jpg": "b0683b313b1aaf0e380269d38ebdbb186740703b828624efb7ec84a40d6ff72c",
+    "MOT17-02-FRCNN/img1/000134.jpg": "186d693b2c0cc4ab97532d57855c84ebb22eb0fb79c402b7f6342e10e47b2612",
+    "MOT17-02-FRCNN/img1/000135.jpg": "8c82e6de6510b437ac0bf5e78e667575a157b1b311a84c25a23628635345f901",
+    "MOT17-02-FRCNN/img1/000136.jpg": "8d8fabc26a69b9a4739542569381db4c7de594907a0f0eaa277d7f0422538757",
+    "MOT17-02-FRCNN/img1/000137.jpg": "878a5bbb7a19bc8cdf3dca036421bc1dc7626421db473698087079f311bb2dd9",
+    "MOT17-02-FRCNN/img1/000138.jpg": "21614db7cf204fd859ce7b15b3a2e1917c45d1c636d5dfba3cc103099a06f2ba",
+    "MOT17-02-FRCNN/img1/000139.jpg": "ad4938f0a9e0580f4091eb0a0e04638b2616286e43f15c47755624ffb1741300",
+    "MOT17-02-FRCNN/img1/000140.jpg": "966bbf2ba5f7a31c8da2936603c5cdd2c49dd207cd7b19671be5613c4918dcad",
+    "MOT17-02-FRCNN/img1/000141.jpg": "9247ba851e59559882d2508a5e6cfcca9f212859bcaa4010b109d32279303cce",
+    "MOT17-02-FRCNN/img1/000142.jpg": "88579bb16f9c8b37e85504baf3ba8421d4f2dfc673e79c7a669c3643a38389cb",
+    "MOT17-02-FRCNN/img1/000143.jpg": "955e9826de9bd7df87fcbd013a273108e94212649a7b3e2f9c803595a3ed79a3",
+    "MOT17-02-FRCNN/img1/000144.jpg": "034cd289d5e251d09e5c1d453a18da747b30aa8be11b6aa853c6a1cfd8da6c0c",
+    "MOT17-02-FRCNN/img1/000145.jpg": "01761a1ecbef1622752802d5e638455a676a940a4ca13f7244687376ca6fd450",
+    "MOT17-02-FRCNN/img1/000146.jpg": "0155d822d5c304c9781ac7fd534c82b3a4783e4791a5da65e98945bab594230a",
+    "MOT17-02-FRCNN/img1/000147.jpg": "c795975ebd6e2b0840e21e57104f2af78acb3d82f074921b8bd3180e46b626f7",
+    "MOT17-02-FRCNN/img1/000148.jpg": "2284f6b44a103cfc222d49bb44f0adee6b160bf174452a40a85f7c8117c6d3b9",
+    "MOT17-02-FRCNN/img1/000149.jpg": "22d6da1072de9f6ff8d6e5dc394b6a739fd6a0c96e8a73ba6bc8f1fa79f5e501",
+    "MOT17-02-FRCNN/img1/000150.jpg": "1b8feca9b1c9bea06042488b90241d785fbd702ffdd16f9f5071bdd1b195c530"
+  },
+  "int8_dependency": {
+    "date": "2026-10-06",
+    "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+    "status": "awaiting-owner-download-approval",
+    "observed_error": "ModuleNotFoundError: No module named 'ml_dtypes'",
+    "operation": "Import onnxruntime.quantization.quantize_static in existing pytools image",
+    "proposed_dependency": {
+      "name": "ml_dtypes",
+      "version": "0.6.0",
+      "source": "https://pypi.org/project/ml-dtypes/0.6.0/#files",
+      "license": "Apache-2.0; bundled Eigen MPL-2.0",
+      "cp312_linux_arm64_wheel_size_kb_published": 360.2,
+      "arm64_sha256": "37da32aa97749251025666d62372775019594577b9c9e9cfda83bed48d778fdb",
+      "amd64_sha256": "3b4a480aa8fd54a1805b8ac10f3f91763926a74f73c0c364c10f9231854f4170",
+      "target": "Separate vision-lab:phase4-pytools image; no host install",
+      "extra_dependency_installation": false,
+      "download_executed": false
+    },
+    "unaffected_work": "Controlled FP32 benchmarks with existing C++ runtime"
+  },
+  "int8_worth_it_gate_evaluated": false,
+  "limitations": [
+    "Mac M2 Max Linux VM, not edge-device FPS.",
+    "CPU quota controls average budget, not physical-core affinity.",
+    "Image read/decode through filtering included; output serialization/rendering excluded.",
+    "Benchmark repeats use warm filesystem cache; disk cold-start is not measured.",
+    "Concurrent user/host workloads are not excluded; repeat distributions retained.",
+    "INT8 speed and held-out loss require completed quantization/evaluation; no claim yet."
+  ]
+}
