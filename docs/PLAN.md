@@ -1,6 +1,6 @@
 # Vision Lab — Work Plan
 
-Status: **Phase 1 done (nano: documented fail on raw tolerance), Phase 2 next** · Started 2026-10-06 · Target 2026-10-13
+Status: **Phase 2 done (C++ detector matches Python), Phase 3 next** · Started 2026-10-06 · Target 2026-10-13
 
 Detailed test plan and acceptance criteria: [01-phase-0-plan.md](01-phase-0-plan.md).
 Detector: ByteTrack's YOLOX nano/tiny checkpoints (decided 2026-10-06).

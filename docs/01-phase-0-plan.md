@@ -64,6 +64,25 @@ tiny, stage breakdown) transfer better than absolute ones.
 | 5 | Mean-shift baseline (bonus) | OpenCV mean-shift initialised from first-appearance ground truth boxes, scored with the same TrackEval settings |
 | 6 | Reproduction | Fresh clone → documented commands reproduce headline numbers within run-to-run variance |
 
+## Amendments
+
+Additions only, each dated and made **before** the data it concerns was run.
+
+### A1 · 2026-10-06 · Tracker settings and evaluators (before any tracking run)
+
+- **MOT17 train (fidelity):** reproduce ByteTrack's own procedure exactly: tracker
+  defaults `track_thresh 0.6, track_buffer 30, match_thresh 0.9, min_box_area 100`,
+  boxes with w/h > 1.6 dropped, frame rate 30, plus the per-sequence overrides in
+  `yolox/evaluators/mot_evaluator.py` (e.g. MOT17-05 `track_buffer 14`, MOT17-13
+  `track_buffer 25`). Scored with ByteTrack's own motmetrics evaluation
+  (`tools/track.py`), because that is how the published numbers were produced.
+  TrackEval numbers are reported alongside, labelled as such.
+- **MOT20 train (held-out):** the deployed configuration, unchanged: the MOT17
+  defaults above, `fuse_score` on (MOT17 mode), **no** per-sequence overrides,
+  input 608×1088. No MOT20-specific tuning, because tuning on held-out data would
+  make it no longer held out. Reported with both TrackEval (HOTA, MOTA, IDF1) and motmetrics.
+- **Detection thresholds** for all tracking runs: conf 0.01, NMS IoU 0.7 (as Phase 2).
+
 ## Not claimed
 
 - No training or fine-tuning; weights are the authors' published checkpoints.

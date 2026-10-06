@@ -24,3 +24,10 @@ set_target_properties(onnxruntime PROPERTIES
 add_executable(env_check src/env_check.cpp)
 target_include_directories(env_check PRIVATE ${OpenCV_INCLUDE_DIR})
 target_link_libraries(env_check PRIVATE onnxruntime ${OpenCV_LIBS})
+
+add_library(vl_detector STATIC src/detector.cpp)
+target_include_directories(vl_detector PUBLIC src ${OpenCV_INCLUDE_DIR})
+target_link_libraries(vl_detector PUBLIC onnxruntime ${OpenCV_LIBS})
+
+add_executable(detect_frames src/detect_frames.cpp)
+target_link_libraries(detect_frames PRIVATE vl_detector)

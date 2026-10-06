@@ -1,0 +1,440 @@
+{
+  "phase": 2,
+  "check": "cpp_detector_vs_python_reference_after_nms",
+  "conf_threshold": 0.01,
+  "nms_threshold": 0.7,
+  "criteria": {
+    "same_count": true,
+    "min_iou": 0.99,
+    "max_score_diff": 0.001
+  },
+  "versions": {
+    "onnxruntime": "1.30.0",
+    "opencv_python": "4.10.0",
+    "torch": "2.5.1"
+  },
+  "variants": {
+    "nano": {
+      "pass": true,
+      "total_detections": {
+        "python": 1516,
+        "cpp": 1516
+      },
+      "min_iou": 0.9999809139971128,
+      "max_score_diff": 4.798562408425688e-06,
+      "frames": [
+        {
+          "frame": "MOT17-02-FRCNN/img1/000332.jpg",
+          "count": {
+            "python": 204,
+            "cpp": 204
+          },
+          "min_iou": 0.9999908311661747,
+          "max_score_diff": 1.221966415387854e-06,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-04-FRCNN/img1/000177.jpg",
+          "count": {
+            "python": 93,
+            "cpp": 93
+          },
+          "min_iou": 0.9999937783922138,
+          "max_score_diff": 2.1753003692781547e-06,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-04-FRCNN/img1/000541.jpg",
+          "count": {
+            "python": 112,
+            "cpp": 112
+          },
+          "min_iou": 0.9999937236500225,
+          "max_score_diff": 4.798562408425688e-06,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-04-FRCNN/img1/000545.jpg",
+          "count": {
+            "python": 110,
+            "cpp": 110
+          },
+          "min_iou": 0.9999932037594061,
+          "max_score_diff": 3.7845506439260213e-06,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-05-FRCNN/img1/000140.jpg",
+          "count": {
+            "python": 55,
+            "cpp": 55
+          },
+          "min_iou": 0.9999917639182281,
+          "max_score_diff": 1.3705023650945058e-06,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-05-FRCNN/img1/000403.jpg",
+          "count": {
+            "python": 25,
+            "cpp": 25
+          },
+          "min_iou": 0.9999884576824448,
+          "max_score_diff": 9.83059280368348e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-05-FRCNN/img1/000472.jpg",
+          "count": {
+            "python": 37,
+            "cpp": 37
+          },
+          "min_iou": 0.99999061030537,
+          "max_score_diff": 3.0171493034525376e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-05-FRCNN/img1/000659.jpg",
+          "count": {
+            "python": 36,
+            "cpp": 36
+          },
+          "min_iou": 0.9999955701199931,
+          "max_score_diff": 6.702968139704613e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-05-FRCNN/img1/000835.jpg",
+          "count": {
+            "python": 47,
+            "cpp": 47
+          },
+          "min_iou": 0.9999809139971128,
+          "max_score_diff": 2.6301003639220277e-06,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-09-FRCNN/img1/000447.jpg",
+          "count": {
+            "python": 32,
+            "cpp": 32
+          },
+          "min_iou": 0.9999945166292012,
+          "max_score_diff": 1.1250059051559624e-06,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-10-FRCNN/img1/000144.jpg",
+          "count": {
+            "python": 111,
+            "cpp": 111
+          },
+          "min_iou": 0.9999900341854486,
+          "max_score_diff": 8.492675094562419e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-10-FRCNN/img1/000306.jpg",
+          "count": {
+            "python": 110,
+            "cpp": 110
+          },
+          "min_iou": 0.9999884776109917,
+          "max_score_diff": 1.0127912902779812e-06,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-10-FRCNN/img1/000434.jpg",
+          "count": {
+            "python": 89,
+            "cpp": 89
+          },
+          "min_iou": 0.9999877400169912,
+          "max_score_diff": 7.748583068512005e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-11-FRCNN/img1/000239.jpg",
+          "count": {
+            "python": 82,
+            "cpp": 82
+          },
+          "min_iou": 0.9999872914044542,
+          "max_score_diff": 1.3408705749617944e-06,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-11-FRCNN/img1/000315.jpg",
+          "count": {
+            "python": 43,
+            "cpp": 43
+          },
+          "min_iou": 0.9999928089842914,
+          "max_score_diff": 1.5349954681359579e-06,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-11-FRCNN/img1/000469.jpg",
+          "count": {
+            "python": 73,
+            "cpp": 73
+          },
+          "min_iou": 0.999990061548312,
+          "max_score_diff": 1.1734596126536379e-06,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-11-FRCNN/img1/000523.jpg",
+          "count": {
+            "python": 65,
+            "cpp": 65
+          },
+          "min_iou": 0.9999947161520513,
+          "max_score_diff": 3.185566026693565e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-11-FRCNN/img1/000697.jpg",
+          "count": {
+            "python": 59,
+            "cpp": 59
+          },
+          "min_iou": 0.999991828135152,
+          "max_score_diff": 8.642918395973531e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-13-FRCNN/img1/000214.jpg",
+          "count": {
+            "python": 129,
+            "cpp": 129
+          },
+          "min_iou": 0.9999860360417651,
+          "max_score_diff": 1.601908657833384e-06,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-13-FRCNN/img1/000500.jpg",
+          "count": {
+            "python": 4,
+            "cpp": 4
+          },
+          "min_iou": 0.9999966361360999,
+          "max_score_diff": 1.340760932902474e-07,
+          "pass": true
+        }
+      ]
+    },
+    "tiny": {
+      "pass": true,
+      "total_detections": {
+        "python": 1166,
+        "cpp": 1166
+      },
+      "min_iou": 0.999985851988894,
+      "max_score_diff": 1.9072447967616313e-06,
+      "frames": [
+        {
+          "frame": "MOT17-02-FRCNN/img1/000332.jpg",
+          "count": {
+            "python": 176,
+            "cpp": 176
+          },
+          "min_iou": 0.9999907777711496,
+          "max_score_diff": 1.7587215728753769e-06,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-04-FRCNN/img1/000177.jpg",
+          "count": {
+            "python": 70,
+            "cpp": 70
+          },
+          "min_iou": 0.999995069977946,
+          "max_score_diff": 1.9072447967616313e-06,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-04-FRCNN/img1/000541.jpg",
+          "count": {
+            "python": 86,
+            "cpp": 86
+          },
+          "min_iou": 0.9999944271801998,
+          "max_score_diff": 7.745662841673884e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-04-FRCNN/img1/000545.jpg",
+          "count": {
+            "python": 87,
+            "cpp": 87
+          },
+          "min_iou": 0.9999948124318779,
+          "max_score_diff": 4.472926712073555e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-05-FRCNN/img1/000140.jpg",
+          "count": {
+            "python": 27,
+            "cpp": 27
+          },
+          "min_iou": 0.9999948560451837,
+          "max_score_diff": 5.960353698375442e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-05-FRCNN/img1/000403.jpg",
+          "count": {
+            "python": 16,
+            "cpp": 16
+          },
+          "min_iou": 0.9999944015845463,
+          "max_score_diff": 4.1736264033698234e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-05-FRCNN/img1/000472.jpg",
+          "count": {
+            "python": 38,
+            "cpp": 38
+          },
+          "min_iou": 0.9999958050258758,
+          "max_score_diff": 1.7890948489363012e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-05-FRCNN/img1/000659.jpg",
+          "count": {
+            "python": 33,
+            "cpp": 33
+          },
+          "min_iou": 0.9999973873860066,
+          "max_score_diff": 4.771836013828246e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-05-FRCNN/img1/000835.jpg",
+          "count": {
+            "python": 36,
+            "cpp": 36
+          },
+          "min_iou": 0.9999961091533703,
+          "max_score_diff": 7.44731094348694e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-09-FRCNN/img1/000447.jpg",
+          "count": {
+            "python": 30,
+            "cpp": 30
+          },
+          "min_iou": 0.999985851988894,
+          "max_score_diff": 5.662265930017618e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-10-FRCNN/img1/000144.jpg",
+          "count": {
+            "python": 69,
+            "cpp": 69
+          },
+          "min_iou": 0.9999923414728706,
+          "max_score_diff": 4.469454650823934e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-10-FRCNN/img1/000306.jpg",
+          "count": {
+            "python": 99,
+            "cpp": 99
+          },
+          "min_iou": 0.9999907491151366,
+          "max_score_diff": 4.4714389035860336e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-10-FRCNN/img1/000434.jpg",
+          "count": {
+            "python": 71,
+            "cpp": 71
+          },
+          "min_iou": 0.999989920200496,
+          "max_score_diff": 1.10286694338102e-06,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-11-FRCNN/img1/000239.jpg",
+          "count": {
+            "python": 67,
+            "cpp": 67
+          },
+          "min_iou": 0.9999872599789253,
+          "max_score_diff": 7.602844925014285e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-11-FRCNN/img1/000315.jpg",
+          "count": {
+            "python": 36,
+            "cpp": 36
+          },
+          "min_iou": 0.9999960162289435,
+          "max_score_diff": 4.169481812033027e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-11-FRCNN/img1/000469.jpg",
+          "count": {
+            "python": 57,
+            "cpp": 57
+          },
+          "min_iou": 0.9999933739795831,
+          "max_score_diff": 3.1288256682748816e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-11-FRCNN/img1/000523.jpg",
+          "count": {
+            "python": 49,
+            "cpp": 49
+          },
+          "min_iou": 0.9999975413535787,
+          "max_score_diff": 3.87373718269135e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-11-FRCNN/img1/000697.jpg",
+          "count": {
+            "python": 38,
+            "cpp": 38
+          },
+          "min_iou": 0.999996977716568,
+          "max_score_diff": 5.366339035084433e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-13-FRCNN/img1/000214.jpg",
+          "count": {
+            "python": 78,
+            "cpp": 78
+          },
+          "min_iou": 0.9999896113510065,
+          "max_score_diff": 5.360057983017086e-07,
+          "pass": true
+        },
+        {
+          "frame": "MOT17-13-FRCNN/img1/000500.jpg",
+          "count": {
+            "python": 3,
+            "cpp": 3
+          },
+          "min_iou": 0.9999976476030461,
+          "max_score_diff": 2.3824697881202894e-07,
+          "pass": true
+        }
+      ]
+    }
+  }
+}
