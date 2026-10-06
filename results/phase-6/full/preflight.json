@@ -1,0 +1,59 @@
+{
+  "models": {
+    "nano": "8741ff7182a44d47d69379015983069532bed92ea33590e2253dc7acb0197868",
+    "tiny": "4d50a6a3fc1bf1c836015c665ab3d4d1c73bbbcf0fad96b7a2d3af78b558d665"
+  },
+  "external_revisions": {
+    "ByteTrack": "d1bf0191adff59bc8fcfeaa0b33d3d1642552a99",
+    "TrackEval": "12c8791b303e0a0b50f753af204249e622d0281a"
+  },
+  "sequences": {
+    "MOT17-02-FRCNN": {
+      "frames": 600,
+      "gt_sha256": "2e3ecb488da8886d3200d402b2b08890c6d2879923839444e9b74fa43a551440"
+    },
+    "MOT17-04-FRCNN": {
+      "frames": 1050,
+      "gt_sha256": "f8cfbe36ef38a2e1857d7ebfe7d754b2355a3ffb9e1f9cedea435e86e4fbc948"
+    },
+    "MOT17-05-FRCNN": {
+      "frames": 837,
+      "gt_sha256": "ed74c54176b21b38cb690eda79a4755cf16e4c4a9ca2f019b0ba8904636174f5"
+    },
+    "MOT17-09-FRCNN": {
+      "frames": 525,
+      "gt_sha256": "592f0d5b519c03b35bb1578c33d726460f63abb91ea0c515f87e8d6d76be001d"
+    },
+    "MOT17-10-FRCNN": {
+      "frames": 654,
+      "gt_sha256": "f8cca05d98fa36d8b6f2b807e03d32407d00d40299d679e4da320e42862677c0"
+    },
+    "MOT17-11-FRCNN": {
+      "frames": 900,
+      "gt_sha256": "4952d6e4efc705c90688e434fd138a55ada2c0d5f576ba3847ee102fc18aff93"
+    },
+    "MOT17-13-FRCNN": {
+      "frames": 750,
+      "gt_sha256": "4827603ef87bbd61123cb4c5f194b3bf23531bd78ed9cd916084e53dca998013"
+    },
+    "MOT20-01": {
+      "frames": 429,
+      "gt_sha256": "89fd0196d67a5eb6011a470dc2a49b02255403b49e8848031cdf99add8a36d9c"
+    },
+    "MOT20-02": {
+      "frames": 2782,
+      "gt_sha256": "10abe457a67d9919a9cbfe821d3619c8e6174c2b0ed7ecf4cb68c1fd6cad58de"
+    },
+    "MOT20-03": {
+      "frames": 2405,
+      "gt_sha256": "350fbc950c6dc00e3cc8a71358b3d0b8958906c8be57a7bf5fb9db34bff70f28"
+    },
+    "MOT20-05": {
+      "frames": 3315,
+      "gt_sha256": "6da1ad9a528c39203c181aa93fc492d194358c50856695a7fe17656c928f5c17"
+    }
+  },
+  "status": "pass",
+  "representative_image_sha256": "41ff65408c5338f4a83035fd12e9f5f7b658ee82feacf4512655677032636597",
+  "limitations": "Hashes cover original models, GT and one representative image; all image counts checked. This is not a full image-byte integrity scan."
+}

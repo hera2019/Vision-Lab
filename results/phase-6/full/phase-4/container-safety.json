@@ -1,0 +1,62 @@
+{
+  "uid": 502,
+  "gid": 20,
+  "effective_capabilities_hex": "0000000000000000",
+  "no_new_privileges": 1,
+  "network_interfaces": [
+    "bonding_masters",
+    "erspan0",
+    "gre0",
+    "gretap0",
+    "ip6_vti0",
+    "ip6gre0",
+    "ip6tnl0",
+    "ip_vti0",
+    "lo",
+    "sit0",
+    "tunl0"
+  ],
+  "interface_flags": {
+    "gre0": 128,
+    "ip6tnl0": 128,
+    "ip_vti0": 128,
+    "tunl0": 128,
+    "sit0": 128,
+    "ip6_vti0": 128,
+    "ip6gre0": 128,
+    "lo": 9,
+    "gretap0": 4098,
+    "erspan0": 4098
+  },
+  "active_non_loopback_interfaces": [],
+  "ipv4_routes": [],
+  "external_connection_probe": {
+    "denied": true,
+    "errno": 101,
+    "message": "[Errno 101] Network is unreachable"
+  },
+  "root_write_probe": {
+    "denied": true,
+    "errno": 30,
+    "message": "[Errno 30] Read-only file system: '/etc/vision-lab-safety-probe'"
+  },
+  "project_write_probe": {
+    "denied": true,
+    "errno": 30,
+    "message": "[Errno 30] Read-only file system: '/work/vision-lab-safety-probe'"
+  },
+  "tmpfs_execution_probe": {
+    "execution_denied": true,
+    "errno": 13
+  },
+  "tmpfs_mount": "tmpfs /tmp tmpfs rw,nosuid,nodev,noexec,relatime,size=1048576k 0 0",
+  "docker_socket_present": false,
+  "memory_max_bytes": 6442450944,
+  "pids_max": 512,
+  "cpu_max": "400000 100000",
+  "writable_submounts": [
+    "/work/results",
+    "/work/data/phase-4"
+  ],
+  "scope": "Probe run through drun with results + data/phase-4 writable, 4 CPUs; build networking is separate."
+}

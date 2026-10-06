@@ -127,3 +127,10 @@ minimal fix, status. Append; do not delete resolved entries.
 - **Observed:** first full attempt from clean commit `97d7177` builds all images, then Bash 3.2 `set -u` rejects an empty optional mount array before preflight. No experimental stage ran.
 - **Correction:** use the guarded optional-array form already used by unchanged `scripts/drun.sh`; empty and populated cases pass on the host Bash, with spaces retained. Commit correction and use another independent clean clone, without overlaying the failed one.
 - **Evidence:** `results/phase-6-full-first-attempt.md` / `.json`, `results/phase-6/full-run-first-attempt.log`, Git clone proof.
+
+## I-20 · Full clone reproduces quality, but strict speed gate fails (open review)
+
+- **Measured:** complete clean-clone execution at `dcdb81e`. Matching source commit/tree, clean entry state, fresh evaluator procedure and ground-truth self-test pass. Every FP32/INT8 canonical evaluator score and track hash equals the original reference; failure crops regenerate.
+- **Failed check:** 8/12 new benchmark medians are above their original three-repeat min/max intervals; 4/12 are inside. Four-thread FP32 nano/tiny are 28.134/10.298 FPS. Faster out-of-interval results still fail the preregistered consistency rule. Full driver exits 1 only at its final gate after all stages execute.
+- **Boundary:** source availability in I-17 is resolved by owner-approved commits; its historical failure remains. Overall Phase 6 acceptance remains FAIL, not pending execution. No tolerance widening, favorable-repeat selection or tracker/model change. Independent review of evidence remains pending; cached builds do not establish a cold dependency installation.
+- **Evidence:** `results/phase-6-full-reproduction.md` / `.json`, `results/phase-6/full-run.log`, preserved raw rerun metadata under `results/phase-6/full/`. Original Phase 3–5 evidence in the main checkout unchanged; no push.

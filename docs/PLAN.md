@@ -1,6 +1,6 @@
 # Vision Lab — Work Plan
 
-Status: **Phase 4–5 evidence complete; Phase 6 entry point and local isolated validation complete, fresh-clone/full acceptance pending; independent review pending** · Started 2026-10-06 · Target 2026-10-13
+Status: **Phase 4–6 experiments complete; full clean-clone quality reproduction passes, strict speed consistency fails; overall Phase 6 acceptance FAIL; independent review pending** · Started 2026-10-06 · Target 2026-10-13
 
 Detailed test plan and acceptance criteria: [01-phase-0-plan.md](01-phase-0-plan.md).
 Detector: ByteTrack's YOLOX nano/tiny checkpoints (decided 2026-10-06).
@@ -39,22 +39,32 @@ per-frame GT/detection/track evidence and provenance. CLEAR audit counts match
 upstream on the three scanned sequences. These are illustrative examples,
 not frequency estimates or tuned improvements. Mandatory Phase 5 evidence is
 complete; independent review pending. Mean-shift remains an optional deferred
-bonus. Phase 6 fresh-clone reproduction is the next mandatory stage.
+bonus. Phase 6 full clean-clone reproduction has now executed; see below.
 
 Phase 6: [README](../README.md), [execution protocol](PHASE6_EXECUTION.md),
-[reproduction record](../results/phase-6-reproduction.md), and
+[historical snapshot record](../results/phase-6-reproduction.md),
+[full clean-clone record](../results/phase-6-full-reproduction.md), and
 [walkthrough](walkthrough/phase-6.md). One-command smoke/full profiles added;
-full execution remains untested. The isolated source snapshot reproduces
+the historical isolated source snapshot reproduces
 both FP32 models' first-50-frame detections/tracks byte for byte and passes
 Python/C++ synthetic behavior. Nano four-thread FPS 27.215 is inside the
 original repeat interval; tiny 10.131 is outside, despite being faster, and
 that strict check failure stays. Standalone root C++ dependency build succeeds
 after the authorized download and produces identical 50-frame outputs.
 Initial offline-build and mount failures remain recorded. Actual clean HEAD
-clone is `6f0e68f` and lacks current Phase 3–6 source. Complete-source commit,
-fresh clone and full numerical/environment validation are still required;
-no commit/push performed. Fresh Python dependency installation has not been
-tested. Local snapshots are not counted as fresh-clone acceptance.
+clone was `6f0e68f` and lacked current Phase 3–6 source; that historical failure
+is retained. Owner approved local commits and full reproduction on 2026-10-07.
+Source/evidence commit `97d7177` failed before runtime on Bash 3.2 empty-array
+handling. Fix commit `dcdb81e` was independently cloned with matching Git tree
+and clean source, using copy-on-write licensed inputs. Full image builds,
+fresh evaluator self-tests, all detection/tracking/evaluation stages, fixed
+INT8 calibration, 36 paired benchmarks and failure crops executed. All FP32
+and INT8 canonical scores and track hashes equal the reference. Strict speed
+consistency passes 4/12 settings and fails 8/12, all above the old intervals;
+no interval was widened. Four-thread FP32 nano/tiny medians are 28.134/10.298
+FPS. Overall fresh-clone acceptance remains FAIL. No push performed. Cached
+dependency layers were permitted; a cold installation and independent review
+remain unverified. Earlier results in the main checkout remain unchanged.
 
 ## Goal
 

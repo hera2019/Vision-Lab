@@ -3,14 +3,15 @@
 # 第 6 阶段讲解：复现证据
 
 Phase 6 adds a readable project entry point, input checks and a one-command
-driver. Its acceptance is still partial. Local source validation, installing
+driver. Full execution is complete, but its strict speed gate fails. Local source validation, installing
 dependencies and reproducing a complete committed project are separate
-checks. The current state is recorded in [the reproduction report](../../results/phase-6-reproduction.md).
+checks. The current state is recorded in [the full reproduction report](../../results/phase-6-full-reproduction.md).
+Sections 1–5 retain the earlier preparation/snapshot state; section 6 records the completed owner-authorized full run.
 Earlier failures, tracking settings and results stay intact.
 
-阶段 6 增加清楚的项目入口、输入检查和一键执行程序。它仍属于部分验收。本地源码
+阶段 6 增加清楚的项目入口、输入检查和一键执行程序。完整实验已经执行，但严格速度检查未通过。本地源码
 验证、安装依赖和复现完整的已提交项目，是不同的检查。当前状态见
-[复现报告](../../results/phase-6-reproduction.md)。之前的失败、追踪设置和结果均保留。
+[完整复现报告](../../results/phase-6-full-reproduction.md)。第 1–5 节保留之前准备与快照检查时的状态，第 6 节记录用户授权后完成的完整运行。之前的失败、追踪设置和结果均保留。
 
 ## 1. The source you have versus the source you can clone / 手上的源码与能克隆到的源码
 
@@ -116,6 +117,38 @@ history can include the complete source. No commit or push was performed.
 执行或验收。数值检查与干净克隆环境的证明分别报告，子集测试不能代替完整的 INT8、
 质量和 CPU 预算矩阵。项目规则要求用户明确要求提交，Git 历史才能包含完整源码。
 本轮没有提交或推送。
+
+## 6. Full clean-clone results / 完整干净克隆结果
+
+After the owner authorized local commits, we cloned committed source `dcdb81e`
+independently. Its Git revision/tree matched and source was clean before the
+experiment. We reran every fixed stage, including fresh evaluator self-tests,
+all FP32 detections and both trackers, full image-to-track execution, original
+INT8 calibration and quality, all 36 speed runs, and the three failure crops.
+Canonical scores and track file hashes agree exactly with the frozen records.
+INT8 accuracy failures also reproduce: nano loses 56.1002 pp MOTA and tiny
+loses 1.0635 pp; neither becomes useful by repeating the experiment.
+
+用户授权本地提交后，我们独立克隆了已提交的源码 `dcdb81e`。Git 版本与文件树一致，
+实验前源码是干净的。所有固定步骤都重新运行：评估器自检、全部 FP32 检测与两种追踪器、
+图片到轨迹的完整执行、原 INT8 校准与准确率、36 次测速和三个失败案例裁剪。
+评估分数与追踪文件校验值和冻结记录完全一致。INT8 准确率失败也被复现：nano 的 MOTA
+下降 56.1002 个百分点，tiny 下降 1.0635 个百分点；重复实验没有让它们变得合格。
+
+Speed is a separate check. Only four of twelve configuration medians are
+inside the original three-repeat interval. Eight are above the upper bound,
+including four-thread FP32 nano 28.134 FPS and tiny 10.298 FPS. Being faster
+still fails this predeclared consistency rule; we did not widen it. Thus the
+full experiment is completed and quality reproduction passes, but overall
+fresh-clone acceptance remains FAIL. Review is pending. We used available
+build layers, so this does not prove a cold dependency installation. No push
+occurred and original main-checkout evidence stays intact.
+
+速度是另一个检查。十二种配置中，只有四种的中位速度落在原来的三次重复区间内；
+另外八种超过上限，包括四线程 FP32 nano 的 28.134 FPS 和 tiny 的 10.298 FPS。
+虽然更快，按预先确定的一致性规则仍然失败，我们没有扩大区间。因此完整实验已经完成、
+质量结果复现通过，但整个干净克隆验收仍为 FAIL，等待复核。构建使用了已有缓存层，
+所以没有证明从零安装依赖。没有推送，主项目里的原始证据保持不变。
 
 ## New terms / 新术语
 

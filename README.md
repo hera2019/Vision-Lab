@@ -13,11 +13,12 @@ a vehicle tracker, person-recognition system or finished product.
 | How fast is it? | Four-thread FP32 nano 27.34 FPS, tiny 9.76 FPS on a fixed 608×1088-input benchmark in the M2 Max Docker Linux VM. This includes JPEG decoding through tracking/filtering, excludes drawing/writing and is not edge-board FPS. |
 | Is this INT8 scheme worthwhile? | No. Nano loses 56.1002 pp MOT20 MOTA. Tiny speeds up, but loses 1.0635 pp, above the frozen 1.0 pp cap. Both fail. |
 | How does it fail? | Documented pillar occlusion 75→107, visible-person correspondence switch 13→22, and small/truncated boundary-target misses. |
-| Is fresh-clone reproduction accepted? | Pending full execution. Owner approved committing the complete Phase 3–6 source and evidence on 2026-10-07. Local source-snapshot smoke is a separate, narrower check. |
+| Is fresh-clone reproduction accepted? | Full clean-clone experiment complete at `dcdb81e`: FP32/INT8 scores and track hashes reproduce exactly. Strict speed check fails in 8/12 configurations, all above the old interval. Overall acceptance remains FAIL. |
 
 See [work plan](docs/PLAN.md), [fixed acceptance criteria](docs/01-phase-0-plan.md),
 [Phase 3](results/phase-3-tracking.md), [Phase 4](results/phase-4-performance.md),
-[Phase 5](results/phase-5-failures.md) and [reproduction record](results/phase-6-reproduction.md).
+[Phase 5](results/phase-5-failures.md), [full reproduction](results/phase-6-full-reproduction.md)
+and [historical snapshot check](results/phase-6-reproduction.md).
 MOT17 training footage is used for fidelity/development only; MOT20 is held
 out. No settings are tuned on MOT20. Negative results remain recorded.
 
@@ -69,8 +70,8 @@ working-source snapshot. It does not commit or overlay the clone.
 
 ## Full reproduction from committed source
 
-Once this complete source revision is committed and independently cloned,
-stage the recorded inputs inside the clone, then run:
+Clone the complete source revision independently, stage the recorded inputs
+inside the clone, then run:
 
 ```sh
 VL_DISPOSABLE_CLONE=1 VL_BUILD_NETWORK=default bash scripts/reproduce.sh full
@@ -91,7 +92,13 @@ The command builds images, archives canonical reference reports under
 tracking, full end-to-end evaluation, all paired FP32/INT8 benchmarks and
 held-out INT8 quality, followed by failure crops. It writes new experiment
 outputs inside that disposable clone. Full execution is substantially longer
-than smoke and is currently **unexecuted**, not an accepted reproduction.
+than smoke. Full execution completed from clean source commit `dcdb81e` on
+2026-10-07: all canonical evaluator scores and track hashes reproduce exactly,
+including the INT8 failures. Only 4/12 speed medians are inside the original
+repeat intervals; the other eight are faster but above their upper bounds.
+The driver therefore exits 1 at its final numerical gate after completing all
+stages, and overall acceptance remains FAIL. Raw rerun evidence is archived
+under `results/phase-6/full/`; original Phase 3–5 records remain unchanged.
 The earlier Phase 0–2 HEAD clone lacked this source; that failure stays in the
 historical report. Clone the complete source commit for this command. No
 workaround snapshot counts as passing that gate.
@@ -101,6 +108,7 @@ archived reference, and every speed median against its original repeat
 interval. A failed check remains failed. The historical Phase 3 human report
 is retained as reference; a new Phase 3 canonical evaluation file is scored.
 Reproduction does not resolve INT8 failures or guarantee continuous IDs.
+Independent review and cold dependency installation remain unverified.
 
 ## Container boundary
 

@@ -1,0 +1,39 @@
+{
+  "status": "pass",
+  "files": {
+    "results/phase-6/full-check.json": {
+      "archive_path": "results/phase-6/full/full-check.json",
+      "sha256": "c894389f3cac304298d9311a3af3aef1305aed645b6af892578b7cdb0b545a68"
+    },
+    "results/phase-6/preflight.json": {
+      "archive_path": "results/phase-6/full/preflight.json",
+      "sha256": "19bc9b7e082db58d896d4471218a2a7e4f9df3d0f4a1e935974c3f6022d8b2fb"
+    },
+    "results/phase-6/clone-proof.json": {
+      "archive_path": "results/phase-6/full/clone-proof.json",
+      "sha256": "29df956516b4ac98c197798c6c5fef78659edba1a38822e75195eaaf450cbae0"
+    },
+    "results/phase-6/python-environment.txt": {
+      "archive_path": "results/phase-6/full/python-environment.txt",
+      "sha256": "c47943c45f640a9bbc07f22832b27ee436ce946de29f5acc5b2559621a0b527e"
+    },
+    "results/phase-3/evaluation-final.json": {
+      "archive_path": "results/phase-6/full/phase-3/evaluation-final.json",
+      "sha256": "fbf056a7304c298a00d2cd83fae2c945245ead9b1a97a30537c5a3eff4fe6589"
+    },
+    "results/phase-3/evaluation-self.json": {
+      "archive_path": "results/phase-6/full/phase-3/evaluation-self.json",
+      "sha256": "43aac804ea7fa85bce9926ee2414ae83579fb27c9153861e510a064bad00dbff"
+    },
+    "results/phase-4-performance.json": {
+      "archive_path": "results/phase-6/full/phase-4-performance.json",
+      "sha256": "3a5922c774ff3185ef5265aa97114d0bdc5bdfb553c0b05da9c5decbf974bb72"
+    },
+    "results/phase-5-failures.json": {
+      "archive_path": "results/phase-6/full/phase-5-failures.json",
+      "sha256": "6a7067feb0b18dc02cdd961209f75164731850d8de6748129a6214f17560b4a1"
+    }
+  },
+  "driver_exit_code": 1,
+  "exit_reason": "Final strict speed gate fails after all stages completed"
+}
