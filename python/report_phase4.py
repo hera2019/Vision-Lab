@@ -2,6 +2,7 @@
 import csv
 import hashlib
 import json
+from datetime import datetime, timezone
 from pathlib import Path
 import numpy as np
 from phase3_common import ROOT
@@ -81,7 +82,12 @@ if folder == paired and evaluation:
                 'quality_measured_at_threads': 4,
                 'quality_transfer_to_this_budget_fully_measured': threads == 4})
 complete = folder == paired and evaluation is not None and len(quantization) == 2
-result = {'date': '2026-10-06', 'author': 'Codex / GPT-6 (exact runtime model ID not exposed)',
+generated_at = datetime.now(timezone.utc).isoformat()
+result = {'date': generated_at[:10], 'date_semantics': 'report generation date in UTC',
+    'report_generated_at_utc': generated_at, 'protocol_date': '2026-10-06',
+    'measurement_time_range_utc': None,
+    'measurement_time_note': 'Absolute measurement timestamps are not recorded in the source timing files. Report generation and protocol dates do not establish when measurements were collected.',
+    'author': 'Codex / GPT-6 (exact runtime model ID not exposed)',
     'status': 'phase-4-measurements-complete' if complete else 'partial-phase-4',
     'protocol': 'docs/PHASE4_EXECUTION.md', 'input_size': [608, 1088],
     'sequence': 'MOT17-02-FRCNN', 'warmup_frames': 50, 'measured_frames_per_repeat': 100,
@@ -118,7 +124,8 @@ if complete:
     verdict = 'Neither INT8 model meets the fixed usefulness gate at any tested budget.' if not any(g['worth_it_per_fixed_gate'] for g in gates) else 'See the per-budget usefulness verdicts below.'
     conclusion = f'**Conclusion: {verdict} {losses}. The FP32 baseline is retained.**'
 lines = ['# Phase 4 — controlled speed and memory', '',
-    'Date: 2026-10-06. Author: Codex / GPT-6 (exact runtime model ID not exposed).', '',
+    f'Report generated (UTC): {generated_at}. Author: Codex / GPT-6 (exact runtime model ID not exposed).', '',
+    f'Protocol date: {result["protocol_date"]}. Measurement UTC range: not recorded in the source timing files. Generation and protocol dates do not establish when measurements were collected.', '',
     f'Status: **{result["status"]}**. '+('All predeclared measurements finished; failed gates remain failed. Independent review is pending.' if complete else 'This is a partial result, not phase completion.'), '',
     conclusion, '',
     'Existing baseline tracker/settings; native 608×1088 detector input. One fresh process at a time, OpenCV one thread, ORT/container CPU budgets 1/2/4. Each setting has three repeats; frames 1–50 warm up and only 51–150 are measured. FPS includes JPEG read/decode, detector and track update/box filtering, excluding output serialization and video drawing. Each median FPS is the median of three repeat throughputs, not reciprocal median latency.', '',

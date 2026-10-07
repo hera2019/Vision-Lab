@@ -12,10 +12,32 @@ if [[ $mode == full ]]; then
   git diff --quiet && git diff --cached --quiet || { echo 'Full mode requires committed source.' >&2; exit 2; }
   [[ -z $(git ls-files --others --exclude-standard) ]] || { echo 'Full mode requires all source/docs committed.' >&2; exit 2; }
   [[ -z ${VL_ASSET_ROOT:-} ]] || { echo 'Shared snapshot assets support smoke only.' >&2; exit 2; }
-  mkdir -p results/phase-6 data/phase-4
+fi
+mkdir -p results/phase-6 data/phase-6
+# Capture source state before replacing any tracked report. Snapshot smoke has no Git metadata.
+if git rev-parse --show-toplevel >/dev/null 2>&1 && [[ -e .git ]]; then
+  entry_status=$(git status --porcelain --untracked-files=no)
+  printf '%s\n' "$entry_status" > results/phase-6/source-status-before.txt
   git rev-parse HEAD > results/phase-6/source-commit.txt
-  git remote get-url origin > results/phase-6/source-origin.txt
-  git status --porcelain --untracked-files=no > results/phase-6/source-status-before.txt
+  git rev-parse 'HEAD^{tree}' > results/phase-6/source-tree.txt
+  git rev-parse '@{upstream}' 2>/dev/null > results/phase-6/source-upstream.txt || : > results/phase-6/source-upstream.txt
+  git remote get-url origin 2>/dev/null > results/phase-6/source-origin.txt || : > results/phase-6/source-origin.txt
+else
+  for name in source-status-before source-commit source-tree source-upstream source-origin; do
+    : > "results/phase-6/$name.txt"
+  done
+fi
+run_id="$(date -u +%Y%m%dT%H%M%SZ)-$$"
+printf '%s\n' "$run_id" > results/phase-6/run-id.txt
+if [[ $mode == full ]]; then
+  mkdir -p data/phase-4 results/phase-6/previous-full-report
+  for suffix in md json; do
+    report="results/phase-6-full-reproduction.$suffix"
+    [[ ! -f $report ]] || cp "$report" "results/phase-6/previous-full-report/report.$suffix"
+  done
+  # A failed build must not leave an old completed report looking current.
+  printf '{"status":"started-not-finalized","run_id":"%s","fresh_clone_gate_passed":false}\n' "$run_id" > results/phase-6-full-reproduction.json
+  printf '# Phase 6 — full run not finalized\n\nRun: `%s`. No acceptance claimed. See the driver log; all historical evidence is retained.\n' "$run_id" > results/phase-6-full-reproduction.md
   network=${VL_BUILD_NETWORK:-none}
   [[ $network == none || $network == default ]] || { echo 'VL_BUILD_NETWORK must be none or default.' >&2; exit 2; }
   docker build --network="$network" --target build -t vision-lab:dev .
@@ -24,7 +46,6 @@ if [[ $mode == full ]]; then
   docker build --network=none -f Dockerfile.phase4 -t vision-lab:phase4 .
   docker build --network="$network" -f Dockerfile.phase4-pytools -t vision-lab:phase4-pytools .
 fi
-mkdir -p results/phase-6 data/phase-6
 asset_root=${VL_ASSET_ROOT:-$PWD}
 : > results/phase-6/external-revisions.txt
 for label in ByteTrack TrackEval; do
@@ -43,6 +64,9 @@ fi
 runpy() {
   VL_RW="results data/phase-6" scripts/drun.sh vision-lab:phase4-pytools ${extra[@]+"${extra[@]}"} -- python "$@"
 }
+context_args=()
+[[ $mode != full ]] || context_args=(--disposable)
+runpy /work/python/phase6_context.py ${context_args[@]+"${context_args[@]}"}
 runpy /work/python/phase6_preflight.py "$mode"
 if [[ $mode == full ]]; then
   scripts/drun.sh vision-lab:dev -- /src/build/env_check > results/phase-3/environment.txt
@@ -77,7 +101,8 @@ if [[ $mode == full ]]; then
   bash scripts/phase3_evaluate.sh final --fresh
   bash scripts/phase4_experiment.sh
   bash scripts/phase5_failures.sh
-  runpy /work/python/phase6_smoke_report.py full
+  runpy /work/python/phase6_smoke_report.py full --collect-only
+  runpy /work/python/report_phase6_full.py --require-gate
   exit
 fi
 base=${VL_REPRO_BASE:-vision-lab:phase4}

@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-07",
+  "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+  "status": "report-date-fix-verified",
+  "finding": "R4",
+  "report_generated_at_utc": "2026-10-07T10:17:36.235010+00:00",
+  "measurement_time_range_utc": null,
+  "comparison": {
+    "unchanged_original_fields_except_date": [
+      "accepted_baseline_replaced",
+      "all_image_versions",
+      "author",
+      "benchmark_source_sha256",
+      "container_safety",
+      "cpp_environment",
+      "image_versions",
+      "implementation_checks",
+      "input_frame_sha256",
+      "input_size",
+      "int8_dependency",
+      "int8_diagnostic",
+      "int8_evaluation",
+      "int8_quantization",
+      "int8_thread_check",
+      "int8_usefulness_gates",
+      "int8_worth_it_gate_evaluated",
+      "limitations",
+      "measured_frames_per_repeat",
+      "negative_records",
+      "protocol",
+      "repeats",
+      "runs",
+      "sequence",
+      "settings",
+      "status",
+      "vm_hardware",
+      "warmup_frames"
+    ],
+    "benchmark_runs": 36,
+    "settings": 12,
+    "all_int8_usefulness_gates_still_failed": true
+  },
+  "protected_report_sha256": {
+    "results/phase-4-performance.json": "7f226306d908325d98e841ef9bf7c1401a738bdfbc771554da5b2fde07a56daa",
+    "results/phase-4-performance.md": "ea641b0d454bf38c2fd0baaebfc11673512cb423da7d38958fb4de3cc8d34579",
+    "results/phase-6-full-reproduction.json": "11a2ed080b000183b5b362d872919b71f7e71c78ac1c95d2b28c4bf946c2f3a9",
+    "results/phase-6-full-reproduction.md": "a3709180144ba33163c018652ea774ac9d6b8ef9a0056749bd453f37b3b84b65"
+  },
+  "validation_scope": "Regenerated Phase 4 report in an isolated temporary directory using existing read-only artifacts; no inference, calibration, rescoring or timing runs.",
+  "verification_log": "results/phase-6-report-date-fix.log",
+  "initial_launch_failure": {
+    "log": "results/phase-6-report-date-fix-first-attempt.log",
+    "cause": "Docker host does not share /private/tmp; no container verification ran on this attempt.",
+    "correction": "Read the same script from the already shared project directory, with unchanged hardened runtime flags."
+  },
+  "new_full_experiment_executed": false,
+  "independent_review": false
+}

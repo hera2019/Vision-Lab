@@ -61,3 +61,32 @@ keeps smoke/full status distinct. No download command is hidden in runtime.
 `docs/walkthrough/phase-6.md`, PLAN/CHANGES/ISSUES updates. Report the fresh
 clone gate as pending until the complete source can be cloned and tested.
 Prepare all reviewable work before asking for the commit needed for that gate.
+
+## Reporting audit follow-up — 2026-10-07
+
+Owner requested the next review stage. The executor [audit](PHASE6_AUDIT.md)
+checks existing evidence without another full run. Full mode now preserves the
+previous final reports, marks a started run not finalized, records source/run
+identity and automatically finalizes paired reports after all stages. Only the
+final aggregate gate decides its numerical exit code. Missing/incomplete or
+stale evidence cannot be accepted. The automated source-context check requires
+a clean standalone Git directory, no object alternates, recorded origin and
+HEAD matching its tracked upstream revision, plus the disposable-clone
+declaration. It does not replace independent reviewer approval. Smoke reports
+their bounded actual context rather than hardcoded historical source states.
+Original min/max intervals and failed outcomes remain unchanged. Targeted
+fixture verification does not establish another full clean-clone experiment.
+
+## Reporting-fix full verification — 2026-10-07
+
+The owner requested continuation of the remaining work after the bounded fixes.
+Within the existing local-commit/full-reproduction scope, save the reviewed
+source locally and run the unchanged full profile once in a new independent
+clone. No push or extra reviewer agent is included. Preserve the original
+`dcdb81e` experiment, all frozen references and speed intervals. This run
+verifies automatic final report collection and current run/source/date labels;
+its result is a separate follow-up, including any failed acceptance checks.
+Use copy-on-write regular-file assets with no historical detection/track overlay.
+Retain entry commit/tree/clean status and the driver's actual exit code.
+Existing build caches are permitted; no cold-install claim. Record the new
+report pair and raw evidence separately under `results/phase-6/reporting-full/`.

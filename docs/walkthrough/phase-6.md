@@ -150,6 +150,49 @@ occurred and original main-checkout evidence stays intact.
 质量结果复现通过，但整个干净克隆验收仍为 FAIL，等待复核。构建使用了已有缓存层，
 所以没有证明从零安装依赖。没有推送，主项目里的原始证据保持不变。
 
+## 7. Checking evidence and report freshness / 检查证据与报告是否属于本次运行
+
+The executor audit recomputes the old and new FPS values directly from 72
+timing files and checks 74 actual regenerated track files plus three crops
+against their hashes. It supports the old numerical claims, including the
+eight strict speed failures. Two reporting gaps were fixed: full mode now
+automatically generates its current final reports, and smoke no longer claims
+the source is uncommitted or full mode has never run. A new run retains previous
+reports and starts with explicit incomplete status; source/run identity and
+fresh complete evidence are required before accepting its final result.
+
+执行者复核直接用 72 个计时文件重算原来与本次的 FPS，并检查 74 个实际生成的追踪文件
+以及三张裁剪图的校验值。原数值结论有证据支持，包括八项严格速度失败。
+修复了两个报告问题：完整模式现在自动生成本次最终报告，快速检查不再声称源码未提交
+或完整模式从未运行。新运行会保留以前的报告，并明确以“尚未完成”状态开始；
+只有本次源码和运行编号一致、证据完整且新鲜，才能接受最终结果。
+
+Thirteen targeted tests use existing measurements and isolated synthetic
+examples to ensure dirty source, stale run IDs, missing/failed self-tests or
+reused evaluations cannot pass the final gate. A simulated build failure
+preserves the old report while preventing it from appearing current. These
+are reporting checks, not another full experiment or independent reviewer
+approval. Historical acceptance stays FAIL; any future speed-uncertainty rule
+must be reviewed before new measurements, not used to erase old failures.
+
+十三项针对性检查使用已有测量与独立的模拟案例，确保源码有改动、运行编号过期、
+自检缺失或失败、复用旧评估时，不能通过最终门槛。模拟构建失败还验证了：旧报告会保留，
+但不会被误当成本次结果。这些是报告检查，不是又一次完整实验，也不是独立审阅批准。
+之前的验收仍为 FAIL；未来若要改进速度不确定性的判断规则，必须在新测量前复核，
+不能拿来抹掉旧失败。
+
+Phase 4 now labels when the report was generated in UTC (Coordinated Universal
+Time), separately from when its protocol was written. The original timing files
+do not record absolute measurement times, so the report says those times are
+unknown. Generating a report today does not mean its measurements ran today.
+Isolated regeneration preserves every original field except date and leaves
+the historical reports unchanged.
+
+阶段 4 现在以 UTC（协调世界时）标出报告生成时间，并另列实验方案的编写日期。
+原始计时文件没有记录测量发生的绝对时间，报告明确写为未知。今天生成报告，
+不代表今天重新做了实验。临时目录中的重生成检查确认：除了日期，原有字段全部一致，
+历史报告也没有改动。
+
 ## New terms / 新术语
 
 | Term | 中文 | Meaning / 含义 |
@@ -159,3 +202,4 @@ occurred and original main-checkout evidence stays intact.
 | Preflight | 预检查 | Checks prerequisites before running / 运行前检查前提条件 |
 | Dependency cache | 依赖缓存 | Previously completed build/install layers / 之前完成的构建或安装层 |
 | Transitive dependency | 传递依赖 | Package required by another package / 其他包所需要的包 |
+| UTC | 协调世界时 | Shared time reference for timestamps / 时间戳采用的统一时间基准 |

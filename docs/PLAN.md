@@ -66,6 +66,19 @@ FPS. Overall fresh-clone acceptance remains FAIL. No push performed. Cached
 dependency layers were permitted; a cold installation and independent review
 remain unverified. Earlier results in the main checkout remain unchanged.
 
+Review follow-up: [executor evidence audit](../results/phase-6-audit.md)
+recomputed 72 original/rerun benchmarks and verified 74 actual track files plus
+three regenerated crops. Scores/hashes agree and the 8/12 failed speed checks
+are correctly reported. [Reporting fixes](../results/phase-6-reporting-fixes.md)
+close three output defects: full mode now generates current paired reports with
+run/source identity, while interrupted builds invalidate current completion;
+smoke removes obsolete uncommitted/unexecuted claims; Phase 4 separates report
+generation time from the protocol date and explicitly unknown measurement times.
+Thirteen bounded contracts and isolated report-date regeneration pass; no new
+full experiment or independent verdict is claimed. Timing-method
+review stays open, with no retrospective criterion change. Independent reviewer
+authorization was requested separately; no extra agent started without consent.
+
 ## Goal
 
 A one-week, reproducible study of **object detection + multi-object tracking on

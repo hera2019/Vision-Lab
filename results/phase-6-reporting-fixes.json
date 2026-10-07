@@ -1,0 +1,37 @@
+{
+  "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+  "date": "2026-10-07",
+  "status": "bounded-reporting-fixes-verified",
+  "audit": "results/phase-6-audit.json",
+  "fixed_findings": [
+    "R1",
+    "R2",
+    "R4"
+  ],
+  "changes": [
+    "Full driver captures entry Git state before overwriting tracked reports, records run identity and clean standalone tracking-checkout context, and automatically writes current paired final reports.",
+    "Previous final reports are retained. A build failure leaves the current report explicitly not finalized rather than showing an old completed report.",
+    "Final acceptance combines clone context, complete fresh evaluations, both self-tests, exact quality/hash comparison and the unchanged speed rule. Missing, incomplete or stale inputs cannot be accepted.",
+    "Smoke reports only their actual bounded source context and generation date; hardcoded uncommitted-source and full-unexecuted statements removed.",
+    "Phase 4 reports label current UTC generation time separately from the historical protocol date. Measurement times absent from raw files are explicitly unknown."
+  ],
+  "validation": {
+    "reporting_contract_tests_passed": 13,
+    "tests_log": "results/phase-6-reporting-tests.log",
+    "real_dirty_checkout_full_guard": "Rejected before build/experiment with Full mode requires committed source",
+    "guard_log": "results/phase-6-reporting-dirty-guard.log",
+    "shell_syntax": "pass",
+    "diff_whitespace": "pass",
+    "scope": "Existing archived measurements plus isolated synthetic reporting/build-failure fixtures; no new inference, rescoring or benchmark measurements.",
+    "initial_fixture_error": "Test script initially used the Python reserved keyword pass as an update keyword argument; corrected to a dictionary before execution. No experiment result affected.",
+    "report_date_verification": "results/phase-6-report-date-fix.json"
+  },
+  "historical_source_tested": "dcdb81e03533045764468305b8a3b07306f4ab98",
+  "historical_full_acceptance": "FAIL",
+  "historical_speed_settings_failed": 8,
+  "new_reporter_full_clean_clone_experiment_executed": false,
+  "independent_review": "Pending explicit authorization for a separate read-only reviewer; this is executor verification.",
+  "prospective_method_review": "R3 remains open. No speed interval or numerical acceptance threshold changed.",
+  "metadata_follow_up": "R4 corrected and verified through isolated regeneration of existing measurements: all original fields except date unchanged, and four historical report hashes preserved. No new full-run claim.",
+  "git_state": "Uncommitted review fixes; no new source commit or full rerun claimed."
+}

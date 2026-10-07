@@ -110,6 +110,16 @@ is retained as reference; a new Phase 3 canonical evaluation file is scored.
 Reproduction does not resolve INT8 failures or guarantee continuous IDs.
 Independent review and cold dependency installation remain unverified.
 
+Reporting follow-up: the [bounded audit](results/phase-6-audit.md) verifies
+existing raw evidence; [reporting fixes](results/phase-6-reporting-fixes.md)
+make the full command generate current paired reports automatically, with
+run/source identity and explicit incomplete status if a build fails. Previous
+reports are kept under `results/phase-6/previous-full-report/`. Source context
+requires a clean standalone checkout matching its tracked upstream revision;
+this is not independent reviewer approval. Thirteen reporting contracts pass,
+but the changed entry point has not undergone another complete clean-clone
+experiment. Historical acceptance and its fixed speed intervals stay unchanged.
+
 ## Container boundary
 
 Every run uses [scripts/drun.sh](scripts/drun.sh): offline, ordinary UID,

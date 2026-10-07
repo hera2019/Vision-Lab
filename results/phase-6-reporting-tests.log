@@ -1,0 +1,18 @@
+test_build_failure_cannot_leave_old_completed_report_current (__main__.DriverFailureContract.test_build_failure_cannot_leave_old_completed_report_current) ... ok
+test_archived_failure_emits_current_pair (__main__.ReportingContract.test_archived_failure_emits_current_pair) ... ok
+test_checkout_not_matching_upstream_never_accepts (__main__.ReportingContract.test_checkout_not_matching_upstream_never_accepts) ... ok
+test_dirty_source_never_accepts_even_if_numbers_pass (__main__.ReportingContract.test_dirty_source_never_accepts_even_if_numbers_pass) ... ok
+test_empty_self_tests_cannot_pass_vacuously (__main__.ReportingContract.test_empty_self_tests_cannot_pass_vacuously) ... ok
+test_failed_self_test_prevents_acceptance (__main__.ReportingContract.test_failed_self_test_prevents_acceptance) ... ok
+test_historical_manual_proof_compatibility (__main__.ReportingContract.test_historical_manual_proof_compatibility) ... ok
+test_missing_self_test_rejected (__main__.ReportingContract.test_missing_self_test_rejected) ... ok
+test_missing_setting_rejected (__main__.ReportingContract.test_missing_setting_rejected) ... ok
+test_reused_evaluation_prevents_acceptance (__main__.ReportingContract.test_reused_evaluation_prevents_acceptance) ... ok
+test_smoke_reports_scope_without_old_source_claims (__main__.ReportingContract.test_smoke_reports_scope_without_old_source_claims) ... ok
+test_stale_run_identity_rejected (__main__.ReportingContract.test_stale_run_identity_rejected) ... ok
+test_synthetic_all_pass_gate (__main__.ReportingContract.test_synthetic_all_pass_gate) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.145s
+
+OK
