@@ -1,0 +1,2282 @@
+{
+  "status": "three-failure-categories-documented",
+  "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+  "protocol": "docs/PHASE5_EXECUTION.md",
+  "baseline": "accepted nano FP32, unchanged A1 settings",
+  "matching": "TrackEval pedestrian preprocessing and CLEAR IoU 0.5 continuity-aware correspondence; counts cross-checked with upstream.",
+  "selection": "Deterministic illustrative examples, not prevalence or new overall accuracy estimates.",
+  "cases": {
+    "identity-switch": {
+      "category": "identity-switch",
+      "sequence": "MOT20-01",
+      "gt_id": 28,
+      "model": "nano FP32",
+      "frame_range": [
+        185,
+        194
+      ],
+      "crop_frames": [
+        189,
+        190,
+        194
+      ],
+      "source_fps": 25,
+      "observations": [
+        {
+          "frame": 185,
+          "gt_box": [
+            1030.0,
+            620.0,
+            75.0,
+            189.0
+          ],
+          "visibility": 1.0,
+          "native_input_height_px": 106.4,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 13,
+            "iou": 0.7887564594099009,
+            "track_box": [
+              1021.1,
+              613.3,
+              79.0,
+              200.9
+            ]
+          },
+          "best_detection": {
+            "iou": 0.7772664250510279,
+            "score": 0.810248076915741,
+            "box": [
+              1022.0428466796875,
+              612.9114379882812,
+              77.0235595703125,
+              203.47967529296875
+            ]
+          },
+          "overlapping_gt_ids": [
+            7,
+            8,
+            20,
+            22,
+            23
+          ]
+        },
+        {
+          "frame": 186,
+          "gt_box": [
+            1033.0,
+            620.0,
+            76.0,
+            190.0
+          ],
+          "visibility": 1.0,
+          "native_input_height_px": 106.96296296296298,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 13,
+            "iou": 0.7823493853537231,
+            "track_box": [
+              1024.1,
+              619.5,
+              76.2,
+              192.8
+            ]
+          },
+          "best_detection": {
+            "iou": 0.7791923180139192,
+            "score": 0.7877784371376038,
+            "box": [
+              1023.508544921875,
+              622.6217041015625,
+              77.1337890625,
+              188.000244140625
+            ]
+          },
+          "overlapping_gt_ids": [
+            7,
+            8,
+            20,
+            22,
+            23
+          ]
+        },
+        {
+          "frame": 187,
+          "gt_box": [
+            1036.0,
+            621.0,
+            76.0,
+            189.0
+          ],
+          "visibility": 1.0,
+          "native_input_height_px": 106.4,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 13,
+            "iou": 0.7558230378396432,
+            "track_box": [
+              1025.7,
+              617.5,
+              77.1,
+              194.1
+            ]
+          },
+          "best_detection": {
+            "iou": 0.8481635100015222,
+            "score": 0.6166651844978333,
+            "box": [
+              1041.0765380859375,
+              615.7644653320312,
+              74.0845947265625,
+              188.58221435546875
+            ]
+          },
+          "overlapping_gt_ids": [
+            7,
+            8,
+            20,
+            22,
+            23
+          ]
+        },
+        {
+          "frame": 188,
+          "gt_box": [
+            1039.0,
+            621.0,
+            77.0,
+            190.0
+          ],
+          "visibility": 1.0,
+          "native_input_height_px": 106.96296296296298,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 13,
+            "iou": 0.7110673596131851,
+            "track_box": [
+              1026.7,
+              617.0,
+              77.1,
+              193.5
+            ]
+          },
+          "best_detection": {
+            "iou": 0.8760423047235877,
+            "score": 0.5921555757522583,
+            "box": [
+              1046.301025390625,
+              618.3316650390625,
+              70.0479736328125,
+              189.72174072265625
+            ]
+          },
+          "overlapping_gt_ids": [
+            7,
+            8,
+            22,
+            23
+          ]
+        },
+        {
+          "frame": 189,
+          "gt_box": [
+            1042.0,
+            622.0,
+            77.0,
+            190.0
+          ],
+          "visibility": 1.0,
+          "native_input_height_px": 106.96296296296298,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 13,
+            "iou": 0.5454429416886237,
+            "track_box": [
+              1021.3,
+              611.6,
+              77.4,
+              195.8
+            ]
+          },
+          "best_detection": {
+            "iou": 0.8833457887481881,
+            "score": 0.7551073431968689,
+            "box": [
+              1039.6171875,
+              615.1502075195312,
+              75.0355224609375,
+              197.25299072265625
+            ]
+          },
+          "overlapping_gt_ids": [
+            7,
+            8,
+            22,
+            23
+          ]
+        },
+        {
+          "frame": 190,
+          "gt_box": [
+            1045.0,
+            623.0,
+            78.0,
+            190.0
+          ],
+          "visibility": 1.0,
+          "native_input_height_px": 106.96296296296298,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 22,
+            "iou": 0.8701706841723293,
+            "track_box": [
+              1044.6,
+              617.9,
+              70.3,
+              195.0
+            ]
+          },
+          "best_detection": {
+            "iou": 0.896732075132238,
+            "score": 0.7898794412612915,
+            "box": [
+              1045.1761474609375,
+              617.5588989257812,
+              72.2218017578125,
+              196.67926025390625
+            ]
+          },
+          "overlapping_gt_ids": [
+            7,
+            8,
+            22,
+            23
+          ]
+        },
+        {
+          "frame": 191,
+          "gt_box": [
+            1051.0,
+            622.0,
+            73.0,
+            190.0
+          ],
+          "visibility": 1.0,
+          "native_input_height_px": 106.96296296296298,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 22,
+            "iou": 0.8523773834173879,
+            "track_box": [
+              1047.4,
+              617.7,
+              70.7,
+              195.7
+            ]
+          },
+          "best_detection": {
+            "iou": 0.8901816482625519,
+            "score": 0.806315004825592,
+            "box": [
+              1048.4281005859375,
+              616.4609985351562,
+              72.25830078125,
+              197.129638671875
+            ]
+          },
+          "overlapping_gt_ids": [
+            7,
+            8,
+            22,
+            23
+          ]
+        },
+        {
+          "frame": 192,
+          "gt_box": [
+            1057.0,
+            622.0,
+            69.0,
+            190.0
+          ],
+          "visibility": 1.0,
+          "native_input_height_px": 106.96296296296298,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 22,
+            "iou": 0.8702242567025605,
+            "track_box": [
+              1052.5,
+              617.2,
+              70.1,
+              194.5
+            ]
+          },
+          "best_detection": {
+            "iou": 0.922698772226725,
+            "score": 0.8272205591201782,
+            "box": [
+              1055.8929443359375,
+              615.9689331054688,
+              68.1951904296875,
+              194.871826171875
+            ]
+          },
+          "overlapping_gt_ids": [
+            7,
+            8,
+            23
+          ]
+        },
+        {
+          "frame": 193,
+          "gt_box": [
+            1063.0,
+            621.0,
+            65.0,
+            190.0
+          ],
+          "visibility": 1.0,
+          "native_input_height_px": 106.96296296296298,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 22,
+            "iou": 0.8069791765712625,
+            "track_box": [
+              1054.6,
+              615.7,
+              69.6,
+              193.9
+            ]
+          },
+          "best_detection": {
+            "iou": 0.8118907488525597,
+            "score": 0.818112850189209,
+            "box": [
+              1056.125,
+              614.1542358398438,
+              67.9127197265625,
+              194.45965576171875
+            ]
+          },
+          "overlapping_gt_ids": [
+            7,
+            8,
+            23
+          ]
+        },
+        {
+          "frame": 194,
+          "gt_box": [
+            1069.0,
+            621.0,
+            61.0,
+            190.0
+          ],
+          "visibility": 1.0,
+          "native_input_height_px": 106.96296296296298,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 22,
+            "iou": 0.8019095339852828,
+            "track_box": [
+              1058.3,
+              612.1,
+              71.0,
+              198.4
+            ]
+          },
+          "best_detection": {
+            "iou": 0.8173314122177381,
+            "score": 0.7984386682510376,
+            "box": [
+              1060.400390625,
+              609.6646118164062,
+              70.41748046875,
+              201.3746337890625
+            ]
+          },
+          "overlapping_gt_ids": [
+            7,
+            8,
+            23
+          ]
+        }
+      ],
+      "crop": {
+        "path": "data/phase-5/crops/identity-switch.png",
+        "sha256": "19600b278059a9b837b64d4dba102a2ab194c6c830bb0d2e03cc3db20ac6a63c",
+        "source_sha256": {
+          "data/MOT20/train/MOT20-01/img1/000189.jpg": "0e1042c267540e130b5a16a37575fb83f05cfe1442282ec40bfbf9205d3e17ad",
+          "data/MOT20/train/MOT20-01/img1/000190.jpg": "629db9dfdb827724fe05b673e6c8b948cf5e19f596bda308dacfa39042483c42",
+          "data/MOT20/train/MOT20-01/img1/000194.jpg": "ef3eac0f706ce25d84c422be770454c47788f70f124da4a9875f63dfccae4e39"
+        },
+        "source_crop_xyxy": [
+          960,
+          580,
+          1200,
+          853
+        ],
+        "display_scale": 2.0,
+        "output_size": [
+          1440,
+          636
+        ],
+        "license": "CC BY-NC-SA 3.0",
+        "attribution": "MOTChallenge authors, https://motchallenge.net/"
+      }
+    },
+    "small-target-miss": {
+      "category": "small-target-miss",
+      "sequence": "MOT20-01",
+      "gt_id": 39,
+      "model": "nano FP32",
+      "frame_range": [
+        86,
+        93
+      ],
+      "crop_frames": [
+        86,
+        89,
+        93
+      ],
+      "source_fps": 25,
+      "observations": [
+        {
+          "frame": 86,
+          "gt_box": [
+            51.0,
+            1047.0,
+            60.0,
+            34.0
+          ],
+          "visibility": 0.97143,
+          "native_input_height_px": 19.140740740740743,
+          "touches_image_border": true,
+          "association": null,
+          "best_detection": {
+            "iou": 0.1976712820882794,
+            "score": 0.010408119298517704,
+            "box": [
+              49.76401138305664,
+              1041.3187255859375,
+              63.20676803588867,
+              163.2762451171875
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 87,
+          "gt_box": [
+            51.0,
+            1044.0,
+            61.0,
+            37.0
+          ],
+          "visibility": 0.97368,
+          "native_input_height_px": 20.829629629629633,
+          "touches_image_border": true,
+          "association": null,
+          "best_detection": {
+            "iou": 0.10163955623348923,
+            "score": 0.014847657643258572,
+            "box": [
+              28.799373626708984,
+              1038.6622314453125,
+              97.22277450561523,
+              228.4024658203125
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 88,
+          "gt_box": [
+            51.0,
+            1042.0,
+            63.0,
+            39.0
+          ],
+          "visibility": 0.975,
+          "native_input_height_px": 21.955555555555556,
+          "touches_image_border": true,
+          "association": null,
+          "best_detection": {
+            "iou": 0.06849735717840756,
+            "score": 0.013132648542523384,
+            "box": [
+              16.91724967956543,
+              989.0999755859375,
+              117.24316596984863,
+              305.9453125
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 89,
+          "gt_box": [
+            51.0,
+            1040.0,
+            64.0,
+            41.0
+          ],
+          "visibility": 0.97619,
+          "native_input_height_px": 23.081481481481482,
+          "touches_image_border": true,
+          "association": null,
+          "best_detection": {
+            "iou": 0.11108064512229346,
+            "score": 0.01641920395195484,
+            "box": [
+              19.5125789642334,
+              1025.4383544921875,
+              98.98659706115723,
+              238.6431884765625
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 90,
+          "gt_box": [
+            51.0,
+            1038.0,
+            66.0,
+            43.0
+          ],
+          "visibility": 0.97727,
+          "native_input_height_px": 24.20740740740741,
+          "touches_image_border": true,
+          "association": null,
+          "best_detection": {
+            "iou": 0.0851700105500815,
+            "score": 0.011412312276661396,
+            "box": [
+              22.594953536987305,
+              982.6361083984375,
+              110.86030769348145,
+              300.57275390625
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 91,
+          "gt_box": [
+            51.0,
+            1036.0,
+            68.0,
+            45.0
+          ],
+          "visibility": 0.97826,
+          "native_input_height_px": 25.333333333333336,
+          "touches_image_border": true,
+          "association": null,
+          "best_detection": {
+            "iou": 0.12713925595184564,
+            "score": 0.01116202212870121,
+            "box": [
+              18.562694549560547,
+              1023.8603515625,
+              99.21771621704102,
+              237.6748046875
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 92,
+          "gt_box": [
+            51.0,
+            1034.0,
+            69.0,
+            47.0
+          ],
+          "visibility": 0.97917,
+          "native_input_height_px": 26.459259259259262,
+          "touches_image_border": true,
+          "association": null,
+          "best_detection": {
+            "iou": 0.1305855878585297,
+            "score": 0.01679837517440319,
+            "box": [
+              16.287078857421875,
+              1027.5341796875,
+              102.98815155029297,
+              238.273681640625
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 93,
+          "gt_box": [
+            51.0,
+            1032.0,
+            71.0,
+            49.0
+          ],
+          "visibility": 0.98,
+          "native_input_height_px": 27.585185185185185,
+          "touches_image_border": true,
+          "association": null,
+          "best_detection": {
+            "iou": 0.10288116100429777,
+            "score": 0.023713447153568268,
+            "box": [
+              -0.3593640625476837,
+              1024.9407958984375,
+              120.76379063725471,
+              273.0751953125
+            ]
+          },
+          "overlapping_gt_ids": []
+        }
+      ],
+      "crop": {
+        "path": "data/phase-5/crops/small-target-miss.png",
+        "sha256": "553090bdf15f938579ada689b4a96636f1ec54d81b5a103f21b88f80d10ce165",
+        "source_sha256": {
+          "data/MOT20/train/MOT20-01/img1/000086.jpg": "ea536c0c7f8f87c2d70a3f5f9b3cdaae9a77b0ab58a4ce38127d8d85207b1f89",
+          "data/MOT20/train/MOT20-01/img1/000089.jpg": "dd06f59924ec2456d4c3bfa4526c0f98fc2cf6611c93bdf55f79fc59dd812e5b",
+          "data/MOT20/train/MOT20-01/img1/000093.jpg": "12e1407a8a6fa1b0d43a3f1054e663cc7327d9cac3c39360fd3247f03c48e6b8"
+        },
+        "source_crop_xyxy": [
+          0,
+          992,
+          192,
+          1080
+        ],
+        "display_scale": 2.0,
+        "output_size": [
+          1152,
+          266
+        ],
+        "license": "CC BY-NC-SA 3.0",
+        "attribution": "MOTChallenge authors, https://motchallenge.net/"
+      }
+    },
+    "occlusion-fragmentation": {
+      "category": "occlusion-fragmentation",
+      "sequence": "MOT20-03",
+      "gt_id": 169,
+      "model": "nano FP32",
+      "frame_range": [
+        130,
+        185
+      ],
+      "crop_frames": [
+        130,
+        155,
+        180
+      ],
+      "source_fps": 25,
+      "observations": [
+        {
+          "frame": 130,
+          "gt_box": [
+            806.0,
+            163.0,
+            45.0,
+            106.0
+          ],
+          "visibility": 0.67391,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 75,
+            "iou": 0.8279096477794798,
+            "track_box": [
+              804.4,
+              163.0,
+              53.4,
+              103.8
+            ]
+          },
+          "best_detection": {
+            "iou": 0.8213489399843087,
+            "score": 0.7717520594596863,
+            "box": [
+              803.1878662109375,
+              161.1847686767578,
+              53.30242919921875,
+              106.50932312011719
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 131,
+          "gt_box": [
+            802.0,
+            163.0,
+            46.0,
+            106.0
+          ],
+          "visibility": 0.59574,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 75,
+            "iou": 0.843551610108048,
+            "track_box": [
+              799.8,
+              162.0,
+              53.0,
+              104.7
+            ]
+          },
+          "best_detection": {
+            "iou": 0.94586004731779,
+            "score": 0.7807226777076721,
+            "box": [
+              802.6002197265625,
+              161.4268341064453,
+              45.26806640625,
+              104.94343566894531
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 132,
+          "gt_box": [
+            799.0,
+            163.0,
+            46.0,
+            106.0
+          ],
+          "visibility": 0.53191,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 75,
+            "iou": 0.8412415974693551,
+            "track_box": [
+              796.7,
+              161.0,
+              52.6,
+              105.6
+            ]
+          },
+          "best_detection": {
+            "iou": 0.9043337364870693,
+            "score": 0.7710859179496765,
+            "box": [
+              800.945068359375,
+              160.56129455566406,
+              43.54296875,
+              105.91261291503906
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 133,
+          "gt_box": [
+            796.0,
+            164.0,
+            46.0,
+            106.0
+          ],
+          "visibility": 0.46809,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 75,
+            "iou": 0.8726847689264521,
+            "track_box": [
+              793.7,
+              163.0,
+              52.0,
+              106.5
+            ]
+          },
+          "best_detection": {
+            "iou": 0.929390079454685,
+            "score": 0.7288106679916382,
+            "box": [
+              797.9544067382812,
+              164.09266662597656,
+              43.10919189453125,
+              106.75279235839844
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 134,
+          "gt_box": [
+            793.0,
+            164.0,
+            46.0,
+            106.0
+          ],
+          "visibility": 0.40426,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 75,
+            "iou": 0.8586203979187517,
+            "track_box": [
+              788.2,
+              161.3,
+              52.2,
+              108.6
+            ]
+          },
+          "best_detection": {
+            "iou": 0.8454558623933898,
+            "score": 0.38423892855644226,
+            "box": [
+              790.94677734375,
+              160.42010498046875,
+              44.0010986328125,
+              109.4095458984375
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 135,
+          "gt_box": [
+            790.0,
+            165.0,
+            46.0,
+            106.0
+          ],
+          "visibility": 0.34043,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 75,
+            "iou": 0.8329703181721119,
+            "track_box": [
+              785.8,
+              159.7,
+              52.5,
+              111.5
+            ]
+          },
+          "best_detection": {
+            "iou": 0.8739377465791999,
+            "score": 0.5463044047355652,
+            "box": [
+              791.2921142578125,
+              158.9849853515625,
+              42.54315185546875,
+              112.67706298828125
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 136,
+          "gt_box": [
+            787.0,
+            165.0,
+            46.0,
+            106.0
+          ],
+          "visibility": 0.2766,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 75,
+            "iou": 0.8403390309560499,
+            "track_box": [
+              784.8,
+              160.6,
+              51.9,
+              111.8
+            ]
+          },
+          "best_detection": {
+            "iou": 0.8848656245053759,
+            "score": 0.6736617684364319,
+            "box": [
+              789.3386840820312,
+              161.28268432617188,
+              44.66485595703125,
+              111.55044555664062
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 137,
+          "gt_box": [
+            785.0,
+            165.0,
+            46.0,
+            106.0
+          ],
+          "visibility": 0.23404,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 75,
+            "iou": 0.8652293496584154,
+            "track_box": [
+              784.1,
+              161.3,
+              51.0,
+              110.5
+            ]
+          },
+          "best_detection": {
+            "iou": 0.8691122785755745,
+            "score": 0.6818462014198303,
+            "box": [
+              786.7552490234375,
+              161.82005310058594,
+              47.65728759765625,
+              109.32618713378906
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 138,
+          "gt_box": [
+            782.0,
+            166.0,
+            46.0,
+            106.0
+          ],
+          "visibility": 0.17021,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 75,
+            "iou": 0.857430175088363,
+            "track_box": [
+              783.6,
+              164.8,
+              48.6,
+              104.9
+            ]
+          },
+          "best_detection": {
+            "iou": 0.8361618153895107,
+            "score": 0.5841739177703857,
+            "box": [
+              783.8859252929688,
+              166.6459503173828,
+              48.91229248046875,
+              101.66889953613281
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 139,
+          "gt_box": [
+            780.0,
+            166.0,
+            46.0,
+            106.0
+          ],
+          "visibility": 0.12766,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 75,
+            "iou": 0.8710881424059715,
+            "track_box": [
+              781.6,
+              166.0,
+              47.8,
+              102.5
+            ]
+          },
+          "best_detection": {
+            "iou": 0.8592271336294972,
+            "score": 0.4391312897205353,
+            "box": [
+              780.4445190429688,
+              166.4236297607422,
+              50.49005126953125,
+              101.40467834472656
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 140,
+          "gt_box": [
+            778.0,
+            167.0,
+            45.0,
+            106.0
+          ],
+          "visibility": 0.065217,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 75,
+            "iou": 0.7119856887298724,
+            "track_box": [
+              783.2,
+              177.9,
+              42.7,
+              90.0
+            ]
+          },
+          "best_detection": {
+            "iou": 0.7545467162882886,
+            "score": 0.05338270217180252,
+            "box": [
+              776.9024658203125,
+              159.92550659179688,
+              54.9937744140625,
+              110.99404907226562
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 141,
+          "gt_box": [
+            775.0,
+            167.0,
+            46.0,
+            106.0
+          ],
+          "visibility": 0.021277,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 75,
+            "iou": 0.5842412451361858,
+            "track_box": [
+              784.6,
+              184.9,
+              39.6,
+              82.5
+            ]
+          },
+          "best_detection": {
+            "iou": 0.597468611584869,
+            "score": 0.030146175995469093,
+            "box": [
+              777.5975952148438,
+              142.8802947998047,
+              55.20745849609375,
+              126.15312194824219
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 142,
+          "gt_box": [
+            773.0,
+            168.0,
+            46.0,
+            106.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.0,
+            "score": 0.8601450324058533,
+            "box": [
+              185.1936798095703,
+              31.578319549560547,
+              38.59718322753906,
+              79.68307113647461
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 143,
+          "gt_box": [
+            771.0,
+            168.0,
+            45.0,
+            106.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.006669349189962819,
+            "score": 0.012432643212378025,
+            "box": [
+              716.5555419921875,
+              -201.76605224609375,
+              514.244384765625,
+              1390.8021850585938
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 144,
+          "gt_box": [
+            768.0,
+            168.0,
+            46.0,
+            106.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.007277422568411245,
+            "score": 0.0333501473069191,
+            "box": [
+              715.6970825195312,
+              -182.67884826660156,
+              500.34332275390625,
+              1339.1153717041016
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 145,
+          "gt_box": [
+            766.0,
+            169.0,
+            45.0,
+            106.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.0077981989265711125,
+            "score": 0.06323879957199097,
+            "box": [
+              729.9392700195312,
+              -152.37010192871094,
+              481.91461181640625,
+              1269.2698822021484
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 146,
+          "gt_box": [
+            764.0,
+            169.0,
+            45.0,
+            106.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.006658954785017807,
+            "score": 0.01709846220910549,
+            "box": [
+              705.1007080078125,
+              -183.4777069091797,
+              530.2393798828125,
+              1350.9532928466797
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 147,
+          "gt_box": [
+            761.0,
+            170.0,
+            45.0,
+            106.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.006229163462642522,
+            "score": 0.010139795020222664,
+            "box": [
+              689.4911499023438,
+              -199.30299377441406,
+              552.7223510742188,
+              1385.4205474853516
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 148,
+          "gt_box": [
+            759.0,
+            170.0,
+            45.0,
+            106.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.0061747907267728575,
+            "score": 0.013045280240476131,
+            "box": [
+              690.9990844726562,
+              -203.51780700683594,
+              554.7680053710938,
+              1392.4664154052734
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 149,
+          "gt_box": [
+            757.0,
+            171.0,
+            45.0,
+            106.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.0059708195662530605,
+            "score": 0.01208594162017107,
+            "box": [
+              687.0752563476562,
+              -184.0839385986328,
+              553.6924438476562,
+              1442.8322296142578
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 150,
+          "gt_box": [
+            754.0,
+            171.0,
+            45.0,
+            106.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.0065434714929392184,
+            "score": 0.012786997482180595,
+            "box": [
+              702.4252319335938,
+              -186.8201904296875,
+              539.0237426757812,
+              1352.3909912109375
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 151,
+          "gt_box": [
+            752.0,
+            172.0,
+            45.0,
+            106.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.006268756410793696,
+            "score": 0.017105145379900932,
+            "box": [
+              693.275146484375,
+              -165.30096435546875,
+              544.1573486328125,
+              1398.3390502929688
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 152,
+          "gt_box": [
+            750.0,
+            172.0,
+            45.0,
+            106.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.006550539743857696,
+            "score": 0.015115469694137573,
+            "box": [
+              699.80078125,
+              -184.9971160888672,
+              535.300537109375,
+              1360.3279266357422
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 153,
+          "gt_box": [
+            747.0,
+            173.0,
+            45.0,
+            106.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.006338444942303966,
+            "score": 0.031602635979652405,
+            "box": [
+              697.1348876953125,
+              -162.7112274169922,
+              539.0338134765625,
+              1396.1100311279297
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 154,
+          "gt_box": [
+            745.0,
+            173.0,
+            45.0,
+            107.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.006526846612705307,
+            "score": 0.026933105662465096,
+            "box": [
+              707.46240234375,
+              -166.2348175048828,
+              527.1746826171875,
+              1399.3886260986328
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 155,
+          "gt_box": [
+            743.0,
+            174.0,
+            45.0,
+            106.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.006397123083614046,
+            "score": 0.019945470616221428,
+            "box": [
+              701.2399291992188,
+              -167.45545959472656,
+              535.5983276367188,
+              1392.177017211914
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 156,
+          "gt_box": [
+            740.0,
+            174.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.006426631823566442,
+            "score": 0.026538142934441566,
+            "box": [
+              702.1429443359375,
+              -178.18775939941406,
+              537.7501220703125,
+              1424.221939086914
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 157,
+          "gt_box": [
+            738.0,
+            175.0,
+            45.0,
+            106.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.008076366730653959,
+            "score": 0.02681160904467106,
+            "box": [
+              735.2859497070312,
+              -127.72650909423828,
+              476.87664794921875,
+              1238.5008010864258
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 158,
+          "gt_box": [
+            736.0,
+            175.0,
+            45.0,
+            107.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.007671735481519191,
+            "score": 0.034316468983888626,
+            "box": [
+              723.3404541015625,
+              -149.80845642089844,
+              492.8172607421875,
+              1273.552230834961
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 159,
+          "gt_box": [
+            733.0,
+            176.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.008304083783238075,
+            "score": 0.03526360169053078,
+            "box": [
+              729.2687377929688,
+              -125.5018310546875,
+              485.12969970703125,
+              1221.7772216796875
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 160,
+          "gt_box": [
+            731.0,
+            176.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.006949031434355139,
+            "score": 0.027076615020632744,
+            "box": [
+              699.7839965820312,
+              -170.79122924804688,
+              534.4291381835938,
+              1325.3396911621094
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 161,
+          "gt_box": [
+            729.0,
+            177.0,
+            45.0,
+            107.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.0064318267315607545,
+            "score": 0.01468847319483757,
+            "box": [
+              691.1361694335938,
+              -199.57933044433594,
+              548.2199096679688,
+              1365.548568725586
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 162,
+          "gt_box": [
+            726.0,
+            177.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.006972558055414373,
+            "score": 0.03040391393005848,
+            "box": [
+              694.6030883789062,
+              -167.69049072265625,
+              535.1206665039062,
+              1319.1608276367188
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 163,
+          "gt_box": [
+            724.0,
+            178.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.00693606155516936,
+            "score": 0.023257296532392502,
+            "box": [
+              693.8358764648438,
+              -173.5752410888672,
+              536.0368041992188,
+              1323.8356170654297
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 164,
+          "gt_box": [
+            722.0,
+            179.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.010827814791156524,
+            "score": 0.01631132699549198,
+            "box": [
+              678.6119384765625,
+              138.8008270263672,
+              44.8609619140625,
+              112.7950439453125
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 165,
+          "gt_box": [
+            717.0,
+            179.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.047074977832418013,
+            "score": 0.0173661932349205,
+            "box": [
+              677.787109375,
+              138.24691772460938,
+              45.4600830078125,
+              113.21345520019531
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 166,
+          "gt_box": [
+            713.0,
+            179.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.07913248888615958,
+            "score": 0.010003033094108105,
+            "box": [
+              677.3286743164062,
+              139.38360595703125,
+              45.7080078125,
+              113.47111511230469
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 167,
+          "gt_box": [
+            709.0,
+            179.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.129265149090815,
+            "score": 0.029673799872398376,
+            "box": [
+              676.3242797851562,
+              153.92140197753906,
+              45.79766845703125,
+              113.26686096191406
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 168,
+          "gt_box": [
+            705.0,
+            179.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.16681739217396085,
+            "score": 0.014161480590701103,
+            "box": [
+              678.3633422851562,
+              140.4815673828125,
+              45.9857177734375,
+              113.42707824707031
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 169,
+          "gt_box": [
+            701.0,
+            179.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.19730237849426308,
+            "score": 0.010487711057066917,
+            "box": [
+              677.2182006835938,
+              140.5396270751953,
+              46.20849609375,
+              112.99125671386719
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 170,
+          "gt_box": [
+            696.0,
+            179.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.25117388346588515,
+            "score": 0.01399867981672287,
+            "box": [
+              676.9625854492188,
+              138.9929962158203,
+              46.804443359375,
+              114.25447082519531
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 171,
+          "gt_box": [
+            692.0,
+            179.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.32146279337861294,
+            "score": 0.02728123776614666,
+            "box": [
+              677.38623046875,
+              138.97537231445312,
+              46.91937255859375,
+              119.20236206054688
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 172,
+          "gt_box": [
+            688.0,
+            179.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.39466520144384254,
+            "score": 0.06017305701971054,
+            "box": [
+              676.8009643554688,
+              138.744873046875,
+              47.2073974609375,
+              125.49313354492188
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 173,
+          "gt_box": [
+            684.0,
+            179.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.48189086634924716,
+            "score": 0.010749305598437786,
+            "box": [
+              670.299560546875,
+              159.1417236328125,
+              47.494140625,
+              123.80084228515625
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 174,
+          "gt_box": [
+            680.0,
+            179.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.5591901341072096,
+            "score": 0.025822928175330162,
+            "box": [
+              668.0784912109375,
+              160.47166442871094,
+              49.626953125,
+              123.76710510253906
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 175,
+          "gt_box": [
+            676.0,
+            179.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.0,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.6901818041351266,
+            "score": 0.04977985844016075,
+            "box": [
+              667.3453369140625,
+              160.1768798828125,
+              53.38372802734375,
+              124.371337890625
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 176,
+          "gt_box": [
+            671.0,
+            179.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.078408,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.8115704392966614,
+            "score": 0.04326128587126732,
+            "box": [
+              667.7808837890625,
+              167.30506896972656,
+              50.59405517578125,
+              117.55207824707031
+            ]
+          },
+          "overlapping_gt_ids": []
+        },
+        {
+          "frame": 177,
+          "gt_box": [
+            667.0,
+            179.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.15524,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.4908096073825599,
+            "score": 0.4226936101913452,
+            "box": [
+              659.11181640625,
+              187.33621215820312,
+              36.70770263671875,
+              96.83230590820312
+            ]
+          },
+          "overlapping_gt_ids": [
+            540
+          ]
+        },
+        {
+          "frame": 178,
+          "gt_box": [
+            663.0,
+            179.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.22991,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.5285361186340909,
+            "score": 0.611922562122345,
+            "box": [
+              653.0216064453125,
+              184.76821899414062,
+              41.06793212890625,
+              100.77066040039062
+            ]
+          },
+          "overlapping_gt_ids": [
+            540
+          ]
+        },
+        {
+          "frame": 179,
+          "gt_box": [
+            659.0,
+            179.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.3026,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": null,
+          "best_detection": {
+            "iou": 0.5512420193945806,
+            "score": 0.7056456208229065,
+            "box": [
+              648.8240356445312,
+              183.53028869628906,
+              43.92523193359375,
+              96.41889953613281
+            ]
+          },
+          "overlapping_gt_ids": [
+            540
+          ]
+        },
+        {
+          "frame": 180,
+          "gt_box": [
+            655.0,
+            179.0,
+            46.0,
+            107.0
+          ],
+          "visibility": 0.37431,
+          "native_input_height_px": 73.92727272727272,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 107,
+            "iou": 0.6300742065012285,
+            "track_box": [
+              647.6,
+              182.7,
+              44.1,
+              96.8
+            ]
+          },
+          "best_detection": {
+            "iou": 0.6275098666594748,
+            "score": 0.7181597352027893,
+            "box": [
+              646.2725830078125,
+              182.53123474121094,
+              46.08221435546875,
+              96.88746643066406
+            ]
+          },
+          "overlapping_gt_ids": [
+            540
+          ]
+        },
+        {
+          "frame": 181,
+          "gt_box": [
+            651.0,
+            180.0,
+            46.0,
+            106.0
+          ],
+          "visibility": 0.4486,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 107,
+            "iou": 0.7818368095907996,
+            "track_box": [
+              647.4,
+              180.6,
+              45.0,
+              98.8
+            ]
+          },
+          "best_detection": {
+            "iou": 0.7876990569762523,
+            "score": 0.7358797192573547,
+            "box": [
+              647.3844604492188,
+              179.9534149169922,
+              45.1602783203125,
+              99.34367370605469
+            ]
+          },
+          "overlapping_gt_ids": [
+            540
+          ]
+        },
+        {
+          "frame": 182,
+          "gt_box": [
+            647.0,
+            180.0,
+            47.0,
+            106.0
+          ],
+          "visibility": 0.50565,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 107,
+            "iou": 0.8271912025867548,
+            "track_box": [
+              645.2,
+              178.8,
+              45.5,
+              99.9
+            ]
+          },
+          "best_detection": {
+            "iou": 0.8049219206670405,
+            "score": 0.6580555438995361,
+            "box": [
+              644.0438842773438,
+              178.5459747314453,
+              46.6123046875,
+              99.92774963378906
+            ]
+          },
+          "overlapping_gt_ids": [
+            540
+          ]
+        },
+        {
+          "frame": 183,
+          "gt_box": [
+            644.0,
+            180.0,
+            47.0,
+            106.0
+          ],
+          "visibility": 0.55744,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 107,
+            "iou": 0.77198270907044,
+            "track_box": [
+              639.1,
+              182.8,
+              46.5,
+              101.7
+            ]
+          },
+          "best_detection": {
+            "iou": 0.7163323735279643,
+            "score": 0.7816836833953857,
+            "box": [
+              636.0061645507812,
+              184.61102294921875,
+              49.14886474609375,
+              102.05136108398438
+            ]
+          },
+          "overlapping_gt_ids": [
+            540
+          ]
+        },
+        {
+          "frame": 184,
+          "gt_box": [
+            640.0,
+            181.0,
+            48.0,
+            106.0
+          ],
+          "visibility": 0.61224,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 107,
+            "iou": 0.7866121087509604,
+            "track_box": [
+              636.8,
+              183.2,
+              45.7,
+              100.1
+            ]
+          },
+          "best_detection": {
+            "iou": 0.7635232624761948,
+            "score": 0.7995853424072266,
+            "box": [
+              637.8571166992188,
+              183.20611572265625,
+              43.03314208984375,
+              98.965576171875
+            ]
+          },
+          "overlapping_gt_ids": [
+            540
+          ]
+        },
+        {
+          "frame": 185,
+          "gt_box": [
+            637.0,
+            181.0,
+            48.0,
+            106.0
+          ],
+          "visibility": 0.65993,
+          "native_input_height_px": 73.23636363636363,
+          "touches_image_border": false,
+          "association": {
+            "track_id": 107,
+            "iou": 0.8180075529511455,
+            "track_box": [
+              633.9,
+              182.5,
+              46.4,
+              102.1
+            ]
+          },
+          "best_detection": {
+            "iou": 0.8114688547083272,
+            "score": 0.8161375522613525,
+            "box": [
+              635.4937133789062,
+              182.0443115234375,
+              42.9329833984375,
+              102.694091796875
+            ]
+          },
+          "overlapping_gt_ids": [
+            540
+          ]
+        }
+      ],
+      "prior_state_diagnosis": "results/phase-3-occlusion-case-75-107.json",
+      "crop": {
+        "path": "data/phase-5/crops/occlusion-fragmentation.png",
+        "sha256": "7c9126f3ba6028419fa311ff8c8d56365d462e2243c99fc86d99157f5d8137f1",
+        "source_sha256": {
+          "data/MOT20/train/MOT20-03/img1/000130.jpg": "351154f039f810f74b8de11efa3a3ab1265c1946985ae816be33102087ee3bc9",
+          "data/MOT20/train/MOT20-03/img1/000155.jpg": "8d97fdbcdd2eefbc312d60a3aa5bd52f2ba176ed12dd9477ef20d44fa69205e4",
+          "data/MOT20/train/MOT20-03/img1/000180.jpg": "95fad930903afdff8aa99bf347d53f6e311ba91fbc750a36b8cffdcaec3ac60d"
+        },
+        "source_crop_xyxy": [
+          567,
+          123,
+          921,
+          327
+        ],
+        "display_scale": 1.3559322033898304,
+        "output_size": [
+          1440,
+          367
+        ],
+        "license": "CC BY-NC-SA 3.0",
+        "attribution": "MOTChallenge authors, https://motchallenge.net/"
+      }
+    }
+  },
+  "audited_sequences": {
+    "MOT20-01": {
+      "counts": {
+        "CLR_TP": 13564,
+        "CLR_FN": 6306,
+        "CLR_FP": 691,
+        "IDSW": 114
+      },
+      "matches_upstream_CLEAR": true,
+      "source_sha256": {
+        "data/phase-3/tracks/end-to-end/nano/MOT20-01.txt": "a6082850c17f03428ae957178f245c3638c30bc690dce5e9ae3631ee0f79ad51",
+        "data/MOT20/train/MOT20-01/gt/gt.txt": "89fd0196d67a5eb6011a470dc2a49b02255403b49e8848031cdf99add8a36d9c",
+        "data/phase-3/dets/nano/MOT20-01.txt": "a3b72afcd58b2a57bca887a75dc54d7fed68617f2eee26d29280141481132ddc"
+      },
+      "processed_frames": 429
+    },
+    "MOT20-02": {
+      "counts": {
+        "CLR_TP": 101594,
+        "CLR_FN": 53148,
+        "CLR_FP": 5252,
+        "IDSW": 839
+      },
+      "matches_upstream_CLEAR": true,
+      "source_sha256": {
+        "data/phase-3/tracks/end-to-end/nano/MOT20-02.txt": "734977a349789e3db2ad3f0f6727ba8086f034229ce0f14489a8255bf055f77b",
+        "data/MOT20/train/MOT20-02/gt/gt.txt": "10abe457a67d9919a9cbfe821d3619c8e6174c2b0ed7ecf4cb68c1fd6cad58de",
+        "data/phase-3/dets/nano/MOT20-02.txt": "6ca3e84b66871dd09abf721a67eed109ebfa614f6b5d32873f3a12eb36a5599d"
+      },
+      "processed_frames": 2782
+    },
+    "MOT20-03": {
+      "counts": {
+        "CLR_TP": 229710,
+        "CLR_FN": 83948,
+        "CLR_FP": 16472,
+        "IDSW": 805
+      },
+      "matches_upstream_CLEAR": true,
+      "source_sha256": {
+        "data/phase-3/tracks/end-to-end/nano/MOT20-03.txt": "946213c4d1b3f872b8550ca915994d82b8ddb79868a6b6d12d7d41c461682267",
+        "data/MOT20/train/MOT20-03/gt/gt.txt": "350fbc950c6dc00e3cc8a71358b3d0b8958906c8be57a7bf5fb9db34bff70f28",
+        "data/phase-3/dets/nano/MOT20-03.txt": "79a79cdd4e75e94fc43eddc0079cf3b0f5efcce92afca4eed534f3a3272b70e7"
+      },
+      "processed_frames": 2405
+    }
+  },
+  "clear_source_sha256": "ab3963eac401073fe1b2957c734af1e531368f42fca49627c14422350b2744f0",
+  "limitations": [
+    "Only selected nano FP32 examples; no random sample or exhaustive taxonomy.",
+    "GT visibility is annotation evidence, not direct measurement of the exact occluding object.",
+    "Small input height does not prove distance or the cause of every miss.",
+    "Correspondence switches show failure against annotation, not a proven unique association cause.",
+    "Mean-shift optional bonus and Phase 6 fresh-clone reproduction not performed here."
+  ]
+}

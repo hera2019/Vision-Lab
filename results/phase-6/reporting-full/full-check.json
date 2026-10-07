@@ -1,0 +1,143 @@
+{
+  "status": "full-stages-executed",
+  "exact_evaluation_equal": true,
+  "int8_evaluation_equal": true,
+  "benchmark_settings": [
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 1,
+      "median_fps": 11.352533623164668,
+      "reference_interval": [
+        11.5943729453211,
+        11.679215405108987
+      ],
+      "inside_interval": false
+    },
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 2,
+      "median_fps": 18.899580266158015,
+      "reference_interval": [
+        18.63756091708918,
+        19.17084989149194
+      ],
+      "inside_interval": true
+    },
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 4,
+      "median_fps": 27.785408152537446,
+      "reference_interval": [
+        26.424624714573092,
+        27.816148640392438
+      ],
+      "inside_interval": true
+    },
+    {
+      "model": "nano",
+      "precision": "int8",
+      "threads": 1,
+      "median_fps": 14.863831790391538,
+      "reference_interval": [
+        15.070331433635623,
+        15.349473563065372
+      ],
+      "inside_interval": false
+    },
+    {
+      "model": "nano",
+      "precision": "int8",
+      "threads": 2,
+      "median_fps": 20.951887739356398,
+      "reference_interval": [
+        19.90528781006777,
+        21.50458861481881
+      ],
+      "inside_interval": true
+    },
+    {
+      "model": "nano",
+      "precision": "int8",
+      "threads": 4,
+      "median_fps": 25.832495982017452,
+      "reference_interval": [
+        24.045198714136443,
+        25.99227256962357
+      ],
+      "inside_interval": true
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 1,
+      "median_fps": 3.1517784643293516,
+      "reference_interval": [
+        3.0417003217804,
+        3.1963140429667787
+      ],
+      "inside_interval": true
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 2,
+      "median_fps": 5.955644399841733,
+      "reference_interval": [
+        5.399567169227033,
+        5.829217166771701
+      ],
+      "inside_interval": false
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 4,
+      "median_fps": 10.283933657508099,
+      "reference_interval": [
+        9.739540929568594,
+        9.895603035592405
+      ],
+      "inside_interval": false
+    },
+    {
+      "model": "tiny",
+      "precision": "int8",
+      "threads": 1,
+      "median_fps": 8.08036517885246,
+      "reference_interval": [
+        7.6530194423225515,
+        8.026770479712566
+      ],
+      "inside_interval": false
+    },
+    {
+      "model": "tiny",
+      "precision": "int8",
+      "threads": 2,
+      "median_fps": 13.215237127017328,
+      "reference_interval": [
+        11.657882876072188,
+        13.197112443080536
+      ],
+      "inside_interval": false
+    },
+    {
+      "model": "tiny",
+      "precision": "int8",
+      "threads": 4,
+      "median_fps": 18.841961549567067,
+      "reference_interval": [
+        18.094319811781858,
+        18.516717565422994
+      ],
+      "inside_interval": false
+    }
+  ],
+  "numerical_reproduction_checks_passed": false,
+  "fresh_clone_gate_passed": false,
+  "note": "All full-driver stages executed. Independent Git clone provenance is required before accepting the fresh-clone gate.",
+  "run_id": "20261007T133609Z-76914"
+}

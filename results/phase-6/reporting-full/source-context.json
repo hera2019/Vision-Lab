@@ -1,0 +1,16 @@
+{
+  "run_id": "20261007T133609Z-76914",
+  "captured_at_utc": "2026-10-07T13:36:21.114418+00:00",
+  "source_commit": "e3c4a83a0e6a461edbfbb2737cac274a31cbc46e",
+  "source_tree": "e6a0d71add4eee6cce8b7071bec0423fe4ee9738",
+  "origin": "/Users/Hera/Documents/Vision-Lab/.",
+  "upstream_commit": "e3c4a83a0e6a461edbfbb2737cac274a31cbc46e",
+  "tracked_source_clean_at_entry": true,
+  "standalone_git_directory": true,
+  "no_git_object_alternates": true,
+  "head_matches_tracking_revision": true,
+  "disposable_clone_declared": true,
+  "context_kind": "git-checkout",
+  "fresh_clone_context_passed": true,
+  "provenance_scope": "Clean standalone Git checkout matching its recorded upstream revision, with owner disposable-clone declaration; not an independent reviewer verdict."
+}

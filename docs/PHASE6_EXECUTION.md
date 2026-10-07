@@ -90,3 +90,12 @@ Use copy-on-write regular-file assets with no historical detection/track overlay
 Retain entry commit/tree/clean status and the driver's actual exit code.
 Existing build caches are permitted; no cold-install claim. Record the new
 report pair and raw evidence separately under `results/phase-6/reporting-full/`.
+
+Completed 2026-10-08 (Japan local date), source `e3c4a83`. Host UTC driver
+envelope: 2026-10-07 13:36:09–15:15:50; these bound the whole driver, not each
+benchmark's absolute measurement time. All stages execute and automatic paired
+report collection succeeds. Canonical quality and track hashes reproduce;
+speed consistency passes 5/12 and fails 7/12. The driver exits 1 at the final
+aggregate gate. No retry or acceptance-rule change. The original experiment
+stays separate; independent review and future timing-method decisions remain
+open. See the follow-up verification report and review handoff.

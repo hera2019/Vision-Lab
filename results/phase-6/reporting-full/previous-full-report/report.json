@@ -1,0 +1,219 @@
+{
+  "status": "full-clean-clone-experiment-complete",
+  "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+  "date": "2026-10-07",
+  "tested_source_commit": "dcdb81e03533045764468305b8a3b07306f4ab98",
+  "fresh_clone_context_passed": true,
+  "clone_proof": {
+    "method": "git clone --no-hardlinks --branch codex/vision-lab-reproduction",
+    "source_commit": "dcdb81e03533045764468305b8a3b07306f4ab98",
+    "clone_commit": "dcdb81e03533045764468305b8a3b07306f4ab98",
+    "source_tree": "ccb238f27f362c8d9982c0e0ea5eb46e961ebd57",
+    "clone_tree": "ccb238f27f362c8d9982c0e0ea5eb46e961ebd57",
+    "clone_origin": "/Users/Hera/Documents/Vision-Lab",
+    "clone_path": "/Users/Hera/Documents/Vision-Lab/data/phase-6-clean-dcdb81e",
+    "clone_clean_before_assets": true,
+    "clone_clean_after_assets": true,
+    "assets_method": "APFS copy-on-write regular files via cp -cR; models, external, MOT17 and MOT20 only; no historical detection/tracking data copied",
+    "source_overlay": false,
+    "push_performed": false
+  },
+  "fresh_evaluator_procedure_passed": true,
+  "ground_truth_self_test_passed": true,
+  "full_checks": {
+    "status": "full-stages-executed",
+    "exact_evaluation_equal": true,
+    "int8_evaluation_equal": true,
+    "benchmark_settings": [
+      {
+        "model": "nano",
+        "precision": "fp32",
+        "threads": 1,
+        "median_fps": 11.647198937948678,
+        "reference_interval": [
+          11.5943729453211,
+          11.679215405108987
+        ],
+        "inside_interval": true
+      },
+      {
+        "model": "nano",
+        "precision": "fp32",
+        "threads": 2,
+        "median_fps": 19.30408497612649,
+        "reference_interval": [
+          18.63756091708918,
+          19.17084989149194
+        ],
+        "inside_interval": false
+      },
+      {
+        "model": "nano",
+        "precision": "fp32",
+        "threads": 4,
+        "median_fps": 28.13357958741823,
+        "reference_interval": [
+          26.424624714573092,
+          27.816148640392438
+        ],
+        "inside_interval": false
+      },
+      {
+        "model": "nano",
+        "precision": "int8",
+        "threads": 1,
+        "median_fps": 15.170210712330515,
+        "reference_interval": [
+          15.070331433635623,
+          15.349473563065372
+        ],
+        "inside_interval": true
+      },
+      {
+        "model": "nano",
+        "precision": "int8",
+        "threads": 2,
+        "median_fps": 21.186484424465508,
+        "reference_interval": [
+          19.90528781006777,
+          21.50458861481881
+        ],
+        "inside_interval": true
+      },
+      {
+        "model": "nano",
+        "precision": "int8",
+        "threads": 4,
+        "median_fps": 26.029026618864147,
+        "reference_interval": [
+          24.045198714136443,
+          25.99227256962357
+        ],
+        "inside_interval": false
+      },
+      {
+        "model": "tiny",
+        "precision": "fp32",
+        "threads": 1,
+        "median_fps": 3.188770327130425,
+        "reference_interval": [
+          3.0417003217804,
+          3.1963140429667787
+        ],
+        "inside_interval": true
+      },
+      {
+        "model": "tiny",
+        "precision": "fp32",
+        "threads": 2,
+        "median_fps": 5.982854124498006,
+        "reference_interval": [
+          5.399567169227033,
+          5.829217166771701
+        ],
+        "inside_interval": false
+      },
+      {
+        "model": "tiny",
+        "precision": "fp32",
+        "threads": 4,
+        "median_fps": 10.297546307173976,
+        "reference_interval": [
+          9.739540929568594,
+          9.895603035592405
+        ],
+        "inside_interval": false
+      },
+      {
+        "model": "tiny",
+        "precision": "int8",
+        "threads": 1,
+        "median_fps": 8.169443764410188,
+        "reference_interval": [
+          7.6530194423225515,
+          8.026770479712566
+        ],
+        "inside_interval": false
+      },
+      {
+        "model": "tiny",
+        "precision": "int8",
+        "threads": 2,
+        "median_fps": 13.342195952816493,
+        "reference_interval": [
+          11.657882876072188,
+          13.197112443080536
+        ],
+        "inside_interval": false
+      },
+      {
+        "model": "tiny",
+        "precision": "int8",
+        "threads": 4,
+        "median_fps": 18.95199375248132,
+        "reference_interval": [
+          18.094319811781858,
+          18.516717565422994
+        ],
+        "inside_interval": false
+      }
+    ],
+    "numerical_reproduction_checks_passed": false,
+    "fresh_clone_gate_passed": false,
+    "note": "All full-driver stages executed. Independent Git clone provenance is required before accepting the fresh-clone gate."
+  },
+  "fresh_clone_gate_passed": false,
+  "limitations": [
+    "Cached Docker build layers are allowed; a cold dependency install is not established.",
+    "Mac Docker Linux VM speed; no edge hardware or real-camera acceptance.",
+    "Independent review remains pending; original INT8 failures remain failed."
+  ],
+  "evidence_sha256": {
+    "results/phase-6/full-check.json": "c894389f3cac304298d9311a3af3aef1305aed645b6af892578b7cdb0b545a68",
+    "results/phase-6/preflight.json": "19bc9b7e082db58d896d4471218a2a7e4f9df3d0f4a1e935974c3f6022d8b2fb",
+    "results/phase-6/clone-proof.json": "29df956516b4ac98c197798c6c5fef78659edba1a38822e75195eaaf450cbae0",
+    "results/phase-6/python-environment.txt": "c47943c45f640a9bbc07f22832b27ee436ce946de29f5acc5b2559621a0b527e",
+    "results/phase-3/evaluation-final.json": "fbf056a7304c298a00d2cd83fae2c945245ead9b1a97a30537c5a3eff4fe6589",
+    "results/phase-3/evaluation-self.json": "43aac804ea7fa85bce9926ee2414ae83579fb27c9153861e510a064bad00dbff",
+    "results/phase-4-performance.json": "3a5922c774ff3185ef5265aa97114d0bdc5bdfb553c0b05da9c5decbf974bb72",
+    "results/phase-5-failures.json": "6a7067feb0b18dc02cdd961209f75164731850d8de6748129a6214f17560b4a1"
+  },
+  "archive_hash_verification_passed": true,
+  "archived_evidence": {
+    "results/phase-6/full-check.json": {
+      "archive_path": "results/phase-6/full/full-check.json",
+      "sha256": "c894389f3cac304298d9311a3af3aef1305aed645b6af892578b7cdb0b545a68"
+    },
+    "results/phase-6/preflight.json": {
+      "archive_path": "results/phase-6/full/preflight.json",
+      "sha256": "19bc9b7e082db58d896d4471218a2a7e4f9df3d0f4a1e935974c3f6022d8b2fb"
+    },
+    "results/phase-6/clone-proof.json": {
+      "archive_path": "results/phase-6/full/clone-proof.json",
+      "sha256": "29df956516b4ac98c197798c6c5fef78659edba1a38822e75195eaaf450cbae0"
+    },
+    "results/phase-6/python-environment.txt": {
+      "archive_path": "results/phase-6/full/python-environment.txt",
+      "sha256": "c47943c45f640a9bbc07f22832b27ee436ce946de29f5acc5b2559621a0b527e"
+    },
+    "results/phase-3/evaluation-final.json": {
+      "archive_path": "results/phase-6/full/phase-3/evaluation-final.json",
+      "sha256": "fbf056a7304c298a00d2cd83fae2c945245ead9b1a97a30537c5a3eff4fe6589"
+    },
+    "results/phase-3/evaluation-self.json": {
+      "archive_path": "results/phase-6/full/phase-3/evaluation-self.json",
+      "sha256": "43aac804ea7fa85bce9926ee2414ae83579fb27c9153861e510a064bad00dbff"
+    },
+    "results/phase-4-performance.json": {
+      "archive_path": "results/phase-6/full/phase-4-performance.json",
+      "sha256": "3a5922c774ff3185ef5265aa97114d0bdc5bdfb553c0b05da9c5decbf974bb72"
+    },
+    "results/phase-5-failures.json": {
+      "archive_path": "results/phase-6/full/phase-5-failures.json",
+      "sha256": "6a7067feb0b18dc02cdd961209f75164731850d8de6748129a6214f17560b4a1"
+    }
+  },
+  "driver_exit_code": 1,
+  "speed_settings_passed": 4,
+  "speed_settings_failed": 8
+}

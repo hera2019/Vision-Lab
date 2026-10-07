@@ -29,9 +29,10 @@
   "historical_source_tested": "dcdb81e03533045764468305b8a3b07306f4ab98",
   "historical_full_acceptance": "FAIL",
   "historical_speed_settings_failed": 8,
-  "new_reporter_full_clean_clone_experiment_executed": false,
+  "new_reporter_full_clean_clone_experiment_executed_at_bounded_validation": false,
+  "subsequent_full_verification": "results/phase-6-reporting-full-verification.json",
   "independent_review": "Pending explicit authorization for a separate read-only reviewer; this is executor verification.",
   "prospective_method_review": "R3 remains open. No speed interval or numerical acceptance threshold changed.",
   "metadata_follow_up": "R4 corrected and verified through isolated regeneration of existing measurements: all original fields except date unchanged, and four historical report hashes preserved. No new full-run claim.",
-  "git_state": "Uncommitted review fixes; no new source commit or full rerun claimed."
+  "git_state_at_bounded_validation": "Uncommitted review fixes; the later complete verification tests local source commit e3c4a83. No push."
 }

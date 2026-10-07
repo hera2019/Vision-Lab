@@ -33,9 +33,9 @@ Shell syntax and whitespace checks pass. An initial syntax typo in the test
 fixture was corrected before the tests ran; no experimental result changed.
 
 Logs: `phase-6-reporting-tests.log`, `phase-6-reporting-dirty-guard.log`.
-These bounded checks do not establish a new full clean-clone experiment with
-the changed reporter. The only completed full experiment remains source
-`dcdb81e`, with its failed acceptance untouched. R3 timing-method review remains
+At this bounded-validation stage, these checks did not establish a new full
+clean-clone experiment with the changed reporter; the completed experiment was
+source `dcdb81e`, with its failed acceptance untouched. R3 timing-method review remains
 open: any future uncertainty rule requires approval before new measurements.
 No independent reviewer verdict or new Opus acceptance is claimed.
 R4 corrected: Phase 4 reports label current UTC generation time separately
@@ -44,4 +44,8 @@ from the source timing files, so the measurement time range is explicitly
 unknown. [Isolated report regeneration](phase-6-report-date-fix.md) verifies
 all original fields except date unchanged, including 36 runs, 12 settings and
 failed usefulness gates; four historical report hashes are preserved.
-These edits are uncommitted review work.
+The edits were uncommitted at bounded validation. Subsequent local source
+commit `e3c4a83` has now had a [complete full verification](phase-6-reporting-full-verification.md):
+automatic reports and quality/hash reproduction pass, strict speed checks pass
+5/12 and fail 7/12, and overall acceptance remains FAIL. This later run is
+separate evidence, not an additional claim made by the bounded tests. No push.

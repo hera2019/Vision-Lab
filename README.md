@@ -116,9 +116,15 @@ make the full command generate current paired reports automatically, with
 run/source identity and explicit incomplete status if a build fails. Previous
 reports are kept under `results/phase-6/previous-full-report/`. Source context
 requires a clean standalone checkout matching its tracked upstream revision;
-this is not independent reviewer approval. Thirteen reporting contracts pass,
-but the changed entry point has not undergone another complete clean-clone
-experiment. Historical acceptance and its fixed speed intervals stay unchanged.
+this is not independent reviewer approval. Thirteen reporting contracts pass.
+The changed entry point has now undergone a complete clean-clone experiment at
+`e3c4a83`: [full reporting verification](results/phase-6-reporting-full-verification.md)
+confirms automatic current reports, fresh evaluation and exact quality/hash
+reproduction. Speed consistency passes 5/12 and fails 7/12 (two below and five
+above the old intervals); overall acceptance remains FAIL. Historical results
+and fixed speed intervals stay unchanged. The
+[independent review handoff](docs/reviews/phase-4-6-handoff.md) is ready;
+no independent verdict is claimed.
 
 ## Container boundary
 

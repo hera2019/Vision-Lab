@@ -1,0 +1,1 @@
+{"status": "automatic-full-reporting-verified", "tested_source_commit": "e3c4a83a0e6a461edbfbb2737cac274a31cbc46e", "raw_benchmarks_recomputed": 36, "actual_track_files_hash_verified": 74, "speed_settings_passed": 5, "speed_settings_failed": 7, "full_acceptance": "FAIL", "driver_exit_code": 1}

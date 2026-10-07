@@ -74,10 +74,17 @@ close three output defects: full mode now generates current paired reports with
 run/source identity, while interrupted builds invalidate current completion;
 smoke removes obsolete uncommitted/unexecuted claims; Phase 4 separates report
 generation time from the protocol date and explicitly unknown measurement times.
-Thirteen bounded contracts and isolated report-date regeneration pass; no new
-full experiment or independent verdict is claimed. Timing-method
-review stays open, with no retrospective criterion change. Independent reviewer
-authorization was requested separately; no extra agent started without consent.
+Thirteen bounded contracts and isolated report-date regeneration pass. The
+subsequent [complete reporting-fix verification](../results/phase-6-reporting-full-verification.md)
+ran once from clean commit `e3c4a83`, automatically producing current paired
+reports. All quality scores and track hashes equal the original; 36 raw timing
+files, 74 actual track files and three crops were checked. Speed consistency
+passes 5/12 and fails 7/12: two below and five above the original intervals.
+Overall acceptance remains FAIL, with no retrospective criterion change.
+Historical `dcdb81e` results stay unchanged. Local source/evidence commits only;
+no push. Timing-method and independent review remain open. The
+[review handoff](reviews/phase-4-6-handoff.md) is ready; no extra agent started
+without explicit consent.
 
 ## Goal
 

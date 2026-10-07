@@ -1,0 +1,12 @@
+{
+  "sequence": "MOT17-02-FRCNN",
+  "frames": [
+    1,
+    50
+  ],
+  "bit_identical": {
+    "nano": true,
+    "tiny": true
+  },
+  "accuracy_threads": 4
+}

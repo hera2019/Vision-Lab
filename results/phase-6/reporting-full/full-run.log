@@ -1,0 +1,778 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.43kB done
+#1 DONE 0.0s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1
+#2 ...
+
+#3 [auth] docker/dockerfile:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1
+#2 DONE 1.3s
+
+#4 docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#4 resolve docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e 0.0s done
+#4 CACHED
+
+#5 [internal] load metadata for docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+#5 ...
+
+#6 [auth] library/ubuntu:pull token for registry-1.docker.io
+#6 DONE 0.0s
+
+#5 [internal] load metadata for docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+#5 DONE 1.1s
+
+#7 [internal] load .dockerignore
+#7 transferring context: 151B done
+#7 DONE 0.0s
+
+#8 [base 1/3] FROM docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+#8 resolve docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55 done
+#8 DONE 0.0s
+
+#9 [internal] load build context
+#9 transferring context: 47.28kB done
+#9 DONE 0.0s
+
+#10 [base 3/3] RUN case "arm64" in       arm64) ORT_ARCH=aarch64; ORT_SHA256=e16a27a8ed330bbc698df7330b0cf56e722f354e3bcc92118682c74ef3c3e3da ;;       amd64) ORT_ARCH=x64;     ORT_SHA256=a5ed5a3cac51fbb2e90da632ae43d19212faaa20e76484e62bcb7c23ddb3b3fd ;;       *) echo "unsupported arch: arm64" >&2; exit 1 ;;     esac     && curl -fsSL -o /tmp/ort.tgz       "https://github.com/microsoft/onnxruntime/releases/download/v1.30.0/onnxruntime-linux-${ORT_ARCH}-1.30.0.tgz"     && echo "${ORT_SHA256}  /tmp/ort.tgz" | sha256sum -c -     && mkdir -p /opt/onnxruntime     && tar -xzf /tmp/ort.tgz -C /opt/onnxruntime --strip-components=1     && rm /tmp/ort.tgz
+#10 CACHED
+
+#11 [build 2/3] COPY cpp/ cpp/
+#11 CACHED
+
+#12 [base 2/3] RUN apt-get update && apt-get install -y --no-install-recommends       build-essential cmake ninja-build ca-certificates curl       libeigen3-dev       libopencv-core-dev libopencv-imgproc-dev libopencv-imgcodecs-dev       libopencv-videoio-dev libopencv-video-dev     && rm -rf /var/lib/apt/lists/*
+#12 CACHED
+
+#13 [build 1/3] WORKDIR /src
+#13 CACHED
+
+#14 [build 3/3] RUN cmake -S cpp -B build -G Ninja -DCMAKE_BUILD_TYPE=Release     && cmake --build build
+#14 CACHED
+
+#15 exporting to image
+#15 exporting layers done
+#15 exporting manifest sha256:eef623c4d2dd10f2c190a6932acb70955b0cc1f1e99059d17f289e1907338d58 done
+#15 exporting config sha256:4fe089a6fa618c96d3050ecabdffc68962454718b2b7387c3a8e5f11d1af4149 done
+#15 exporting attestation manifest sha256:648cc718a530a122f8156aff436b8febd4140852a9d8df3f0aab79943669b30f done
+#15 exporting manifest list sha256:f16269f4e29782e78167f00344fe53f13c50666c295e86d760f8caf15ed7e71f done
+#15 naming to docker.io/library/vision-lab:dev done
+#15 unpacking to docker.io/library/vision-lab:dev done
+#15 DONE 0.0s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ktxbz2yeqmo6f3zmdwqtdxglv
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.43kB done
+#1 DONE 0.0s
+
+#2 resolve image config for docker-image://docker.io/docker/dockerfile:1
+#2 DONE 0.3s
+
+#3 docker-image://docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e
+#3 resolve docker.io/docker/dockerfile:1@sha256:4edf897a3ffa55b89f906fc8cc78afdb3f1834cc9c7083565e611a8a7d5fe99e 0.0s done
+#3 CACHED
+
+#4 [internal] load metadata for docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+#4 DONE 0.0s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 151B done
+#5 DONE 0.0s
+
+#6 [pytools 1/5] FROM docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55
+#6 resolve docker.io/library/ubuntu:24.04@sha256:534baea6a22c03a63003dbc8dbe78fe34bc0d7e595d9a9dc9834884ff530eb55 done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 627B done
+#7 DONE 0.0s
+
+#8 [pytools 2/5] RUN apt-get update && apt-get install -y --no-install-recommends       python3 python3-venv ca-certificates build-essential python3-dev     && rm -rf /var/lib/apt/lists/*
+#8 CACHED
+
+#9 [pytools 3/5] COPY python/requirements.txt /tmp/requirements.txt
+#9 CACHED
+
+#10 [pytools 4/5] RUN python3 -m venv /opt/venv     && /opt/venv/bin/pip install --no-cache-dir -r /tmp/requirements.txt
+#10 CACHED
+
+#11 [pytools 5/5] WORKDIR /work
+#11 CACHED
+
+#12 exporting to image
+#12 exporting layers done
+#12 exporting manifest sha256:f51072719002198a4e95e12d4728ba091ffe5226ad3431ed88936dc53739a197 done
+#12 exporting config sha256:975314083807209d01e4fa5bdaf9f238359ee1e6f4b4d84a1dcc2be7da2fcdc4 done
+#12 exporting attestation manifest sha256:76c5807108963b0b10b4788660c26261399d29afc2724d56a080afd70e567bb5 done
+#12 exporting manifest list sha256:4f307d5a49057df9ae6ed49689ce13b5d807c6baa392d12811a2e2ed354aabed 0.0s done
+#12 naming to docker.io/library/vision-lab:pytools done
+#12 unpacking to docker.io/library/vision-lab:pytools done
+#12 DONE 0.0s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/5gryl3s4iy2zx9e728auycq5q
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.review-fixes
+#1 transferring dockerfile: 266B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/vision-lab:dev
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 151B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 47.28kB done
+#4 DONE 0.0s
+
+#5 [1/4] FROM docker.io/library/vision-lab:dev@sha256:f16269f4e29782e78167f00344fe53f13c50666c295e86d760f8caf15ed7e71f
+#5 resolve docker.io/library/vision-lab:dev@sha256:f16269f4e29782e78167f00344fe53f13c50666c295e86d760f8caf15ed7e71f done
+#5 DONE 0.0s
+
+#6 [2/4] WORKDIR /src
+#6 DONE 0.0s
+
+#7 [3/4] COPY cpp/ cpp/
+#7 DONE 0.0s
+
+#8 [4/4] RUN cmake -S cpp -B build -G Ninja -DCMAKE_BUILD_TYPE=Release     && cmake --build build
+#8 0.094 -- Configuring done (0.0s)
+#8 0.106 -- Generating done (0.0s)
+#8 0.108 -- Build files have been written to: /src/build
+#8 0.262 [1/17] Building CXX object CMakeFiles/vl_tracker.dir/src/tracker/lapjv.cpp.o
+#8 1.118 [2/17] Building CXX object CMakeFiles/transcode_demo.dir/src/transcode_demo.cpp.o
+#8 1.553 [3/17] Building CXX object CMakeFiles/env_check.dir/src/env_check.cpp.o
+#8 1.668 [4/17] Building CXX object CMakeFiles/detect_frames.dir/src/detect_frames.cpp.o
+#8 1.728 [5/17] Linking CXX executable transcode_demo
+#8 1.783 [6/17] Linking CXX executable env_check
+#8 1.821 [7/17] Building CXX object CMakeFiles/vl_detector.dir/src/detector.cpp.o
+#8 1.832 [8/17] Linking CXX static library libvl_detector.a
+#8 1.914 [9/17] Building CXX object CMakeFiles/detect_sequence.dir/src/detect_sequence.cpp.o
+#8 2.011 [10/17] Linking CXX executable detect_frames
+#8 2.066 [11/17] Linking CXX executable detect_sequence
+#8 2.338 [12/17] Building CXX object CMakeFiles/benchmark_pipeline.dir/src/benchmark_pipeline.cpp.o
+#8 2.457 [13/17] Building CXX object CMakeFiles/track_sequence.dir/src/track_sequence.cpp.o
+#8 4.397 [14/17] Building CXX object CMakeFiles/vl_tracker.dir/src/tracker/tracker.cpp.o
+#8 4.404 [15/17] Linking CXX static library libvl_tracker.a
+#8 4.562 [16/17] Linking CXX executable benchmark_pipeline
+#8 4.562 [17/17] Linking CXX executable track_sequence
+#8 DONE 4.6s
+
+#9 exporting to image
+#9 exporting layers 0.1s done
+#9 exporting manifest sha256:6770b46d8163817cef2a7d7df59a6b2a5f85b9283858affa590e7647d0a20bf8 done
+#9 exporting config sha256:189e03133d9ad1a6980ad733a230e2fc2cb3a9d733006852b3c4672eec4647c7 done
+#9 exporting attestation manifest sha256:cd252bfc4d8fc81cf03311802427f948a148e5ead96a1f5869a0c7d327df6ea4 done
+#9 exporting manifest list sha256:8eabcfb2826bed77854562e3f989d3c6e9648b3664da8ca226bd99562c647f16 done
+#9 naming to docker.io/library/vision-lab:review-fixes done
+#9 unpacking to docker.io/library/vision-lab:review-fixes 0.0s done
+#9 DONE 0.1s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/1hro4r085rc7tmgms7z86hdee
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.phase4
+#1 transferring dockerfile: 256B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/vision-lab:review-fixes
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 151B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 752B done
+#4 DONE 0.0s
+
+#5 [1/4] FROM docker.io/library/vision-lab:review-fixes@sha256:8eabcfb2826bed77854562e3f989d3c6e9648b3664da8ca226bd99562c647f16
+#5 resolve docker.io/library/vision-lab:review-fixes@sha256:8eabcfb2826bed77854562e3f989d3c6e9648b3664da8ca226bd99562c647f16 done
+#5 DONE 0.0s
+
+#6 [2/4] WORKDIR /src
+#6 DONE 0.0s
+
+#7 [3/4] COPY cpp/ cpp/
+#7 DONE 0.0s
+
+#8 [4/4] RUN cmake -S cpp -B build -G Ninja -DCMAKE_BUILD_TYPE=Release     && cmake --build build
+#8 0.043 -- Configuring done (0.0s)
+#8 0.050 -- Generating done (0.0s)
+#8 0.051 -- Build files have been written to: /src/build
+#8 0.061 ninja: no work to do.
+#8 DONE 0.1s
+
+#9 exporting to image
+#9 exporting layers 0.0s done
+#9 exporting manifest sha256:2ce54488e661166203d625ed27f9047d63a590c08240b20abab5420203c951a2 done
+#9 exporting config sha256:a28101525eb6e0cdb86af05e3b6135c7b4b8ad603191f98636473cf433804733 done
+#9 exporting attestation manifest sha256:4143774719ce20eb8f828ea9ff68ff38fd4f67388f79dc12331a3b720b8108e2 done
+#9 exporting manifest list sha256:7f552709dfd8c8068e63d906383663098e7bcc6b7832bf7e62ffe797212e65d2 done
+#9 naming to docker.io/library/vision-lab:phase4 done
+#9 unpacking to docker.io/library/vision-lab:phase4 0.0s done
+#9 DONE 0.1s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/j1eiy8tl5a7eliuyyljfz8332
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.phase4-pytools
+#1 transferring dockerfile: 322B done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/vision-lab:pytools
+#2 DONE 0.0s
+
+#3 [internal] load .dockerignore
+#3 transferring context: 151B done
+#3 DONE 0.0s
+
+#4 [internal] load build context
+#4 transferring context: 422B done
+#4 DONE 0.0s
+
+#5 [1/3] FROM docker.io/library/vision-lab:pytools@sha256:4f307d5a49057df9ae6ed49689ce13b5d807c6baa392d12811a2e2ed354aabed
+#5 resolve docker.io/library/vision-lab:pytools@sha256:4f307d5a49057df9ae6ed49689ce13b5d807c6baa392d12811a2e2ed354aabed done
+#5 DONE 0.0s
+
+#6 [2/3] COPY python/requirements-phase4.txt /tmp/requirements-phase4.txt
+#6 DONE 0.0s
+
+#7 [3/3] RUN pip install --no-cache-dir --no-deps --only-binary=:all: --require-hashes     -r /tmp/requirements-phase4.txt
+#7 0.486 Collecting ml_dtypes==0.6.0 (from -r /tmp/requirements-phase4.txt (line 3))
+#7 0.560   Downloading ml_dtypes-0.6.0-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (360 kB)
+#7 0.610      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 360.2/360.2 kB 7.5 MB/s eta 0:00:00
+#7 0.614 Installing collected packages: ml_dtypes
+#7 0.648 Successfully installed ml_dtypes-0.6.0
+#7 DONE 0.7s
+
+#8 exporting to image
+#8 exporting layers 0.0s done
+#8 exporting manifest sha256:61b8aaa00aadae6cc38ff155fe090714056b9da327e8470aded38416888dc4c2 done
+#8 exporting config sha256:5b5efcd80fd9f1214103abcf26013146bd5cf22997a84199ba05cb1b9fadbe25 done
+#8 exporting attestation manifest sha256:3348af2e72842bd3744a210236af1608c2645ce1cb65bae3e7f1a4da53d97bdd done
+#8 exporting manifest list sha256:80724869dc249e16dcaad0b7292fd9d545249a0be93e627924600c019e5158fe done
+#8 naming to docker.io/library/vision-lab:phase4-pytools done
+#8 unpacking to docker.io/library/vision-lab:phase4-pytools 0.0s done
+#8 DONE 0.1s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/hwkns3qf897cvliqh82159pgb
+{"run_id": "20261007T133609Z-76914", "context_kind": "git-checkout", "fresh_clone_context_passed": true}
+{"preflight": "pass", "models": 2, "sequences": 11}
+{"uid": 502, "gid": 20, "effective_capabilities_hex": "0000000000000000", "no_new_privileges": 1, "network_interfaces": ["bonding_masters", "erspan0", "gre0", "gretap0", "ip6_vti0", "ip6gre0", "ip6tnl0", "ip_vti0", "lo", "sit0", "tunl0"], "interface_flags": {"ip6tnl0": 128, "ip_vti0": 128, "sit0": 128, "ip6_vti0": 128, "gre0": 128, "ip6gre0": 128, "tunl0": 128, "gretap0": 4098, "erspan0": 4098, "lo": 9}, "active_non_loopback_interfaces": [], "ipv4_routes": [], "external_connection_probe": {"denied": true, "errno": 101, "message": "[Errno 101] Network is unreachable"}, "root_write_probe": {"denied": true, "errno": 30, "message": "[Errno 30] Read-only file system: '/etc/vision-lab-safety-probe'"}, "project_write_probe": {"denied": true, "errno": 30, "message": "[Errno 30] Read-only file system: '/work/vision-lab-safety-probe'"}, "tmpfs_execution_probe": {"execution_denied": true, "errno": 13}, "tmpfs_mount": "tmpfs /tmp tmpfs rw,nosuid,nodev,noexec,relatime,size=1048576k 0 0", "docker_socket_present": false, "memory_max_bytes": 6442450944, "pids_max": 512, "cpu_max": "400000 100000", "writable_submounts": ["/work/results", "/work/data/phase-4"], "scope": "Probe run through drun with results + data/phase-4 writable, 4 CPUs; build networking is separate."}
+wrote 50 frames: /work/data/phase-3/determinism/nano-1.txt
+wrote 50 frames: /work/data/phase-3/determinism/nano-4.txt
+wrote 50 frames: /work/data/phase-3/determinism/tiny-1.txt
+wrote 50 frames: /work/data/phase-3/determinism/tiny-4.txt
+{"sequence": "MOT17-02-FRCNN", "frames": [1, 50], "bit_identical": {"nano": true, "tiny": true}, "accuracy_threads": 4}
+Synthetic-edge-cases: 0.01s -> /work/data/phase-3/edge-cases/python.txt
+wrote tracks: /work/data/phase-3/edge-cases/cpp.txt
+{"left_lines": 87, "right_lines": 87, "byte_identical": false, "identical_line_share": 0.0, "same_frame_and_id": true, "max_box_difference": 0.0, "max_score_difference": 2.384185793236071e-08, "pass": true, "covers": ["high/low confidence", "empty-frame skip", "lost recovery", "expiry", "unconfirmed removal", "float32 threshold equality at 0.1, 0.6 and 0.7"]}
+
+CLEAR Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Identity Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Evaluating 1 tracker(s) on 7 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating ground-truth-self
+
+
+CLEAR Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Identity Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Evaluating 1 tracker(s) on 4 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating ground-truth-self
+
+wrote /work/results/phase-3/evaluation-self.json
+MOT17-02-FRCNN frame 500/600
+wrote 600 frames: /work/data/phase-3/dets/nano/MOT17-02-FRCNN.txt
+MOT17-04-FRCNN frame 500/1050
+MOT17-04-FRCNN frame 1000/1050
+wrote 1050 frames: /work/data/phase-3/dets/nano/MOT17-04-FRCNN.txt
+MOT17-05-FRCNN frame 500/837
+wrote 837 frames: /work/data/phase-3/dets/nano/MOT17-05-FRCNN.txt
+MOT17-09-FRCNN frame 500/525
+wrote 525 frames: /work/data/phase-3/dets/nano/MOT17-09-FRCNN.txt
+MOT17-10-FRCNN frame 500/654
+wrote 654 frames: /work/data/phase-3/dets/nano/MOT17-10-FRCNN.txt
+MOT17-11-FRCNN frame 500/900
+wrote 900 frames: /work/data/phase-3/dets/nano/MOT17-11-FRCNN.txt
+MOT17-13-FRCNN frame 500/750
+wrote 750 frames: /work/data/phase-3/dets/nano/MOT17-13-FRCNN.txt
+wrote 429 frames: /work/data/phase-3/dets/nano/MOT20-01.txt
+MOT20-02 frame 500/2782
+MOT20-02 frame 1000/2782
+MOT20-02 frame 1500/2782
+MOT20-02 frame 2000/2782
+MOT20-02 frame 2500/2782
+wrote 2782 frames: /work/data/phase-3/dets/nano/MOT20-02.txt
+MOT20-03 frame 500/2405
+MOT20-03 frame 1000/2405
+MOT20-03 frame 1500/2405
+MOT20-03 frame 2000/2405
+wrote 2405 frames: /work/data/phase-3/dets/nano/MOT20-03.txt
+MOT20-05 frame 500/3315
+MOT20-05 frame 1000/3315
+MOT20-05 frame 1500/3315
+MOT20-05 frame 2000/3315
+MOT20-05 frame 2500/3315
+MOT20-05 frame 3000/3315
+wrote 3315 frames: /work/data/phase-3/dets/nano/MOT20-05.txt
+MOT17-02-FRCNN frame 500/600
+wrote 600 frames: /work/data/phase-3/dets/tiny/MOT17-02-FRCNN.txt
+MOT17-04-FRCNN frame 500/1050
+MOT17-04-FRCNN frame 1000/1050
+wrote 1050 frames: /work/data/phase-3/dets/tiny/MOT17-04-FRCNN.txt
+MOT17-05-FRCNN frame 500/837
+wrote 837 frames: /work/data/phase-3/dets/tiny/MOT17-05-FRCNN.txt
+MOT17-09-FRCNN frame 500/525
+wrote 525 frames: /work/data/phase-3/dets/tiny/MOT17-09-FRCNN.txt
+MOT17-10-FRCNN frame 500/654
+wrote 654 frames: /work/data/phase-3/dets/tiny/MOT17-10-FRCNN.txt
+MOT17-11-FRCNN frame 500/900
+wrote 900 frames: /work/data/phase-3/dets/tiny/MOT17-11-FRCNN.txt
+MOT17-13-FRCNN frame 500/750
+wrote 750 frames: /work/data/phase-3/dets/tiny/MOT17-13-FRCNN.txt
+wrote 429 frames: /work/data/phase-3/dets/tiny/MOT20-01.txt
+MOT20-02 frame 500/2782
+MOT20-02 frame 1000/2782
+MOT20-02 frame 1500/2782
+MOT20-02 frame 2000/2782
+MOT20-02 frame 2500/2782
+wrote 2782 frames: /work/data/phase-3/dets/tiny/MOT20-02.txt
+MOT20-03 frame 500/2405
+MOT20-03 frame 1000/2405
+MOT20-03 frame 1500/2405
+MOT20-03 frame 2000/2405
+wrote 2405 frames: /work/data/phase-3/dets/tiny/MOT20-03.txt
+MOT20-05 frame 500/3315
+MOT20-05 frame 1000/3315
+MOT20-05 frame 1500/3315
+MOT20-05 frame 2000/3315
+MOT20-05 frame 2500/3315
+MOT20-05 frame 3000/3315
+wrote 3315 frames: /work/data/phase-3/dets/tiny/MOT20-05.txt
+MOT17-02-FRCNN: 0.65s -> /work/data/phase-3/tracks/python/nano/MOT17-02-FRCNN.txt
+MOT17-02-FRCNN frame 500/600
+wrote tracks: /work/data/phase-3/tracks/cpp/nano/MOT17-02-FRCNN.txt
+MOT17-04-FRCNN: 2.15s -> /work/data/phase-3/tracks/python/nano/MOT17-04-FRCNN.txt
+MOT17-04-FRCNN frame 500/1050
+MOT17-04-FRCNN frame 1000/1050
+wrote tracks: /work/data/phase-3/tracks/cpp/nano/MOT17-04-FRCNN.txt
+MOT17-05-FRCNN: 0.34s -> /work/data/phase-3/tracks/python/nano/MOT17-05-FRCNN.txt
+MOT17-05-FRCNN frame 500/837
+wrote tracks: /work/data/phase-3/tracks/cpp/nano/MOT17-05-FRCNN.txt
+MOT17-09-FRCNN: 0.24s -> /work/data/phase-3/tracks/python/nano/MOT17-09-FRCNN.txt
+MOT17-09-FRCNN frame 500/525
+wrote tracks: /work/data/phase-3/tracks/cpp/nano/MOT17-09-FRCNN.txt
+MOT17-10-FRCNN: 0.65s -> /work/data/phase-3/tracks/python/nano/MOT17-10-FRCNN.txt
+MOT17-10-FRCNN frame 500/654
+wrote tracks: /work/data/phase-3/tracks/cpp/nano/MOT17-10-FRCNN.txt
+MOT17-11-FRCNN: 0.44s -> /work/data/phase-3/tracks/python/nano/MOT17-11-FRCNN.txt
+MOT17-11-FRCNN frame 500/900
+wrote tracks: /work/data/phase-3/tracks/cpp/nano/MOT17-11-FRCNN.txt
+MOT17-13-FRCNN: 0.47s -> /work/data/phase-3/tracks/python/nano/MOT17-13-FRCNN.txt
+MOT17-13-FRCNN frame 500/750
+wrote tracks: /work/data/phase-3/tracks/cpp/nano/MOT17-13-FRCNN.txt
+MOT20-01: 0.78s -> /work/data/phase-3/tracks/python/nano/MOT20-01.txt
+wrote tracks: /work/data/phase-3/tracks/cpp/nano/MOT20-01.txt
+MOT20-02: 5.65s -> /work/data/phase-3/tracks/python/nano/MOT20-02.txt
+MOT20-02 frame 500/2782
+MOT20-02 frame 1000/2782
+MOT20-02 frame 1500/2782
+MOT20-02 frame 2000/2782
+MOT20-02 frame 2500/2782
+wrote tracks: /work/data/phase-3/tracks/cpp/nano/MOT20-02.txt
+MOT20-03: 11.94s -> /work/data/phase-3/tracks/python/nano/MOT20-03.txt
+MOT20-03 frame 500/2405
+MOT20-03 frame 1000/2405
+MOT20-03 frame 1500/2405
+MOT20-03 frame 2000/2405
+wrote tracks: /work/data/phase-3/tracks/cpp/nano/MOT20-03.txt
+MOT20-05: 25.10s -> /work/data/phase-3/tracks/python/nano/MOT20-05.txt
+MOT20-05 frame 500/3315
+MOT20-05 frame 1000/3315
+MOT20-05 frame 1500/3315
+MOT20-05 frame 2000/3315
+MOT20-05 frame 2500/3315
+MOT20-05 frame 3000/3315
+wrote tracks: /work/data/phase-3/tracks/cpp/nano/MOT20-05.txt
+MOT17-02-FRCNN: 0.71s -> /work/data/phase-3/tracks/python/tiny/MOT17-02-FRCNN.txt
+MOT17-02-FRCNN frame 500/600
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT17-02-FRCNN.txt
+MOT17-04-FRCNN: 2.11s -> /work/data/phase-3/tracks/python/tiny/MOT17-04-FRCNN.txt
+MOT17-04-FRCNN frame 500/1050
+MOT17-04-FRCNN frame 1000/1050
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT17-04-FRCNN.txt
+MOT17-05-FRCNN: 0.32s -> /work/data/phase-3/tracks/python/tiny/MOT17-05-FRCNN.txt
+MOT17-05-FRCNN frame 500/837
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT17-05-FRCNN.txt
+MOT17-09-FRCNN: 0.25s -> /work/data/phase-3/tracks/python/tiny/MOT17-09-FRCNN.txt
+MOT17-09-FRCNN frame 500/525
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT17-09-FRCNN.txt
+MOT17-10-FRCNN: 0.53s -> /work/data/phase-3/tracks/python/tiny/MOT17-10-FRCNN.txt
+MOT17-10-FRCNN frame 500/654
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT17-10-FRCNN.txt
+MOT17-11-FRCNN: 0.43s -> /work/data/phase-3/tracks/python/tiny/MOT17-11-FRCNN.txt
+MOT17-11-FRCNN frame 500/900
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT17-11-FRCNN.txt
+MOT17-13-FRCNN: 0.66s -> /work/data/phase-3/tracks/python/tiny/MOT17-13-FRCNN.txt
+MOT17-13-FRCNN frame 500/750
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT17-13-FRCNN.txt
+MOT20-01: 0.78s -> /work/data/phase-3/tracks/python/tiny/MOT20-01.txt
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT20-01.txt
+MOT20-02: 5.93s -> /work/data/phase-3/tracks/python/tiny/MOT20-02.txt
+MOT20-02 frame 500/2782
+MOT20-02 frame 1000/2782
+MOT20-02 frame 1500/2782
+MOT20-02 frame 2000/2782
+MOT20-02 frame 2500/2782
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT20-02.txt
+MOT20-03: 12.62s -> /work/data/phase-3/tracks/python/tiny/MOT20-03.txt
+MOT20-03 frame 500/2405
+MOT20-03 frame 1000/2405
+MOT20-03 frame 1500/2405
+MOT20-03 frame 2000/2405
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT20-03.txt
+MOT20-05: 27.60s -> /work/data/phase-3/tracks/python/tiny/MOT20-05.txt
+MOT20-05 frame 500/3315
+MOT20-05 frame 1000/3315
+MOT20-05 frame 1500/3315
+MOT20-05 frame 2000/3315
+MOT20-05 frame 2500/3315
+MOT20-05 frame 3000/3315
+wrote tracks: /work/data/phase-3/tracks/cpp/tiny/MOT20-05.txt
+MOT17-02-FRCNN frame 500/600
+wrote tracks: /work/data/phase-3/tracks/end-to-end/nano/MOT17-02-FRCNN.txt
+MOT17-04-FRCNN frame 500/1050
+MOT17-04-FRCNN frame 1000/1050
+wrote tracks: /work/data/phase-3/tracks/end-to-end/nano/MOT17-04-FRCNN.txt
+MOT17-05-FRCNN frame 500/837
+wrote tracks: /work/data/phase-3/tracks/end-to-end/nano/MOT17-05-FRCNN.txt
+MOT17-09-FRCNN frame 500/525
+wrote tracks: /work/data/phase-3/tracks/end-to-end/nano/MOT17-09-FRCNN.txt
+MOT17-10-FRCNN frame 500/654
+wrote tracks: /work/data/phase-3/tracks/end-to-end/nano/MOT17-10-FRCNN.txt
+MOT17-11-FRCNN frame 500/900
+wrote tracks: /work/data/phase-3/tracks/end-to-end/nano/MOT17-11-FRCNN.txt
+MOT17-13-FRCNN frame 500/750
+wrote tracks: /work/data/phase-3/tracks/end-to-end/nano/MOT17-13-FRCNN.txt
+wrote tracks: /work/data/phase-3/tracks/end-to-end/nano/MOT20-01.txt
+MOT20-02 frame 500/2782
+MOT20-02 frame 1000/2782
+MOT20-02 frame 1500/2782
+MOT20-02 frame 2000/2782
+MOT20-02 frame 2500/2782
+wrote tracks: /work/data/phase-3/tracks/end-to-end/nano/MOT20-02.txt
+MOT20-03 frame 500/2405
+MOT20-03 frame 1000/2405
+MOT20-03 frame 1500/2405
+MOT20-03 frame 2000/2405
+wrote tracks: /work/data/phase-3/tracks/end-to-end/nano/MOT20-03.txt
+MOT20-05 frame 500/3315
+MOT20-05 frame 1000/3315
+MOT20-05 frame 1500/3315
+MOT20-05 frame 2000/3315
+MOT20-05 frame 2500/3315
+MOT20-05 frame 3000/3315
+wrote tracks: /work/data/phase-3/tracks/end-to-end/nano/MOT20-05.txt
+MOT17-02-FRCNN frame 500/600
+wrote tracks: /work/data/phase-3/tracks/end-to-end/tiny/MOT17-02-FRCNN.txt
+MOT17-04-FRCNN frame 500/1050
+MOT17-04-FRCNN frame 1000/1050
+wrote tracks: /work/data/phase-3/tracks/end-to-end/tiny/MOT17-04-FRCNN.txt
+MOT17-05-FRCNN frame 500/837
+wrote tracks: /work/data/phase-3/tracks/end-to-end/tiny/MOT17-05-FRCNN.txt
+MOT17-09-FRCNN frame 500/525
+wrote tracks: /work/data/phase-3/tracks/end-to-end/tiny/MOT17-09-FRCNN.txt
+MOT17-10-FRCNN frame 500/654
+wrote tracks: /work/data/phase-3/tracks/end-to-end/tiny/MOT17-10-FRCNN.txt
+MOT17-11-FRCNN frame 500/900
+wrote tracks: /work/data/phase-3/tracks/end-to-end/tiny/MOT17-11-FRCNN.txt
+MOT17-13-FRCNN frame 500/750
+wrote tracks: /work/data/phase-3/tracks/end-to-end/tiny/MOT17-13-FRCNN.txt
+wrote tracks: /work/data/phase-3/tracks/end-to-end/tiny/MOT20-01.txt
+MOT20-02 frame 500/2782
+MOT20-02 frame 1000/2782
+MOT20-02 frame 1500/2782
+MOT20-02 frame 2000/2782
+MOT20-02 frame 2500/2782
+wrote tracks: /work/data/phase-3/tracks/end-to-end/tiny/MOT20-02.txt
+MOT20-03 frame 500/2405
+MOT20-03 frame 1000/2405
+MOT20-03 frame 1500/2405
+MOT20-03 frame 2000/2405
+wrote tracks: /work/data/phase-3/tracks/end-to-end/tiny/MOT20-03.txt
+MOT20-05 frame 500/3315
+MOT20-05 frame 1000/3315
+MOT20-05 frame 1500/3315
+MOT20-05 frame 2000/3315
+MOT20-05 frame 2500/3315
+MOT20-05 frame 3000/3315
+wrote tracks: /work/data/phase-3/tracks/end-to-end/tiny/MOT20-05.txt
+{"nano": {"MOT17-02-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-04-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-05-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-09-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-10-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-11-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-13-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT20-01": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT20-02": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT20-03": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT20-05": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}}, "tiny": {"MOT17-02-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-04-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-05-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-09-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-10-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-11-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT17-13-FRCNN": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT20-01": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT20-02": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT20-03": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}, "MOT20-05": {"high_comparison_difference": 0, "low_comparison_difference": 0, "new_track_comparison_difference": 0}}}
+
+CLEAR Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Identity Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Evaluating 1 tracker(s) on 7 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating python-nano
+
+MOT17 python nano: {'mota': 69.23248172257496, 'idf1': 66.8414141565438, 'num_switches': 530, 'num_false_positives': 4858, 'num_misses': 29163, 'num_objects': 112297}
+
+CLEAR Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Identity Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Evaluating 1 tracker(s) on 7 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating python-tiny
+
+MOT17 python tiny: {'mota': 77.13474091026474, 'idf1': 71.56506655677691, 'num_switches': 517, 'num_false_positives': 4630, 'num_misses': 20530, 'num_objects': 112297}
+
+CLEAR Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Identity Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Evaluating 1 tracker(s) on 7 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating cpp-nano
+
+MOT17 cpp nano: {'mota': 69.23248172257496, 'idf1': 66.8414141565438, 'num_switches': 530, 'num_false_positives': 4858, 'num_misses': 29163, 'num_objects': 112297}
+
+CLEAR Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Identity Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Evaluating 1 tracker(s) on 7 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating cpp-tiny
+
+MOT17 cpp tiny: {'mota': 77.13474091026474, 'idf1': 71.56506655677691, 'num_switches': 517, 'num_false_positives': 4630, 'num_misses': 20530, 'num_objects': 112297}
+MOT17 end-to-end nano: {'mota': 69.23248172257496, 'idf1': 66.8414141565438, 'num_switches': 530, 'num_false_positives': 4858, 'num_misses': 29163, 'num_objects': 112297}
+MOT17 end-to-end tiny: {'mota': 77.13474091026474, 'idf1': 71.56506655677691, 'num_switches': 517, 'num_false_positives': 4630, 'num_misses': 20530, 'num_objects': 112297}
+
+CLEAR Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Identity Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Evaluating 1 tracker(s) on 4 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating python-nano
+
+MOT20 python nano: {'mota': 56.02072599139443, 'idf1': 51.36987945844744, 'num_switches': 4640, 'num_false_positives': 133000, 'num_misses': 361355, 'num_objects': 1134614}
+
+CLEAR Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Identity Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Evaluating 1 tracker(s) on 4 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating python-tiny
+
+MOT20 python tiny: {'mota': 61.07522029518408, 'idf1': 59.490619839630966, 'num_switches': 3389, 'num_false_positives': 138521, 'num_misses': 299736, 'num_objects': 1134614}
+
+CLEAR Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Identity Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Evaluating 1 tracker(s) on 4 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating cpp-nano
+
+MOT20 cpp nano: {'mota': 56.02072599139443, 'idf1': 51.36987945844744, 'num_switches': 4640, 'num_false_positives': 133000, 'num_misses': 361355, 'num_objects': 1134614}
+
+CLEAR Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Identity Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Evaluating 1 tracker(s) on 4 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating cpp-tiny
+
+MOT20 cpp tiny: {'mota': 61.07522029518408, 'idf1': 59.490619839630966, 'num_switches': 3389, 'num_false_positives': 138521, 'num_misses': 299736, 'num_objects': 1134614}
+MOT20 end-to-end nano: {'mota': 56.02072599139443, 'idf1': 51.36987945844744, 'num_switches': 4640, 'num_false_positives': 133000, 'num_misses': 361355, 'num_objects': 1134614}
+MOT20 end-to-end tiny: {'mota': 61.07522029518408, 'idf1': 59.490619839630966, 'num_switches': 3389, 'num_false_positives': 138521, 'num_misses': 299736, 'num_objects': 1134614}
+wrote /work/results/phase-3/evaluation-final.json
+nano: preprocessing and 112-frame MOT17-only calibration
+nano: static INT8 smoke pass, 1392158 bytes
+tiny: preprocessing and 112-frame MOT17-only calibration
+tiny: static INT8 smoke pass, 5429297 bytes
+wrote 50 frames: /work/data/phase-4/determinism/nano-t1.txt
+wrote 50 frames: /work/data/phase-4/determinism/nano-t4.txt
+wrote 50 frames: /work/data/phase-4/determinism/tiny-t1.txt
+wrote 50 frames: /work/data/phase-4/determinism/tiny-t4.txt
+{"scope": "MOT17-02 frames 1\u201350; consistency check only, not full held-out per-thread accuracy.", "models": {"nano": {"byte_identical_1_4": true, "sha256": {"nano-t1.txt": "86b45c9c92893ebf6751ad4135e325b5f1a200f2eabd941a70a5e33e9cbb48c6", "nano-t4.txt": "86b45c9c92893ebf6751ad4135e325b5f1a200f2eabd941a70a5e33e9cbb48c6"}}, "tiny": {"byte_identical_1_4": true, "sha256": {"tiny-t1.txt": "964dd1af2911e1aef21cdee3bb57aabe7df92da6befdef8714d93c1d313a24d9", "tiny-t4.txt": "964dd1af2911e1aef21cdee3bb57aabe7df92da6befdef8714d93c1d313a24d9"}}}, "accuracy_threads": 4}
+nano fp32 threads=1 repeat=1 completed
+nano int8 threads=1 repeat=1 completed
+nano fp32 threads=1 repeat=2 completed
+nano int8 threads=1 repeat=2 completed
+nano fp32 threads=1 repeat=3 completed
+nano int8 threads=1 repeat=3 completed
+nano fp32 threads=2 repeat=1 completed
+nano int8 threads=2 repeat=1 completed
+nano fp32 threads=2 repeat=2 completed
+nano int8 threads=2 repeat=2 completed
+nano fp32 threads=2 repeat=3 completed
+nano int8 threads=2 repeat=3 completed
+nano fp32 threads=4 repeat=1 completed
+nano int8 threads=4 repeat=1 completed
+nano fp32 threads=4 repeat=2 completed
+nano int8 threads=4 repeat=2 completed
+nano fp32 threads=4 repeat=3 completed
+nano int8 threads=4 repeat=3 completed
+tiny fp32 threads=1 repeat=1 completed
+tiny int8 threads=1 repeat=1 completed
+tiny fp32 threads=1 repeat=2 completed
+tiny int8 threads=1 repeat=2 completed
+tiny fp32 threads=1 repeat=3 completed
+tiny int8 threads=1 repeat=3 completed
+tiny fp32 threads=2 repeat=1 completed
+tiny int8 threads=2 repeat=1 completed
+tiny fp32 threads=2 repeat=2 completed
+tiny int8 threads=2 repeat=2 completed
+tiny fp32 threads=2 repeat=3 completed
+tiny int8 threads=2 repeat=3 completed
+tiny fp32 threads=4 repeat=1 completed
+tiny int8 threads=4 repeat=1 completed
+tiny fp32 threads=4 repeat=2 completed
+tiny int8 threads=4 repeat=2 completed
+tiny fp32 threads=4 repeat=3 completed
+tiny int8 threads=4 repeat=3 completed
+wrote tracks: /work/data/phase-4/tracks/nano/MOT20-01.txt
+MOT20-02 frame 500/2782
+MOT20-02 frame 1000/2782
+MOT20-02 frame 1500/2782
+MOT20-02 frame 2000/2782
+MOT20-02 frame 2500/2782
+wrote tracks: /work/data/phase-4/tracks/nano/MOT20-02.txt
+MOT20-03 frame 500/2405
+MOT20-03 frame 1000/2405
+MOT20-03 frame 1500/2405
+MOT20-03 frame 2000/2405
+wrote tracks: /work/data/phase-4/tracks/nano/MOT20-03.txt
+MOT20-05 frame 500/3315
+MOT20-05 frame 1000/3315
+MOT20-05 frame 1500/3315
+MOT20-05 frame 2000/3315
+MOT20-05 frame 2500/3315
+MOT20-05 frame 3000/3315
+wrote tracks: /work/data/phase-4/tracks/nano/MOT20-05.txt
+wrote tracks: /work/data/phase-4/tracks/tiny/MOT20-01.txt
+MOT20-02 frame 500/2782
+MOT20-02 frame 1000/2782
+MOT20-02 frame 1500/2782
+MOT20-02 frame 2000/2782
+MOT20-02 frame 2500/2782
+wrote tracks: /work/data/phase-4/tracks/tiny/MOT20-02.txt
+MOT20-03 frame 500/2405
+MOT20-03 frame 1000/2405
+MOT20-03 frame 1500/2405
+MOT20-03 frame 2000/2405
+wrote tracks: /work/data/phase-4/tracks/tiny/MOT20-03.txt
+MOT20-05 frame 500/3315
+MOT20-05 frame 1000/3315
+MOT20-05 frame 1500/3315
+MOT20-05 frame 2000/3315
+MOT20-05 frame 2500/3315
+MOT20-05 frame 3000/3315
+wrote tracks: /work/data/phase-4/tracks/tiny/MOT20-05.txt
+
+CLEAR Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Identity Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Evaluating 1 tracker(s) on 4 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating int8-nano
+
+{"model": "nano", "int8_overall": {"mota": -0.07949840209975356, "idf1": 1.323452423487639, "num_switches": 3269, "num_false_positives": 15059, "num_misses": 1117188, "num_objects": 1134614}, "delta_pp": {"motmetrics": {"mota": -56.10022439349418, "idf1": -50.046427034959805}, "TrackEval": {"MOTA": -62.382801551893415, "IDF1": -51.99049659182512, "HOTA": -40.29376971219738}}}
+
+CLEAR Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Identity Config:
+THRESHOLD            : 0.5                           
+PRINT_CONFIG         : True                          
+
+Evaluating 1 tracker(s) on 4 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, CLEAR, Identity, Count
+
+
+Evaluating int8-tiny
+
+{"model": "tiny", "int8_overall": {"mota": 60.01168679392287, "idf1": 57.929852951826966, "num_switches": 3894, "num_false_positives": 132777, "num_misses": 317042, "num_objects": 1134614}, "delta_pp": {"motmetrics": {"mota": -1.0635335012612117, "idf1": -1.5607668878040002}, "TrackEval": {"MOTA": -1.1855133111348977, "IDF1": -1.6414339643632658, "HOTA": -1.886170240677437}}}
+{"status": "phase-4-measurements-complete", "settings": [{"model": "nano", "precision": "fp32", "threads": 1, "median_repeat_fps": 11.352533623164668, "peak_rss_mib_max": 153.265625, "realtime_25_fps_gate": false}, {"model": "nano", "precision": "fp32", "threads": 2, "median_repeat_fps": 18.899580266158015, "peak_rss_mib_max": 153.6015625, "realtime_25_fps_gate": false}, {"model": "nano", "precision": "fp32", "threads": 4, "median_repeat_fps": 27.785408152537446, "peak_rss_mib_max": 153.8515625, "realtime_25_fps_gate": true}, {"model": "nano", "precision": "int8", "threads": 1, "median_repeat_fps": 14.863831790391538, "peak_rss_mib_max": 200.2734375, "realtime_25_fps_gate": false}, {"model": "nano", "precision": "int8", "threads": 2, "median_repeat_fps": 20.951887739356398, "peak_rss_mib_max": 201.3828125, "realtime_25_fps_gate": false}, {"model": "nano", "precision": "int8", "threads": 4, "median_repeat_fps": 25.832495982017452, "peak_rss_mib_max": 201.1953125, "realtime_25_fps_gate": true}, {"model": "tiny", "precision": "fp32", "threads": 1, "median_repeat_fps": 3.1517784643293516, "peak_rss_mib_max": 203.83984375, "realtime_25_fps_gate": false}, {"model": "tiny", "precision": "fp32", "threads": 2, "median_repeat_fps": 5.955644399841733, "peak_rss_mib_max": 204.96484375, "realtime_25_fps_gate": false}, {"model": "tiny", "precision": "fp32", "threads": 4, "median_repeat_fps": 10.283933657508099, "peak_rss_mib_max": 205.37109375, "realtime_25_fps_gate": false}, {"model": "tiny", "precision": "int8", "threads": 1, "median_repeat_fps": 8.08036517885246, "peak_rss_mib_max": 220.6953125, "realtime_25_fps_gate": false}, {"model": "tiny", "precision": "int8", "threads": 2, "median_repeat_fps": 13.215237127017328, "peak_rss_mib_max": 221.9453125, "realtime_25_fps_gate": false}, {"model": "tiny", "precision": "int8", "threads": 4, "median_repeat_fps": 18.841961549567067, "peak_rss_mib_max": 222.3984375, "realtime_25_fps_gate": false}]}
+{"sequence": "MOT20-01", "audit": {"CLR_TP": 13564, "CLR_FN": 6306, "CLR_FP": 691, "IDSW": 114}, "categories_found": ["identity-switch", "small-target-miss"]}
+{"sequence": "MOT20-02", "audit": {"CLR_TP": 101594, "CLR_FN": 53148, "CLR_FP": 5252, "IDSW": 839}, "categories_found": ["identity-switch", "small-target-miss"]}
+{"sequence": "MOT20-03", "audit": {"CLR_TP": 229710, "CLR_FN": 83948, "CLR_FP": 16472, "IDSW": 805}, "categories_found": ["identity-switch", "small-target-miss", "occlusion-fragmentation"]}
+{"status": "three-failure-categories-documented", "cases": {"identity-switch": {"sequence": "MOT20-01", "gt_id": 28, "frame_range": [185, 194], "crop_frames": [189, 190, 194]}, "small-target-miss": {"sequence": "MOT20-01", "gt_id": 39, "frame_range": [86, 93], "crop_frames": [86, 89, 93]}, "occlusion-fragmentation": {"sequence": "MOT20-03", "gt_id": 169, "frame_range": [130, 185], "crop_frames": [130, 155, 180]}}}
+{"status": "full-stages-executed", "exact_evaluation_equal": true, "int8_evaluation_equal": true, "benchmark_settings": [{"model": "nano", "precision": "fp32", "threads": 1, "median_fps": 11.352533623164668, "reference_interval": [11.5943729453211, 11.679215405108987], "inside_interval": false}, {"model": "nano", "precision": "fp32", "threads": 2, "median_fps": 18.899580266158015, "reference_interval": [18.63756091708918, 19.17084989149194], "inside_interval": true}, {"model": "nano", "precision": "fp32", "threads": 4, "median_fps": 27.785408152537446, "reference_interval": [26.424624714573092, 27.816148640392438], "inside_interval": true}, {"model": "nano", "precision": "int8", "threads": 1, "median_fps": 14.863831790391538, "reference_interval": [15.070331433635623, 15.349473563065372], "inside_interval": false}, {"model": "nano", "precision": "int8", "threads": 2, "median_fps": 20.951887739356398, "reference_interval": [19.90528781006777, 21.50458861481881], "inside_interval": true}, {"model": "nano", "precision": "int8", "threads": 4, "median_fps": 25.832495982017452, "reference_interval": [24.045198714136443, 25.99227256962357], "inside_interval": true}, {"model": "tiny", "precision": "fp32", "threads": 1, "median_fps": 3.1517784643293516, "reference_interval": [3.0417003217804, 3.1963140429667787], "inside_interval": true}, {"model": "tiny", "precision": "fp32", "threads": 2, "median_fps": 5.955644399841733, "reference_interval": [5.399567169227033, 5.829217166771701], "inside_interval": false}, {"model": "tiny", "precision": "fp32", "threads": 4, "median_fps": 10.283933657508099, "reference_interval": [9.739540929568594, 9.895603035592405], "inside_interval": false}, {"model": "tiny", "precision": "int8", "threads": 1, "median_fps": 8.08036517885246, "reference_interval": [7.6530194423225515, 8.026770479712566], "inside_interval": false}, {"model": "tiny", "precision": "int8", "threads": 2, "median_fps": 13.215237127017328, "reference_interval": [11.657882876072188, 13.197112443080536], "inside_interval": false}, {"model": "tiny", "precision": "int8", "threads": 4, "median_fps": 18.841961549567067, "reference_interval": [18.094319811781858, 18.516717565422994], "inside_interval": false}], "numerical_reproduction_checks_passed": false, "fresh_clone_gate_passed": false, "note": "All full-driver stages executed. Independent Git clone provenance is required before accepting the fresh-clone gate.", "run_id": "20261007T133609Z-76914"}
+{"status": "full-clean-clone-experiment-complete", "tested_source_commit": "e3c4a83a0e6a461edbfbb2737cac274a31cbc46e", "fresh_clone_context_passed": true, "fresh_clone_gate_passed": false}

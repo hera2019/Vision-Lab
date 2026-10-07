@@ -193,6 +193,36 @@ the historical reports unchanged.
 不代表今天重新做了实验。临时目录中的重生成检查确认：除了日期，原有字段全部一致，
 历史报告也没有改动。
 
+## 8. Verifying the reporting fixes with a complete run / 完整运行验证报告修复
+
+The fixed source was committed locally as `e3c4a83` and cloned independently.
+The full command ran once and generated its current final report automatically,
+including source/run identity and dates. Both FP32 and INT8 reproduce every
+canonical score and track hash. The follow-up check recomputes 36 raw benchmarks,
+checks 74 actual track files and three crops, and confirms that the four protected
+historical reports stayed byte-identical. This verifies the reporting changes;
+it does not grant independent reviewer approval.
+
+修复后的源码保存为本地提交 `e3c4a83`，再建立独立克隆。完整命令运行一次，并自动生成
+带有本次源码、运行编号和时间的最终报告。FP32 与 INT8 的全部标准评估分数、轨迹文件
+校验值都与原记录一致。后续检查重算了 36 个原始测速文件，核对 74 个实际轨迹文件和
+三张裁剪图，还确认四份受保护的历史报告逐字节未变。这验证了报告修复，独立审阅仍未完成。
+
+The current speed check passes five of twelve settings and fails seven: two
+are slower than the original lower bound, five faster than the upper bound.
+The original rule treats both directions as failures. Four-thread FP32 nano
+measures 27.785 FPS and tiny 10.284 FPS. The driver therefore completes all
+stages and exits 1 at its final failed acceptance gate. Historical acceptance
+stays FAIL too; no repeats were selected or intervals changed. The reviewer
+handoff is ready, while timing-method review and cold-install/device evidence
+remain separate work.
+
+本次速度检查十二种配置中五种通过、七种失败：两种低于原区间下限，五种高于上限。
+原规则将两个方向的超界都判为失败。四线程 FP32 nano 为 27.785 FPS，tiny 为
+10.284 FPS。因此程序完成了所有步骤，最后因验收失败返回退出码 1。历史验收也仍为
+FAIL；没有挑选重复结果或改变区间。独立审阅交接清单已准备好，速度判断方法、从零安装
+依赖及实际设备证据仍需各自处理。
+
 ## New terms / 新术语
 
 | Term | 中文 | Meaning / 含义 |
