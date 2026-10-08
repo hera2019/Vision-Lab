@@ -23,5 +23,4 @@ models, full track files and footage live in ignored `data/` directories.
 Interpretation and source navigation: [README](../README.md),
 [reproduction guide](../docs/REPRODUCTION.md),
 [fixed acceptance criteria](../docs/01-phase-0-plan.md),
-[review lead's verdict](../docs/reviews/phase-4-6-opus.md),
-[learning walkthroughs](../docs/walkthrough/).
+and the [review lead's verdict](../docs/reviews/phase-4-6-opus.md).

@@ -59,8 +59,7 @@ use a clean disposable clone and follow the [execution guide](docs/REPRODUCTION.
 Runtime containers are offline, unprivileged and read-only except for explicit
 output directories. Cold dependency installation remains unverified.
 
-The [results index](results/README.md) groups evidence by phase;
-[bilingual walkthroughs](docs/walkthrough/) explain the steps for beginners.
+The [results index](results/README.md) groups evidence by phase.
 [Project code](LICENSE) and [third-party inputs](docs/LICENSES.md) have separate
 licenses. Training, GPU/NPU, multi-camera tracking and appearance-based
 re-identification are outside this study. The completed mean-shift bonus has

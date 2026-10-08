@@ -52,8 +52,7 @@ on three frames; the specific INT8 failure cause remains unisolated.
 Final speed ratios use the paired matrix.
 
 Phase 5: [executor protocol](PHASE5_EXECUTION.md),
-[three-category failure report](../results/phase-5-failures.md), and
-[beginner walkthrough](walkthrough/phase-5.md). Owner-reported MOT20-03
+and the [three-category failure report](../results/phase-5-failures.md). Owner-reported MOT20-03
 occlusion (75→107), MOT20-01 identity correspondence switch (13→22), and
 small/truncated target detection misses each include frame intervals, crops,
 per-frame GT/detection/track evidence and provenance. CLEAR audit counts match
@@ -73,8 +72,7 @@ Phase 6 full clean-clone reproduction has executed for the earlier scope.
 
 Phase 6: [README](../README.md), [execution protocol](PHASE6_EXECUTION.md),
 [historical snapshot record](../results/phase-6-reproduction.md),
-[full clean-clone record](../results/phase-6-full-reproduction.md), and
-[walkthrough](walkthrough/phase-6.md). One-command smoke/full profiles added;
+and the [full clean-clone record](../results/phase-6-full-reproduction.md). One-command smoke/full profiles added;
 the historical isolated source snapshot reproduces
 both FP32 models' first-50-frame detections/tracks byte for byte and passes
 Python/C++ synthetic behavior. Nano four-thread FPS 27.215 is inside the

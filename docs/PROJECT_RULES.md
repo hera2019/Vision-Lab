@@ -14,7 +14,7 @@ repository follows the same rules.
 - Append one row per change to [CHANGES.md](CHANGES.md): date, actual agent/model, files, reason, verification. Never sign for another agent or guess authorship.
 - Distinguish proposals, observations, measurements and hypotheses. Never call an unexecuted command verified.
 - Every result is reported twice: `results/<phase>-<name>.md` (human) and `.json` (machine). Negative and unresolved results stay. Superseded conclusions are kept with the reason.
-- After each phase, write `docs/walkthrough/phase-N.md`: one English paragraph, then the same in Chinese; explain for a complete beginner; define every new term the first time it appears; end with a term table. Do not re-define terms from earlier walkthroughs.
+- After each phase, write the owner's private learning note `notes/walkthrough/phase-N.md` (gitignored, never published): one English paragraph, then the same in Chinese; explain for a complete beginner; define every new term the first time it appears; end with a term table. Do not re-define terms from earlier walkthroughs.
 - All public-facing content (README, docs, reports, commit messages) is in English. Conversation with the owner can be in Chinese.
 
 ## Measurement integrity

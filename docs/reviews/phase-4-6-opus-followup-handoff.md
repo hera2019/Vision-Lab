@@ -93,8 +93,7 @@ remains a dated historical verdict, not silently rewritten as an Opus verdict.
   historical reports retained.
 - [Execution guide](../REPRODUCTION.md): earlier detailed process/audit notes
   moved out of the reader summary, with current interpretation at the top.
-- [Phase 4](../walkthrough/phase-4.md) and
-  [Phase 6](../walkthrough/phase-6.md): bilingual learning updates.
+- Phase 4 and Phase 6 walkthroughs: bilingual learning updates (owner's private notes, not published).
 - `docs/images/mot17-tracking.jpg`: byte-identical existing MOT17-02 frame
   180 demonstration still; MOTChallenge attribution and CC BY-NC-SA 3.0 in
   README/LICENSES/assets. Models and datasets remain unbundled.

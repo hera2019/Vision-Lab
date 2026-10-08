@@ -2,7 +2,7 @@
   "date": "2026-10-06",
   "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
   "status": "owner-approved-installed-import-pass",
-  "owner_authorization": "2026-10-06: 允许下载; 请继续实验测试",
+  "owner_authorization": "2026-10-06: download allowed; please continue the experiments (translated from Chinese)",
   "resolution": "Separate phase4-pytools image built; ml_dtypes 0.6.0 installed with wheel hashes and no-deps; quantization import passes.",
   "build_log": "results/phase-4/dependency-build.log",
   "observed_error": "ModuleNotFoundError: No module named 'ml_dtypes'",

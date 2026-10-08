@@ -32,7 +32,7 @@ for model, name in (('nano', 'MOT20-02'), ('tiny', 'MOT20-05')):
             'cpp_score': float(right[index, 6]), 'difference': float(abs(left[index, 6]-right[index, 6]))})
 assert len(score_examples) == 3, score_examples
 
-walkthrough = ROOT/'docs/walkthrough/phase-3.md'
+walkthrough = ROOT/'notes/walkthrough/phase-3.md'  # private, not in git
 text = walkthrough.read_text()
 terms = ('motmetrics', 'TrackEval', 'ID switch', 'Behavioral fixture', 'Determinism', 'Domain shift')
 assert all(term in text for term in terms)

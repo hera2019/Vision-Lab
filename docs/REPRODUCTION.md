@@ -176,7 +176,6 @@ protections from absolute guarantees. No GUI access is needed.
 
 ## Learning and licensing
 
-[Bilingual walkthroughs](walkthrough/) explain each phase for beginners.
 [Changes](CHANGES.md) name the actual contributors; [issues](ISSUES.md)
 retain failures. Commit/push requires the owner's explicit instruction.
 
