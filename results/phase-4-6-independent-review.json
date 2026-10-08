@@ -1,0 +1,47 @@
+{
+  "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+  "role": "independent read-only review agent",
+  "task": "/root/independent_review",
+  "date": "2026-10-08",
+  "reviewed_head": "e161ef46342e37e85cebbefaa9d96f257e674dc9",
+  "reviewed_implementation_and_recorded_full_run_source": "e3c4a83a0e6a461edbfbb2737cac274a31cbc46e",
+  "historical_full_run_source": "dcdb81e03533045764468305b8a3b07306f4ab98",
+  "new_actionable_findings": [],
+  "disposition": {
+    "R1": "resolved within reviewed single-run reporting scope",
+    "R2": "resolved",
+    "R3": "open, P2 prospective timing-method issue",
+    "R4": "resolved"
+  },
+  "checks": {
+    "archive_file_hashes": 150,
+    "raw_timing_csv_files": 108,
+    "actual_regenerated_track_file_hashes": 74,
+    "actual_regenerated_crop_hashes": 3,
+    "protected_historical_report_hashes": 4,
+    "phase5_original_source_file_hashes": 18,
+    "phase5_GT_and_associated_prediction_observations": 74,
+    "recorded_self_tests": "both pass",
+    "current_speed": {"pass": 5, "below": 2, "above": 5},
+    "historical_speed": {"pass": 4, "above": 8},
+    "INT8_usefulness_gates_failed": 6,
+    "IID_rank_illustration": {"outside": 8, "orderings": 20}
+  },
+  "verdicts": {
+    "implementation_and_existing_evidence_review": "PASS within stated scope",
+    "current_numerical_experimental_acceptance": "FAIL",
+    "historical_numerical_experimental_acceptance": "FAIL",
+    "prospective_timing_method": "NOT APPROVED",
+    "cold_dependency_installation": "NOT ESTABLISHED",
+    "edge_device_or_product_readiness": "NOT ESTABLISHED"
+  },
+  "limitations": [
+    "Existing executor measurements reused; no independent new experiment.",
+    "No inference, rescoring, benchmark, recalibration or full CLEAR scan.",
+    "Existing targeted test source and logs inspected; suite not rerun.",
+    "No image visual inspection or tracker-state replay.",
+    "Previous-report retention verified for the recorded single run, not unlimited generations.",
+    "All computational checks used unchanged hardened wrapper and read-only offline image access.",
+    "No files or Git history modified."
+  ]
+}

@@ -1,0 +1,36 @@
+head-fp32: quantized 77 Conv nodes
+neck-head-fp32: quantized 47 Conv nodes
+MOT17-02-FRCNN frame 500/600
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/head-fp32/MOT17-02-FRCNN.txt
+MOT17-04-FRCNN frame 500/1050
+MOT17-04-FRCNN frame 1000/1050
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/head-fp32/MOT17-04-FRCNN.txt
+MOT17-05-FRCNN frame 500/837
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/head-fp32/MOT17-05-FRCNN.txt
+MOT17-09-FRCNN frame 500/525
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/head-fp32/MOT17-09-FRCNN.txt
+MOT17-10-FRCNN frame 500/654
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/head-fp32/MOT17-10-FRCNN.txt
+MOT17-11-FRCNN frame 500/900
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/head-fp32/MOT17-11-FRCNN.txt
+MOT17-13-FRCNN frame 500/750
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/head-fp32/MOT17-13-FRCNN.txt
+MOT17-02-FRCNN frame 500/600
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/neck-head-fp32/MOT17-02-FRCNN.txt
+MOT17-04-FRCNN frame 500/1050
+MOT17-04-FRCNN frame 1000/1050
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/neck-head-fp32/MOT17-04-FRCNN.txt
+MOT17-05-FRCNN frame 500/837
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/neck-head-fp32/MOT17-05-FRCNN.txt
+MOT17-09-FRCNN frame 500/525
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/neck-head-fp32/MOT17-09-FRCNN.txt
+MOT17-10-FRCNN frame 500/654
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/neck-head-fp32/MOT17-10-FRCNN.txt
+MOT17-11-FRCNN frame 500/900
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/neck-head-fp32/MOT17-11-FRCNN.txt
+MOT17-13-FRCNN frame 500/750
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/neck-head-fp32/MOT17-13-FRCNN.txt
+MOT17/head-fp32: {'mota': 10.668138952955108, 'idf1': 15.50084357316691, 'num_switches': 791, 'num_false_positives': 4443, 'num_misses': 95083, 'num_objects': 112297}, loss={'mota': 58.564342769619856, 'idf1': 51.340570583376895}
+MOT17/neck-head-fp32: {'mota': 37.315333446129465, 'idf1': 41.49015177001543, 'num_switches': 296, 'num_false_positives': 1522, 'num_misses': 68575, 'num_objects': 112297}, loss={'mota': 31.917148276445495, 'idf1': 25.351262386528376}
+pre-held-out selection: None
+scripts/phase4_nano_repair.sh: line 59: rol: command not found

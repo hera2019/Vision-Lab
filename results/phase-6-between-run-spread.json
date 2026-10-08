@@ -1,0 +1,255 @@
+{
+  "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+  "date": "2026-10-08",
+  "status": "descriptive-between-session-spread",
+  "sources": [
+    "results/phase-4-performance.json",
+    "results/phase-6-full-reproduction.json",
+    "results/phase-6-reporting-full-reproduction.json"
+  ],
+  "scope": "Original session plus two completed full reproductions; descriptive observed spread, not a new acceptance threshold or confidence interval.",
+  "settings": [
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 1,
+      "rerun_report": "results/phase-6-full-reproduction.json",
+      "source_commit": "dcdb81e03533045764468305b8a3b07306f4ab98",
+      "original_median_fps": 11.609888588952602,
+      "rerun_median_fps": 11.647198937948678,
+      "delta_pct": 0.3213669856537482
+    },
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 2,
+      "rerun_report": "results/phase-6-full-reproduction.json",
+      "source_commit": "dcdb81e03533045764468305b8a3b07306f4ab98",
+      "original_median_fps": 19.08760725760761,
+      "rerun_median_fps": 19.30408497612649,
+      "delta_pct": 1.134127057400569
+    },
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 4,
+      "rerun_report": "results/phase-6-full-reproduction.json",
+      "source_commit": "dcdb81e03533045764468305b8a3b07306f4ab98",
+      "original_median_fps": 27.344467367147377,
+      "rerun_median_fps": 28.13357958741823,
+      "delta_pct": 2.885820409941209
+    },
+    {
+      "model": "nano",
+      "precision": "int8",
+      "threads": 1,
+      "rerun_report": "results/phase-6-full-reproduction.json",
+      "source_commit": "dcdb81e03533045764468305b8a3b07306f4ab98",
+      "original_median_fps": 15.280384921722128,
+      "rerun_median_fps": 15.170210712330515,
+      "delta_pct": -0.7210172384793267
+    },
+    {
+      "model": "nano",
+      "precision": "int8",
+      "threads": 2,
+      "rerun_report": "results/phase-6-full-reproduction.json",
+      "source_commit": "dcdb81e03533045764468305b8a3b07306f4ab98",
+      "original_median_fps": 20.555876117249046,
+      "rerun_median_fps": 21.186484424465508,
+      "delta_pct": 3.067776355624652
+    },
+    {
+      "model": "nano",
+      "precision": "int8",
+      "threads": 4,
+      "rerun_report": "results/phase-6-full-reproduction.json",
+      "source_commit": "dcdb81e03533045764468305b8a3b07306f4ab98",
+      "original_median_fps": 25.46132766616868,
+      "rerun_median_fps": 26.029026618864147,
+      "delta_pct": 2.2296518081804217
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 1,
+      "rerun_report": "results/phase-6-full-reproduction.json",
+      "source_commit": "dcdb81e03533045764468305b8a3b07306f4ab98",
+      "original_median_fps": 3.175277016166364,
+      "rerun_median_fps": 3.188770327130425,
+      "delta_pct": 0.42494909563359773
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 2,
+      "rerun_report": "results/phase-6-full-reproduction.json",
+      "source_commit": "dcdb81e03533045764468305b8a3b07306f4ab98",
+      "original_median_fps": 5.657027073544594,
+      "rerun_median_fps": 5.982854124498006,
+      "delta_pct": 5.75968696485758
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 4,
+      "rerun_report": "results/phase-6-full-reproduction.json",
+      "source_commit": "dcdb81e03533045764468305b8a3b07306f4ab98",
+      "original_median_fps": 9.757257910269068,
+      "rerun_median_fps": 10.297546307173976,
+      "delta_pct": 5.537297485354764
+    },
+    {
+      "model": "tiny",
+      "precision": "int8",
+      "threads": 1,
+      "rerun_report": "results/phase-6-full-reproduction.json",
+      "source_commit": "dcdb81e03533045764468305b8a3b07306f4ab98",
+      "original_median_fps": 7.813169048990511,
+      "rerun_median_fps": 8.169443764410188,
+      "delta_pct": 4.559925853206881
+    },
+    {
+      "model": "tiny",
+      "precision": "int8",
+      "threads": 2,
+      "rerun_report": "results/phase-6-full-reproduction.json",
+      "source_commit": "dcdb81e03533045764468305b8a3b07306f4ab98",
+      "original_median_fps": 12.996942212005171,
+      "rerun_median_fps": 13.342195952816493,
+      "delta_pct": 2.656422835306693
+    },
+    {
+      "model": "tiny",
+      "precision": "int8",
+      "threads": 4,
+      "rerun_report": "results/phase-6-full-reproduction.json",
+      "source_commit": "dcdb81e03533045764468305b8a3b07306f4ab98",
+      "original_median_fps": 18.253713072564587,
+      "rerun_median_fps": 18.95199375248132,
+      "delta_pct": 3.825417202192427
+    },
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 1,
+      "rerun_report": "results/phase-6-reporting-full-reproduction.json",
+      "source_commit": "e3c4a83a0e6a461edbfbb2737cac274a31cbc46e",
+      "original_median_fps": 11.609888588952602,
+      "rerun_median_fps": 11.352533623164668,
+      "delta_pct": -2.2166876436077176
+    },
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 2,
+      "rerun_report": "results/phase-6-reporting-full-reproduction.json",
+      "source_commit": "e3c4a83a0e6a461edbfbb2737cac274a31cbc46e",
+      "original_median_fps": 19.08760725760761,
+      "rerun_median_fps": 18.899580266158015,
+      "delta_pct": -0.9850736601605847
+    },
+    {
+      "model": "nano",
+      "precision": "fp32",
+      "threads": 4,
+      "rerun_report": "results/phase-6-reporting-full-reproduction.json",
+      "source_commit": "e3c4a83a0e6a461edbfbb2737cac274a31cbc46e",
+      "original_median_fps": 27.344467367147377,
+      "rerun_median_fps": 27.785408152537446,
+      "delta_pct": 1.6125411384674937
+    },
+    {
+      "model": "nano",
+      "precision": "int8",
+      "threads": 1,
+      "rerun_report": "results/phase-6-reporting-full-reproduction.json",
+      "source_commit": "e3c4a83a0e6a461edbfbb2737cac274a31cbc46e",
+      "original_median_fps": 15.280384921722128,
+      "rerun_median_fps": 14.863831790391538,
+      "delta_pct": -2.726064385579907
+    },
+    {
+      "model": "nano",
+      "precision": "int8",
+      "threads": 2,
+      "rerun_report": "results/phase-6-reporting-full-reproduction.json",
+      "source_commit": "e3c4a83a0e6a461edbfbb2737cac274a31cbc46e",
+      "original_median_fps": 20.555876117249046,
+      "rerun_median_fps": 20.951887739356398,
+      "delta_pct": 1.9265129827039873
+    },
+    {
+      "model": "nano",
+      "precision": "int8",
+      "threads": 4,
+      "rerun_report": "results/phase-6-reporting-full-reproduction.json",
+      "source_commit": "e3c4a83a0e6a461edbfbb2737cac274a31cbc46e",
+      "original_median_fps": 25.46132766616868,
+      "rerun_median_fps": 25.832495982017452,
+      "delta_pct": 1.4577728259707268
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 1,
+      "rerun_report": "results/phase-6-reporting-full-reproduction.json",
+      "source_commit": "e3c4a83a0e6a461edbfbb2737cac274a31cbc46e",
+      "original_median_fps": 3.175277016166364,
+      "rerun_median_fps": 3.1517784643293516,
+      "delta_pct": -0.7400473003575381
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 2,
+      "rerun_report": "results/phase-6-reporting-full-reproduction.json",
+      "source_commit": "e3c4a83a0e6a461edbfbb2737cac274a31cbc46e",
+      "original_median_fps": 5.657027073544594,
+      "rerun_median_fps": 5.955644399841733,
+      "delta_pct": 5.278697139238386
+    },
+    {
+      "model": "tiny",
+      "precision": "fp32",
+      "threads": 4,
+      "rerun_report": "results/phase-6-reporting-full-reproduction.json",
+      "source_commit": "e3c4a83a0e6a461edbfbb2737cac274a31cbc46e",
+      "original_median_fps": 9.757257910269068,
+      "rerun_median_fps": 10.283933657508099,
+      "delta_pct": 5.397784419377993
+    },
+    {
+      "model": "tiny",
+      "precision": "int8",
+      "threads": 1,
+      "rerun_report": "results/phase-6-reporting-full-reproduction.json",
+      "source_commit": "e3c4a83a0e6a461edbfbb2737cac274a31cbc46e",
+      "original_median_fps": 7.813169048990511,
+      "rerun_median_fps": 8.08036517885246,
+      "delta_pct": 3.4198175949677223
+    },
+    {
+      "model": "tiny",
+      "precision": "int8",
+      "threads": 2,
+      "rerun_report": "results/phase-6-reporting-full-reproduction.json",
+      "source_commit": "e3c4a83a0e6a461edbfbb2737cac274a31cbc46e",
+      "original_median_fps": 12.996942212005171,
+      "rerun_median_fps": 13.215237127017328,
+      "delta_pct": 1.6795867170242618
+    },
+    {
+      "model": "tiny",
+      "precision": "int8",
+      "threads": 4,
+      "rerun_report": "results/phase-6-reporting-full-reproduction.json",
+      "source_commit": "e3c4a83a0e6a461edbfbb2737cac274a31cbc46e",
+      "original_median_fps": 18.253713072564587,
+      "rerun_median_fps": 18.841961549567067,
+      "delta_pct": 3.222623663821156
+    }
+  ],
+  "min_delta_pct": -2.726064385579907,
+  "max_delta_pct": 5.75968696485758
+}

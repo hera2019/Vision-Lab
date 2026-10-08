@@ -99,3 +99,19 @@ speed consistency passes 5/12 and fails 7/12. The driver exits 1 at the final
 aggregate gate. No retry or acceptance-rule change. The original experiment
 stays separate; independent review and future timing-method decisions remain
 open. See the follow-up verification report and review handoff.
+
+Independent implementation/evidence review completed subsequently on
+2026-10-08 by an explicitly owner-authorized Codex read-only agent. R1 is
+resolved within the reviewed single-run reporting scope; R2 and R4 are
+resolved. No new actionable defect was established. R3 and cold-install/device
+evidence remain open or unestablished, and experimental acceptance remains
+FAIL. The reviewer reused existing measurements for independent arithmetic,
+integrity and source checks; no new experiment, rescoring or visual inspection.
+See `docs/reviews/phase-4-6.md` and the paired review result.
+
+Review lead ruling on 2026-10-08 (R-B): headline presentation now says quality
+reproduces exactly and gives the observed between-session speed spread. Both
+full reruns together differ by -2.73% to +5.76% from original medians. The
+historical strict gate failures above remain unchanged. This is descriptive,
+not a replacement 6% criterion; future timing design remains prospective.
+See `docs/reviews/phase-4-6-opus.md` and `results/phase-6-between-run-spread.*`.

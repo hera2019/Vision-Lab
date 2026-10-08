@@ -1,9 +1,27 @@
 # Vision Lab — Work Plan
 
-Status: **Phase 4–6 experiments complete; full clean-clone quality reproduction passes, strict speed consistency fails; overall Phase 6 acceptance FAIL; independent review pending** · Started 2026-10-06 · Target 2026-10-13
+Status: **Phase 4–6 measurements reviewed; quality reproduces exactly; speed differs by -2.73% to +5.76% across full reruns; post-hoc nano diagnosis/control complete, acceleration unresolved; final Opus review pending** · Started 2026-10-06 · Target 2026-10-13
+
+Review lead's [2026-10-08 verdict](reviews/phase-4-6-opus.md): measurements
+accepted; R-A requires a MOT20 failure diagnosis and a separately declared
+MOT17-selected remedy; R-B changes speed interpretation without rescoring;
+R-C requires a short README and results index. [Observed spread](../results/phase-6-between-run-spread.md)
+includes both completed reruns. README and index have been rewritten; the
+[new bounded experiment](PHASE4_REPAIR.md) preserves original INT8 failures.
+It is complete: [diagnosis/control report](../results/phase-4-nano-repair.md).
+Both mixed candidates fail MOT17; the fixed-weight floating control reaches
+MOT20 MOTA 55.3158 (loss 0.7049 pp) but all three speed budgets fail >=1.3x.
+Activation/bias effects are not separately isolated; no accelerated INT8
+repair or baseline replacement is claimed. Twenty-five track hashes, 18 raw
+benchmark runs, original report preservation and documentation links pass
+the bounded final verification.
+Final review, merge and push remain pending; merge/push need owner approval.
 
 Detailed test plan and acceptance criteria: [01-phase-0-plan.md](01-phase-0-plan.md).
 Detector: ByteTrack's YOLOX nano/tiny checkpoints (decided 2026-10-06).
+
+Phase 4–6: [independent Codex review](reviews/phase-4-6.md), completed
+2026-10-08 after explicit owner authorization for a separate read-only agent.
 
 Review: [Opus verdict](reviews/phase-3.md); [follow-up verification](../results/phase-3-review-fixes.md).
 The reviewer has not re-reviewed the follow-up changes. The separately
@@ -38,7 +56,9 @@ small/truncated target detection misses each include frame intervals, crops,
 per-frame GT/detection/track evidence and provenance. CLEAR audit counts match
 upstream on the three scanned sequences. These are illustrative examples,
 not frequency estimates or tuned improvements. Mandatory Phase 5 evidence is
-complete; independent review pending. Mean-shift remains an optional deferred
+complete; independent review supports the numerical case descriptions within
+its stated limits (no new visual inspection or tracker-state replay).
+Mean-shift remains an optional deferred
 bonus. Phase 6 full clean-clone reproduction has now executed; see below.
 
 Phase 6: [README](../README.md), [execution protocol](PHASE6_EXECUTION.md),
@@ -63,8 +83,9 @@ and INT8 canonical scores and track hashes equal the reference. Strict speed
 consistency passes 4/12 settings and fails 8/12, all above the old intervals;
 no interval was widened. Four-thread FP32 nano/tiny medians are 28.134/10.298
 FPS. Overall fresh-clone acceptance remains FAIL. No push performed. Cached
-dependency layers were permitted; a cold installation and independent review
-remain unverified. Earlier results in the main checkout remain unchanged.
+dependency layers were permitted; a cold installation remains unverified.
+Independent evidence review was completed subsequently; its scope is linked
+above. Earlier results in the main checkout remain unchanged.
 
 Review follow-up: [executor evidence audit](../results/phase-6-audit.md)
 recomputed 72 original/rerun benchmarks and verified 74 actual track files plus
@@ -82,9 +103,13 @@ files, 74 actual track files and three crops were checked. Speed consistency
 passes 5/12 and fails 7/12: two below and five above the original intervals.
 Overall acceptance remains FAIL, with no retrospective criterion change.
 Historical `dcdb81e` results stay unchanged. Local source/evidence commits only;
-no push. Timing-method and independent review remain open. The
-[review handoff](reviews/phase-4-6-handoff.md) is ready; no extra agent started
-without explicit consent.
+no push. Owner explicitly authorized the separate read-only reviewer on
+2026-10-08. Its implementation/evidence verdict passes within the reviewed
+single-run reporting scope: R1, R2 and R4 are resolved, no new actionable defect
+was established, and R3 remains open. Independently checked 108 existing timing
+files, 150 archive hashes, 74 tracks, three crops and selected failure-case
+source observations. No new experiment or replacement acceptance rule was
+approved. See the paired [review result](../results/phase-4-6-independent-review.md).
 
 ## Goal
 

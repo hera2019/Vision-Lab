@@ -228,5 +228,41 @@
       "license": "CC BY-NC-SA 3.0",
       "attribution": "MOTChallenge authors, https://motchallenge.net/"
     }
+  },
+  "documentation_figures": {
+    "docs/images/mot17-tracking.jpg": {
+      "source": "MOTChallenge authors, MOT17-02-FRCNN frame 180",
+      "derived_from": "data/phase-3/demos/MOT17-02-FRCNN-nano.frame-180.jpg",
+      "sha256": "8c77e5f3ddb5f97bf53d1309d307f23721533a69f979c5595a8ec34c129780c0",
+      "license": "CC BY-NC-SA 3.0",
+      "annotation": "Vision Lab nano FP32 tracker; existing demo still, unchanged"
+    }
+  },
+  "post_hoc_nano": {
+    "protocol": "docs/PHASE4_REPAIR.md",
+    "report": "results/phase-4-nano-repair.json",
+    "calibration": "Original 112 MOT17 frames for the first two candidates; original weight arrays inherited by weight-control",
+    "models": {
+      "head-fp32": {
+        "sha256": "3c402aab5c609a4ffd3057710025a79079dbba17040a2fc9a4addff1d57ae206",
+        "bytes": 1550480,
+        "compute": "Mixed INT8/FP32 convolutions",
+        "path": "data/phase-4-repair/head-fp32.onnx"
+      },
+      "neck-head-fp32": {
+        "sha256": "e8c47a7bb9312dd5bdb3c7a969a3cd85e1ffed9b2fe51542531091eed27cd3a2",
+        "bytes": 2482526,
+        "compute": "Mixed INT8/FP32 convolutions",
+        "path": "data/phase-4-repair/neck-head-fp32.onnx"
+      },
+      "weight-control": {
+        "sha256": "1d218bdea2c43149d37fefb02d886d913bdc35a5957171ceb919386b3aeeea24",
+        "bytes": 1104476,
+        "compute": "FP32",
+        "path": "data/phase-4-repair/weight-control.onnx"
+      }
+    },
+    "source": "models/bytetrack_nano_mot17.onnx; prepared FP32 and original INT8 hashes recorded in candidate-models.json",
+    "license": "Derived ByteTrack checkpoint; MIT weights with underlying research-dataset terms, see docs/LICENSES.md"
   }
 }

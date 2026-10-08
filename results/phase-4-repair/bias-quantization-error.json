@@ -1,0 +1,572 @@
+{
+  "biases": 113,
+  "max_abs_error": 0.01397235319018364,
+  "per_conv": [
+    {
+      "node": "/backbone/backbone/stem/conv/conv/Conv",
+      "max_abs_error": 0.0003010360524058342,
+      "mean_abs_error": 7.345547493997628e-05
+    },
+    {
+      "node": "/backbone/backbone/dark2/dark2.0/dconv/conv/Conv",
+      "max_abs_error": 0.007812090218067169,
+      "mean_abs_error": 0.001622865500394255
+    },
+    {
+      "node": "/backbone/backbone/dark2/dark2.0/pconv/conv/Conv",
+      "max_abs_error": 0.002564283087849617,
+      "mean_abs_error": 0.0006497528938780306
+    },
+    {
+      "node": "/backbone/backbone/dark2/dark2.1/conv1/conv/Conv",
+      "max_abs_error": 0.0004127318970859051,
+      "mean_abs_error": 0.00010220193962595658
+    },
+    {
+      "node": "/backbone/backbone/dark2/dark2.1/m/m.0/conv1/conv/Conv",
+      "max_abs_error": 0.000124847749248147,
+      "mean_abs_error": 2.3178807964541193e-05
+    },
+    {
+      "node": "/backbone/backbone/dark2/dark2.1/m/m.0/conv2/dconv/conv/Conv",
+      "max_abs_error": 0.003087364137172699,
+      "mean_abs_error": 0.0012052728998241946
+    },
+    {
+      "node": "/backbone/backbone/dark2/dark2.1/m/m.0/conv2/pconv/conv/Conv",
+      "max_abs_error": 0.0005088686011731625,
+      "mean_abs_error": 0.00024216467136284336
+    },
+    {
+      "node": "/backbone/backbone/dark2/dark2.1/conv2/conv/Conv",
+      "max_abs_error": 0.0004950592992827296,
+      "mean_abs_error": 0.00017012418538797647
+    },
+    {
+      "node": "/backbone/backbone/dark2/dark2.1/conv3/conv/Conv",
+      "max_abs_error": 0.0002366849803365767,
+      "mean_abs_error": 4.7103870656428626e-05
+    },
+    {
+      "node": "/backbone/backbone/dark3/dark3.0/dconv/conv/Conv",
+      "max_abs_error": 0.00107476394623518,
+      "mean_abs_error": 0.0002479412326010788
+    },
+    {
+      "node": "/backbone/backbone/dark3/dark3.0/pconv/conv/Conv",
+      "max_abs_error": 0.00044284749310463667,
+      "mean_abs_error": 0.00010702595818656846
+    },
+    {
+      "node": "/backbone/backbone/dark3/dark3.1/conv1/conv/Conv",
+      "max_abs_error": 5.5395343224518e-05,
+      "mean_abs_error": 2.8259216264814313e-05
+    },
+    {
+      "node": "/backbone/backbone/dark3/dark3.1/m/m.0/conv1/conv/Conv",
+      "max_abs_error": 0.00011863373219966888,
+      "mean_abs_error": 2.4177137277092697e-05
+    },
+    {
+      "node": "/backbone/backbone/dark3/dark3.1/m/m.0/conv2/dconv/conv/Conv",
+      "max_abs_error": 0.001003779238089919,
+      "mean_abs_error": 0.0002263385626974923
+    },
+    {
+      "node": "/backbone/backbone/dark3/dark3.1/m/m.0/conv2/pconv/conv/Conv",
+      "max_abs_error": 0.00013614818453788757,
+      "mean_abs_error": 4.349466121311707e-05
+    },
+    {
+      "node": "/backbone/backbone/dark3/dark3.1/m/m.1/conv1/conv/Conv",
+      "max_abs_error": 0.00010065664537250996,
+      "mean_abs_error": 2.7066226550687134e-05
+    },
+    {
+      "node": "/backbone/backbone/dark3/dark3.1/m/m.1/conv2/dconv/conv/Conv",
+      "max_abs_error": 0.0009320478420704603,
+      "mean_abs_error": 0.000324622317975809
+    },
+    {
+      "node": "/backbone/backbone/dark3/dark3.1/m/m.1/conv2/pconv/conv/Conv",
+      "max_abs_error": 9.165027586277574e-05,
+      "mean_abs_error": 3.4032879625556234e-05
+    },
+    {
+      "node": "/backbone/backbone/dark3/dark3.1/m/m.2/conv1/conv/Conv",
+      "max_abs_error": 8.87205678736791e-05,
+      "mean_abs_error": 2.3856533289290383e-05
+    },
+    {
+      "node": "/backbone/backbone/dark3/dark3.1/m/m.2/conv2/dconv/conv/Conv",
+      "max_abs_error": 0.0014499770477414131,
+      "mean_abs_error": 0.0001712800477662313
+    },
+    {
+      "node": "/backbone/backbone/dark3/dark3.1/m/m.2/conv2/pconv/conv/Conv",
+      "max_abs_error": 0.00010564445983618498,
+      "mean_abs_error": 5.299011559145583e-05
+    },
+    {
+      "node": "/backbone/backbone/dark3/dark3.1/conv2/conv/Conv",
+      "max_abs_error": 0.0001497059129178524,
+      "mean_abs_error": 6.265783258641022e-05
+    },
+    {
+      "node": "/backbone/backbone/dark3/dark3.1/conv3/conv/Conv",
+      "max_abs_error": 0.0001476727775298059,
+      "mean_abs_error": 4.236104848587274e-05
+    },
+    {
+      "node": "/backbone/backbone/dark4/dark4.0/dconv/conv/Conv",
+      "max_abs_error": 0.00013754097744822502,
+      "mean_abs_error": 3.9045179619279224e-05
+    },
+    {
+      "node": "/backbone/backbone/dark4/dark4.0/pconv/conv/Conv",
+      "max_abs_error": 0.0005450393073260784,
+      "mean_abs_error": 9.745247461978579e-05
+    },
+    {
+      "node": "/backbone/backbone/dark4/dark4.1/conv1/conv/Conv",
+      "max_abs_error": 6.215526082087308e-05,
+      "mean_abs_error": 1.845962549396063e-05
+    },
+    {
+      "node": "/backbone/backbone/dark4/dark4.1/m/m.0/conv1/conv/Conv",
+      "max_abs_error": 0.00011528815957717597,
+      "mean_abs_error": 1.7050358934511678e-05
+    },
+    {
+      "node": "/backbone/backbone/dark4/dark4.1/m/m.0/conv2/dconv/conv/Conv",
+      "max_abs_error": 0.0014501814730465412,
+      "mean_abs_error": 0.00038897084959899075
+    },
+    {
+      "node": "/backbone/backbone/dark4/dark4.1/m/m.0/conv2/pconv/conv/Conv",
+      "max_abs_error": 9.876309195533395e-05,
+      "mean_abs_error": 2.318368660780834e-05
+    },
+    {
+      "node": "/backbone/backbone/dark4/dark4.1/m/m.1/conv1/conv/Conv",
+      "max_abs_error": 0.00019439804600551724,
+      "mean_abs_error": 4.6960701382658954e-05
+    },
+    {
+      "node": "/backbone/backbone/dark4/dark4.1/m/m.1/conv2/dconv/conv/Conv",
+      "max_abs_error": 0.0009571090340614319,
+      "mean_abs_error": 0.00011086997392339981
+    },
+    {
+      "node": "/backbone/backbone/dark4/dark4.1/m/m.1/conv2/pconv/conv/Conv",
+      "max_abs_error": 0.00014870497398078442,
+      "mean_abs_error": 3.568987369817478e-05
+    },
+    {
+      "node": "/backbone/backbone/dark4/dark4.1/m/m.2/conv1/conv/Conv",
+      "max_abs_error": 0.0001801173493731767,
+      "mean_abs_error": 4.534906258868432e-05
+    },
+    {
+      "node": "/backbone/backbone/dark4/dark4.1/m/m.2/conv2/dconv/conv/Conv",
+      "max_abs_error": 0.000670938054099679,
+      "mean_abs_error": 0.00010970745188387809
+    },
+    {
+      "node": "/backbone/backbone/dark4/dark4.1/m/m.2/conv2/pconv/conv/Conv",
+      "max_abs_error": 0.0005163901951164007,
+      "mean_abs_error": 7.497980186599307e-05
+    },
+    {
+      "node": "/backbone/backbone/dark4/dark4.1/conv2/conv/Conv",
+      "max_abs_error": 0.00016598819638602436,
+      "mean_abs_error": 4.419570188929356e-05
+    },
+    {
+      "node": "/backbone/backbone/dark4/dark4.1/conv3/conv/Conv",
+      "max_abs_error": 0.0001594982750248164,
+      "mean_abs_error": 4.508447375428659e-05
+    },
+    {
+      "node": "/backbone/backbone/dark5/dark5.0/dconv/conv/Conv",
+      "max_abs_error": 0.0001713800011202693,
+      "mean_abs_error": 5.431963552382513e-05
+    },
+    {
+      "node": "/backbone/backbone/dark5/dark5.0/pconv/conv/Conv",
+      "max_abs_error": 0.0008336254395544529,
+      "mean_abs_error": 0.00018554135044723807
+    },
+    {
+      "node": "/backbone/backbone/dark5/dark5.1/conv1/conv/Conv",
+      "max_abs_error": 0.00037916027940809727,
+      "mean_abs_error": 5.913646737099043e-05
+    },
+    {
+      "node": "/backbone/backbone/dark5/dark5.1/conv2/conv/Conv",
+      "max_abs_error": 0.00011787796393036842,
+      "mean_abs_error": 2.0204385798194835e-05
+    },
+    {
+      "node": "/backbone/backbone/dark5/dark5.2/conv1/conv/Conv",
+      "max_abs_error": 0.00035326340002939105,
+      "mean_abs_error": 6.42575927827238e-05
+    },
+    {
+      "node": "/backbone/backbone/dark5/dark5.2/m/m.0/conv1/conv/Conv",
+      "max_abs_error": 0.00021427543833851814,
+      "mean_abs_error": 3.7095769768846765e-05
+    },
+    {
+      "node": "/backbone/backbone/dark5/dark5.2/m/m.0/conv2/dconv/conv/Conv",
+      "max_abs_error": 0.0029204003512859344,
+      "mean_abs_error": 0.00034849820726012837
+    },
+    {
+      "node": "/backbone/backbone/dark5/dark5.2/m/m.0/conv2/pconv/conv/Conv",
+      "max_abs_error": 0.0004836095031350851,
+      "mean_abs_error": 0.00016433501559731667
+    },
+    {
+      "node": "/backbone/backbone/dark5/dark5.2/conv2/conv/Conv",
+      "max_abs_error": 0.00033032376086339355,
+      "mean_abs_error": 5.133987218641778e-05
+    },
+    {
+      "node": "/backbone/backbone/dark5/dark5.2/conv3/conv/Conv",
+      "max_abs_error": 0.0006251353770494461,
+      "mean_abs_error": 9.75304824351042e-05
+    },
+    {
+      "node": "/backbone/lateral_conv0/conv/Conv",
+      "max_abs_error": 0.00039287004619836807,
+      "mean_abs_error": 0.00012939799398736795
+    },
+    {
+      "node": "/backbone/C3_p4/conv1/conv/Conv",
+      "max_abs_error": 0.0005124378949403763,
+      "mean_abs_error": 0.00010552394064688997
+    },
+    {
+      "node": "/backbone/C3_p4/m/m.0/conv1/conv/Conv",
+      "max_abs_error": 0.0003260879311710596,
+      "mean_abs_error": 7.604236679981113e-05
+    },
+    {
+      "node": "/backbone/C3_p4/m/m.0/conv2/dconv/conv/Conv",
+      "max_abs_error": 0.0019090473651885986,
+      "mean_abs_error": 0.0002693341164103913
+    },
+    {
+      "node": "/backbone/C3_p4/m/m.0/conv2/pconv/conv/Conv",
+      "max_abs_error": 0.002991701476275921,
+      "mean_abs_error": 0.0008124758169287816
+    },
+    {
+      "node": "/backbone/C3_p4/conv2/conv/Conv",
+      "max_abs_error": 0.0002629897790029645,
+      "mean_abs_error": 0.00010610778576847224
+    },
+    {
+      "node": "/backbone/C3_p4/conv3/conv/Conv",
+      "max_abs_error": 0.0011683180928230286,
+      "mean_abs_error": 0.0004466448626772035
+    },
+    {
+      "node": "/backbone/reduce_conv1/conv/Conv",
+      "max_abs_error": 0.0017647678032517433,
+      "mean_abs_error": 0.00048016336768341716
+    },
+    {
+      "node": "/backbone/C3_p3/conv1/conv/Conv",
+      "max_abs_error": 0.000965949147939682,
+      "mean_abs_error": 0.00029907870339229703
+    },
+    {
+      "node": "/backbone/C3_p3/m/m.0/conv1/conv/Conv",
+      "max_abs_error": 0.0013779187574982643,
+      "mean_abs_error": 0.0003071983169320447
+    },
+    {
+      "node": "/backbone/C3_p3/m/m.0/conv2/dconv/conv/Conv",
+      "max_abs_error": 0.0015635783784091473,
+      "mean_abs_error": 0.00032889754766074475
+    },
+    {
+      "node": "/backbone/C3_p3/m/m.0/conv2/pconv/conv/Conv",
+      "max_abs_error": 0.0012174113653600216,
+      "mean_abs_error": 0.0004454628433450125
+    },
+    {
+      "node": "/backbone/C3_p3/conv2/conv/Conv",
+      "max_abs_error": 0.0011098580434918404,
+      "mean_abs_error": 0.0003755038633244112
+    },
+    {
+      "node": "/backbone/C3_p3/conv3/conv/Conv",
+      "max_abs_error": 0.0010675601661205292,
+      "mean_abs_error": 0.00032370141343562864
+    },
+    {
+      "node": "/backbone/bu_conv2/dconv/conv/Conv",
+      "max_abs_error": 0.0020560026168823242,
+      "mean_abs_error": 0.0003313422421342693
+    },
+    {
+      "node": "/backbone/bu_conv2/pconv/conv/Conv",
+      "max_abs_error": 0.003302529454231262,
+      "mean_abs_error": 0.0012010126120003406
+    },
+    {
+      "node": "/backbone/C3_n3/conv1/conv/Conv",
+      "max_abs_error": 0.0028901435434818268,
+      "mean_abs_error": 0.0008144583534885896
+    },
+    {
+      "node": "/backbone/C3_n3/m/m.0/conv1/conv/Conv",
+      "max_abs_error": 0.0013694483786821365,
+      "mean_abs_error": 0.0002768230338006106
+    },
+    {
+      "node": "/backbone/C3_n3/m/m.0/conv2/dconv/conv/Conv",
+      "max_abs_error": 0.004155820235610008,
+      "mean_abs_error": 0.0006215771427378058
+    },
+    {
+      "node": "/backbone/C3_n3/m/m.0/conv2/pconv/conv/Conv",
+      "max_abs_error": 0.0008946389425545931,
+      "mean_abs_error": 0.00035093956375931157
+    },
+    {
+      "node": "/backbone/C3_n3/conv2/conv/Conv",
+      "max_abs_error": 0.0017307642847299576,
+      "mean_abs_error": 0.0006209647635841975
+    },
+    {
+      "node": "/backbone/C3_n3/conv3/conv/Conv",
+      "max_abs_error": 0.0021176133304834366,
+      "mean_abs_error": 0.0006482831190623983
+    },
+    {
+      "node": "/backbone/bu_conv1/dconv/conv/Conv",
+      "max_abs_error": 0.004201769828796387,
+      "mean_abs_error": 0.0006561761979355651
+    },
+    {
+      "node": "/backbone/bu_conv1/pconv/conv/Conv",
+      "max_abs_error": 0.0007891247514635324,
+      "mean_abs_error": 0.00017407415771231172
+    },
+    {
+      "node": "/backbone/C3_n4/conv1/conv/Conv",
+      "max_abs_error": 0.0007523908279836178,
+      "mean_abs_error": 0.000232116710549235
+    },
+    {
+      "node": "/backbone/C3_n4/m/m.0/conv1/conv/Conv",
+      "max_abs_error": 0.00047413655556738377,
+      "mean_abs_error": 0.00015406746661028592
+    },
+    {
+      "node": "/backbone/C3_n4/m/m.0/conv2/dconv/conv/Conv",
+      "max_abs_error": 0.0014431672170758247,
+      "mean_abs_error": 0.00034134597206048056
+    },
+    {
+      "node": "/backbone/C3_n4/m/m.0/conv2/pconv/conv/Conv",
+      "max_abs_error": 0.0008004400879144669,
+      "mean_abs_error": 0.00030321862845994474
+    },
+    {
+      "node": "/backbone/C3_n4/conv2/conv/Conv",
+      "max_abs_error": 0.0007168671581894159,
+      "mean_abs_error": 0.00021871954254493176
+    },
+    {
+      "node": "/backbone/C3_n4/conv3/conv/Conv",
+      "max_abs_error": 0.00102195143699646,
+      "mean_abs_error": 0.0003059735688566434
+    },
+    {
+      "node": "/head/stems.2/conv/Conv",
+      "max_abs_error": 0.00033605529461055994,
+      "mean_abs_error": 0.00013010234499688522
+    },
+    {
+      "node": "/head/cls_convs.2/cls_convs.2.0/dconv/conv/Conv",
+      "max_abs_error": 0.0010934695601463318,
+      "mean_abs_error": 0.00025648650671428186
+    },
+    {
+      "node": "/head/cls_convs.2/cls_convs.2.0/pconv/conv/Conv",
+      "max_abs_error": 0.0007418522145599127,
+      "mean_abs_error": 0.00023325350184677518
+    },
+    {
+      "node": "/head/cls_convs.2/cls_convs.2.1/dconv/conv/Conv",
+      "max_abs_error": 0.0016186186112463474,
+      "mean_abs_error": 0.00025645277401054045
+    },
+    {
+      "node": "/head/cls_convs.2/cls_convs.2.1/pconv/conv/Conv",
+      "max_abs_error": 0.002345789223909378,
+      "mean_abs_error": 0.000590239037592255
+    },
+    {
+      "node": "/head/cls_preds.2/Conv",
+      "max_abs_error": 5.8286706916987896e-05,
+      "mean_abs_error": 5.8286706916987896e-05
+    },
+    {
+      "node": "/head/reg_convs.2/reg_convs.2.0/dconv/conv/Conv",
+      "max_abs_error": 0.006783363409340382,
+      "mean_abs_error": 0.0008371206067749881
+    },
+    {
+      "node": "/head/reg_convs.2/reg_convs.2.0/pconv/conv/Conv",
+      "max_abs_error": 0.0014640095178037882,
+      "mean_abs_error": 0.00032103227295010583
+    },
+    {
+      "node": "/head/reg_convs.2/reg_convs.2.1/dconv/conv/Conv",
+      "max_abs_error": 0.007239699363708496,
+      "mean_abs_error": 0.0005616666967398487
+    },
+    {
+      "node": "/head/reg_convs.2/reg_convs.2.1/pconv/conv/Conv",
+      "max_abs_error": 0.00267624668776989,
+      "mean_abs_error": 0.0007484499146812595
+    },
+    {
+      "node": "/head/obj_preds.2/Conv",
+      "max_abs_error": 0.00011309550609439611,
+      "mean_abs_error": 0.00011309550609439611
+    },
+    {
+      "node": "/head/reg_preds.2/Conv",
+      "max_abs_error": 0.0002772868610918522,
+      "mean_abs_error": 0.00014359856868395582
+    },
+    {
+      "node": "/head/stems.1/conv/Conv",
+      "max_abs_error": 0.0014438563957810402,
+      "mean_abs_error": 0.0004735527281809482
+    },
+    {
+      "node": "/head/cls_convs.1/cls_convs.1.0/dconv/conv/Conv",
+      "max_abs_error": 0.003932952880859375,
+      "mean_abs_error": 0.0005858462818650878
+    },
+    {
+      "node": "/head/cls_convs.1/cls_convs.1.0/pconv/conv/Conv",
+      "max_abs_error": 0.0014188308268785477,
+      "mean_abs_error": 0.0003656189364846796
+    },
+    {
+      "node": "/head/cls_convs.1/cls_convs.1.1/dconv/conv/Conv",
+      "max_abs_error": 0.0029920991510152817,
+      "mean_abs_error": 0.00030724379348612274
+    },
+    {
+      "node": "/head/cls_convs.1/cls_convs.1.1/pconv/conv/Conv",
+      "max_abs_error": 0.0013453918509185314,
+      "mean_abs_error": 0.00044541234092321247
+    },
+    {
+      "node": "/head/cls_preds.1/Conv",
+      "max_abs_error": 0.00015978398732841015,
+      "mean_abs_error": 0.00015978398732841015
+    },
+    {
+      "node": "/head/reg_convs.1/reg_convs.1.0/dconv/conv/Conv",
+      "max_abs_error": 0.01397235319018364,
+      "mean_abs_error": 0.0013822581513522891
+    },
+    {
+      "node": "/head/reg_convs.1/reg_convs.1.0/pconv/conv/Conv",
+      "max_abs_error": 0.0024271346628665924,
+      "mean_abs_error": 0.0004407564581470069
+    },
+    {
+      "node": "/head/reg_convs.1/reg_convs.1.1/dconv/conv/Conv",
+      "max_abs_error": 0.005868654698133469,
+      "mean_abs_error": 0.0013080000780973933
+    },
+    {
+      "node": "/head/reg_convs.1/reg_convs.1.1/pconv/conv/Conv",
+      "max_abs_error": 0.001282528042793274,
+      "mean_abs_error": 0.00019860575957864057
+    },
+    {
+      "node": "/head/obj_preds.1/Conv",
+      "max_abs_error": 0.0001764476764947176,
+      "mean_abs_error": 0.0001764476764947176
+    },
+    {
+      "node": "/head/reg_preds.1/Conv",
+      "max_abs_error": 0.00022581504890695214,
+      "mean_abs_error": 0.00010008305980591103
+    },
+    {
+      "node": "/head/stems.0/conv/Conv",
+      "max_abs_error": 0.0021642479114234447,
+      "mean_abs_error": 0.00044712257840728853
+    },
+    {
+      "node": "/head/cls_convs.0/cls_convs.0.0/dconv/conv/Conv",
+      "max_abs_error": 0.0026663830503821373,
+      "mean_abs_error": 0.00039613426952200825
+    },
+    {
+      "node": "/head/cls_convs.0/cls_convs.0.0/pconv/conv/Conv",
+      "max_abs_error": 0.004513204097747803,
+      "mean_abs_error": 0.0008879105167752255
+    },
+    {
+      "node": "/head/cls_convs.0/cls_convs.0.1/dconv/conv/Conv",
+      "max_abs_error": 0.01378156989812851,
+      "mean_abs_error": 0.0007979228632368773
+    },
+    {
+      "node": "/head/cls_convs.0/cls_convs.0.1/pconv/conv/Conv",
+      "max_abs_error": 0.003618847578763962,
+      "mean_abs_error": 0.0010246026504319161
+    },
+    {
+      "node": "/head/cls_preds.0/Conv",
+      "max_abs_error": 5.830556619912386e-05,
+      "mean_abs_error": 5.830556619912386e-05
+    },
+    {
+      "node": "/head/reg_convs.0/reg_convs.0.0/dconv/conv/Conv",
+      "max_abs_error": 0.0062668658792972565,
+      "mean_abs_error": 0.0007244902767524763
+    },
+    {
+      "node": "/head/reg_convs.0/reg_convs.0.0/pconv/conv/Conv",
+      "max_abs_error": 0.01152040995657444,
+      "mean_abs_error": 0.0016101268829515902
+    },
+    {
+      "node": "/head/reg_convs.0/reg_convs.0.1/dconv/conv/Conv",
+      "max_abs_error": 0.012920185923576355,
+      "mean_abs_error": 0.0022735418133379426
+    },
+    {
+      "node": "/head/reg_convs.0/reg_convs.0.1/pconv/conv/Conv",
+      "max_abs_error": 0.0021689534187316895,
+      "mean_abs_error": 0.0002921629757111077
+    },
+    {
+      "node": "/head/obj_preds.0/Conv",
+      "max_abs_error": 0.00045074615627527237,
+      "mean_abs_error": 0.00045074615627527237
+    },
+    {
+      "node": "/head/reg_preds.0/Conv",
+      "max_abs_error": 0.0002984096063300967,
+      "mean_abs_error": 0.00022132883896119893
+    }
+  ],
+  "limitation": "Control removes activation quantization and restores FP32 biases; it does not isolate these two changes."
+}

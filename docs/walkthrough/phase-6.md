@@ -223,6 +223,49 @@ remain separate work.
 FAIL；没有挑选重复结果或改变区间。独立审阅交接清单已准备好，速度判断方法、从零安装
 依赖及实际设备证据仍需各自处理。
 
+## 9. Independent read-only review / 独立只读审阅
+
+After explicit owner authorization, a separate agent that did not implement
+the changes checked source and existing evidence. It independently recomputed
+108 existing timing files and checked archive, actual track/crop and selected
+failure-case source hashes and observations. The implementation/evidence
+review passes within the stated single-run scope; R1, R2 and R4 are resolved.
+It found no new actionable implementation defect. The reviewer did not change
+files, run inference or another experiment, rescore metrics, or inspect images
+visually. Its verdict and limits are recorded under its actual Codex identity.
+
+获得本人明确授权后，由没有参与实现的另一位代理检查源码和已有证据。它独立重算了
+108 个已有计时文件，并核对归档、实际轨迹与裁剪图，以及选定失败案例的源文件和记录。
+在注明的一次运行范围内，实现与证据审阅通过，R1、R2、R4 已解决，没有发现新的可操作
+实现缺陷。审阅者没有修改文件、重新推理或做实验，也没有重新评分或肉眼检查图片。
+审阅结论和限制以它实际的 Codex 身份记录。
+
+Review approval does not turn failed experimental checks into passes. Current
+speed consistency still passes 5/12 and fails 7/12; both INT8 models still fail
+the usefulness gate. R3 requires a prospective timing protocol before new data
+are collected. This review approves neither a replacement threshold nor
+cold-install, edge-device or product readiness. A read-only review helps check
+whether evidence supports the conclusions; it does not repair identity switches.
+
+审阅通过不会把实验失败变成通过。本次速度一致性仍是 5/12 通过、7/12 失败，两种
+INT8 模型的实用性门槛也仍然失败。R3 要求先确定未来测速方案，再收集新数据。
+本次审阅没有批准替代门槛，也没有证明从零安装、实际边缘设备性能或产品可用性。
+只读审阅检查的是证据能否支持结论，不会修复目标编号变化。
+
+## Review lead's timing ruling / 审查负责人的测速判断
+
+Opus reviewed the timing method on 2026-10-08. Three repeats in one session
+cannot describe variation between sessions. Across both complete reruns, speed
+medians differ by -2.73% to +5.76% from the originals, while quality scores and
+track files agree exactly. We now present those measured differences in the
+headline. The older strict failures stay recorded; 6% is not a new pass rule.
+A future experiment needs its timing method declared before collecting data.
+
+Opus 于 2026-10-08 审查了测速方法。同一场实验里的三次重复，不能描述不同场次
+之间的波动。两次完整复现实验的速度中位数相对原始结果变化 -2.73% 到 +5.76%，
+质量分数和轨迹文件则完全一致。现在摘要会直接展示这些实测差异。旧的严格门槛
+失败仍保留；6% 不是新的合格标准。未来实验需要在采集数据前声明测速方法。
+
 ## New terms / 新术语
 
 | Term | 中文 | Meaning / 含义 |
@@ -233,3 +276,4 @@ FAIL；没有挑选重复结果或改变区间。独立审阅交接清单已准�
 | Dependency cache | 依赖缓存 | Previously completed build/install layers / 之前完成的构建或安装层 |
 | Transitive dependency | 传递依赖 | Package required by another package / 其他包所需要的包 |
 | UTC | 协调世界时 | Shared time reference for timestamps / 时间戳采用的统一时间基准 |
+| Read-only review | 只读审阅 | Checks existing files without changing implementation or experimental settings / 检查已有文件，不修改实现或实验设置 |

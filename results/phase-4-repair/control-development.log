@@ -1,0 +1,18 @@
+weight-control: exact original INT8 weights; all activations/biases FP32
+MOT17-02-FRCNN frame 500/600
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/weight-control/MOT17-02-FRCNN.txt
+MOT17-04-FRCNN frame 500/1050
+MOT17-04-FRCNN frame 1000/1050
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/weight-control/MOT17-04-FRCNN.txt
+MOT17-05-FRCNN frame 500/837
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/weight-control/MOT17-05-FRCNN.txt
+MOT17-09-FRCNN frame 500/525
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/weight-control/MOT17-09-FRCNN.txt
+MOT17-10-FRCNN frame 500/654
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/weight-control/MOT17-10-FRCNN.txt
+MOT17-11-FRCNN frame 500/900
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/weight-control/MOT17-11-FRCNN.txt
+MOT17-13-FRCNN frame 500/750
+wrote tracks: /work/data/phase-4-repair/tracks/MOT17/weight-control/MOT17-13-FRCNN.txt
+MOT17/weight-control: {'mota': 69.17548999528037, 'idf1': 66.40996264009964, 'num_switches': 541, 'num_false_positives': 5115, 'num_misses': 28959, 'num_objects': 112297}, loss={'mota': 0.056991727294587236, 'idf1': 0.4314515164441701}
+pre-held-out selection: weight-control

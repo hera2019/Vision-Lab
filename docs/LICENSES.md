@@ -14,6 +14,13 @@ repository; scripts download them from the original sources.
 | Eigen | Ubuntu 24.04 packages | MPL-2.0 | |
 | MOT17, MOT20 | [motchallenge.net](https://motchallenge.net/) | CC BY-NC-SA 3.0 | **Non-commercial research only.** Any frames, crops or GIFs from these sequences shown in this repository are shared under the same license, with attribution to the MOTChallenge authors. |
 
+README illustration `docs/images/mot17-tracking.jpg`: MOT17-02-FRCNN frame
+180, MOTChallenge authors; tracker annotations by Vision Lab. Copied byte for
+byte from the existing nano FP32 demonstration still under
+`data/phase-3/demos/MOT17-02-FRCNN-nano.frame-180.jpg`. Distributed under the
+same [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/)
+non-commercial terms. It is not covered by this repository's code license.
+
 ## Consequences
 
 - `cpp/src/tracker/tracker.*` ports the ByteTrack Python tracker at commit

@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/work/python/phase4_nano_repair.py", line 273, in <module>
+    main()
+  File "/work/python/phase4_nano_repair.py", line 267, in main
+    quantize()
+  File "/work/python/phase4_nano_repair.py", line 192, in quantize
+    quantize_static(PREPARED, target, reader, quant_format=QuantFormat.QDQ,
+  File "/opt/venv/lib/python3.12/site-packages/onnxruntime/quantization/quantize.py", line 727, in quantize_static
+    else load_model_with_shape_infer(Path(model_input))
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/onnxruntime/quantization/quant_utils.py", line 1241, in load_model_with_shape_infer
+    model = onnx.load(inferred_model_path.as_posix())
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/onnx/__init__.py", line 212, in load_model
+    model = _get_serializer(format, f).deserialize_proto(_load_bytes(f), ModelProto())
+                                                         ^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/onnx/__init__.py", line 149, in _load_bytes
+    with open(f, "rb") as readable:
+         ^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/work/data/phase-4/models/bytetrack_nano_mot17.preprocessed-inferred.onnx'

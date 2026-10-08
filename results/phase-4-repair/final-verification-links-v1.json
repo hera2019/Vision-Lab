@@ -1,0 +1,18 @@
+{
+  "status": "broken-links",
+  "track_files_verified": 25,
+  "old_reports_unchanged": 4,
+  "benchmark_runs_verified": 18,
+  "model_hashes_verified": 3,
+  "weight_control_invariants_pass": true,
+  "markdown_broken_links": [
+    {
+      "file": "results/README.md",
+      "target": "phase-0/"
+    },
+    {
+      "file": "results/README.md",
+      "target": "phase-1/"
+    }
+  ]
+}

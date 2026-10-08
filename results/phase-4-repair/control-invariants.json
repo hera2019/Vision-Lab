@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "conv_weights_identical_to_original_int8": 113,
+  "nonweight_initializers_equal_prepared_fp32": true,
+  "original_graph_nodes_unchanged": true,
+  "activation_quantizers": 0,
+  "compute": "FP32; INT8 stored weights"
+}

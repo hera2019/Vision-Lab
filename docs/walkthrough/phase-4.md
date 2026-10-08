@@ -121,6 +121,63 @@ Every test uses the same hardened wrapper: no runtime network, ordinary user, no
 
 每项测试使用同一个加固的运行入口：运行时没有网络，使用普通用户，撤销 Linux 额外权限并禁止提升权限，系统和项目只读，只有明确列出的输出目录可写。CPU 配额、6 GiB 内存和 512 个进程的限制约束资源使用。1 GiB 的临时文件系统拒绝直接执行文件、设备和设置用户身份的行为；解释器仍可以读取脚本，因此这不代表禁止一切计算。没有挂载 Docker 控制接口或整个个人目录。实际的写入、路由、连接、身份和资源检查保存在[安全报告](../../results/phase-4/container-safety.md)。经授权的依赖构建是单独的联网步骤。这些控制限制访问，但不是对所有漏洞的绝对保证。
 
+## 11. A separate post-hoc diagnosis / 单独的后验诊断
+
+Opus pointed out that our first diagnosis used three MOT17 frames, although the
+large quality failure happened on MOT20. We now inspect a fixed small set of
+frames from both datasets. On MOT20 the original INT8 model loses many
+high-confidence boxes. The same MOT17 diagnostic frames already show a coarse
+0.7163 step in the first feature layer: every observed negative floating
+activation rounds to zero. Being outside the representable window is different
+from saturation, which means a rounded integer exceeds its allowed bounds.
+The actual saturation rate there is negligible. These observations point to
+loss of numerical resolution, rather than proving that a new scene alone
+exceeded calibration ranges. The detailed tables retain that distinction.
+
+Opus 指出：第一次诊断只看了三张 MOT17 图，但严重质量失败发生在 MOT20。
+现在我们检查两套数据中预先固定的少量图片。在 MOT20 上，原 INT8 模型丢失了
+大量高置信度框。同一组 MOT17 诊断图已经显示：第一层特征的量化步长粗达
+0.7163，所有观测到的浮点负激活都被取整为零。“超出可表示范围”和“饱和”不同，
+饱和是取整后的整数超出了允许上下限；这里的实际饱和率很低。这些现象指向数值
+分辨率损失，并不能证明仅仅是新场景超出了校准范围。详细表格保留了这种区别。
+
+Two fixed mixed-precision candidates keep either the prediction head (which
+produces boxes and confidence), or the head and feature pyramid (which combines
+features at several scales), floating. Both fail complete MOT17 development
+evaluation. A conditional diagnostic control keeps the original INT8 weights
+but every activation and bias (a learned additive offset) floating; it uses floating convolution computation.
+It reaches MOT17 MOTA 69.1755, only 0.0570 points below the floating baseline,
+and its identity score falls by 0.4315 points. This supports the activation/
+bias quantization path as a major source of the original collapse; the control
+restores both, so their effects are not separately isolated. It does not identify
+one causal layer and does not establish an accelerated INT8 solution. The
+control's model hash is fixed before one MOT20 evaluation and paired speed test;
+[the separate report](../../results/phase-4-nano-repair.md) records their outcome.
+Original failed models, scores and limits stay unchanged.
+
+两个固定的混合精度方案分别保留检测头（产生框和置信度）浮点，或保留检测头与
+特征金字塔（组合多个尺度的特征）浮点，
+但都没通过完整的 MOT17 开发集验证。有条件的诊断对照保留原 INT8 权重，
+让全部激活和偏置（学习得到的加法偏移量）保持浮点，卷积仍以浮点计算。
+它在 MOT17 上达到 MOTA 69.1755，
+仅比浮点基线低 0.0570 个百分点，身份一致性分数低 0.4315 个百分点。
+这支持“激活／偏置量化路径是原始崩溃的重要来源”的判断；对照同时恢复了两者，
+没有单独隔离各自的影响。它没有锁定某一层，也没有证明
+INT8 加速方案合格。对照模型的摘要在单次 MOT20 评估与配对测速之前固定；
+[单独报告](../../results/phase-4-nano-repair.md)记录这些测试的结果。
+原来失败的模型、分数和门槛保持不变。
+
+The single MOT20 run reaches MOTA 55.3158, a loss of 0.7049 percentage points,
+inside the original quality cap. Paired speed ratios at 1/2/4 threads are
+1.030/0.995/0.969x, all below the required 1.3x. Recovering quality is useful
+diagnostic evidence, but this floating control does not solve INT8 acceleration.
+The original FP32 baseline remains the accepted comparison.
+
+单次 MOT20 测量达到 MOTA 55.3158，损失 0.7049 个百分点，落在原质量限值内。
+一／二／四线程的配对速度比为 1.030／0.995／0.969 倍，都低于要求的 1.3 倍。
+质量恢复提供了有用的诊断证据，但这个浮点对照没有解决 INT8 加速问题。
+原 FP32 基线仍是已接受的比较对象。
+
 ## New terms / 新术语
 
 | Term | 中文 | Meaning / 含义 |
@@ -136,3 +193,7 @@ Every test uses the same hardened wrapper: no runtime network, ordinary user, no
 | S8S8 | 有符号 8 位权重与激活 | Signed INT8 representation for both quantities / 两者都使用有符号 INT8 表示 |
 | Per-channel | 逐通道 | Separate weight scaling for each output feature channel / 每个输出特征通道分别缩放权重 |
 | MinMax | 最小最大值 | Calibration using observed extrema / 使用观测到的极值进行校准 |
+| Saturation | 饱和 | Rounded quantized integer would exceed its bounds and must be clamped / 取整后的量化整数超出上下限，需要截断 |
+| Weight-only storage | 仅权重低精度存储 | Store weights as INT8, then restore float values for floating computation / 权重以 INT8 存储，恢复浮点值后进行浮点计算 |
+| Feature pyramid | 特征金字塔 | Combines image features at different resolutions / 组合不同分辨率的图像特征 |
+| Bias | 偏置 | Learned additive offset / 学习得到的加法偏移量 |

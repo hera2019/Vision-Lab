@@ -1,0 +1,136 @@
+{
+  "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+  "generated_at_utc": "2026-10-07T16:32:03.155825+00:00",
+  "protocol": "docs/PHASE4_REPAIR.md",
+  "protocol_sha256": "e1c59e557523b69994b4ffa9b32868877101794210012c170a1a7c0ec69acde5",
+  "script_sha256": "fa319217b126169ebf317e327fb87fe38662891d5f8b7f0b0cfab2d9eea8839a",
+  "original_hashes": {
+    "models/bytetrack_nano_mot17.onnx": "8741ff7182a44d47d69379015983069532bed92ea33590e2253dc7acb0197868",
+    "data/phase-4/models/bytetrack_nano_mot17.preprocessed.onnx": "8756969103789a9dd85670426cf66abc8738d57a1beef427304b1fbbf1ee0da5",
+    "data/phase-4/models/bytetrack_nano_mot17.int8.onnx": "b91974f59ad63ec7b99568270e0ad8961570b88415ec6fc77db256c200df9d9f"
+  },
+  "onnxruntime": "1.30.0",
+  "cpp_source_sha256": {
+    "cpp/src/detector.h": "37d880387e19322c4dbcd0b44051b481d98e4abb8e4b7fea04553e1c94ca32bb",
+    "cpp/src/track_sequence.cpp": "f712acde8c27c88584d31b4cf771e2c116a58fee08b89768dbf811d81899319c",
+    "cpp/src/benchmark_pipeline.cpp": "364f92403ad93252cc7767066e440d811abe42d9e1fbcc3eb0ce222498411c56",
+    "cpp/src/tracker/tracker.cpp": "f314ebf25f466a38798b09ce6809b44ea69a4173a403de70136b08b007bd2e09"
+  },
+  "benchmark": "MOT20",
+  "candidates": {
+    "weight-control": {
+      "motmetrics": {
+        "MOT20-01": {
+          "mota": 59.03371917463514,
+          "idf1": 55.347883070260416,
+          "num_switches": 146,
+          "num_false_positives": 1676,
+          "num_misses": 6318,
+          "num_objects": 19870
+        },
+        "MOT20-02": {
+          "mota": 56.72474182833361,
+          "idf1": 48.66561191251745,
+          "num_switches": 866,
+          "num_false_positives": 12620,
+          "num_misses": 53479,
+          "num_objects": 154742
+        },
+        "MOT20-03": {
+          "mota": 64.1227068973213,
+          "idf1": 67.33924518490933,
+          "num_switches": 724,
+          "num_false_positives": 26872,
+          "num_misses": 84936,
+          "num_objects": 313658
+        },
+        "MOT20-05": {
+          "mota": 50.59039768296758,
+          "idf1": 44.80724558243938,
+          "num_switches": 2844,
+          "num_false_positives": 86607,
+          "num_misses": 229905,
+          "num_objects": 646344
+        },
+        "OVERALL": {
+          "mota": 55.315816656589824,
+          "idf1": 51.84494391467416,
+          "num_switches": 4580,
+          "num_false_positives": 127775,
+          "num_misses": 374638,
+          "num_objects": 1134614
+        }
+      },
+      "loss_pp_vs_fp32": {
+        "mota": 0.7049093348046043,
+        "idf1": -0.47506445622671833
+      },
+      "sha256": {
+        "MOT20-01": "94336c0ba6a1e899d9ac81e58e1042207ccdff563c2e83e99aae56562dc5643a",
+        "MOT20-02": "9a84c463e180518481cedc21cc437d559639d273bb915d5d8ce413271be3775a",
+        "MOT20-03": "85e3d18313d815fdcf27dfd426c8ba59b872a8b83e2466fb972621cee6917a7f",
+        "MOT20-05": "0938119777cf1fd4d4094aba7fccd0a76e0c46373ba78689a1291724f766ccb2"
+      },
+      "coverage": {
+        "MOT20-01": {
+          "frames": 429,
+          "rows": 15228
+        },
+        "MOT20-02": {
+          "frames": 2782,
+          "rows": 113883
+        },
+        "MOT20-03": {
+          "frames": 2405,
+          "rows": 255594
+        },
+        "MOT20-05": {
+          "frames": 3315,
+          "rows": 503046
+        }
+      }
+    }
+  },
+  "baseline_motmetrics": {
+    "MOT20-01": {
+      "mota": 59.144438852541526,
+      "idf1": 57.26435152374203,
+      "num_switches": 113,
+      "num_false_positives": 1770,
+      "num_misses": 6235,
+      "num_objects": 19870
+    },
+    "MOT20-02": {
+      "mota": 57.11054529474868,
+      "idf1": 48.223208812438465,
+      "num_switches": 841,
+      "num_false_positives": 12604,
+      "num_misses": 52923,
+      "num_objects": 154742
+    },
+    "MOT20-03": {
+      "mota": 63.95979059995282,
+      "idf1": 65.59913543610288,
+      "num_switches": 786,
+      "num_false_positives": 28395,
+      "num_misses": 83862,
+      "num_objects": 313658
+    },
+    "MOT20-05": {
+      "mota": 51.81110987338011,
+      "idf1": 44.931580718952006,
+      "num_switches": 2900,
+      "num_false_positives": 90231,
+      "num_misses": 218335,
+      "num_objects": 646344
+    },
+    "OVERALL": {
+      "mota": 56.02072599139443,
+      "idf1": 51.36987945844744,
+      "num_switches": 4640,
+      "num_false_positives": 133000,
+      "num_misses": 361355,
+      "num_objects": 1134614
+    }
+  }
+}
