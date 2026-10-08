@@ -1,0 +1,36 @@
+{
+  "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+  "generated_at_utc": "2026-10-08T05:51:51.600084+00:00",
+  "status": "pass",
+  "scope": "Executor output/provenance audit; no new inference, benchmark or metric computation; not independent review.",
+  "counts": {
+    "MOT20-01": {
+      "frames": 429,
+      "seeds": 74,
+      "rows": 23045
+    },
+    "MOT20-02": {
+      "frames": 2782,
+      "seeds": 270,
+      "rows": 436426
+    },
+    "MOT20-03": {
+      "frames": 2405,
+      "seeds": 702,
+      "rows": 653378
+    },
+    "MOT20-05": {
+      "frames": 3315,
+      "seeds": 1169,
+      "rows": 2112235
+    }
+  },
+  "frames": 8931,
+  "rows": 3225084,
+  "source_hashes_match": true,
+  "GT_first_appearance_schedule_and_boxes_match": true,
+  "track_numeric_shape_order_birth_size_and_hash_checks": true,
+  "full_frame_timing_and_active_target_counts_match": true,
+  "python_syntax": "pass",
+  "audit_source_sha256": "70d75bda4bd0ece9a609bab87bfcd2af91163ee3a47b4406e164c7f42be83a16"
+}

@@ -147,6 +147,24 @@ The reviewer independently checked existing arithmetic and hashes without new
 inference, rescoring, visual inspection or a full experiment. This is a Codex
 agent verdict, not an Opus verdict or evidence of device/product readiness.
 
+## Separate mean-shift bonus
+
+The [completed classical comparison](../results/phase-5-meanshift.md) has a
+separate [fixed protocol](MEANSHIFT_EXECUTION.md). With the existing
+`vision-lab:phase4-pytools` image, pinned TrackEval and licensed MOT17/MOT20:
+
+```sh
+bash scripts/phase5_meanshift.sh
+```
+
+Use an output-empty disposable checkout: existing track/timing outputs are
+not overwritten. This entry point runs the equivalence prechecks, four full
+sequences, three sparse-clip timing repeats, fresh scoring, reporting and
+bounded output audit. Tracking/evaluation and the subsequent reporting/audit
+steps have been executed; the final assembled entry point has not been run
+end to end in a fresh clone. Earlier smoke/full profiles do not execute this
+bonus, and Opus's prior Phase 3–6 acceptance does not cover it.
+
 ## Container boundary
 
 Every run uses [scripts/drun.sh](../scripts/drun.sh): offline, ordinary UID,
@@ -165,6 +183,7 @@ retain failures. Commit/push requires the owner's explicit instruction.
 Our code uses [LICENSE](../LICENSE); third-party terms are in
 [docs/LICENSES.md](LICENSES.md). MOT17/MOT20 images, clips and crops retain
 MOTChallenge attribution and CC BY-NC-SA 3.0 non-commercial research terms.
-Models and datasets are not redistributed in this repository. Mean-shift is
-a deferred optional bonus; GPU/NPU, training, multi-camera and appearance
+Models and datasets are not redistributed in this repository. The optional
+mean-shift comparison is complete, with separate review pending. GPU/NPU,
+training, multi-camera and appearance
 re-identification are outside the current scope.

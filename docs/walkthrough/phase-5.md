@@ -2,17 +2,19 @@
 
 # 第 5 阶段讲解：看清追踪怎样失败
 
-Phase 5 documents three failure categories using existing nano FP32 outputs
-on held-out MOT20. It adds evidence, not a new tracking algorithm. Each crop
+The original Phase 5 pass documents three failure categories using existing
+nano FP32 outputs on held-out MOT20. Each crop
 shows three source frames from a stated interval, with the annotated target
 in yellow and its associated prediction in cyan. The accepted pipeline and
 all earlier scores remain unchanged. The full records are in
-[the failure report](../../results/phase-5-failures.md).
+[the failure report](../../results/phase-5-failures.md). Section 6 adds the
+subsequent mean-shift control completed on 2026-10-08.
 
-阶段 5 使用现有 nano FP32 在 MOT20 留出集上的输出，记录三类失败。它增加的是证据，
-没有引入新的追踪算法。每张局部图展示明确区间中的三张原始帧，黄色框是人工标注的
+阶段 5 最初使用现有 nano FP32 在 MOT20 留出集上的输出，记录三类失败。
+每张局部图展示明确区间中的三张原始帧，黄色框是人工标注的
 目标，青色框是与它对应的预测。已验收的流水线和之前的分数均保持不变。
-完整记录见[失败报告](../../results/phase-5-failures.md)。
+完整记录见[失败报告](../../results/phase-5-failures.md)。第 6 节补充了
+2026-10-08 完成的均值漂移对照实验。
 
 ## 1. A box needs a reference / 判断框是否正确，需要参照
 
@@ -101,18 +103,98 @@ new overall accuracy claim follows from three examples. Each case provides
 its sequence, full frame interval, target boxes, visibility, match history,
 detector overlap, source hashes and context-preserving crop. The three image
 files decode exactly and were inspected directly as files, without screen or
-app access. That meets the mandatory Phase 5 documentation requirement;
-independent review remains pending. The optional mean-shift bonus has not
-been run. Phase 6 will address reproduction from a clean checkout; the INT8
-root cause and continuous identity recovery remain unresolved.
+app access. That meets the mandatory Phase 5 documentation requirement.
+The subsequent Opus review accepted Phases 3–6, including this case evidence
+and clean-clone reproduction. The new bonus below is outside that verdict.
+Accelerated INT8 repair and continuous identity recovery remain unresolved.
 
 我们特意选择能说明问题的错误，不是随机抽样。遮挡案例由用户先发现，另外两例
 使用扫描前写好的固定选择规则。三个例子不能推出各类错误的频率、模型排名，或新的
 整体准确率结论。每例都记录序列、完整帧区间、目标框、可见度、匹配历史、检测重叠、
 源文件校验值和保留上下文的局部图。三张图片解码后与写入前完全一致，并直接作为
-文件检查，没有读取屏幕或操作应用。这满足阶段 5 的必需失败文档要求，独立复核
-仍待进行。可选的 mean-shift 加分实验没有运行。阶段 6 将处理干净检出后的复现；
-INT8 的具体根因和身份连续恢复问题仍未解决。
+文件检查，没有读取屏幕或操作应用。这满足阶段 5 的必需失败文档要求。
+之后 Opus 已验收阶段 3–6，包括这些案例证据与干净检出后的复现。
+下面新增的加分实验不在那次验收范围内。INT8 加速修复和身份连续恢复仍未解决。
+
+## 6. Classical mean-shift control / 经典均值漂移对照
+
+**Mean-shift** moves a tracking window toward the center of pixels matching
+the target's initial color distribution. **HSV** means hue, saturation and
+value: color type, color intensity and brightness. We build a **histogram**,
+a count of hue values, from the first target box. **Backprojection** assigns
+each later pixel a weight from that histogram. OpenCV repeatedly shifts the
+window toward the weighted center, at most ten times per frame. The histogram
+and window size stay fixed. This is a small classical tracker, with no person
+detector, re-identification or scale adaptation.
+
+**均值漂移（mean-shift）**把追踪窗口移向符合目标初始颜色分布的像素中心。
+**HSV** 是色相（hue）、饱和度（saturation）和明度（value），分别描述颜色类型、
+浓淡与亮暗。我们在目标的初始框里建立**直方图（histogram）**，统计各色相的数量。
+**反向投影（backprojection）**根据这个统计，为后续画面的每个像素赋予权重。
+OpenCV 反复把窗口移向加权中心，每帧最多十次。直方图与窗口大小保持固定。
+这个简单经典追踪器没有行人检测、身份重识别或大小适应能力。
+
+The original plan supplies a ground-truth (GT, human-annotated reference)
+box at each person's first valid appearance. This **oracle initialization**
+gives mean-shift both the start time and correct initial position; an ordinary
+video does not provide them. After initialization, no later GT position,
+visibility or exit label is used. Every initialized tracker persists to the
+end, including empty color histograms. This fixed protocol can leave boxes
+after people depart and drift between similar clothes. It was declared before
+scoring; removing failures afterward would change the experiment.
+
+原计划在每个人首次有效出现时，提供一个人工标注框（ground truth，简称 GT）。
+这种**使用参照答案的初始化（oracle initialization）**，提前告诉均值漂移何时开始、
+正确的初始位置在哪里；普通视频没有这些信息。初始化后，不再使用后续 GT 位置、
+可见度或离场标签。所有初始化的追踪器一直保留到视频结束，颜色直方图为空也一样。
+这个固定方案会在人离场后留下框，也可能在相似衣服之间漂移。这些规则在评分前确定；
+看到结果后再删除失败框，就改变了实验。
+
+All 8,931 frames across four MOT20 sequences were processed once. We scored
+the new outputs and existing nano/tiny FP32 outputs with the same pinned
+TrackEval pedestrian preprocessing and metrics. Existing baseline scores and
+track hashes reproduce exactly. These are percentages from TrackEval; they
+must not be mixed with the project's separately reported motmetrics values.
+
+四条 MOT20 序列的全部 8,931 帧各处理一次。新增输出与现有 nano/tiny FP32 输出，
+使用相同版本的 TrackEval、行人预处理与指标评分。原有基线的分数和轨迹文件校验值
+完全复现。下表是 TrackEval 百分数，不能与项目另行报告的 motmetrics 分数混用。
+
+| Method / 方法 | HOTA | MOTA | IDF1 |
+|---|---:|---:|---:|
+| Mean-shift / 均值漂移 | 4.24 | −252.30 | 3.11 |
+| Nano FP32 + ByteTrack | 42.07 | 62.42 | 53.31 |
+| Tiny FP32 + ByteTrack | 48.78 | 68.05 | 61.88 |
+
+HOTA combines detection and identity association quality. Negative MOTA is
+valid: false positives, misses and identity switches together exceed the
+annotated-target count. Mean-shift performs very poorly here despite initial
+reference boxes. Its unchanged ID labels do not prove it follows the same
+people. This characterizes the fixed tutorial-style control, not every
+classical algorithm. A separate sparse MOT17 clip measured 135.69 FPS in
+three one-thread runs, but has different initialization/workload and session
+from the detector benchmark; image bytes were pre-read for checksums. It
+does not establish a paired speedup or dense-scene real-time acceptance.
+
+HOTA 综合衡量检测与身份关联质量。MOTA 为负是有效结果：误报、漏检与身份切换
+加起来超过了标注目标的总数。这里即使提供初始参照框，均值漂移仍表现很差。
+编号没有改变，也不能证明它跟着同一个人。这描述的是固定的教程式对照方案，
+不能推广到所有经典算法。另一个较稀疏的 MOT17 短片经过三次单线程测速，得到
+135.69 FPS；但初始化方式、工作量和运行时间都与检测器基准不同，图像字节还因
+校验而提前读取。因此它不能证明成对加速收益，也不构成密集场景的实时验收。
+
+See the [full comparison](../../results/phase-5-meanshift.md) and
+[fixed protocol](../MEANSHIFT_EXECUTION.md). The own computational shortcuts
+match standard OpenCV windows in 160 checks and upstream TrackEval arrays
+and metrics on all 837 MOT17-05 frames. Independent bonus review and its
+fresh-clone execution remain unverified; earlier full-run evidence covers
+the prior profile. No accepted model or threshold changes.
+
+完整证据见[对比报告](../../results/phase-5-meanshift.md)与
+[固定实验方案](../MEANSHIFT_EXECUTION.md)。我们只优化计算方式：160 个窗口检查
+与标准 OpenCV 一致，全部 837 帧 MOT17-05 的评估数组和指标与原版 TrackEval 一致。
+新增实验尚未独立复核，也未从干净检出单独运行；之前完整复现的证据覆盖的是原有流程。
+已验收模型与判定阈值保持不变。
 
 ## New terms / 新术语
 
@@ -121,3 +203,8 @@ INT8 的具体根因和身份连续恢复问题仍未解决。
 | Correspondence | 对应关系 | Evaluator pairing between annotated person and predicted track / 评估器配对人工标注人物与预测轨迹 |
 | Visibility | 可见度 | Dataset annotation of target visibility / 数据集标注的目标可见程度 |
 | Truncation | 截断 | Part of a target outside the image / 目标一部分在画面之外 |
+| Mean-shift | 均值漂移 | Moving a window toward weighted pixel mass / 把窗口移向像素加权中心 |
+| HSV | 色相、饱和度、明度 | Hue, saturation, value color representation / 一种颜色表示方式 |
+| Histogram | 直方图 | Counts grouped by value / 按数值分组统计数量 |
+| Backprojection | 反向投影 | Weighting pixels by the target histogram / 按目标直方图赋予像素权重 |
+| Oracle initialization | 使用参照答案的初始化 | Providing annotated first-appearance time and box / 提供人工标注的首次出现时间与框 |

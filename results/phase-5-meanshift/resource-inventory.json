@@ -1,0 +1,30 @@
+[
+  {
+    "sequence": "MOT20-01",
+    "gt_seed_identities": 74,
+    "max_expected_live_tracks": 74,
+    "upper_bound_prediction_rows": 23389,
+    "dense_all_gt_similarity_gib": 0.011005319654941559
+  },
+  {
+    "sequence": "MOT20-02",
+    "gt_seed_identities": 270,
+    "max_expected_live_tracks": 270,
+    "upper_bound_prediction_rows": 438064,
+    "dense_all_gt_similarity_gib": 0.25276651978492737
+  },
+  {
+    "sequence": "MOT20-03",
+    "gt_seed_identities": 702,
+    "max_expected_live_tracks": 702,
+    "upper_bound_prediction_rows": 805118,
+    "dense_all_gt_similarity_gib": 0.9970960468053818
+  },
+  {
+    "sequence": "MOT20-05",
+    "gt_seed_identities": 1169,
+    "max_expected_live_tracks": 1169,
+    "upper_bound_prediction_rows": 2354377,
+    "dense_all_gt_similarity_gib": 3.959279865026474
+  }
+]

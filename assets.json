@@ -264,5 +264,51 @@
     },
     "source": "models/bytetrack_nano_mot17.onnx; prepared FP32 and original INT8 hashes recorded in candidate-models.json",
     "license": "Derived ByteTrack checkpoint; MIT weights with underlying research-dataset terms, see docs/LICENSES.md"
+  },
+  "meanshift_bonus": {
+    "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+    "protocol": "docs/MEANSHIFT_EXECUTION.md",
+    "protocol_sha256": "4e037dfd1be919f3caeab87e8bb27e83fd0334697b140571d66f8f1b7274287c",
+    "report": "results/phase-5-meanshift.json",
+    "output_root": "data/phase-5-meanshift",
+    "source": "Existing licensed MOT20/MOT17 frames and first-appearance pedestrian annotations; no new weights or downloads",
+    "license": "MOTChallenge CC BY-NC-SA 3.0, non-commercial research",
+    "trackeval_commit": "12c8791b303e0a0b50f753af204249e622d0281a",
+    "opencv": "4.10.0 (existing Python image)",
+    "initialization": "First eligible pedestrian GT appearance/box; arbitrary tracker ID; no later GT correction or retirement.",
+    "sequences": {
+      "MOT20-01": {
+        "tracks_sha256": "4db7dfe04d9013606ca3fc94c3a345a79e3644d136da931454e7ae4a7d0e8f3d",
+        "seeds_sha256": "ac1f389d749fe3319d5508fd00aec2e40189418755e89619b033536fc046fc6d",
+        "gt_sha256": "89fd0196d67a5eb6011a470dc2a49b02255403b49e8848031cdf99add8a36d9c",
+        "seqinfo_sha256": "5850098d845d1a92c4b8649ee7ab4e2b7ef2b0a2104eb855cdef9a8e93da0a5e",
+        "ordered_image_manifest_sha256": "fba899b1eebce6ae0f02153e299ebceee7a2706ce226ce08d0c44aa06d94402e",
+        "timing_sha256": "674075382499c409cc6b2017dd80062f06680ce0762d8adc87d80511145fc194"
+      },
+      "MOT20-02": {
+        "tracks_sha256": "0eeea350ba4d084397a7ad95b3f694194e24d363dcd26e7f3973e14fdba96569",
+        "seeds_sha256": "e0c2d50720336b5a989915aa2198cab53c3f4e557889e79a52d0c2c7594ad504",
+        "gt_sha256": "10abe457a67d9919a9cbfe821d3619c8e6174c2b0ed7ecf4cb68c1fd6cad58de",
+        "seqinfo_sha256": "e94c47840038e71e84613eeda0a9635728de1e488b56c5b05b16f68ff7305a44",
+        "ordered_image_manifest_sha256": "0aed202ea8ea5c2be75997889209b65fe68c7bb28d7b2293a636ce3219fccbb4",
+        "timing_sha256": "f84c64e409471a8f3964b64711d96c6b0f35924bb1f7f3c4cf1618c7c5b3a9ad"
+      },
+      "MOT20-03": {
+        "tracks_sha256": "f2f471b07292900779c4bd23693f9fb935240489c961ef8786f80809aadc30c3",
+        "seeds_sha256": "f2370eaa6fb52a07be5879f432f34e8068940ae909c87ff4b4e8d5be5a46b78e",
+        "gt_sha256": "350fbc950c6dc00e3cc8a71358b3d0b8958906c8be57a7bf5fb9db34bff70f28",
+        "seqinfo_sha256": "fb62095bce77a2e422e258d76266d767c7ea04816e8462f631b9b65ec2a64b5e",
+        "ordered_image_manifest_sha256": "3cee10ee4cd9a9684023f282d2a0044f03c575648b301f029c56cd7ec5af3ce8",
+        "timing_sha256": "792bcd9897ac2a536012a4bda18b7b21b91d16dc4300949218781b2799a77606"
+      },
+      "MOT20-05": {
+        "tracks_sha256": "4d613911c76123822084fdd23bdfa08b9e2b8549f567131f0bff7c0baf08236c",
+        "seeds_sha256": "277fcdb46a9a01d8937ba402c11a0f322280789c759def64c13c4b0776a14092",
+        "gt_sha256": "6da1ad9a528c39203c181aa93fc492d194358c50856695a7fe17656c928f5c17",
+        "seqinfo_sha256": "1834b94212c439addf4662acba986e80f63f1b2a22f4f92ef7181ee2be47088e",
+        "ordered_image_manifest_sha256": "7e181feded0b1d01c804870fea396ee7276865fa2c0339e1aff60e668a052b08",
+        "timing_sha256": "4e3080a1b864f5e87c4d70aa5566ed956a3e4269b7839f097502e0b181f69c06"
+      }
+    }
   }
 }

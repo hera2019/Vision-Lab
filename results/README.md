@@ -14,6 +14,7 @@ models, full track files and footage live in ignored `data/` directories.
 | 4 · Dependencies / early diagnosis | [Approved dependency](phase-4-dependency.md), [initial failure](phase-4-dependency-initial.md) | [Earlier MOT17-only diagnostic](phase-4-int8-diagnostic.md); does not explain MOT20 collapse |
 | 4 · Post-hoc nano investigation | [Remedy / floating diagnostic control](phase-4-nano-repair.md), [fixed-frame diagnosis](phase-4-nano-diagnosis.md) | [Protocol](../docs/PHASE4_REPAIR.md), [raw evidence](phase-4-repair/); quality restored within 0.705 pp, acceleration fails |
 | 5 · Failure analysis | [Three documented cases](phase-5-failures.md) | [Raw evidence](phase-5/) |
+| 5 · Classical control | [Mean-shift versus ByteTrack](phase-5-meanshift.md) | [JSON](phase-5-meanshift.json), [protocol](../docs/MEANSHIFT_EXECUTION.md), [raw evidence](phase-5-meanshift/); bonus review pending |
 | 6 · Full reproduction | [Current tested reporting source](phase-6-reporting-full-reproduction.md), [verification](phase-6-reporting-full-verification.md) | [Archived raw run](phase-6/reporting-full/), [earlier full run](phase-6-full-reproduction.md) |
 | 6 · Speed interpretation | [Observed between-run spread](phase-6-between-run-spread.md) | Original strict interval failures remain; [Opus ruling](../docs/reviews/phase-4-6-opus.md) |
 | 6 · Reporting audit | [Arithmetic/hash audit](phase-6-audit.md), [reporting fixes](phase-6-reporting-fixes.md), [date fix](phase-6-report-date-fix.md) | [Read-only independent review](phase-4-6-independent-review.md) |

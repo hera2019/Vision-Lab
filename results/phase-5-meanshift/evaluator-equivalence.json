@@ -1,0 +1,18 @@
+{
+  "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+  "generated_at_utc": "2026-10-08T05:37:37.887254+00:00",
+  "protocol": "docs/MEANSHIFT_EXECUTION.md",
+  "protocol_sha256": "4e037dfd1be919f3caeab87e8bb27e83fd0334697b140571d66f8f1b7274287c",
+  "script_sha256": "19d77123c9f601113ce5e699e5fd82d86df55c84864db6d8e22047095e366f4b",
+  "opencv": "4.10.0",
+  "opencv_threads": 1,
+  "cpu_max": "100000 100000",
+  "status": "pass",
+  "sequence": "MOT17-05-FRCNN",
+  "source_tracks_sha256": "6d2a61fe41f448709fe54ceab8a0ee6be98178fb75b607e4d1f2626e6afdf939",
+  "frames": 837,
+  "arrays_equal": 5022,
+  "float_dtype_unchanged": true,
+  "all_metric_fields_equal": true,
+  "adapter_sha256": "f16251752fce16862289bbe1c68369702d104e1756246ecb9a08a301956d98bf"
+}

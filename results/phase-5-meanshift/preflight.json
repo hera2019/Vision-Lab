@@ -1,0 +1,51 @@
+{
+  "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+  "generated_at_utc": "2026-10-08T05:37:36.407854+00:00",
+  "protocol": "docs/MEANSHIFT_EXECUTION.md",
+  "protocol_sha256": "4e037dfd1be919f3caeab87e8bb27e83fd0334697b140571d66f8f1b7274287c",
+  "script_sha256": "19d77123c9f601113ce5e699e5fd82d86df55c84864db6d8e22047095e366f4b",
+  "opencv": "4.10.0",
+  "opencv_threads": 1,
+  "cpu_max": "100000 100000",
+  "status": "pass",
+  "synthetic_windows": 120,
+  "tracking_core_sha256": "230dc0d2405cdf7b1d45bf54968a2ead828809f1a8063b7a2f0c63467e4b456f",
+  "MOT17_windows": 40,
+  "images": [
+    {
+      "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000001.jpg",
+      "sha256": "41ff65408c5338f4a83035fd12e9f5f7b658ee82feacf4512655677032636597"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000002.jpg",
+      "sha256": "9312a3137c9a12524d381d85c693ed39b67374fc1872eb6b1e5a91d66e73e6ea"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000051.jpg",
+      "sha256": "d074198e39fac1b1925454b642f591d6d0919e0385b8121aa235ae26b51d4f02"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000100.jpg",
+      "sha256": "71f7b310a05d12a8c0f0fb7f91819f2b795285d4539adfbb3636aea1b808aeed"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000001.jpg",
+      "sha256": "9f4f112b29e93846501db27d2bcc2c99795715aa6376d5b5662d75f2e2f196d7"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000002.jpg",
+      "sha256": "1494429af24fbbf38c3d6d7376fa1abd6bcae706edaf07a743bdbd1f9c2dbc4b"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000051.jpg",
+      "sha256": "125f4a80dbd6b1236827cec142f0efed4ba75e4f77a38f61cb0df2d9d4c75281"
+    },
+    {
+      "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000100.jpg",
+      "sha256": "b30c34989ba8d3a17d3a345f525fa5dbb3d65172ef813013de1fd5515e93d6d1"
+    }
+  ],
+  "preprocess_max_abs_error": 0.0,
+  "births_unchanged_without_later_annotations": true,
+  "full_backprojection_final_windows_identical": true
+}

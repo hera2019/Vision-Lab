@@ -50,3 +50,14 @@ and actual-author ledger/plan updates. Preserve limitations and negative
 evidence. Existing demos and accepted baseline remain unchanged. Mean-shift
 is an optional bonus and is not included in this mandatory failure-case pass.
 Phase 6 fresh-clone reproduction remains subsequent work. No commit or push.
+
+## Subsequent bonus, 2026-10-08
+
+The case-only protocol above is historical. The separately fixed
+[mean-shift protocol](MEANSHIFT_EXECUTION.md) and [completed comparison](../results/phase-5-meanshift.md)
+now cover all four MOT20 sequences. They do not change the original cases or
+scores. Run `bash scripts/phase5_meanshift.sh` with the existing Python image,
+TrackEval checkout and licensed inputs; outputs must be absent because the
+tracker refuses overwrite. The new entry point generates both report formats.
+This bonus is outside the previously executed clean-clone full profile and
+awaits independent review.

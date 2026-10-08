@@ -1,0 +1,727 @@
+{
+  "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+  "generated_at_utc": "2026-10-08T05:51:35.528268+00:00",
+  "status": "complete-mean-shift-bonus-comparison",
+  "protocol": "docs/MEANSHIFT_EXECUTION.md",
+  "protocol_sha256": "4e037dfd1be919f3caeab87e8bb27e83fd0334697b140571d66f8f1b7274287c",
+  "source_sha256": {
+    "python/meanshift_baseline.py": "19d77123c9f601113ce5e699e5fd82d86df55c84864db6d8e22047095e366f4b",
+    "python/meanshift_trackeval.py": "f16251752fce16862289bbe1c68369702d104e1756246ecb9a08a301956d98bf",
+    "python/report_meanshift.py": "5d8a1a97336cf6568f01c77d5879e63d873445becb2d68cf88ecec2d5b741cfd",
+    "python/verify_meanshift.py": "70d75bda4bd0ece9a609bab87bfcd2af91163ee3a47b4406e164c7f42be83a16",
+    "scripts/phase5_meanshift.sh": "3c1b1b6f4acc389a39429487fc4becd4e6de175bc52cf5b3e7a4c8ab840de2dd"
+  },
+  "preflight": {
+    "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+    "generated_at_utc": "2026-10-08T05:37:36.407854+00:00",
+    "protocol": "docs/MEANSHIFT_EXECUTION.md",
+    "protocol_sha256": "4e037dfd1be919f3caeab87e8bb27e83fd0334697b140571d66f8f1b7274287c",
+    "script_sha256": "19d77123c9f601113ce5e699e5fd82d86df55c84864db6d8e22047095e366f4b",
+    "opencv": "4.10.0",
+    "opencv_threads": 1,
+    "cpu_max": "100000 100000",
+    "status": "pass",
+    "synthetic_windows": 120,
+    "tracking_core_sha256": "230dc0d2405cdf7b1d45bf54968a2ead828809f1a8063b7a2f0c63467e4b456f",
+    "MOT17_windows": 40,
+    "images": [
+      {
+        "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000001.jpg",
+        "sha256": "41ff65408c5338f4a83035fd12e9f5f7b658ee82feacf4512655677032636597"
+      },
+      {
+        "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000002.jpg",
+        "sha256": "9312a3137c9a12524d381d85c693ed39b67374fc1872eb6b1e5a91d66e73e6ea"
+      },
+      {
+        "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000051.jpg",
+        "sha256": "d074198e39fac1b1925454b642f591d6d0919e0385b8121aa235ae26b51d4f02"
+      },
+      {
+        "path": "data/MOT17/train/MOT17-02-FRCNN/img1/000100.jpg",
+        "sha256": "71f7b310a05d12a8c0f0fb7f91819f2b795285d4539adfbb3636aea1b808aeed"
+      },
+      {
+        "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000001.jpg",
+        "sha256": "9f4f112b29e93846501db27d2bcc2c99795715aa6376d5b5662d75f2e2f196d7"
+      },
+      {
+        "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000002.jpg",
+        "sha256": "1494429af24fbbf38c3d6d7376fa1abd6bcae706edaf07a743bdbd1f9c2dbc4b"
+      },
+      {
+        "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000051.jpg",
+        "sha256": "125f4a80dbd6b1236827cec142f0efed4ba75e4f77a38f61cb0df2d9d4c75281"
+      },
+      {
+        "path": "data/MOT17/train/MOT17-05-FRCNN/img1/000100.jpg",
+        "sha256": "b30c34989ba8d3a17d3a345f525fa5dbb3d65172ef813013de1fd5515e93d6d1"
+      }
+    ],
+    "preprocess_max_abs_error": 0.0,
+    "births_unchanged_without_later_annotations": true,
+    "full_backprojection_final_windows_identical": true
+  },
+  "evaluator_equivalence": {
+    "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+    "generated_at_utc": "2026-10-08T05:37:37.887254+00:00",
+    "protocol": "docs/MEANSHIFT_EXECUTION.md",
+    "protocol_sha256": "4e037dfd1be919f3caeab87e8bb27e83fd0334697b140571d66f8f1b7274287c",
+    "script_sha256": "19d77123c9f601113ce5e699e5fd82d86df55c84864db6d8e22047095e366f4b",
+    "opencv": "4.10.0",
+    "opencv_threads": 1,
+    "cpu_max": "100000 100000",
+    "status": "pass",
+    "sequence": "MOT17-05-FRCNN",
+    "source_tracks_sha256": "6d2a61fe41f448709fe54ceab8a0ee6be98178fb75b607e4d1f2626e6afdf939",
+    "frames": 837,
+    "arrays_equal": 5022,
+    "float_dtype_unchanged": true,
+    "all_metric_fields_equal": true,
+    "adapter_sha256": "f16251752fce16862289bbe1c68369702d104e1756246ecb9a08a301956d98bf"
+  },
+  "sequences": {
+    "MOT20-01": {
+      "metadata": {
+        "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+        "generated_at_utc": "2026-10-08T05:37:43.309120+00:00",
+        "protocol": "docs/MEANSHIFT_EXECUTION.md",
+        "protocol_sha256": "4e037dfd1be919f3caeab87e8bb27e83fd0334697b140571d66f8f1b7274287c",
+        "script_sha256": "19d77123c9f601113ce5e699e5fd82d86df55c84864db6d8e22047095e366f4b",
+        "opencv": "4.10.0",
+        "opencv_threads": 1,
+        "cpu_max": "100000 100000",
+        "sequence": "MOT20-01",
+        "processed_frames": 429,
+        "measured_frames": 429,
+        "warmup_frames": 0,
+        "benchmark_repeat": null,
+        "gt_sha256": "89fd0196d67a5eb6011a470dc2a49b02255403b49e8848031cdf99add8a36d9c",
+        "seqinfo_sha256": "5850098d845d1a92c4b8649ee7ab4e2b7ef2b0a2104eb855cdef9a8e93da0a5e",
+        "ordered_image_manifest_sha256": "fba899b1eebce6ae0f02153e299ebceee7a2706ce226ce08d0c44aa06d94402e",
+        "initialized_tracks": 74,
+        "empty_histograms": 0,
+        "invalid_seeds": [],
+        "emitted_rows_including_warmup": 23045,
+        "peak_rss_kib": 84436,
+        "seconds_driver": 5.088850586005719,
+        "timing_sha256": "674075382499c409cc6b2017dd80062f06680ce0762d8adc87d80511145fc194",
+        "tracks_sha256": "4db7dfe04d9013606ca3fc94c3a345a79e3644d136da931454e7ae4a7d0e8f3d",
+        "seed_source": "first valid pedestrian GT appearance only; no subsequent GT updates or retirement"
+      },
+      "timing": {
+        "frames": 429,
+        "fps": 94.61303776661615,
+        "mean_ms": 10.569367854636692,
+        "p50_ms": 10.32112498069182,
+        "p95_ms": 11.245233204681426,
+        "mean_active_tracks": 54.51981351981352,
+        "max_active_tracks": 74,
+        "timing_sha256": "674075382499c409cc6b2017dd80062f06680ce0762d8adc87d80511145fc194"
+      },
+      "seeds_sha256": "ac1f389d749fe3319d5508fd00aec2e40189418755e89619b033536fc046fc6d"
+    },
+    "MOT20-02": {
+      "metadata": {
+        "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+        "generated_at_utc": "2026-10-08T05:38:21.156285+00:00",
+        "protocol": "docs/MEANSHIFT_EXECUTION.md",
+        "protocol_sha256": "4e037dfd1be919f3caeab87e8bb27e83fd0334697b140571d66f8f1b7274287c",
+        "script_sha256": "19d77123c9f601113ce5e699e5fd82d86df55c84864db6d8e22047095e366f4b",
+        "opencv": "4.10.0",
+        "opencv_threads": 1,
+        "cpu_max": "100000 100000",
+        "sequence": "MOT20-02",
+        "processed_frames": 2782,
+        "measured_frames": 2782,
+        "warmup_frames": 0,
+        "benchmark_repeat": null,
+        "gt_sha256": "10abe457a67d9919a9cbfe821d3619c8e6174c2b0ed7ecf4cb68c1fd6cad58de",
+        "seqinfo_sha256": "e94c47840038e71e84613eeda0a9635728de1e488b56c5b05b16f68ff7305a44",
+        "ordered_image_manifest_sha256": "0aed202ea8ea5c2be75997889209b65fe68c7bb28d7b2293a636ce3219fccbb4",
+        "initialized_tracks": 270,
+        "empty_histograms": 0,
+        "invalid_seeds": [],
+        "emitted_rows_including_warmup": 436426,
+        "peak_rss_kib": 93332,
+        "seconds_driver": 37.259949100989616,
+        "timing_sha256": "f84c64e409471a8f3964b64711d96c6b0f35924bb1f7f3c4cf1618c7c5b3a9ad",
+        "tracks_sha256": "0eeea350ba4d084397a7ad95b3f694194e24d363dcd26e7f3973e14fdba96569",
+        "seed_source": "first valid pedestrian GT appearance only; no subsequent GT updates or retirement"
+      },
+      "timing": {
+        "frames": 2782,
+        "fps": 83.04434372350605,
+        "mean_ms": 12.041759319930009,
+        "p50_ms": 11.889999994309619,
+        "p95_ms": 14.907670515822245,
+        "mean_active_tracks": 157.46369518332136,
+        "max_active_tracks": 270,
+        "timing_sha256": "f84c64e409471a8f3964b64711d96c6b0f35924bb1f7f3c4cf1618c7c5b3a9ad"
+      },
+      "seeds_sha256": "e0c2d50720336b5a989915aa2198cab53c3f4e557889e79a52d0c2c7594ad504"
+    },
+    "MOT20-03": {
+      "metadata": {
+        "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+        "generated_at_utc": "2026-10-08T05:38:48.746388+00:00",
+        "protocol": "docs/MEANSHIFT_EXECUTION.md",
+        "protocol_sha256": "4e037dfd1be919f3caeab87e8bb27e83fd0334697b140571d66f8f1b7274287c",
+        "script_sha256": "19d77123c9f601113ce5e699e5fd82d86df55c84864db6d8e22047095e366f4b",
+        "opencv": "4.10.0",
+        "opencv_threads": 1,
+        "cpu_max": "100000 100000",
+        "sequence": "MOT20-03",
+        "processed_frames": 2405,
+        "measured_frames": 2405,
+        "warmup_frames": 0,
+        "benchmark_repeat": null,
+        "gt_sha256": "350fbc950c6dc00e3cc8a71358b3d0b8958906c8be57a7bf5fb9db34bff70f28",
+        "seqinfo_sha256": "fb62095bce77a2e422e258d76266d767c7ea04816e8462f631b9b65ec2a64b5e",
+        "ordered_image_manifest_sha256": "3cee10ee4cd9a9684023f282d2a0044f03c575648b301f029c56cd7ec5af3ce8",
+        "initialized_tracks": 702,
+        "empty_histograms": 23,
+        "invalid_seeds": [],
+        "emitted_rows_including_warmup": 653378,
+        "peak_rss_kib": 118264,
+        "seconds_driver": 26.91220921999775,
+        "timing_sha256": "792bcd9897ac2a536012a4bda18b7b21b91d16dc4300949218781b2799a77606",
+        "tracks_sha256": "f2f471b07292900779c4bd23693f9fb935240489c961ef8786f80809aadc30c3",
+        "seed_source": "first valid pedestrian GT appearance only; no subsequent GT updates or retirement"
+      },
+      "timing": {
+        "frames": 2405,
+        "fps": 98.0669457524455,
+        "mean_ms": 10.197115779707689,
+        "p50_ms": 9.752082987688482,
+        "p95_ms": 14.35260798316449,
+        "mean_active_tracks": 334.7683991683992,
+        "max_active_tracks": 702,
+        "timing_sha256": "792bcd9897ac2a536012a4bda18b7b21b91d16dc4300949218781b2799a77606"
+      },
+      "seeds_sha256": "f2370eaa6fb52a07be5879f432f34e8068940ae909c87ff4b4e8d5be5a46b78e"
+    },
+    "MOT20-05": {
+      "metadata": {
+        "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+        "generated_at_utc": "2026-10-08T05:40:01.125740+00:00",
+        "protocol": "docs/MEANSHIFT_EXECUTION.md",
+        "protocol_sha256": "4e037dfd1be919f3caeab87e8bb27e83fd0334697b140571d66f8f1b7274287c",
+        "script_sha256": "19d77123c9f601113ce5e699e5fd82d86df55c84864db6d8e22047095e366f4b",
+        "opencv": "4.10.0",
+        "opencv_threads": 1,
+        "cpu_max": "100000 100000",
+        "sequence": "MOT20-05",
+        "processed_frames": 3315,
+        "measured_frames": 3315,
+        "warmup_frames": 0,
+        "benchmark_repeat": null,
+        "gt_sha256": "6da1ad9a528c39203c181aa93fc492d194358c50856695a7fe17656c928f5c17",
+        "seqinfo_sha256": "1834b94212c439addf4662acba986e80f63f1b2a22f4f92ef7181ee2be47088e",
+        "ordered_image_manifest_sha256": "7e181feded0b1d01c804870fea396ee7276865fa2c0339e1aff60e668a052b08",
+        "initialized_tracks": 1169,
+        "empty_histograms": 8,
+        "invalid_seeds": [],
+        "emitted_rows_including_warmup": 2112235,
+        "peak_rss_kib": 195344,
+        "seconds_driver": 71.46758540699375,
+        "timing_sha256": "4e3080a1b864f5e87c4d70aa5566ed956a3e4269b7839f097502e0b181f69c06",
+        "tracks_sha256": "4d613911c76123822084fdd23bdfa08b9e2b8549f567131f0bff7c0baf08236c",
+        "seed_source": "first valid pedestrian GT appearance only; no subsequent GT updates or retirement"
+      },
+      "timing": {
+        "frames": 3315,
+        "fps": 50.66187047836571,
+        "mean_ms": 19.73871060341195,
+        "p50_ms": 19.377042015548795,
+        "p95_ms": 26.771804192685522,
+        "mean_active_tracks": 710.2193061840121,
+        "max_active_tracks": 1169,
+        "timing_sha256": "4e3080a1b864f5e87c4d70aa5566ed956a3e4269b7839f097502e0b181f69c06"
+      },
+      "seeds_sha256": "277fcdb46a9a01d8937ba402c11a0f322280789c759def64c13c4b0776a14092"
+    }
+  },
+  "quality": {
+    "meanshift": {
+      "TrackEval": {
+        "MOT20-01": {
+          "HOTA": 7.822641030288768,
+          "MOTA": -99.18973326623049,
+          "IDF1": 5.3556446350330935,
+          "IDSW": 131
+        },
+        "MOT20-02": {
+          "HOTA": 3.5151076777103185,
+          "MOTA": -265.97820888963565,
+          "IDF1": 2.3621527701409812,
+          "IDSW": 1093
+        },
+        "MOT20-03": {
+          "HOTA": 5.168189047094732,
+          "MOTA": -184.27969316899296,
+          "IDF1": 3.041936135289214,
+          "IDSW": 2613
+        },
+        "MOT20-05": {
+          "HOTA": 3.93033779051182,
+          "MOTA": -286.74142561855604,
+          "IDF1": 3.2563804320634855,
+          "IDSW": 12185
+        },
+        "OVERALL": {
+          "HOTA": 4.239367780309066,
+          "MOTA": -252.30016551884606,
+          "IDF1": 3.107562722617949,
+          "IDSW": 16022
+        }
+      },
+      "motmetrics": {
+        "MOT20-01": {
+          "mota": -99.17966784096627,
+          "idf1": 5.354771059070256,
+          "num_switches": 134,
+          "num_false_positives": 21309,
+          "num_misses": 18134,
+          "num_objects": 19870
+        },
+        "MOT20-02": {
+          "mota": -265.9995347093872,
+          "idf1": 2.37868084876042,
+          "num_switches": 1059,
+          "num_false_positives": 423490,
+          "num_misses": 141806,
+          "num_objects": 154742
+        },
+        "MOT20-03": {
+          "mota": -184.67215884817222,
+          "idf1": 3.038976832299935,
+          "num_switches": 2507,
+          "num_false_positives": 615055,
+          "num_misses": 275335,
+          "num_objects": 313658
+        },
+        "MOT20-05": {
+          "mota": -289.77231938410506,
+          "idf1": 3.242103996296644,
+          "num_switches": 11785,
+          "num_false_positives": 1986688,
+          "num_misses": 520797,
+          "num_objects": 646344
+        },
+        "OVERALL": {
+          "mota": -254.1379711514224,
+          "idf1": 3.1007652364911515,
+          "num_switches": 15485,
+          "num_false_positives": 3046542,
+          "num_misses": 956072,
+          "num_objects": 1134614
+        }
+      },
+      "sha256": {
+        "MOT20-01": "4db7dfe04d9013606ca3fc94c3a345a79e3644d136da931454e7ae4a7d0e8f3d",
+        "MOT20-02": "0eeea350ba4d084397a7ad95b3f694194e24d363dcd26e7f3973e14fdba96569",
+        "MOT20-03": "f2f471b07292900779c4bd23693f9fb935240489c961ef8786f80809aadc30c3",
+        "MOT20-05": "4d613911c76123822084fdd23bdfa08b9e2b8549f567131f0bff7c0baf08236c"
+      }
+    },
+    "nano": {
+      "TrackEval": {
+        "MOT20-01": {
+          "HOTA": 47.23054213312274,
+          "MOTA": 64.21238047307499,
+          "IDF1": 59.11794871794872,
+          "IDSW": 114
+        },
+        "MOT20-02": {
+          "HOTA": 41.07236009093464,
+          "MOTA": 61.71756859805353,
+          "IDF1": 49.597076318485556,
+          "IDSW": 839
+        },
+        "MOT20-03": {
+          "HOTA": 48.86228961976236,
+          "MOTA": 67.7275886475078,
+          "IDF1": 67.00164332666476,
+          "IDSW": 805
+        },
+        "MOT20-05": {
+          "HOTA": 38.1823651847849,
+          "MOTA": 59.96110430359066,
+          "IDF1": 47.098216501758586,
+          "IDSW": 2840
+        },
+        "OVERALL": {
+          "HOTA": 42.06929816580634,
+          "MOTA": 62.42211007443941,
+          "IDF1": 53.31482258609942,
+          "IDSW": 4598
+        }
+      },
+      "motmetrics": {
+        "MOT20-01": {
+          "mota": 59.144438852541526,
+          "idf1": 57.26435152374203,
+          "num_switches": 113,
+          "num_false_positives": 1770,
+          "num_misses": 6235,
+          "num_objects": 19870
+        },
+        "MOT20-02": {
+          "mota": 57.11054529474868,
+          "idf1": 48.223208812438465,
+          "num_switches": 841,
+          "num_false_positives": 12604,
+          "num_misses": 52923,
+          "num_objects": 154742
+        },
+        "MOT20-03": {
+          "mota": 63.95979059995282,
+          "idf1": 65.59913543610288,
+          "num_switches": 786,
+          "num_false_positives": 28395,
+          "num_misses": 83862,
+          "num_objects": 313658
+        },
+        "MOT20-05": {
+          "mota": 51.81110987338011,
+          "idf1": 44.931580718952006,
+          "num_switches": 2900,
+          "num_false_positives": 90231,
+          "num_misses": 218335,
+          "num_objects": 646344
+        },
+        "OVERALL": {
+          "mota": 56.02072599139443,
+          "idf1": 51.36987945844744,
+          "num_switches": 4640,
+          "num_false_positives": 133000,
+          "num_misses": 361355,
+          "num_objects": 1134614
+        }
+      },
+      "sha256": {
+        "MOT20-01": "a6082850c17f03428ae957178f245c3638c30bc690dce5e9ae3631ee0f79ad51",
+        "MOT20-02": "734977a349789e3db2ad3f0f6727ba8086f034229ce0f14489a8255bf055f77b",
+        "MOT20-03": "946213c4d1b3f872b8550ca915994d82b8ddb79868a6b6d12d7d41c461682267",
+        "MOT20-05": "ce8935c3e80e15463c322fa1551a93d8cf79045936119943b9b58bc52887f31f"
+      }
+    },
+    "tiny": {
+      "TrackEval": {
+        "MOT20-01": {
+          "HOTA": 51.56269404165561,
+          "MOTA": 70.48314041268243,
+          "IDF1": 62.30307151762439,
+          "IDSW": 85
+        },
+        "MOT20-02": {
+          "HOTA": 47.7104678768838,
+          "MOTA": 69.52411110105854,
+          "IDF1": 57.38780585933214,
+          "IDSW": 651
+        },
+        "MOT20-03": {
+          "HOTA": 54.2064464342087,
+          "MOTA": 71.22598499002098,
+          "IDF1": 74.00833711581704,
+          "IDSW": 513
+        },
+        "MOT20-05": {
+          "HOTA": 45.80328757683619,
+          "MOTA": 66.08725384624906,
+          "IDF1": 56.833058906254664,
+          "IDSW": 2063
+        },
+        "OVERALL": {
+          "HOTA": 48.77875889968304,
+          "MOTA": 68.05354067550726,
+          "IDF1": 61.882181260587096,
+          "IDSW": 3312
+        }
+      },
+      "motmetrics": {
+        "MOT20-01": {
+          "mota": 63.49270256668345,
+          "idf1": 59.81907581972779,
+          "num_switches": 93,
+          "num_false_positives": 2116,
+          "num_misses": 5045,
+          "num_objects": 19870
+        },
+        "MOT20-02": {
+          "mota": 64.43176383916455,
+          "idf1": 55.750609197280454,
+          "num_switches": 655,
+          "num_false_positives": 13209,
+          "num_misses": 41175,
+          "num_objects": 154742
+        },
+        "MOT20-03": {
+          "mota": 66.95987349278514,
+          "idf1": 72.31336994345368,
+          "num_switches": 503,
+          "num_false_positives": 32179,
+          "num_misses": 70951,
+          "num_objects": 313658
+        },
+        "MOT20-05": {
+          "mota": 57.34160137635686,
+          "idf1": 54.07412957690194,
+          "num_switches": 2138,
+          "num_false_positives": 91017,
+          "num_misses": 182565,
+          "num_objects": 646344
+        },
+        "OVERALL": {
+          "mota": 61.07522029518408,
+          "idf1": 59.490619839630966,
+          "num_switches": 3389,
+          "num_false_positives": 138521,
+          "num_misses": 299736,
+          "num_objects": 1134614
+        }
+      },
+      "sha256": {
+        "MOT20-01": "b63c9808550e4176143dbfa593688b564b66530d7ff88308c96ffd255ba68dcd",
+        "MOT20-02": "c0b0ddfb9399ebf86995795aecb74146089b2bc1e46ef8f90ceda51544bfbd90",
+        "MOT20-03": "1d35ffe10718a4f7f1e3dfeeaed9e81191b813eb2007882f8560dac585226eb0",
+        "MOT20-05": "ca47d1658125c15570a89eb662318c53ff98953f76b35a48100f9f445b7634a5"
+      }
+    }
+  },
+  "evaluation_sha256": "6294a0e979ea4fd372fa1cc93f2bc228e8a2a96ddf7aa845856b7093bfc56189",
+  "original_baselines_exact": true,
+  "baseline_replaced": false,
+  "parameters_tuned_on_MOT20": false,
+  "benchmark": {
+    "sequence": "MOT17-02-FRCNN",
+    "input_size": [
+      608,
+      1088
+    ],
+    "warmup": 50,
+    "measured_frames_per_repeat": 100,
+    "repeats": [
+      {
+        "repeat": 1,
+        "metadata": {
+          "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+          "generated_at_utc": "2026-10-08T05:40:03.088115+00:00",
+          "protocol": "docs/MEANSHIFT_EXECUTION.md",
+          "protocol_sha256": "4e037dfd1be919f3caeab87e8bb27e83fd0334697b140571d66f8f1b7274287c",
+          "script_sha256": "19d77123c9f601113ce5e699e5fd82d86df55c84864db6d8e22047095e366f4b",
+          "opencv": "4.10.0",
+          "opencv_threads": 1,
+          "cpu_max": "100000 100000",
+          "sequence": "MOT17-02-FRCNN",
+          "processed_frames": 150,
+          "measured_frames": 100,
+          "warmup_frames": 50,
+          "benchmark_repeat": 1,
+          "gt_sha256": "2e3ecb488da8886d3200d402b2b08890c6d2879923839444e9b74fa43a551440",
+          "seqinfo_sha256": "669c5135aa1b7f1726ee50ab6cec86780fc448dadaf93ea9c4fb6e2a0d4256aa",
+          "ordered_image_manifest_sha256": "4d3bbd0592909140866aafe688fe94e520e6efb3f4b6e73eb34562fc80ee9cf0",
+          "initialized_tracks": 35,
+          "empty_histograms": 2,
+          "invalid_seeds": [],
+          "emitted_rows_including_warmup": 4234,
+          "peak_rss_kib": 80864,
+          "seconds_driver": 1.267205959011335,
+          "timing_sha256": "9d385647a6c01dc05ba0908f1188254edf2bf56cc4ea521b5998f6043cad1a2c",
+          "tracks_sha256": null,
+          "seed_source": "first valid pedestrian GT appearance only; no subsequent GT updates or retirement"
+        },
+        "frames": 100,
+        "fps": 136.2024441591037,
+        "mean_ms": 7.342012150911614,
+        "p50_ms": 7.188729505287483,
+        "p95_ms": 8.219417293730658,
+        "mean_active_tracks": 30.64,
+        "max_active_tracks": 35,
+        "timing_sha256": "9d385647a6c01dc05ba0908f1188254edf2bf56cc4ea521b5998f6043cad1a2c"
+      },
+      {
+        "repeat": 2,
+        "metadata": {
+          "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+          "generated_at_utc": "2026-10-08T05:40:04.719487+00:00",
+          "protocol": "docs/MEANSHIFT_EXECUTION.md",
+          "protocol_sha256": "4e037dfd1be919f3caeab87e8bb27e83fd0334697b140571d66f8f1b7274287c",
+          "script_sha256": "19d77123c9f601113ce5e699e5fd82d86df55c84864db6d8e22047095e366f4b",
+          "opencv": "4.10.0",
+          "opencv_threads": 1,
+          "cpu_max": "100000 100000",
+          "sequence": "MOT17-02-FRCNN",
+          "processed_frames": 150,
+          "measured_frames": 100,
+          "warmup_frames": 50,
+          "benchmark_repeat": 2,
+          "gt_sha256": "2e3ecb488da8886d3200d402b2b08890c6d2879923839444e9b74fa43a551440",
+          "seqinfo_sha256": "669c5135aa1b7f1726ee50ab6cec86780fc448dadaf93ea9c4fb6e2a0d4256aa",
+          "ordered_image_manifest_sha256": "4d3bbd0592909140866aafe688fe94e520e6efb3f4b6e73eb34562fc80ee9cf0",
+          "initialized_tracks": 35,
+          "empty_histograms": 2,
+          "invalid_seeds": [],
+          "emitted_rows_including_warmup": 4234,
+          "peak_rss_kib": 80860,
+          "seconds_driver": 1.2116616670100484,
+          "timing_sha256": "6519408692f5dbd4d71d48b7626331e2c4cc1057d83818d8c16143fe509f82f7",
+          "tracks_sha256": null,
+          "seed_source": "first valid pedestrian GT appearance only; no subsequent GT updates or retirement"
+        },
+        "frames": 100,
+        "fps": 133.37280383756755,
+        "mean_ms": 7.497780441190116,
+        "p50_ms": 7.288708497071639,
+        "p95_ms": 8.25203930871794,
+        "mean_active_tracks": 30.64,
+        "max_active_tracks": 35,
+        "timing_sha256": "6519408692f5dbd4d71d48b7626331e2c4cc1057d83818d8c16143fe509f82f7"
+      },
+      {
+        "repeat": 3,
+        "metadata": {
+          "author": "Codex / GPT-6 (exact runtime model ID not exposed)",
+          "generated_at_utc": "2026-10-08T05:40:06.326581+00:00",
+          "protocol": "docs/MEANSHIFT_EXECUTION.md",
+          "protocol_sha256": "4e037dfd1be919f3caeab87e8bb27e83fd0334697b140571d66f8f1b7274287c",
+          "script_sha256": "19d77123c9f601113ce5e699e5fd82d86df55c84864db6d8e22047095e366f4b",
+          "opencv": "4.10.0",
+          "opencv_threads": 1,
+          "cpu_max": "100000 100000",
+          "sequence": "MOT17-02-FRCNN",
+          "processed_frames": 150,
+          "measured_frames": 100,
+          "warmup_frames": 50,
+          "benchmark_repeat": 3,
+          "gt_sha256": "2e3ecb488da8886d3200d402b2b08890c6d2879923839444e9b74fa43a551440",
+          "seqinfo_sha256": "669c5135aa1b7f1726ee50ab6cec86780fc448dadaf93ea9c4fb6e2a0d4256aa",
+          "ordered_image_manifest_sha256": "4d3bbd0592909140866aafe688fe94e520e6efb3f4b6e73eb34562fc80ee9cf0",
+          "initialized_tracks": 35,
+          "empty_histograms": 2,
+          "invalid_seeds": [],
+          "emitted_rows_including_warmup": 4234,
+          "peak_rss_kib": 80864,
+          "seconds_driver": 1.206362333992729,
+          "timing_sha256": "5e0818d812f5170b538a14302c4227c0c58ab623582f2e7b1d3e946283229268",
+          "tracks_sha256": null,
+          "seed_source": "first valid pedestrian GT appearance only; no subsequent GT updates or retirement"
+        },
+        "frames": 100,
+        "fps": 135.69345021280935,
+        "mean_ms": 7.369552461314015,
+        "p50_ms": 7.214437500806525,
+        "p95_ms": 8.157579148246441,
+        "mean_active_tracks": 30.64,
+        "max_active_tracks": 35,
+        "timing_sha256": "5e0818d812f5170b538a14302c4227c0c58ab623582f2e7b1d3e946283229268"
+      }
+    ],
+    "median_repeat_fps": 135.69345021280935,
+    "combined_p50_ms": 7.219542007078417,
+    "combined_p95_ms": 8.225256540754344,
+    "original_fp32_one_thread_settings": {
+      "nano": {
+        "model": "nano",
+        "precision": "fp32",
+        "threads": 1,
+        "median_repeat_fps": 11.609888588952602,
+        "repeat_fps": [
+          11.679215405108987,
+          11.609888588952602,
+          11.5943729453211
+        ],
+        "realtime_25_fps_gate": false,
+        "stages": {
+          "decode_ms": {
+            "mean_ms": 5.200975839999999,
+            "p50_ms": 5.177313,
+            "p95_ms": 5.5265018
+          },
+          "preprocess_ms": {
+            "mean_ms": 2.7017528133333335,
+            "p50_ms": 2.6604795,
+            "p95_ms": 2.86143925
+          },
+          "inference_ms": {
+            "mean_ms": 77.89711306666666,
+            "p50_ms": 77.17266699999999,
+            "p95_ms": 80.69523125
+          },
+          "postprocess_ms": {
+            "mean_ms": 0.1434711466666667,
+            "p50_ms": 0.1432915,
+            "p95_ms": 0.1733896
+          },
+          "tracking_ms": {
+            "mean_ms": 0.05538055333333334,
+            "p50_ms": 0.0565205,
+            "p95_ms": 0.07175
+          },
+          "end_to_end_ms": {
+            "mean_ms": 86.00146527,
+            "p50_ms": 85.1691455,
+            "p95_ms": 89.16197085
+          }
+        },
+        "peak_rss_mib_max": 153.20703125,
+        "model_bytes": 3652051,
+        "model_sha256": "8741ff7182a44d47d69379015983069532bed92ea33590e2253dc7acb0197868"
+      },
+      "tiny": {
+        "model": "tiny",
+        "precision": "fp32",
+        "threads": 1,
+        "median_repeat_fps": 3.175277016166364,
+        "repeat_fps": [
+          3.0417003217804,
+          3.1963140429667787,
+          3.175277016166364
+        ],
+        "realtime_25_fps_gate": false,
+        "stages": {
+          "decode_ms": {
+            "mean_ms": 5.924721126666666,
+            "p50_ms": 5.4496455,
+            "p95_ms": 6.1463684500000015
+          },
+          "preprocess_ms": {
+            "mean_ms": 2.7752105366666666,
+            "p50_ms": 2.6957294999999997,
+            "p95_ms": 3.0232944
+          },
+          "inference_ms": {
+            "mean_ms": 309.9332558433333,
+            "p50_ms": 303.59825049999995,
+            "p95_ms": 345.16810835
+          },
+          "postprocess_ms": {
+            "mean_ms": 0.15192234666666665,
+            "p50_ms": 0.098875,
+            "p95_ms": 0.12521010000000002
+          },
+          "tracking_ms": {
+            "mean_ms": 0.06399372333333332,
+            "p50_ms": 0.0611245,
+            "p95_ms": 0.07926040000000001
+          },
+          "end_to_end_ms": {
+            "mean_ms": 318.85233657333333,
+            "p50_ms": 312.3441045,
+            "p95_ms": 354.1147295
+          }
+        },
+        "peak_rss_mib_max": 203.86328125,
+        "model_bytes": 20166903,
+        "model_sha256": "4d50a6a3fc1bf1c836015c665ab3d4d1c73bbbcf0fad96b7a2d3af78b558d665"
+      }
+    },
+    "comparison_scope": "Different sessions and implementations; GT-seeded workload, no human annotation cost; not a paired speed-up or shipping test.",
+    "cache_note": "Image checksums are read outside timing immediately before decoding; filesystem bytes are pre-read. Comparisons do not control cold I/O."
+  },
+  "oracle_initialization": "First eligible pedestrian GT appearance/box; arbitrary tracker ID; no later GT correction or retirement.",
+  "loss_policy": "Keep fixed histogram/window size and every initialized tracker until sequence end; stale tracks count against quality.",
+  "negative_results_retained": true,
+  "fresh_clone_bonus_execution_verified": false
+}

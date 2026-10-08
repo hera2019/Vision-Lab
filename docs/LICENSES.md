@@ -9,8 +9,8 @@ repository; scripts download them from the original sources.
 | YOLOX (detector architecture) | [Megvii-BaseDetection/YOLOX](https://github.com/Megvii-BaseDetection/YOLOX) | Apache-2.0 | |
 | ONNX Runtime 1.30.0 | [microsoft/onnxruntime](https://github.com/microsoft/onnxruntime) | MIT | Prebuilt Linux tarballs, SHA-256 pinned in the Dockerfile |
 | ml_dtypes 0.6.0 | [PyPI release files](https://pypi.org/project/ml-dtypes/0.6.0/#files) | Apache-2.0; bundled Eigen MPL-2.0 | Owner-approved, hash-pinned binary wheel in the separate Phase 4 Python image only |
-| TrackEval | [JonathonLuiten/TrackEval](https://github.com/JonathonLuiten/TrackEval) | MIT | |
-| OpenCV | Ubuntu 24.04 packages | Apache-2.0 | |
+| TrackEval | [JonathonLuiten/TrackEval](https://github.com/JonathonLuiten/TrackEval) | MIT | Own mean-shift adapter extends the pinned dataset API; upstream notice preserved in `python/LICENSE.TrackEval` |
+| OpenCV | Ubuntu 24.04 packages; existing Python headless wheel 4.10.0 | Apache-2.0 | Mean-shift uses the existing Python image; no new dependency installation |
 | Eigen | Ubuntu 24.04 packages | MPL-2.0 | |
 | MOT17, MOT20 | [motchallenge.net](https://motchallenge.net/) | CC BY-NC-SA 3.0 | **Non-commercial research only.** Any frames, crops or GIFs from these sequences shown in this repository are shared under the same license, with attribution to the MOTChallenge authors. |
 

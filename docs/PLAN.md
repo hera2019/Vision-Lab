@@ -1,11 +1,12 @@
 # Vision Lab — Work Plan
 
-Status: **Phase 4–6 measurements reviewed; quality reproduces exactly; speed differs by -2.73% to +5.76% across full reruns; post-hoc nano diagnosis/control complete, acceleration unresolved; final Opus review pending** · Started 2026-10-06 · Target 2026-10-13
+Status: **Phases 3–6 accepted by Opus; mean-shift bonus measured, separate review pending; accelerated INT8 repair unresolved** · Started 2026-10-06 · Target 2026-10-13
 
 Review lead's [2026-10-08 verdict](reviews/phase-4-6-opus.md): measurements
-accepted; R-A requires a MOT20 failure diagnosis and a separately declared
-MOT17-selected remedy; R-B changes speed interpretation without rescoring;
-R-C requires a short README and results index. [Observed spread](../results/phase-6-between-run-spread.md)
+accepted after the final follow-up; R-A, R-B and R-C resolved. The initial
+requests were a MOT20 failure diagnosis and separately declared MOT17-selected
+control, descriptive speed interpretation, and a short README/results index.
+[Observed spread](../results/phase-6-between-run-spread.md)
 includes both completed reruns. README and index have been rewritten; the
 [new bounded experiment](PHASE4_REPAIR.md) preserves original INT8 failures.
 It is complete: [diagnosis/control report](../results/phase-4-nano-repair.md).
@@ -15,7 +16,9 @@ Activation/bias effects are not separately isolated; no accelerated INT8
 repair or baseline replacement is claimed. Twenty-five track hashes, 18 raw
 benchmark runs, original report preservation and documentation links pass
 the bounded final verification.
-Final review, merge and push remain pending; merge/push need owner approval.
+Opus's final review records the prior work committed, merged and pushed.
+The subsequent mean-shift additions are uncommitted and outside that verdict;
+their [review brief](reviews/phase-5-meanshift-handoff.md) is ready.
 
 Detailed test plan and acceptance criteria: [01-phase-0-plan.md](01-phase-0-plan.md).
 Detector: ByteTrack's YOLOX nano/tiny checkpoints (decided 2026-10-06).
@@ -58,8 +61,15 @@ upstream on the three scanned sequences. These are illustrative examples,
 not frequency estimates or tuned improvements. Mandatory Phase 5 evidence is
 complete; independent review supports the numerical case descriptions within
 its stated limits (no new visual inspection or tracker-state replay).
-Mean-shift remains an optional deferred
-bonus. Phase 6 full clean-clone reproduction has now executed; see below.
+The optional [mean-shift comparison](../results/phase-5-meanshift.md) now covers
+all 8,931 MOT20 frames under the same TrackEval settings: MOTA −252.30,
+IDF1 3.11, versus nano 62.42/53.31 and tiny 68.05/61.88. It receives annotated
+first-appearance boxes but no later correction, scale adaptation or retirement;
+drift and stale boxes remain failures. The 135.69 FPS sparse-clip timing is
+illustrative, not a paired speedup or the shipping gate. The bonus has its own
+[protocol](MEANSHIFT_EXECUTION.md); no new threshold, tuning or baseline
+replacement. Its fresh-clone execution and independent review remain unverified.
+Phase 6 full clean-clone reproduction has executed for the earlier scope.
 
 Phase 6: [README](../README.md), [execution protocol](PHASE6_EXECUTION.md),
 [historical snapshot record](../results/phase-6-reproduction.md),
@@ -127,7 +137,8 @@ Linux, and Docker.
 - **Detection:** YOLOX nano (primary) and tiny, using the ByteTrack authors' pedestrian checkpoints.
 - **Tracking:** ByteTrack-style association.
 - **Inference:** model exported to ONNX and run from **C++ via ONNX Runtime**.
-  Python is used only for export, evaluation and reporting.
+  Python is used for export, calibration, evaluation and reporting, and for
+  the separate OpenCV mean-shift classical control.
 - **Runtime:** everything runs inside a **Linux Docker container, CPU only**
   (Docker on macOS runs a Linux VM, so this stands in for an edge device).
 - **Data:** public videos / MOT benchmark sequences with licenses recorded.
